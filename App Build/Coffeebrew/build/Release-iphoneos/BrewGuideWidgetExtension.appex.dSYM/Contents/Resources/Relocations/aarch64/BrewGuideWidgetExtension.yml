@@ -1,5 +1,0 @@
----
-triple:          'arm64-apple-darwin'
-binary-path:     '/Users/muhammadazizurrehman/Documents/CoffeeBrew/Coffeebrew/build/Release-iphoneos/BrewGuideWidgetExtension.appex/BrewGuideWidgetExtension'
-relocations:     []
-...

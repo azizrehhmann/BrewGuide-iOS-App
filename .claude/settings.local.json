@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mv Data/* Docs/Data/)",
+      "Bash(rmdir Data)"
+    ]
+  }
+}
