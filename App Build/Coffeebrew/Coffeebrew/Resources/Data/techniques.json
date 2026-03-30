@@ -1,0 +1,774 @@
+[
+  {
+    "technique_id": "v60-pour-over-standard",
+    "method_id": "v60-pour-over",
+    "name": "V60 Pour Over (Standard)",
+    "description": "Hario V60 Dripper. Grind: Medium-Fine (table salt).",
+    "total_time_seconds": 150,
+    "water_temp_c": 90,
+    "ratio_water_coffee": 16.7,
+    "grind_size_label": "Medium-Fine (table salt)",
+    "grind_size_ref": "Medium-Fine",
+    "step_count": 8,
+    "sort_order": 1
+  },
+  {
+    "technique_id": "v60-james-hoffmann-ultimate",
+    "method_id": "v60-pour-over",
+    "name": "V60 \u2013 James Hoffmann Ultimate",
+    "description": "Hario V60 Dripper. Grind: Medium-Fine.",
+    "total_time_seconds": 210,
+    "water_temp_c": 95,
+    "ratio_water_coffee": 16.7,
+    "grind_size_label": "Medium-Fine",
+    "grind_size_ref": "Medium-Fine",
+    "step_count": 9,
+    "sort_order": 2,
+    "deep_dive": {
+      "origin_story": "James Hoffmann published his \"Ultimate V60 Technique\" on YouTube in 2017, distilling years of competition experience and cafe consulting into a single, repeatable method. The video became one of the most-watched coffee tutorials ever, with over 15 million views.\n\nThe technique emphasizes a large bloom with a gentle swirl, followed by two main pours with intermittent swirling to ensure even extraction. Hoffmann designed it to be forgiving and consistent, removing much of the barista variance that plagues pour-over brewing.",
+      "creator": {
+        "name": "James Hoffmann",
+        "bio": "World Barista Champion 2007, author of \"The World Atlas of Coffee,\" and one of the most influential figures in specialty coffee. His YouTube channel has millions of subscribers and has democratized coffee knowledge worldwide.",
+        "url": "https://www.jameshoffmann.co.uk"
+      },
+      "tasting_notes": "Expect a clean, sweet cup with excellent clarity. The swirling technique promotes even extraction, producing a balanced body that highlights origin flavors. Acidity is bright but not overwhelming, with a smooth, lingering finish.",
+      "common_mistakes": [
+        "Pouring too aggressively during the bloom, disturbing the coffee bed",
+        "Skipping the swirl after bloom \u2014 this is essential for even saturation",
+        "Using water that is not hot enough (Hoffmann recommends as hot as possible)",
+        "Grinding too coarse, leading to fast drawdown and under-extraction",
+        "Not waiting for the full bloom time before the first main pour"
+      ],
+      "tips": [
+        "Use water just off the boil (95\u201398\u00b0C) for light roasts",
+        "The swirl after each pour is gentle \u2014 think wine glass, not cocktail shaker",
+        "If drawdown exceeds 3:30, grind slightly coarser next time",
+        "Rinse your paper filter thoroughly to remove papery taste",
+        "Weigh everything \u2014 consistency is the key to this method"
+      ],
+      "videos": [
+        {
+          "title": "The Ultimate V60 Technique",
+          "youtube_id": "AI4ynXzkSQo",
+          "duration_label": "6:24"
+        },
+        {
+          "title": "V60 Recipes Compared",
+          "youtube_id": "PApBycDN1-I",
+          "duration_label": "18:28"
+        }
+      ]
+    }
+  },
+  {
+    "technique_id": "v60-tetsu-kasuya-46-method",
+    "method_id": "v60-pour-over",
+    "name": "V60 \u2013 Tetsu Kasuya 4:6 Method",
+    "description": "Hario V60 (Kasuya Model preferred). Grind: Medium-Coarse (coarser than standard V60).",
+    "total_time_seconds": 210,
+    "water_temp_c": 93,
+    "ratio_water_coffee": 15.0,
+    "grind_size_label": "Medium-Coarse (coarser than standard V60)",
+    "grind_size_ref": "Medium-Coarse",
+    "step_count": 7,
+    "sort_order": 3,
+    "deep_dive": {
+      "origin_story": "Tetsu Kasuya won the 2016 World Brewers Cup in Dublin with his revolutionary 4:6 method. The technique divides the total water into five pours: the first two (40%) control sweetness and acidity, while the last three (60%) control strength and body.\n\nWhat made the method groundbreaking was its use of a significantly coarser grind than traditional V60 recipes. This counterintuitive approach, combined with the structured pour ratios, gave brewers a simple framework to dial in flavor profiles without changing grind size \u2014 just by adjusting the first two pour sizes.",
+      "creator": {
+        "name": "Tetsu Kasuya",
+        "bio": "Japanese barista and 2016 World Brewers Cup Champion. Founder of Philocoffea and known for his innovative, accessible approach to brewing science. His 4:6 method transformed how home brewers think about pour-over variables.",
+        "url": "https://philocoffea.com"
+      },
+      "tasting_notes": "The 4:6 method produces a well-rounded cup with adjustable character. With equal first two pours, expect a balanced sweetness-to-acidity ratio. The coarser grind gives a fuller body than typical V60 brews while maintaining good clarity. Finish is clean and medium-length.",
+      "common_mistakes": [
+        "Grinding too fine \u2014 this method requires a noticeably coarser grind than standard V60",
+        "Not waiting for each pour to fully drain before starting the next",
+        "Pouring too fast, which undermines the controlled extraction",
+        "Forgetting that the first two pours are for flavor balance, not just wetting",
+        "Using the wrong total water ratio (should be 1:15, not 1:16.7)"
+      ],
+      "tips": [
+        "To increase sweetness, make the first pour larger than the second",
+        "To increase acidity/brightness, make the second pour larger than the first",
+        "Each of the last three pours should be equal in volume",
+        "Use a timer and scale \u2014 precision matters with this method",
+        "Try with single-origin light roasts to really taste the control this gives you"
+      ],
+      "videos": [
+        {
+          "title": "Tetsu Kasuya's 4:6 Method Explained",
+          "youtube_id": "wmCW8xSWGZY",
+          "duration_label": "9:47"
+        }
+      ]
+    }
+  },
+  {
+    "technique_id": "v60-matt-winton-five-pour",
+    "method_id": "v60-pour-over",
+    "name": "V60 \u2013 Matt Winton Five Pour",
+    "description": "Hario V60 Dripper. Grind: Medium-Fine.",
+    "total_time_seconds": 150,
+    "water_temp_c": 95,
+    "ratio_water_coffee": 16.7,
+    "grind_size_label": "Medium-Fine",
+    "grind_size_ref": "Medium-Fine",
+    "step_count": 9,
+    "sort_order": 4
+  },
+  {
+    "technique_id": "chemex",
+    "method_id": "chemex",
+    "name": "Chemex",
+    "description": "Chemex Brewer (6 or 8 cup). Grind: Medium-Coarse (kosher salt).",
+    "total_time_seconds": 210,
+    "water_temp_c": 93,
+    "ratio_water_coffee": 15.0,
+    "grind_size_label": "Medium-Coarse (kosher salt)",
+    "grind_size_ref": "Medium-Coarse",
+    "step_count": 8,
+    "sort_order": 1
+  },
+  {
+    "technique_id": "kalita-wave",
+    "method_id": "kalita-wave",
+    "name": "Kalita Wave",
+    "description": "Kalita Wave 155/185 Dripper. Grind: Medium (between V60 and Chemex).",
+    "total_time_seconds": 180,
+    "water_temp_c": 90,
+    "ratio_water_coffee": 16.0,
+    "grind_size_label": "Medium (between V60 and Chemex)",
+    "grind_size_ref": "Medium",
+    "step_count": 8,
+    "sort_order": 1
+  },
+  {
+    "technique_id": "nel-drip-flannel-drip",
+    "method_id": "nel-drip",
+    "name": "Nel Drip (Flannel Drip)",
+    "description": "Nel drip stand + flannel filter. Grind: Medium to Medium-Coarse.",
+    "total_time_seconds": 180,
+    "water_temp_c": 85,
+    "ratio_water_coffee": 14.0,
+    "grind_size_label": "Medium to Medium-Coarse",
+    "grind_size_ref": "Medium-Coarse",
+    "step_count": 8,
+    "sort_order": 1
+  },
+  {
+    "technique_id": "french-press-standard",
+    "method_id": "french-press",
+    "name": "French Press (Standard)",
+    "description": "French Press (Cafeti\u00e8re). Grind: Coarse (sea salt).",
+    "total_time_seconds": 240,
+    "water_temp_c": 93,
+    "ratio_water_coffee": 16.0,
+    "grind_size_label": "Coarse (sea salt)",
+    "grind_size_ref": "Coarse",
+    "step_count": 7,
+    "sort_order": 1
+  },
+  {
+    "technique_id": "french-press-james-hoffmann",
+    "method_id": "french-press",
+    "name": "French Press \u2013 James Hoffmann",
+    "description": "French Press (Cafeti\u00e8re). Grind: Medium (finer than traditional).",
+    "total_time_seconds": 540,
+    "water_temp_c": 95,
+    "ratio_water_coffee": 16.7,
+    "grind_size_label": "Medium (finer than traditional)",
+    "grind_size_ref": "Medium",
+    "step_count": 8,
+    "sort_order": 2,
+    "deep_dive": {
+      "origin_story": "James Hoffmann's French Press technique challenged decades of conventional wisdom. Published on YouTube in 2016, he argued that the traditional 4-minute steep with a coarse grind was producing under-extracted, muddy coffee.\n\nHis method uses a finer grind, longer steep time (9+ minutes total), and crucially, never fully plunges the press. Instead, after removing the crust and scooping foam, the plunger sits just below the surface as a filter while pouring. This produces a dramatically cleaner cup than most people thought possible from a French Press.",
+      "creator": {
+        "name": "James Hoffmann",
+        "bio": "World Barista Champion 2007, author of \"The World Atlas of Coffee,\" and one of the most influential figures in specialty coffee. His YouTube channel has millions of subscribers and has democratized coffee knowledge worldwide.",
+        "url": "https://www.jameshoffmann.co.uk"
+      },
+      "tasting_notes": "Surprisingly clean for a French Press. The extended steep and lack of plunging produces a cup closer to a pour-over in clarity, but with the fuller body characteristic of immersion brewing. Expect rich sweetness, low bitterness, and minimal silt.",
+      "common_mistakes": [
+        "Using a coarse grind out of habit \u2014 this method needs medium grind",
+        "Plunging the press all the way down, pushing fines into the cup",
+        "Not waiting the full steep time (patience is essential)",
+        "Stirring too vigorously when breaking the crust",
+        "Pouring from the press too quickly, disturbing the settled grounds"
+      ],
+      "tips": [
+        "After 4 minutes, gently break the crust with a spoon and scoop off foam",
+        "Wait at least 5 more minutes for fines to settle before pouring",
+        "Do NOT plunge \u2014 just rest the plunger on the surface as a strainer",
+        "Pour slowly and gently to leave sediment behind",
+        "This method works beautifully with specialty light roasts"
+      ],
+      "videos": [
+        {
+          "title": "The Ultimate French Press Technique",
+          "youtube_id": "st571DYYTR8",
+          "duration_label": "8:31"
+        }
+      ]
+    }
+  },
+  {
+    "technique_id": "clever-dripper",
+    "method_id": "clever-dripper",
+    "name": "Clever Dripper",
+    "description": "Clever Coffee Dripper. Grind: Medium-Coarse (slightly coarser than pour over).",
+    "total_time_seconds": 150,
+    "water_temp_c": 93,
+    "ratio_water_coffee": 16.0,
+    "grind_size_label": "Medium-Coarse (slightly coarser than pour over)",
+    "grind_size_ref": "Medium-Coarse",
+    "step_count": 7,
+    "sort_order": 1
+  },
+  {
+    "technique_id": "cold-brew-immersion",
+    "method_id": "cold-brew",
+    "name": "Cold Brew (Immersion)",
+    "description": "Mason jar, French press, or cold brew pitcher. Grind: Coarse (very coarse, like raw sugar).",
+    "total_time_seconds": 43200,
+    "water_temp_c": 2,
+    "ratio_water_coffee": 8.0,
+    "grind_size_label": "Coarse (very coarse, like raw sugar)",
+    "grind_size_ref": "Coarse",
+    "step_count": 8,
+    "sort_order": 1
+  },
+  {
+    "technique_id": "japanese-iced-coffee-flash-brew",
+    "method_id": "japanese-iced",
+    "name": "Japanese Iced Coffee (Flash Brew)",
+    "description": "V60, Chemex, or any pour over + ice. Grind: Medium-Fine (slightly finer than hot pour over).",
+    "total_time_seconds": 120,
+    "water_temp_c": 92,
+    "ratio_water_coffee": 16.0,
+    "grind_size_label": "Medium-Fine (slightly finer than hot pour over)",
+    "grind_size_ref": "Medium-Fine",
+    "step_count": 7,
+    "sort_order": 1
+  },
+  {
+    "technique_id": "aeropress-standardupright",
+    "method_id": "aeropress",
+    "name": "AeroPress (Standard/Upright)",
+    "description": "AeroPress Original or Clear. Grind: Medium-Fine (finer than drip).",
+    "total_time_seconds": 60,
+    "water_temp_c": 80,
+    "ratio_water_coffee": 15.0,
+    "grind_size_label": "Medium-Fine (finer than drip)",
+    "grind_size_ref": "Medium-Fine",
+    "step_count": 0,
+    "sort_order": 1
+  },
+  {
+    "technique_id": "aeropress-inverted-method",
+    "method_id": "aeropress",
+    "name": "AeroPress (Inverted Method)",
+    "description": "AeroPress (flipped upside down). Grind: Medium-Fine.",
+    "total_time_seconds": 60,
+    "water_temp_c": 80,
+    "ratio_water_coffee": 12.0,
+    "grind_size_label": "Medium-Fine",
+    "grind_size_ref": "Medium-Fine",
+    "step_count": 9,
+    "sort_order": 2,
+    "deep_dive": {
+      "origin_story": "The inverted method was developed by the AeroPress community in the late 2000s as a hack to solve a fundamental limitation of the standard method: premature dripping. In the standard orientation, water begins draining through the filter immediately, reducing control over steep time.\n\nBy flipping the AeroPress upside down (plunger on bottom, open end up), brewers could steep coffee like an immersion brewer and only filter when ready. This technique quickly became the dominant method in AeroPress competitions and among specialty coffee enthusiasts, despite inventor Alan Adler's original design intent.",
+      "tasting_notes": "Fuller body than the standard method due to the true immersion steep. Expect a concentrated, espresso-like intensity with a clean finish thanks to the paper filter. Bright acidity with rich sweetness, and no grit or sediment.",
+      "common_mistakes": [
+        "Not sealing the plunger properly, causing leaks when inverted",
+        "Overfilling the chamber, leading to spills during the flip",
+        "Flipping too quickly or carelessly \u2014 hot coffee can spill",
+        "Pressing too hard, which forces fines through the filter",
+        "Using too much water for the small chamber capacity"
+      ],
+      "tips": [
+        "Insert the plunger about 1cm to create a seal before adding coffee",
+        "Leave at least 1cm of headroom before flipping",
+        "Place your mug on top, grip both firmly, and flip in one confident motion",
+        "Press slowly and steadily \u2014 aim for 20\u201330 seconds of press time",
+        "Experiment with the metal filter for a richer, oilier cup"
+      ],
+      "videos": [
+        {
+          "title": "AeroPress Inverted Method Tutorial",
+          "youtube_id": "ZuQMys2eoR0",
+          "duration_label": "5:12"
+        }
+      ]
+    }
+  },
+  {
+    "technique_id": "aeropress-wac-2025-winner-n\u00e9mo-pop",
+    "method_id": "aeropress",
+    "name": "AeroPress \u2013 WAC 2025 Winner (N\u00e9mo Pop)",
+    "description": "AeroPress + Flow Control Filter Cap. Grind: Fine (Comandante 31 clicks, sifted at 200\u03bcm).",
+    "total_time_seconds": 0,
+    "water_temp_c": 84,
+    "ratio_water_coffee": 5.5,
+    "grind_size_label": "Fine (Comandante 31 clicks, sifted at 200\u03bcm)",
+    "grind_size_ref": "Fine",
+    "step_count": 7,
+    "sort_order": 3,
+    "deep_dive": {
+      "origin_story": "N\u00e9mo Pop won the 2025 World AeroPress Championship with a meticulously engineered recipe that pushed the boundaries of AeroPress brewing. His technique combines an ultra-fine, sifted grind with the Flow Control Filter Cap to create a bypass-style brew with exceptional clarity.\n\nThe recipe uses a very concentrated brew ratio (1:5.5) with lower temperature water, then dilutes to drinking strength. By sifting the grounds at 200\u03bcm, Pop eliminated the finest particles that cause astringency while keeping the larger fines that contribute to body and sweetness.",
+      "creator": {
+        "name": "N\u00e9mo Pop",
+        "bio": "2025 World AeroPress Champion from France. Known for his scientific approach to brewing, incorporating particle size analysis and bypass brewing techniques into competition recipes.",
+        "url": null
+      },
+      "tasting_notes": "A remarkably clean and juicy cup with tea-like clarity. The bypass technique preserves delicate floral and fruit notes that would be lost in a full-immersion brew. Light body with vibrant acidity, complex sweetness, and an exceptionally long, sweet finish.",
+      "common_mistakes": [
+        "Not sifting the grounds \u2014 the 200\u03bcm sieve is essential to this recipe",
+        "Using water that is too hot, which extracts unwanted bitterness",
+        "Forgetting the bypass dilution step after pressing",
+        "Using a standard filter cap instead of the Flow Control version",
+        "Pressing too fast through the fine grounds"
+      ],
+      "tips": [
+        "Invest in a set of sieving screens if you want to replicate competition results",
+        "The Flow Control Filter Cap restricts flow for a more even extraction",
+        "Dilute the concentrated brew to taste \u2014 start with a 1:1 ratio of brew to water",
+        "Use light-roasted, high-quality single-origin beans for best results",
+        "Temperature precision matters \u2014 use a gooseneck kettle with temperature control"
+      ],
+      "videos": [
+        {
+          "title": "WAC 2025 Final Round \u2014 N\u00e9mo Pop",
+          "youtube_id": "4bQFfwzADYo",
+          "duration_label": "12:35"
+        }
+      ]
+    }
+  },
+  {
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "method_id": "aeropress",
+    "name": "AeroPress \u2013 WAC 2024 Winner (George Stanica)",
+    "description": "AeroPress (Inverted at 4th mark). Grind: Medium-Fine (Comandante C40 58 clicks / 870\u03bcm).",
+    "total_time_seconds": 0,
+    "water_temp_c": 96,
+    "ratio_water_coffee": 7.2,
+    "grind_size_label": "Medium-Fine (Comandante C40 58 clicks / 870\u03bcm)",
+    "grind_size_ref": "Medium-Fine",
+    "step_count": 17,
+    "sort_order": 4,
+    "deep_dive": {
+      "origin_story": "George Stanica won the 2024 World AeroPress Championship in Tokyo with a complex, multi-step recipe that demonstrated extraordinary precision. His inverted method uses a high temperature (96\u00b0C) with a medium-fine grind and a concentrated ratio of 1:7.2.\n\nThe recipe features an elaborate 17-step process including multiple agitation phases, precise timing intervals, and careful temperature management. Stanica's approach showed that the AeroPress can produce competition-quality results rivaling expensive pour-over setups when pushed to its limits.",
+      "creator": {
+        "name": "George Stanica",
+        "bio": "Romanian barista and 2024 World AeroPress Champion. His winning recipe at the Tokyo championships showcased how precision and creativity can extract extraordinary flavors from the humble AeroPress.",
+        "url": null
+      },
+      "tasting_notes": "Intense and complex with a syrupy body. The high extraction temperature brings out deep caramel sweetness and stone fruit notes. Despite the concentrated ratio, the cup has remarkable balance with a smooth, coating mouthfeel and a long, sweet aftertaste.",
+      "common_mistakes": [
+        "Rushing through the 17 steps \u2014 each timing interval matters",
+        "Not preheating the AeroPress and mug thoroughly",
+        "Using water below 96\u00b0C, which under-extracts at this grind size",
+        "Inconsistent agitation between steps",
+        "Not weighing each water addition precisely"
+      ],
+      "tips": [
+        "Practice the full sequence several times before expecting good results",
+        "Use a precise scale and timer \u2014 this recipe demands accuracy",
+        "The inverted position at the 4th mark gives optimal brew volume",
+        "High-quality, freshly roasted specialty beans are essential",
+        "Take notes on each attempt to refine your execution"
+      ],
+      "videos": [
+        {
+          "title": "WAC 2024 Winning Recipe \u2014 George Stanica",
+          "youtube_id": "VDFn3Y4RMTI",
+          "duration_label": "8:44"
+        }
+      ]
+    }
+  },
+  {
+    "technique_id": "moka-pot-stovetop-espresso",
+    "method_id": "moka-pot",
+    "name": "Moka Pot (Stovetop Espresso)",
+    "description": "Moka Pot (Bialetti or similar). Grind: Fine (slightly coarser than espresso, like fine sand).",
+    "total_time_seconds": 300,
+    "water_temp_c": 95,
+    "ratio_water_coffee": 10.0,
+    "grind_size_label": "Fine (slightly coarser than espresso, like fine sand)",
+    "grind_size_ref": "Fine",
+    "step_count": 9,
+    "sort_order": 1
+  },
+  {
+    "technique_id": "espresso-machine",
+    "method_id": "espresso",
+    "name": "Espresso (Machine)",
+    "description": "Espresso machine (pump-driven). Grind: Very Fine (powdery, like flour).",
+    "total_time_seconds": 25,
+    "water_temp_c": 90,
+    "ratio_water_coffee": 2.0,
+    "grind_size_label": "Very Fine (powdery, like flour)",
+    "grind_size_ref": "Very Fine",
+    "step_count": 8,
+    "sort_order": 1
+  },
+  {
+    "technique_id": "turkish-coffee-traditional",
+    "method_id": "turkish-coffee",
+    "name": "Turkish Coffee (Traditional)",
+    "description": "Cezve (Ibrik). Grind: Extra Fine (powder, finer than espresso; like talcum).",
+    "total_time_seconds": 120,
+    "water_temp_c": 90,
+    "ratio_water_coffee": 10.0,
+    "grind_size_label": "Extra Fine (powder, finer than espresso; like talcum)",
+    "grind_size_ref": "Extra Fine",
+    "step_count": 10,
+    "sort_order": 1,
+    "deep_dive": {
+      "origin_story": "Turkish coffee is one of the oldest known methods of preparing coffee, dating back to the 15th century in the Ottoman Empire. According to tradition, it was first brewed in Istanbul after coffee beans arrived from Yemen via Ethiopian traders.\n\nThe method was so central to Ottoman culture that it became part of marriage customs \u2014 a prospective bride would prepare Turkish coffee for her suitor, and her skill was considered a reflection of her character. In 2013, UNESCO inscribed Turkish coffee culture and tradition on the Representative List of Intangible Cultural Heritage of Humanity.\n\nThe technique has remained virtually unchanged for over 500 years: extra-fine grounds are simmered (never boiled) in a cezve with water and often sugar, producing a thick, unfiltered brew with a distinctive foam (kaymak) on top.",
+      "tasting_notes": "Intensely aromatic with a thick, almost syrupy body. The unfiltered grounds create a velvety mouthfeel. Expect deep chocolate and spice notes with low acidity. The foam (kaymak) adds a creamy texture. Traditional preparations with cardamom add a warm, exotic complexity. The grounds settle to the bottom, creating a residue used for fortune-telling (tasseography).",
+      "common_mistakes": [
+        "Boiling the coffee \u2014 it should only foam up, never reach a rolling boil",
+        "Stirring after the initial mix, which disrupts foam formation",
+        "Using a grind that is too coarse \u2014 Turkish grind must be powder-fine",
+        "Rushing the process on high heat instead of slow, gentle heating",
+        "Serving without letting the grounds settle for 1\u20132 minutes"
+      ],
+      "tips": [
+        "Use cold water for the best foam development",
+        "Heat slowly on low flame \u2014 patience creates the best kaymak (foam)",
+        "Add sugar and spices (cardamom) at the beginning, with the water and coffee",
+        "Pour slowly to preserve the foam layer on top",
+        "Use a traditional copper cezve for the most authentic heat distribution",
+        "Never stir once heating begins \u2014 let the foam develop naturally"
+      ],
+      "videos": [
+        {
+          "title": "Traditional Turkish Coffee",
+          "youtube_id": "j6VlT_jUVPc",
+          "duration_label": "7:18"
+        }
+      ]
+    }
+  },
+  {
+    "technique_id": "turkish-coffee-specialty-competition",
+    "method_id": "turkish-coffee",
+    "name": "Turkish Coffee (Specialty / Competition)",
+    "description": "Copper Cezve (handmade, thin-wall). Grind: Very Fine (between Turkish and espresso).",
+    "total_time_seconds": 120,
+    "water_temp_c": 60,
+    "ratio_water_coffee": 10.0,
+    "grind_size_label": "Very Fine (between Turkish and espresso)",
+    "grind_size_ref": "Very Fine",
+    "step_count": 9,
+    "sort_order": 2,
+    "deep_dive": {
+      "origin_story": "The specialty/competition approach to Turkish coffee emerged in the 2010s as third-wave coffee culture began reexamining traditional methods through a scientific lens. Competition brewers discovered that using a slightly coarser grind than traditional (very fine rather than extra fine), lower starting temperatures, and precise temperature curves could produce a remarkably clean and complex cup.\n\nThis modern take respects the heritage of Turkish coffee while applying contemporary brewing science: controlled agitation, precise temperature staging, and high-quality single-origin beans replace the traditional dark-roast blends and sugar-forward preparations.",
+      "tasting_notes": "Cleaner and more nuanced than traditional Turkish coffee. Single-origin beans shine through with distinct fruit and floral notes. The body is still full and silky but with less sediment. Acidity is present and pleasant, a departure from the traditional flat profile. The foam is delicate and aromatic.",
+      "common_mistakes": [
+        "Using too high a starting temperature \u2014 start with warm (60\u00b0C), not hot water",
+        "Grinding to traditional extra-fine rather than the slightly coarser competition grind",
+        "Over-agitating the brew, which increases bitterness",
+        "Using dark-roast commodity beans instead of specialty light-to-medium roasts",
+        "Not controlling the temperature curve during heating"
+      ],
+      "tips": [
+        "Start with water at 60\u00b0C and heat very slowly for maximum control",
+        "Use a thin-walled copper cezve for responsive heat transfer",
+        "Try omitting sugar to let the bean's natural sweetness come through",
+        "A slightly coarser grind than traditional gives more clarity",
+        "Use freshly roasted specialty-grade single-origin beans"
+      ],
+      "videos": [
+        {
+          "title": "Specialty Turkish Coffee Technique",
+          "youtube_id": "j6VlT_jUVPc",
+          "duration_label": "7:18"
+        }
+      ]
+    }
+  },
+  {
+    "technique_id": "siphon-vacuum-brewer",
+    "method_id": "siphon",
+    "name": "Siphon (Vacuum Brewer)",
+    "description": "Siphon brewer (Hario, Yama, etc.). Grind: Medium-Fine (table salt).",
+    "total_time_seconds": 120,
+    "water_temp_c": 92,
+    "ratio_water_coffee": 15.0,
+    "grind_size_label": "Medium-Fine (table salt)",
+    "grind_size_ref": "Medium-Fine",
+    "step_count": 9,
+    "sort_order": 1
+  },
+  {
+    "technique_id": "vietnamese-phin-filter",
+    "method_id": "vietnamese-phin",
+    "name": "Vietnamese Phin Filter",
+    "description": "Vietnamese Phin filter (stainless steel). Grind: Medium-Coarse to Coarse.",
+    "total_time_seconds": 240,
+    "water_temp_c": 95,
+    "ratio_water_coffee": 8.0,
+    "grind_size_label": "Medium-Coarse to Coarse",
+    "grind_size_ref": "Medium-Coarse",
+    "step_count": 8,
+    "sort_order": 1
+  },
+  {
+    "technique_id": "drip-coffee-maker-automatic",
+    "method_id": "drip-machine",
+    "name": "Drip Coffee Maker (Automatic)",
+    "description": "Automatic drip brewer. Grind: Medium (like beach sand).",
+    "total_time_seconds": 300,
+    "water_temp_c": 92,
+    "ratio_water_coffee": 16.0,
+    "grind_size_label": "Medium (like beach sand)",
+    "grind_size_ref": "Medium",
+    "step_count": 7,
+    "sort_order": 1
+  },
+  {
+    "technique_id": "percolator-stovetopelectric",
+    "method_id": "percolator",
+    "name": "Percolator (Stovetop/Electric)",
+    "description": "Stovetop or electric percolator. Grind: Coarse (chunky, like breadcrumbs).",
+    "total_time_seconds": 420,
+    "water_temp_c": 92,
+    "ratio_water_coffee": 17.0,
+    "grind_size_label": "Coarse (chunky, like breadcrumbs)",
+    "grind_size_ref": "Coarse",
+    "step_count": 8,
+    "sort_order": 1
+  },
+  {
+    "technique_id": "aeropress-james-hoffmann-best-recipe",
+    "method_id": "aeropress",
+    "name": "AeroPress \u2013 James Hoffmann (Best Recipe)",
+    "description": "AeroPress (Standard upright). Grind: Fine-Medium.",
+    "total_time_seconds": 120,
+    "water_temp_c": 90,
+    "ratio_water_coffee": 18.0,
+    "grind_size_label": "Fine-Medium",
+    "grind_size_ref": "Fine",
+    "step_count": 6,
+    "sort_order": 5,
+    "deep_dive": {
+      "origin_story": "After years of experimenting and making numerous AeroPress videos, James Hoffmann released what he considers his definitive \"best\" AeroPress recipe in 2023. The method is deliberately simple: standard (upright) position, fine-medium grind, and no agitation beyond the initial pour.\n\nHoffmann's approach strips away the complexity that competition recipes had added to AeroPress brewing. He found that the standard orientation actually produces a cleaner cup than inverted when combined with the right grind size and a higher water ratio. The recipe was designed to be foolproof and consistently delicious.",
+      "creator": {
+        "name": "James Hoffmann",
+        "bio": "World Barista Champion 2007, author of \"The World Atlas of Coffee,\" and one of the most influential figures in specialty coffee. His YouTube channel has millions of subscribers and has democratized coffee knowledge worldwide.",
+        "url": "https://www.jameshoffmann.co.uk"
+      },
+      "tasting_notes": "Clean, sweet, and incredibly approachable. The higher ratio (1:18) produces a lighter body than most AeroPress recipes but with excellent clarity and sweetness. Expect bright fruit acidity, floral notes from quality light roasts, and a smooth, tea-like finish.",
+      "common_mistakes": [
+        "Grinding too coarse \u2014 this recipe needs finer than typical AeroPress grind",
+        "Adding unnecessary agitation or stirring",
+        "Using water that is not hot enough (use close to boiling)",
+        "Pressing too hard or too fast",
+        "Not letting the coffee steep long enough before pressing"
+      ],
+      "tips": [
+        "Keep it simple \u2014 the beauty of this recipe is its simplicity",
+        "Use water at 90\u201395\u00b0C for best results",
+        "Pour all the water at once, then wait 2 minutes before pressing",
+        "Press gently over 20\u201330 seconds",
+        "The standard (upright) position is intentional \u2014 trust the process"
+      ],
+      "videos": [
+        {
+          "title": "The Best AeroPress Recipe",
+          "youtube_id": "j6VlT_jUVPc",
+          "duration_label": "11:53"
+        }
+      ]
+    }
+  },
+  {
+    "technique_id": "osmotic-flow-v60",
+    "method_id": "v60-pour-over",
+    "name": "Osmotic Flow V60",
+    "description": "Hario V60 + Cafec Flower Dripper. Grind: Medium.",
+    "total_time_seconds": 180,
+    "water_temp_c": 92,
+    "ratio_water_coffee": 15.0,
+    "grind_size_label": "Medium",
+    "grind_size_ref": "Medium",
+    "step_count": 7,
+    "sort_order": 5
+  },
+  {
+    "technique_id": "cupping-professional-tasting",
+    "method_id": "cupping",
+    "name": "Cupping (Professional Tasting)",
+    "description": "Cupping bowl (6-8 oz ceramic). Grind: Coarse (slightly coarser than French press).",
+    "total_time_seconds": 240,
+    "water_temp_c": 93,
+    "ratio_water_coffee": 18.18,
+    "grind_size_label": "Coarse (slightly coarser than French press)",
+    "grind_size_ref": "Coarse",
+    "step_count": 9,
+    "sort_order": 1
+  },
+  {
+    "technique_id": "south-indian-filter-coffee-kaapi",
+    "method_id": "south-indian-filter",
+    "name": "South Indian Filter Coffee (Kaapi)",
+    "description": "Stainless steel / brass South Indian coffee filter (dabara set). Grind: Medium-Fine (fine for traditional; medium-fine for specialty).",
+    "total_time_seconds": 14400,
+    "water_temp_c": 96,
+    "ratio_water_coffee": 10.0,
+    "grind_size_label": "Medium-Fine (fine for traditional; medium-fine for specialty)",
+    "grind_size_ref": "Medium-Fine",
+    "step_count": 8,
+    "sort_order": 1
+  },
+  {
+    "technique_id": "kyoto-style-slow-drip-cold-drip-tower",
+    "method_id": "kyoto-cold-drip",
+    "name": "Kyoto-Style Slow Drip (Cold Drip Tower)",
+    "description": "Kyoto drip tower (Yama, Hario Shizuku, Nispira, etc.). Grind: Medium-Coarse (breadcrumbs).",
+    "total_time_seconds": 43200,
+    "water_temp_c": 0,
+    "ratio_water_coffee": 10.0,
+    "grind_size_label": "Medium-Coarse (breadcrumbs)",
+    "grind_size_ref": "Medium-Coarse",
+    "step_count": 8,
+    "sort_order": 1
+  },
+  {
+    "technique_id": "cowboy-coffee",
+    "method_id": "cowboy-coffee",
+    "name": "Cowboy Coffee",
+    "description": "Open pot or saucepan over campfire/stove. Grind: Coarse to Very Coarse.",
+    "total_time_seconds": 240,
+    "water_temp_c": 100,
+    "ratio_water_coffee": 16.0,
+    "grind_size_label": "Coarse to Very Coarse",
+    "grind_size_ref": "Coarse",
+    "step_count": 8,
+    "sort_order": 1
+  },
+  {
+    "technique_id": "kopi-tubruk-indonesian",
+    "method_id": "kopi-tubruk",
+    "name": "Kopi Tubruk (Indonesian)",
+    "description": "Glass or cup (no special equipment). Grind: Very Fine (powder, similar to Turkish).",
+    "total_time_seconds": 180,
+    "water_temp_c": 100,
+    "ratio_water_coffee": 20.0,
+    "grind_size_label": "Very Fine (powder, similar to Turkish)",
+    "grind_size_ref": "Extra Fine",
+    "step_count": 8,
+    "sort_order": 1
+  },
+  {
+    "technique_id": "hario-switch-immersion-dripper",
+    "method_id": "hario-switch",
+    "name": "Hario Switch (Immersion Dripper)",
+    "description": "Hario Switch 02/03 (V60 shape with valve). Grind: Medium to Medium-Fine.",
+    "total_time_seconds": 120,
+    "water_temp_c": 92,
+    "ratio_water_coffee": 15.0,
+    "grind_size_label": "Medium to Medium-Fine",
+    "grind_size_ref": "Medium-Fine",
+    "step_count": 7,
+    "sort_order": 1
+  },
+  {
+    "technique_id": "neapolitan-flip-pot-napoletana",
+    "method_id": "neapolitan-flip",
+    "name": "Neapolitan Flip Pot (Napoletana)",
+    "description": "Neapolitan flip coffee maker (cuccumella). Grind: Medium-Coarse.",
+    "total_time_seconds": 300,
+    "water_temp_c": 100,
+    "ratio_water_coffee": 15.0,
+    "grind_size_label": "Medium-Coarse",
+    "grind_size_ref": "Medium-Coarse",
+    "step_count": 9,
+    "sort_order": 1
+  },
+  {
+    "technique_id": "single-serve-pod-keurig-nespresso",
+    "method_id": "espresso",
+    "name": "Single Serve Pod (Keurig / Nespresso)",
+    "description": "Keurig K-Cup brewer or Nespresso machine. Grind: Pre-ground (sealed in capsule; fine for Nespresso, medium for K-Cup).",
+    "total_time_seconds": 25,
+    "water_temp_c": 88,
+    "ratio_water_coffee": 16.0,
+    "grind_size_label": "Pre-ground (sealed in capsule; fine for Nespresso, medium for K-Cup)",
+    "grind_size_ref": "Fine",
+    "step_count": 7,
+    "sort_order": 2
+  },
+  {
+    "technique_id": "nitro-cold-brew",
+    "method_id": "cold-brew",
+    "name": "Nitro Cold Brew",
+    "description": "Cold brew system + nitrogen keg/tap (or whipped cream dispenser for home). Grind: Coarse (same as cold brew).",
+    "total_time_seconds": 86400,
+    "water_temp_c": 2,
+    "ratio_water_coffee": 8.0,
+    "grind_size_label": "Coarse (same as cold brew)",
+    "grind_size_ref": "Coarse",
+    "step_count": 8,
+    "sort_order": 2
+  },
+  {
+    "technique_id": "scott-rao-v60-technique",
+    "method_id": "v60-pour-over",
+    "name": "Scott Rao V60 Technique",
+    "description": "Hario V60 Dripper. Grind: Medium-Fine.",
+    "total_time_seconds": 180,
+    "water_temp_c": 95,
+    "ratio_water_coffee": 16.0,
+    "grind_size_label": "Medium-Fine",
+    "grind_size_ref": "Medium-Fine",
+    "step_count": 8,
+    "sort_order": 6,
+    "deep_dive": {
+      "origin_story": "Scott Rao's V60 technique, detailed in his influential book \"Everything but Espresso\" (2010) and refined through his consulting work, established many of the pour-over principles that later became industry standard. His method emphasizes a vigorous bloom, a single continuous pour in concentric circles, and the famous \"Rao Spin\" at the end.\n\nThe Rao Spin \u2014 a gentle swirl of the dripper after the final pour \u2014 became one of the most widely adopted techniques in specialty coffee. It ensures a flat, even coffee bed for uniform extraction and has been incorporated into countless other recipes. Rao's scientific approach to brewing variables helped transform pour-over from an artisan craft into a reproducible science.",
+      "creator": {
+        "name": "Scott Rao",
+        "bio": "Coffee consultant, author of \"Everything but Espresso\" and \"The Coffee Roaster's Companion.\" One of the most influential voices in extraction science, Rao's work on even extraction, roast development, and brewing theory has shaped modern specialty coffee.",
+        "url": "https://www.scottrao.com"
+      },
+      "tasting_notes": "Exceptionally even and balanced. The continuous pour and Rao Spin produce one of the most uniform extractions possible with a V60, resulting in a clean cup where every flavor is represented proportionally. Expect bright acidity, clear sweetness, and a silky body with no astringent or bitter notes.",
+      "common_mistakes": [
+        "Pouring in a start-stop pattern rather than one continuous pour",
+        "Spinning too aggressively \u2014 the Rao Spin should be gentle",
+        "Pouring water directly onto the filter walls, bypassing the coffee bed",
+        "Not blooming aggressively enough in the first phase",
+        "Ignoring the importance of a flat coffee bed at the end"
+      ],
+      "tips": [
+        "After the bloom, pour in steady concentric circles from center outward and back",
+        "The Rao Spin: one gentle swirl after the last drop of water hits the bed",
+        "Aim for a completely flat coffee bed when drawdown finishes",
+        "If you see a dome or crater in the spent grounds, adjust your pour pattern",
+        "A gooseneck kettle with flow control is almost essential for this technique"
+      ],
+      "videos": [
+        {
+          "title": "Scott Rao V60 Pour Over Technique",
+          "youtube_id": "c0Qe_ASz_k8",
+          "duration_label": "9:15"
+        }
+      ]
+    }
+  },
+  {
+    "technique_id": "melitta-pour-over-classic-flat-bottom",
+    "method_id": "melitta-pour-over",
+    "name": "Melitta Pour Over (Classic Flat Bottom)",
+    "description": "Melitta cone or flat-bottom dripper. Grind: Medium (like beach sand).",
+    "total_time_seconds": 180,
+    "water_temp_c": 90,
+    "ratio_water_coffee": 16.0,
+    "grind_size_label": "Medium (like beach sand)",
+    "grind_size_ref": "Medium",
+    "step_count": 8,
+    "sort_order": 1
+  }
+]

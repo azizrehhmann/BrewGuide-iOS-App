@@ -1,0 +1,12 @@
+{
+  "/Users/muhammadazizurrehman/Documents/CoffeeBrew/Coffeebrew/BrewGuideWidgetExtension/BrewActivityAttributes.swift" : {
+    "abi-baseline-json" : "/Users/muhammadazizurrehman/Documents/CoffeeBrew/Coffeebrew/build/Coffeebrew.build/Release-iphoneos/BrewGuideWidgetExtension.build/Objects-normal/arm64/BrewGuideWidgetExtension.abi.json",
+    "const-values" : "/Users/muhammadazizurrehman/Documents/CoffeeBrew/Coffeebrew/build/Coffeebrew.build/Release-iphoneos/BrewGuideWidgetExtension.build/Objects-normal/arm64/BrewGuideWidgetExtension-primary.swiftconstvalues",
+    "dependencies" : "/Users/muhammadazizurrehman/Documents/CoffeeBrew/Coffeebrew/build/Coffeebrew.build/Release-iphoneos/BrewGuideWidgetExtension.build/Objects-normal/arm64/BrewGuideWidgetExtension-primary.d",
+    "diagnostics" : "/Users/muhammadazizurrehman/Documents/CoffeeBrew/Coffeebrew/build/Coffeebrew.build/Release-iphoneos/BrewGuideWidgetExtension.build/Objects-normal/arm64/BrewGuideWidgetExtension-primary.dia",
+    "objc-header" : "/Users/muhammadazizurrehman/Documents/CoffeeBrew/Coffeebrew/build/Coffeebrew.build/Release-iphoneos/BrewGuideWidgetExtension.build/Objects-normal/arm64/BrewGuideWidgetExtension-Swift.h",
+    "swiftdoc" : "/Users/muhammadazizurrehman/Documents/CoffeeBrew/Coffeebrew/build/Coffeebrew.build/Release-iphoneos/BrewGuideWidgetExtension.build/Objects-normal/arm64/BrewGuideWidgetExtension.swiftdoc",
+    "swiftmodule" : "/Users/muhammadazizurrehman/Documents/CoffeeBrew/Coffeebrew/build/Coffeebrew.build/Release-iphoneos/BrewGuideWidgetExtension.build/Objects-normal/arm64/BrewGuideWidgetExtension.swiftmodule",
+    "swiftsourceinfo" : "/Users/muhammadazizurrehman/Documents/CoffeeBrew/Coffeebrew/build/Coffeebrew.build/Release-iphoneos/BrewGuideWidgetExtension.build/Objects-normal/arm64/BrewGuideWidgetExtension.swiftsourceinfo"
+  }
+}

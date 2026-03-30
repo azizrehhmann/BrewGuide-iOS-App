@@ -1,0 +1,40 @@
+{
+  "source": "/Users/muhammadazizurrehman/Documents/CoffeeBrew/Coffeebrew/BrewGuideWidgetExtension/BrewLockScreenView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 29
+        }
+      },
+      {
+        "comment": "",
+        "key": "of %lld",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 32
+        }
+      },
+      {
+        "comment": "",
+        "key": "paused",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 72
+        }
+      },
+      {
+        "comment": "",
+        "key": "remaining",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 80
+        }
+      }
+    ]
+  },
+  "version": 1
+}

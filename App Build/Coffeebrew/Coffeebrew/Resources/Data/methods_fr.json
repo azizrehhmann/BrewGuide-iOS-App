@@ -1,0 +1,218 @@
+[
+  {
+    "method_id": "aeropress",
+    "name": "Aeropress",
+    "description": "Découvrez les techniques d'infusion Aeropress.",
+    "difficulty": 2,
+    "icon_name": "gauge.with.dots.needle.bottom.50percent",
+    "image_name": null,
+    "category": "Pressure"
+  },
+  {
+    "method_id": "chemex",
+    "name": "Chemex",
+    "description": "Découvrez les techniques d'infusion Chemex.",
+    "difficulty": 3,
+    "icon_name": "drop.fill",
+    "image_name": null,
+    "category": "Pour Over"
+  },
+  {
+    "method_id": "clever-dripper",
+    "name": "Clever Dripper",
+    "description": "Découvrez les techniques d'infusion Clever Dripper.",
+    "difficulty": 1,
+    "icon_name": "cup.and.saucer.fill",
+    "image_name": null,
+    "category": "Immersion"
+  },
+  {
+    "method_id": "cold-brew",
+    "name": "Cold Brew",
+    "description": "Découvrez les techniques de préparation Cold Brew.",
+    "difficulty": 1,
+    "icon_name": "cup.and.saucer.fill",
+    "image_name": null,
+    "category": "Cold Brew"
+  },
+  {
+    "method_id": "cowboy-coffee",
+    "name": "Cowboy Coffee",
+    "description": "Découvrez les techniques de préparation Cowboy Coffee.",
+    "difficulty": 1,
+    "icon_name": "flame.fill",
+    "image_name": null,
+    "category": "Stovetop & Traditional"
+  },
+  {
+    "method_id": "cupping",
+    "name": "Cupping",
+    "description": "Découvrez les techniques de dégustation Cupping.",
+    "difficulty": 2,
+    "icon_name": "cup.and.saucer.fill",
+    "image_name": null,
+    "category": "Immersion"
+  },
+  {
+    "method_id": "drip-machine",
+    "name": "Drip Machine",
+    "description": "Découvrez les techniques de la cafetière filtre.",
+    "difficulty": 1,
+    "icon_name": "drop.degreesign.fill",
+    "image_name": null,
+    "category": "Machine"
+  },
+  {
+    "method_id": "espresso",
+    "name": "Espresso",
+    "description": "Découvrez les techniques de préparation Espresso.",
+    "difficulty": 4,
+    "icon_name": "gauge.with.dots.needle.bottom.50percent",
+    "image_name": null,
+    "category": "Pressure"
+  },
+  {
+    "method_id": "french-press",
+    "name": "French Press",
+    "description": "Découvrez les techniques d'infusion à la cafetière à piston.",
+    "difficulty": 1,
+    "icon_name": "cup.and.saucer.fill",
+    "image_name": null,
+    "category": "Immersion"
+  },
+  {
+    "method_id": "hario-switch",
+    "name": "Hario Switch",
+    "description": "Découvrez les techniques d'infusion Hario Switch.",
+    "difficulty": 2,
+    "icon_name": "cup.and.saucer.fill",
+    "image_name": null,
+    "category": "Pour Over"
+  },
+  {
+    "method_id": "japanese-iced",
+    "name": "Japanese Iced",
+    "description": "Découvrez les techniques de café glacé japonais.",
+    "difficulty": 3,
+    "icon_name": "cup.and.saucer.fill",
+    "image_name": null,
+    "category": "Cold Brew"
+  },
+  {
+    "method_id": "kalita-wave",
+    "name": "Kalita Wave",
+    "description": "Découvrez les techniques d'infusion Kalita Wave.",
+    "difficulty": 2,
+    "icon_name": "drop.fill",
+    "image_name": null,
+    "category": "Pour Over"
+  },
+  {
+    "method_id": "kopi-tubruk",
+    "name": "Kopi Tubruk",
+    "description": "Découvrez les techniques de préparation Kopi Tubruk.",
+    "difficulty": 1,
+    "icon_name": "flame.fill",
+    "image_name": null,
+    "category": "Stovetop & Traditional"
+  },
+  {
+    "method_id": "kyoto-cold-drip",
+    "name": "Kyoto Cold Drip",
+    "description": "Découvrez les techniques d'infusion Kyoto Cold Drip.",
+    "difficulty": 3,
+    "icon_name": "snowflake",
+    "image_name": null,
+    "category": "Cold Brew"
+  },
+  {
+    "method_id": "melitta-pour-over",
+    "name": "Melitta Pour Over",
+    "description": "Découvrez les techniques d'infusion Melitta.",
+    "difficulty": 1,
+    "icon_name": "drop.fill",
+    "image_name": null,
+    "category": "Pour Over"
+  },
+  {
+    "method_id": "moka-pot",
+    "name": "Moka Pot",
+    "description": "Découvrez les techniques de préparation à la cafetière italienne.",
+    "difficulty": 2,
+    "icon_name": "gauge.with.dots.needle.bottom.50percent",
+    "image_name": null,
+    "category": "Pressure"
+  },
+  {
+    "method_id": "neapolitan-flip",
+    "name": "Neapolitan Flip",
+    "description": "Découvrez les techniques de la cafetière napolitaine.",
+    "difficulty": 2,
+    "icon_name": "drop.degreesign.fill",
+    "image_name": null,
+    "category": "Stovetop & Traditional"
+  },
+  {
+    "method_id": "nel-drip",
+    "name": "Nel Drip",
+    "description": "Découvrez les techniques d'infusion Nel Drip.",
+    "difficulty": 4,
+    "icon_name": "drop.fill",
+    "image_name": null,
+    "category": "Pour Over"
+  },
+  {
+    "method_id": "percolator",
+    "name": "Percolator",
+    "description": "Découvrez les techniques du percolateur.",
+    "difficulty": 1,
+    "icon_name": "arrow.up.arrow.down.circle.fill",
+    "image_name": null,
+    "category": "Stovetop & Traditional"
+  },
+  {
+    "method_id": "siphon",
+    "name": "Siphon",
+    "description": "Découvrez les techniques d'infusion au siphon.",
+    "difficulty": 4,
+    "icon_name": "bubbles.and.sparkles.fill",
+    "image_name": null,
+    "category": "Immersion"
+  },
+  {
+    "method_id": "south-indian-filter",
+    "name": "South Indian Filter",
+    "description": "Découvrez les techniques du filtre sud-indien.",
+    "difficulty": 2,
+    "icon_name": "drop.degreesign.fill",
+    "image_name": null,
+    "category": "Stovetop & Traditional"
+  },
+  {
+    "method_id": "turkish-coffee",
+    "name": "Turkish Coffee",
+    "description": "Découvrez les techniques de préparation du café turc.",
+    "difficulty": 3,
+    "icon_name": "flame.fill",
+    "image_name": null,
+    "category": "Stovetop & Traditional"
+  },
+  {
+    "method_id": "v60-pour-over",
+    "name": "V60 Pour Over",
+    "description": "Découvrez les techniques d'infusion V60.",
+    "difficulty": 3,
+    "icon_name": "drop.fill",
+    "image_name": null,
+    "category": "Pour Over"
+  },
+  {
+    "method_id": "vietnamese-phin",
+    "name": "Vietnamese Phin",
+    "description": "Découvrez les techniques d'infusion au Phin vietnamien.",
+    "difficulty": 1,
+    "icon_name": "drop.degreesign.fill",
+    "image_name": null,
+    "category": "Stovetop & Traditional"
+  }
+]

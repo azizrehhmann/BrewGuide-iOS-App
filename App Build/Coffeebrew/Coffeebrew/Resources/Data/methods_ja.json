@@ -1,0 +1,218 @@
+[
+  {
+    "method_id": "aeropress",
+    "name": "Aeropress",
+    "description": "エアロプレスの抽出テクニックを探索しましょう。",
+    "difficulty": 2,
+    "icon_name": "gauge.with.dots.needle.bottom.50percent",
+    "image_name": null,
+    "category": "Pressure"
+  },
+  {
+    "method_id": "chemex",
+    "name": "Chemex",
+    "description": "ケメックスの抽出テクニックを探索しましょう。",
+    "difficulty": 3,
+    "icon_name": "drop.fill",
+    "image_name": null,
+    "category": "Pour Over"
+  },
+  {
+    "method_id": "clever-dripper",
+    "name": "Clever Dripper",
+    "description": "クレバードリッパーの抽出テクニックを探索しましょう。",
+    "difficulty": 1,
+    "icon_name": "cup.and.saucer.fill",
+    "image_name": null,
+    "category": "Immersion"
+  },
+  {
+    "method_id": "cold-brew",
+    "name": "Cold Brew",
+    "description": "コールドブリューの抽出テクニックを探索しましょう。",
+    "difficulty": 1,
+    "icon_name": "cup.and.saucer.fill",
+    "image_name": null,
+    "category": "Cold Brew"
+  },
+  {
+    "method_id": "cowboy-coffee",
+    "name": "Cowboy Coffee",
+    "description": "カウボーイコーヒーの抽出テクニックを探索しましょう。",
+    "difficulty": 1,
+    "icon_name": "flame.fill",
+    "image_name": null,
+    "category": "Stovetop & Traditional"
+  },
+  {
+    "method_id": "cupping",
+    "name": "Cupping",
+    "description": "カッピングの抽出テクニックを探索しましょう。",
+    "difficulty": 2,
+    "icon_name": "cup.and.saucer.fill",
+    "image_name": null,
+    "category": "Immersion"
+  },
+  {
+    "method_id": "drip-machine",
+    "name": "Drip Machine",
+    "description": "ドリップマシンの抽出テクニックを探索しましょう。",
+    "difficulty": 1,
+    "icon_name": "drop.degreesign.fill",
+    "image_name": null,
+    "category": "Machine"
+  },
+  {
+    "method_id": "espresso",
+    "name": "Espresso",
+    "description": "エスプレッソの抽出テクニックを探索しましょう。",
+    "difficulty": 4,
+    "icon_name": "gauge.with.dots.needle.bottom.50percent",
+    "image_name": null,
+    "category": "Pressure"
+  },
+  {
+    "method_id": "french-press",
+    "name": "French Press",
+    "description": "フレンチプレスの抽出テクニックを探索しましょう。",
+    "difficulty": 1,
+    "icon_name": "cup.and.saucer.fill",
+    "image_name": null,
+    "category": "Immersion"
+  },
+  {
+    "method_id": "hario-switch",
+    "name": "Hario Switch",
+    "description": "ハリオスイッチの抽出テクニックを探索しましょう。",
+    "difficulty": 2,
+    "icon_name": "cup.and.saucer.fill",
+    "image_name": null,
+    "category": "Pour Over"
+  },
+  {
+    "method_id": "japanese-iced",
+    "name": "Japanese Iced",
+    "description": "急冷式アイスコーヒーの抽出テクニックを探索しましょう。",
+    "difficulty": 3,
+    "icon_name": "cup.and.saucer.fill",
+    "image_name": null,
+    "category": "Cold Brew"
+  },
+  {
+    "method_id": "kalita-wave",
+    "name": "Kalita Wave",
+    "description": "カリタウェーブの抽出テクニックを探索しましょう。",
+    "difficulty": 2,
+    "icon_name": "drop.fill",
+    "image_name": null,
+    "category": "Pour Over"
+  },
+  {
+    "method_id": "kopi-tubruk",
+    "name": "Kopi Tubruk",
+    "description": "コピ・トゥブルックの抽出テクニックを探索しましょう。",
+    "difficulty": 1,
+    "icon_name": "flame.fill",
+    "image_name": null,
+    "category": "Stovetop & Traditional"
+  },
+  {
+    "method_id": "kyoto-cold-drip",
+    "name": "Kyoto Cold Drip",
+    "description": "京都式水出しコーヒーの抽出テクニックを探索しましょう。",
+    "difficulty": 3,
+    "icon_name": "snowflake",
+    "image_name": null,
+    "category": "Cold Brew"
+  },
+  {
+    "method_id": "melitta-pour-over",
+    "name": "Melitta Pour Over",
+    "description": "メリタドリップの抽出テクニックを探索しましょう。",
+    "difficulty": 1,
+    "icon_name": "drop.fill",
+    "image_name": null,
+    "category": "Pour Over"
+  },
+  {
+    "method_id": "moka-pot",
+    "name": "Moka Pot",
+    "description": "モカポットの抽出テクニックを探索しましょう。",
+    "difficulty": 2,
+    "icon_name": "gauge.with.dots.needle.bottom.50percent",
+    "image_name": null,
+    "category": "Pressure"
+  },
+  {
+    "method_id": "neapolitan-flip",
+    "name": "Neapolitan Flip",
+    "description": "ナポリタンフリップの抽出テクニックを探索しましょう。",
+    "difficulty": 2,
+    "icon_name": "drop.degreesign.fill",
+    "image_name": null,
+    "category": "Stovetop & Traditional"
+  },
+  {
+    "method_id": "nel-drip",
+    "name": "Nel Drip",
+    "description": "ネルドリップの抽出テクニックを探索しましょう。",
+    "difficulty": 4,
+    "icon_name": "drop.fill",
+    "image_name": null,
+    "category": "Pour Over"
+  },
+  {
+    "method_id": "percolator",
+    "name": "Percolator",
+    "description": "パーコレーターの抽出テクニックを探索しましょう。",
+    "difficulty": 1,
+    "icon_name": "arrow.up.arrow.down.circle.fill",
+    "image_name": null,
+    "category": "Stovetop & Traditional"
+  },
+  {
+    "method_id": "siphon",
+    "name": "Siphon",
+    "description": "サイフォンの抽出テクニックを探索しましょう。",
+    "difficulty": 4,
+    "icon_name": "bubbles.and.sparkles.fill",
+    "image_name": null,
+    "category": "Immersion"
+  },
+  {
+    "method_id": "south-indian-filter",
+    "name": "South Indian Filter",
+    "description": "南インド式フィルターの抽出テクニックを探索しましょう。",
+    "difficulty": 2,
+    "icon_name": "drop.degreesign.fill",
+    "image_name": null,
+    "category": "Stovetop & Traditional"
+  },
+  {
+    "method_id": "turkish-coffee",
+    "name": "Turkish Coffee",
+    "description": "トルココーヒーの抽出テクニックを探索しましょう。",
+    "difficulty": 3,
+    "icon_name": "flame.fill",
+    "image_name": null,
+    "category": "Stovetop & Traditional"
+  },
+  {
+    "method_id": "v60-pour-over",
+    "name": "V60 Pour Over",
+    "description": "V60ドリップの抽出テクニックを探索しましょう。",
+    "difficulty": 3,
+    "icon_name": "drop.fill",
+    "image_name": null,
+    "category": "Pour Over"
+  },
+  {
+    "method_id": "vietnamese-phin",
+    "name": "Vietnamese Phin",
+    "description": "ベトナム式フィンの抽出テクニックを探索しましょう。",
+    "difficulty": 1,
+    "icon_name": "drop.degreesign.fill",
+    "image_name": null,
+    "category": "Stovetop & Traditional"
+  }
+]

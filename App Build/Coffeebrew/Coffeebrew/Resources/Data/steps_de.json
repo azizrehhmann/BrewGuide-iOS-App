@@ -1,0 +1,3032 @@
+[
+  {
+    "step_id": "v60-james-hoffmann-ultimate-step-1",
+    "technique_id": "v60-james-hoffmann-ultimate",
+    "step_number": 1,
+    "title": "0:00",
+    "instruction": "Gemahlenen Kaffee in den V60 geben; mit dem Finger eine Mulde in der Mitte formen",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-james-hoffmann-ultimate-step-2",
+    "technique_id": "v60-james-hoffmann-ultimate",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "Timer starten; {water}g Wasser (2× Dosis) in Spiralen von der Mitte nach außen gießen",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 30.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-james-hoffmann-ultimate-step-3",
+    "technique_id": "v60-james-hoffmann-ultimate",
+    "step_number": 3,
+    "title": "0:10",
+    "instruction": "V60 kreisförmig schwenken, bis der Kaffeeschlamm gleichmäßig ist; keine trockenen Klumpen",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-james-hoffmann-ultimate-step-4",
+    "technique_id": "v60-james-hoffmann-ultimate",
+    "step_number": 4,
+    "title": "0:10-0:45",
+    "instruction": "Kaffee bloomen lassen (CO₂ entweicht); bis zu 45 Sekunden warten",
+    "duration_seconds": 35,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-james-hoffmann-ultimate-step-5",
+    "technique_id": "v60-james-hoffmann-ultimate",
+    "step_number": 5,
+    "title": "0:45",
+    "instruction": "Hauptaufguss beginnen: zügig in Spiralen gießen, um {water}g bis 1:15 zu erreichen (60% der Gesamtmenge)",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 120.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-james-hoffmann-ultimate-step-6",
+    "technique_id": "v60-james-hoffmann-ultimate",
+    "step_number": 6,
+    "title": "1:15",
+    "instruction": "Langsamer zweiter Aufguss: restliches Wasser sanft aufgießen, um {water_total}g bis 1:45 zu erreichen",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 100.5,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-james-hoffmann-ultimate-step-7",
+    "technique_id": "v60-james-hoffmann-ultimate",
+    "step_number": 7,
+    "title": "1:45",
+    "instruction": "Einmal im Uhrzeigersinn, einmal gegen den Uhrzeigersinn mit dem Löffel rühren (löst Kaffeemehl von den Wänden)",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-james-hoffmann-ultimate-step-8",
+    "technique_id": "v60-james-hoffmann-ultimate",
+    "step_number": 8,
+    "title": "1:50",
+    "instruction": "V60 kurz abtropfen lassen, dann ein letztes sanftes Schwenken durchführen",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-james-hoffmann-ultimate-step-9",
+    "technique_id": "v60-james-hoffmann-ultimate",
+    "step_number": 9,
+    "title": "1:55-3:30",
+    "instruction": "Vollständiges Durchlaufen abwarten; flaches Kaffeebett anstreben; Gesamtzeit ~3:30",
+    "duration_seconds": 95,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-tetsu-kasuya-46-method-step-1",
+    "technique_id": "v60-tetsu-kasuya-46-method",
+    "step_number": 1,
+    "title": "0:00",
+    "instruction": "{water}g Wasser langsam in konzentrischen Kreisen über 10 Sekunden aufgießen (1. Aufguss = 40% Teil 1)",
+    "duration_seconds": 10,
+    "water_volume_ml_base": 45.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-tetsu-kasuya-46-method-step-2",
+    "technique_id": "v60-tetsu-kasuya-46-method",
+    "step_number": 2,
+    "title": "0:00-0:45",
+    "instruction": "Warten, bis das Wasser vollständig abgelaufen ist, bevor der nächste Aufguss beginnt",
+    "duration_seconds": 45,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-tetsu-kasuya-46-method-step-3",
+    "technique_id": "v60-tetsu-kasuya-46-method",
+    "step_number": 3,
+    "title": "0:45",
+    "instruction": "{water}g Wasser aufgießen (2. Aufguss = 40% Teil 2); vollständig ablaufen lassen",
+    "duration_seconds": 40,
+    "water_volume_ml_base": 45.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-tetsu-kasuya-46-method-step-4",
+    "technique_id": "v60-tetsu-kasuya-46-method",
+    "step_number": 4,
+    "title": "1:25",
+    "instruction": "{water}g Wasser aufgießen (3. Aufguss = 60% Teil 1); vollständig ablaufen lassen",
+    "duration_seconds": 40,
+    "water_volume_ml_base": 45.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-tetsu-kasuya-46-method-step-5",
+    "technique_id": "v60-tetsu-kasuya-46-method",
+    "step_number": 5,
+    "title": "2:05",
+    "instruction": "{water}g Wasser aufgießen (4. Aufguss = 60% Teil 2); vollständig ablaufen lassen",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 45.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-tetsu-kasuya-46-method-step-6",
+    "technique_id": "v60-tetsu-kasuya-46-method",
+    "step_number": 6,
+    "title": "2:35",
+    "instruction": "{water}g Wasser aufgießen (5. Aufguss = 60% Teil 3); vollständig ablaufen lassen",
+    "duration_seconds": 55,
+    "water_volume_ml_base": 45.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-tetsu-kasuya-46-method-step-7",
+    "technique_id": "v60-tetsu-kasuya-46-method",
+    "step_number": 7,
+    "title": "3:30",
+    "instruction": "Extraktion abgeschlossen; V60 entfernen und servieren",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-james-hoffmann-step-1",
+    "technique_id": "french-press-james-hoffmann",
+    "step_number": 1,
+    "title": "0:00",
+    "instruction": "{coffee}g mittel gemahlenen Kaffee in die French Press geben (KEINEN groben Mahlgrad verwenden)",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-james-hoffmann-step-2",
+    "technique_id": "french-press-james-hoffmann",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "Timer starten; alle {water_total}g Wasser auf einmal aufgießen; gesamtes Kaffeemehl gleichmäßig sättigen",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 250.5,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-james-hoffmann-step-3",
+    "technique_id": "french-press-james-hoffmann",
+    "step_number": 3,
+    "title": "0:00-4:00",
+    "instruction": "4 Minuten OHNE Deckel warten; nicht berühren. Eine Kruste bildet sich oben",
+    "duration_seconds": 240,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-james-hoffmann-step-4",
+    "technique_id": "french-press-james-hoffmann",
+    "step_number": 4,
+    "title": "4:00",
+    "instruction": "Kruste durch sanftes Rühren brechen (im und gegen den Uhrzeigersinn)",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-james-hoffmann-step-5",
+    "technique_id": "french-press-james-hoffmann",
+    "step_number": 5,
+    "title": "4:15",
+    "instruction": "Mit zwei Löffeln Schaum und schwimmende Partikel von der Oberfläche abschöpfen",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-james-hoffmann-step-6",
+    "technique_id": "french-press-james-hoffmann",
+    "step_number": 6,
+    "title": "4:30",
+    "instruction": "Deckel aufsetzen (Stempel NICHT herunterdrücken); weitere 5-8 Minuten warten",
+    "duration_seconds": 390,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-james-hoffmann-step-7",
+    "technique_id": "french-press-james-hoffmann",
+    "step_number": 7,
+    "title": "9:00-12:00",
+    "instruction": "Stempel NUR sanft bis knapp unter die Oberfläche drücken (nicht bis zum Boden)",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-james-hoffmann-step-8",
+    "technique_id": "french-press-james-hoffmann",
+    "step_number": 8,
+    "title": "9:00-12:00",
+    "instruction": "Vorsichtig in die Tasse gießen; letzte ~20ml zurücklassen, um den abgesetzten Kaffeesatz nicht aufzuwirbeln",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2025-winner-némo-pop-step-1",
+    "technique_id": "aeropress-wac-2025-winner-némo-pop",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Zuerst {water}g Bypass-Wasser mit 50°C in die Kanne gießen",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 32.1,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2025-winner-némo-pop-step-2",
+    "technique_id": "aeropress-wac-2025-winner-némo-pop",
+    "step_number": 2,
+    "title": "Prep",
+    "instruction": "Kaffee mahlen (niedrige Drehzahl); Silberhäutchen wegblasen und Feinanteil bei 200μm aussieben",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2025-winner-némo-pop-step-3",
+    "technique_id": "aeropress-wac-2025-winner-némo-pop",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "AeroPress aufrecht auf die Kanne stellen; gesiebtes Kaffeemehl in die Kammer geben",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2025-winner-némo-pop-step-4",
+    "technique_id": "aeropress-wac-2025-winner-némo-pop",
+    "step_number": 4,
+    "title": "0:00",
+    "instruction": "{water}g Wasser mit 84°C in die AeroPress gießen; gesamtes Kaffeemehl benetzen",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 50.4,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2025-winner-némo-pop-step-5",
+    "technique_id": "aeropress-wac-2025-winner-némo-pop",
+    "step_number": 5,
+    "title": "0:25",
+    "instruction": "Im Nord-Süd-Nord-Süd- dann West-Ost-West-Ost-Muster rühren",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2025-winner-némo-pop-step-6",
+    "technique_id": "aeropress-wac-2025-winner-némo-pop",
+    "step_number": 6,
+    "title": "0:50",
+    "instruction": "Sanft pressen, etwa 20 Sekunden lang",
+    "duration_seconds": 20,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2025-winner-némo-pop-step-7",
+    "technique_id": "aeropress-wac-2025-winner-némo-pop",
+    "step_number": 7,
+    "title": "1:10",
+    "instruction": "Pressen abgeschlossen; Kaffee vermischt sich mit dem Bypass-Wasser in der Kanne. Servieren.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-1",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "AeroPress umgedreht bei der 4. Markierung aufstellen; {coffee}g Kaffee in die Kammer geben",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-2",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "1. Aufguss: {water}g Wasser mit einem Melodrip aufgießen (dauert 5-6 Sekunden)",
+    "duration_seconds": 6,
+    "water_volume_ml_base": 41.5,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-3",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 3,
+    "title": "0:06-0:30",
+    "instruction": "Warten; Kaffee bloomen lassen",
+    "duration_seconds": 24,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-4",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 4,
+    "title": "0:30",
+    "instruction": "2. Aufguss: Weitere {water}g Wasser aufgießen (gesamt {water_total}g) mit Melodrip (dauert ~10 Sek.)",
+    "duration_seconds": 10,
+    "water_volume_ml_base": 66.5,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-5",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 5,
+    "title": "0:45",
+    "instruction": "Sanft im N-S-O-W-Muster 10 Sekunden rühren",
+    "duration_seconds": 10,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-6",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 6,
+    "title": "1:00",
+    "instruction": "Filter spülen (1x Aesir); Wasserkocher ausschalten und Deckel abnehmen",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-7",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 7,
+    "title": "1:20",
+    "instruction": "AeroPress verschließen; vorsichtig Luft ablassen (dauert ~10 Sekunden)",
+    "duration_seconds": 10,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-8",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 8,
+    "title": "1:30",
+    "instruction": "AeroPress sanft schwenken; auf die Kanne setzen",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-9",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 9,
+    "title": "1:35",
+    "instruction": "Sanft pressen; 76-79g Ergebnis in 30-40 Sekunden anstreben",
+    "duration_seconds": 35,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-10",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 10,
+    "title": "2:10",
+    "instruction": "Warmes Wasser aus dem Wasserkocher auf ~130-135g Gesamtgewicht auffüllen; 20-30g zimmerwarmes 0ppm-Wasser hinzufügen",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "chemex-step-1",
+    "technique_id": "chemex",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Chemex-Filter einsetzen (3 Lagen zur Ausgussseite); mit heißem Wasser spülen; Spülwasser verwerfen",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "chemex-step-2",
+    "technique_id": "chemex",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "Gemahlenen Kaffee hinzufügen; sanft schütteln, um ihn zu ebnen. Timer starten.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "chemex-step-3",
+    "technique_id": "chemex",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "{water}g Wasser zum Bloomen aufgießen; gesamtes Kaffeemehl gleichmäßig in einer Spirale von der Mitte benetzen",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 45.0,
+    "image_name": null
+  },
+  {
+    "step_id": "chemex-step-4",
+    "technique_id": "chemex",
+    "step_number": 4,
+    "title": "0:00-0:45",
+    "instruction": "30-45 Sekunden auf das Blooming warten (Kaffee setzt CO₂ frei und quillt auf)",
+    "duration_seconds": 38,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "chemex-step-5",
+    "technique_id": "chemex",
+    "step_number": 5,
+    "title": "0:45",
+    "instruction": "Hauptaufguss beginnen: langsame Spirale von der Mitte nach außen; Filterränder meiden",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "chemex-step-6",
+    "technique_id": "chemex",
+    "step_number": 6,
+    "title": "0:45-2:45",
+    "instruction": "Gleichmäßig weitergießen, bis {water_total}g erreicht sind; pausieren, wenn der Rand fast erreicht ist",
+    "duration_seconds": 120,
+    "water_volume_ml_base": 180.0,
+    "image_name": null
+  },
+  {
+    "step_id": "chemex-step-7",
+    "technique_id": "chemex",
+    "step_number": 7,
+    "title": "2:45-4:00",
+    "instruction": "Vollständig durchlaufen lassen; Gesamtzeit von 3:30-4:30 anstreben",
+    "duration_seconds": 75,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "chemex-step-8",
+    "technique_id": "chemex",
+    "step_number": 8,
+    "title": "4:00",
+    "instruction": "Filter entfernen und entsorgen; sofort servieren",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "moka-pot-stovetop-espresso-step-1",
+    "technique_id": "moka-pot-stovetop-espresso",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Wasser zuerst im Wasserkocher aufkochen (vorgeheiztes Wasser reduziert bittere Extraktion)",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "moka-pot-stovetop-espresso-step-2",
+    "technique_id": "moka-pot-stovetop-espresso",
+    "step_number": 2,
+    "title": "Step 1",
+    "instruction": "Untere Kammer mit {water_total}g heißem Wasser bis knapp UNTER das Sicherheitsventil füllen",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 150.0,
+    "image_name": null
+  },
+  {
+    "step_id": "moka-pot-stovetop-espresso-step-3",
+    "technique_id": "moka-pot-stovetop-espresso",
+    "step_number": 3,
+    "title": "Step 2",
+    "instruction": "Filterkorb mit fein gemahlenem Kaffee füllen; glattstreichen, ohne zu tampen",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "moka-pot-stovetop-espresso-step-4",
+    "technique_id": "moka-pot-stovetop-espresso",
+    "step_number": 4,
+    "title": "Step 3",
+    "instruction": "Mokkakanne zusammenbauen; ein Tuch verwenden, um die heiße untere Kammer zu halten",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "moka-pot-stovetop-espresso-step-5",
+    "technique_id": "moka-pot-stovetop-espresso",
+    "step_number": 5,
+    "title": "Step 4",
+    "instruction": "Auf den Herd stellen bei NIEDRIGER bis MITTLERER Hitze; Deckel offen lassen zum Beobachten",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "moka-pot-stovetop-espresso-step-6",
+    "technique_id": "moka-pot-stovetop-espresso",
+    "step_number": 6,
+    "title": "Step 5",
+    "instruction": "Kaffee beginnt in die obere Kammer zu fließen; sollte ein honigfarbener Strahl sein",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "moka-pot-stovetop-espresso-step-7",
+    "technique_id": "moka-pot-stovetop-espresso",
+    "step_number": 7,
+    "title": "Step 6",
+    "instruction": "Wenn das Spritzen/Gurgeln beginnt, sofort von der Hitzequelle nehmen",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "moka-pot-stovetop-espresso-step-8",
+    "technique_id": "moka-pot-stovetop-espresso",
+    "step_number": 8,
+    "title": "Step 7",
+    "instruction": "Untere Kammer unter kaltem fließendem Wasser abkühlen, um die Extraktion zu stoppen",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "moka-pot-stovetop-espresso-step-9",
+    "technique_id": "moka-pot-stovetop-espresso",
+    "step_number": 9,
+    "title": "Step 8",
+    "instruction": "Sofort servieren; kann verdünnt oder mit aufgeschäumter Milch ergänzt werden",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-specialty-competition-step-1",
+    "technique_id": "turkish-coffee-specialty-competition",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Hell bis mittel gerösteten Spezialitätenkaffee verwenden; zwischen Türkisch und Espresso mahlen",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-specialty-competition-step-2",
+    "technique_id": "turkish-coffee-specialty-competition",
+    "step_number": 2,
+    "title": "Step 1",
+    "instruction": "{water_total}g warmes Wasser (60-70°C) in die Kupfer-Cezve geben",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 150.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-specialty-competition-step-3",
+    "technique_id": "turkish-coffee-specialty-competition",
+    "step_number": 3,
+    "title": "Step 2",
+    "instruction": "{coffee}g fein gemahlenen Kaffee auf das Wasser geben",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-specialty-competition-step-4",
+    "technique_id": "turkish-coffee-specialty-competition",
+    "step_number": 4,
+    "title": "Step 3",
+    "instruction": "Sanft mit einem Holzspatel umrühren, bis der Kaffee gesättigt und vermischt ist",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-specialty-competition-step-5",
+    "technique_id": "turkish-coffee-specialty-competition",
+    "step_number": 5,
+    "title": "Step 4",
+    "instruction": "Auf sehr niedrige Hitze stellen (Gasflamme, Sandbadheizung oder Mikrobrenner)",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-specialty-competition-step-6",
+    "technique_id": "turkish-coffee-specialty-competition",
+    "step_number": 6,
+    "title": "Step 5",
+    "instruction": "Aufmerksam beobachten; Schaum beginnt sich zu bilden und aufzusteigen",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-specialty-competition-step-7",
+    "technique_id": "turkish-coffee-specialty-competition",
+    "step_number": 7,
+    "title": "Step 6",
+    "instruction": "Wenn der Schaum fast den Rand erreicht, von der Hitze nehmen (NUR EIN Aufstieg)",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-specialty-competition-step-8",
+    "technique_id": "turkish-coffee-specialty-competition",
+    "step_number": 8,
+    "title": "Step 7",
+    "instruction": "Langsam in die Mokkatasse gießen, um die Schaumschicht oben zu erhalten",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-specialty-competition-step-9",
+    "technique_id": "turkish-coffee-specialty-competition",
+    "step_number": 9,
+    "title": "Step 8",
+    "instruction": "1-2 Minuten warten, bis sich der Kaffeesatz absetzt; langsam trinken",
+    "duration_seconds": 90,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cold-brew-immersion-step-1",
+    "technique_id": "cold-brew-immersion",
+    "step_number": 1,
+    "title": "Step 1",
+    "instruction": "Kaffee sehr grob mahlen (wie Rohzucker oder grobes Maismehl)",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cold-brew-immersion-step-2",
+    "technique_id": "cold-brew-immersion",
+    "step_number": 2,
+    "title": "Step 2",
+    "instruction": "Kaffee in ein Einmachglas, eine French Press oder einen Cold-Brew-Krug geben",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cold-brew-immersion-step-3",
+    "technique_id": "cold-brew-immersion",
+    "step_number": 3,
+    "title": "Step 3",
+    "instruction": "{water_total}g kaltes oder zimmerwarmes gefiltertes Wasser über das Kaffeemehl gießen",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 120.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cold-brew-immersion-step-4",
+    "technique_id": "cold-brew-immersion",
+    "step_number": 4,
+    "title": "Step 4",
+    "instruction": "Sanft umrühren, um sicherzustellen, dass das gesamte Kaffeemehl gesättigt ist",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cold-brew-immersion-step-5",
+    "technique_id": "cold-brew-immersion",
+    "step_number": 5,
+    "title": "Step 5",
+    "instruction": "Behälter abdecken; in den Kühlschrank stellen (oder bei Raumtemperatur für schnellere Extraktion stehen lassen)",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cold-brew-immersion-step-6",
+    "technique_id": "cold-brew-immersion",
+    "step_number": 6,
+    "title": "Step 6",
+    "instruction": "12-24 Stunden ziehen lassen (Kühlschrank = 18-24 Std.; Raumtemperatur = 12-16 Std.)",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cold-brew-immersion-step-7",
+    "technique_id": "cold-brew-immersion",
+    "step_number": 7,
+    "title": "Step 7",
+    "instruction": "Durch ein feines Sieb filtern, dann durch ein Mulltuch oder einen Papierfilter",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cold-brew-immersion-step-8",
+    "technique_id": "cold-brew-immersion",
+    "step_number": 8,
+    "title": "Step 8",
+    "instruction": "Konzentrat kann 1:1 mit Wasser oder Milch verdünnt werden; über Eis servieren",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "clever-dripper-step-1",
+    "technique_id": "clever-dripper",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Melitta-#4-Filter in den Clever Dripper einsetzen; mit heißem Wasser spülen; auf dem Dripperständer abtropfen lassen",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "clever-dripper-step-2",
+    "technique_id": "clever-dripper",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "Gemahlenen Kaffee hinzufügen; alle {water_total}g Wasser auf einmal aufgießen (kein Blooming nötig); Timer starten",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 240.0,
+    "image_name": null
+  },
+  {
+    "step_id": "clever-dripper-step-3",
+    "technique_id": "clever-dripper",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "Deckel aufsetzen, um die Wärme zu halten",
+    "duration_seconds": 60,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "clever-dripper-step-4",
+    "technique_id": "clever-dripper",
+    "step_number": 4,
+    "title": "1:00",
+    "instruction": "Sanft umrühren, um die Kruste aus schwimmendem Kaffeesatz zu brechen",
+    "duration_seconds": 90,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "clever-dripper-step-5",
+    "technique_id": "clever-dripper",
+    "step_number": 5,
+    "title": "2:30",
+    "instruction": "Clever Dripper auf die Kanne/Tasse setzen, um das Ventil zu öffnen und das Durchlaufen zu starten",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "clever-dripper-step-6",
+    "technique_id": "clever-dripper",
+    "step_number": 6,
+    "title": "2:30-3:15",
+    "instruction": "Das Durchlaufen durch den Papierfilter dauert 30-45 Sekunden",
+    "duration_seconds": 38,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "clever-dripper-step-7",
+    "technique_id": "clever-dripper",
+    "step_number": 7,
+    "title": "3:15",
+    "instruction": "Clever Dripper entfernen; Kaffee servieren",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "siphon-vacuum-brewer-step-1",
+    "technique_id": "siphon-vacuum-brewer",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Stoff- oder Papierfilter an der oberen Kammer befestigen; Stofffilter einweichen, wenn neu",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "siphon-vacuum-brewer-step-2",
+    "technique_id": "siphon-vacuum-brewer",
+    "step_number": 2,
+    "title": "Step 1",
+    "instruction": "{water_total}g Wasser in die untere Glaskugel geben; auf die Wärmequelle stellen (Butanbrenner oder Halogen)",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 225.0,
+    "image_name": null
+  },
+  {
+    "step_id": "siphon-vacuum-brewer-step-3",
+    "technique_id": "siphon-vacuum-brewer",
+    "step_number": 3,
+    "title": "Step 2",
+    "instruction": "Während das Wasser erhitzt wird, die obere Kammer lose aufsetzen (noch nicht abdichten)",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "siphon-vacuum-brewer-step-4",
+    "technique_id": "siphon-vacuum-brewer",
+    "step_number": 4,
+    "title": "Step 3",
+    "instruction": "Wenn das Wasser zu kochen beginnt, obere Kammer fest andrücken, um abzudichten",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "siphon-vacuum-brewer-step-5",
+    "technique_id": "siphon-vacuum-brewer",
+    "step_number": 5,
+    "title": "Step 4",
+    "instruction": "Wasser steigt durch Vakuumdruck in die obere Kammer",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "siphon-vacuum-brewer-step-6",
+    "technique_id": "siphon-vacuum-brewer",
+    "step_number": 6,
+    "title": "Step 5",
+    "instruction": "Sobald das meiste Wasser oben ist, gemahlenen Kaffee hinzufügen; sanft umrühren, um ihn unterzutauchen",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "siphon-vacuum-brewer-step-7",
+    "technique_id": "siphon-vacuum-brewer",
+    "step_number": 7,
+    "title": "Step 6",
+    "instruction": "45-90 Sekunden in der oberen Kammer brühen lassen",
+    "duration_seconds": 68,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "siphon-vacuum-brewer-step-8",
+    "technique_id": "siphon-vacuum-brewer",
+    "step_number": 8,
+    "title": "Step 7",
+    "instruction": "Von der Hitzequelle nehmen; beim Abkühlen der unteren Glaskugel zieht das Vakuum den gebrühten Kaffee durch den Filter nach unten",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "siphon-vacuum-brewer-step-9",
+    "technique_id": "siphon-vacuum-brewer",
+    "step_number": 9,
+    "title": "Step 8",
+    "instruction": "Obere Kammer entfernen; aus der unteren Glaskugel servieren",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-pour-over-standard-step-1",
+    "technique_id": "v60-pour-over-standard",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "V60-Papierfilternaht falten; in den Dripper auf der Kanne einsetzen. Mit heißem Wasser spülen; Spülwasser verwerfen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-pour-over-standard-step-2",
+    "technique_id": "v60-pour-over-standard",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "Gemahlenen Kaffee hinzufügen; schütteln, um ihn zu ebnen. Timer starten.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-pour-over-standard-step-3",
+    "technique_id": "v60-pour-over-standard",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "Blooming: {water}g Wasser (2× Kaffeemenge) in Spiralen von der Mitte nach außen gießen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 30.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-pour-over-standard-step-4",
+    "technique_id": "v60-pour-over-standard",
+    "step_number": 4,
+    "title": "0:00-0:30",
+    "instruction": "30 Sekunden auf das Blooming warten; Kaffee setzt CO₂ frei und quillt auf.",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-pour-over-standard-step-5",
+    "technique_id": "v60-pour-over-standard",
+    "step_number": 5,
+    "title": "0:30",
+    "instruction": "Hauptaufguss beginnen: langsame konzentrische Kreise von der Mitte nach außen; Filterränder meiden.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-pour-over-standard-step-6",
+    "technique_id": "v60-pour-over-standard",
+    "step_number": 6,
+    "title": "0:30-2:00",
+    "instruction": "{water}g gleichmäßig aufgießen; Wasserstand etwa auf halber Höhe des Kaffeeschlamms halten.",
+    "duration_seconds": 90,
+    "water_volume_ml_base": 150.5,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-pour-over-standard-step-7",
+    "technique_id": "v60-pour-over-standard",
+    "step_number": 7,
+    "title": "2:00-2:30",
+    "instruction": "Letzten Aufguss abschließen, um {water_total}g Gesamtwassergewicht zu erreichen.",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 70.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-pour-over-standard-step-8",
+    "technique_id": "v60-pour-over-standard",
+    "step_number": 8,
+    "title": "2:30-3:30",
+    "instruction": "Vollständig durchlaufen lassen. Ein flaches Kaffeebett anstreben.",
+    "duration_seconds": 60,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kalita-wave-step-1",
+    "technique_id": "kalita-wave",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Kalita-Wave-Filter in den Dripper einsetzen; auf der Kanne mit heißem Wasser spülen. Spülwasser verwerfen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kalita-wave-step-2",
+    "technique_id": "kalita-wave",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "Gemahlenen Kaffee hinzufügen; schütteln, um ihn zu ebnen. Timer starten.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kalita-wave-step-3",
+    "technique_id": "kalita-wave",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "Blooming: {water}g Wasser aufgießen, um das gesamte Kaffeemehl zu sättigen; sanft schwenken.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 45.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kalita-wave-step-4",
+    "technique_id": "kalita-wave",
+    "step_number": 4,
+    "title": "0:00-0:45",
+    "instruction": "30-45 Sekunden auf das Blooming warten.",
+    "duration_seconds": 38,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kalita-wave-step-5",
+    "technique_id": "kalita-wave",
+    "step_number": 5,
+    "title": "0:45",
+    "instruction": "In langsamen konzentrischen Kreisen bis ~60% von {water_total}g Gesamtwassergewicht aufgießen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 99.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kalita-wave-step-6",
+    "technique_id": "kalita-wave",
+    "step_number": 6,
+    "title": "1:30",
+    "instruction": "Kurz pausieren; Wasser bis fast auf Schlammhöhe absinken lassen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kalita-wave-step-7",
+    "technique_id": "kalita-wave",
+    "step_number": 7,
+    "title": "1:45",
+    "instruction": "Weitergießen bis {water_total}g Endgewicht; sanfte, zentrierte Aufgüsse beibehalten.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 96.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kalita-wave-step-8",
+    "technique_id": "kalita-wave",
+    "step_number": 8,
+    "title": "2:30-4:00",
+    "instruction": "Vollständiges Durchlaufen abgeschlossen. Flaches Kaffeebett = gleichmäßige Extraktion.",
+    "duration_seconds": 90,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-1",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Papierfilter in die Kappe einlegen; spülen. Kappe an der AeroPress-Kammer befestigen; auf die Tasse stellen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-2",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "Gemahlenen Kaffee hinzufügen. Timer starten. Alle {water_total}g Wasser gleichmäßig aufgießen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 108.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-3",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 3,
+    "title": "0:10",
+    "instruction": "Sanft 3-5 Mal hin und her rühren.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-4",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 4,
+    "title": "0:10-1:00",
+    "instruction": "Kaffee ziehen lassen (etwas wird durchtropfen — das ist normal bei der aufrechten Methode).",
+    "duration_seconds": 50,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-5",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 5,
+    "title": "1:00",
+    "instruction": "Stempel einsetzen und mit gleichmäßigem Druck langsam für 20-30 Sekunden herunterdrücken.",
+    "duration_seconds": 25,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-6",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 6,
+    "title": "1:20-1:30",
+    "instruction": "Aufhören zu pressen, wenn ein Zischen zu hören ist (Luft drückt hindurch).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-7",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 7,
+    "title": "Done",
+    "instruction": "AeroPress entfernen. Optional mit heißem Wasser verdünnen für einen Americano-Stil.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "espresso-machine-step-1",
+    "technique_id": "espresso-machine",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Maschine 15-30 Minuten aufwärmen. Brühgruppe mit Wasser durchspülen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "espresso-machine-step-2",
+    "technique_id": "espresso-machine",
+    "step_number": 2,
+    "title": "Step 1",
+    "instruction": "{coffee}g frisch gemahlenen Kaffee in den Siebträger dosieren.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "espresso-machine-step-3",
+    "technique_id": "espresso-machine",
+    "step_number": 3,
+    "title": "Step 2",
+    "instruction": "Kaffeemehl gleichmäßig verteilen (WDT-Werkzeug oder Klopfen); gleichmäßig mit ~15kg Druck tampen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "espresso-machine-step-4",
+    "technique_id": "espresso-machine",
+    "step_number": 4,
+    "title": "Step 3",
+    "instruction": "Siebträger in die Brühgruppe einspannen. Tasse darunter stellen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "espresso-machine-step-5",
+    "technique_id": "espresso-machine",
+    "step_number": 5,
+    "title": "Step 4",
+    "instruction": "Extraktion starten; Timer beginnt bei Pumpenaktivierung.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "espresso-machine-step-6",
+    "technique_id": "espresso-machine",
+    "step_number": 6,
+    "title": "Step 5",
+    "instruction": "Fluss beobachten: sollte als langsame Tropfen beginnen, dann in einen dünnen gleichmäßigen Strahl übergehen ('Mausschwanz').",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "espresso-machine-step-7",
+    "technique_id": "espresso-machine",
+    "step_number": 7,
+    "title": "Step 6",
+    "instruction": "Ziel: {water_total}g Ergebnis (bei {coffee}g Dosis) in 25-35 Sekunden.",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 30.0,
+    "image_name": null
+  },
+  {
+    "step_id": "espresso-machine-step-8",
+    "technique_id": "espresso-machine",
+    "step_number": 8,
+    "title": "Step 7",
+    "instruction": "Bezug stoppen. Sofort servieren.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "vietnamese-phin-filter-step-1",
+    "technique_id": "vietnamese-phin-filter",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Phin-Filter auf Glas/Tasse setzen. 2-3 EL gesüßte Kondensmilch ins Glas geben (für Cà phê sữa đá).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "vietnamese-phin-filter-step-2",
+    "technique_id": "vietnamese-phin-filter",
+    "step_number": 2,
+    "title": "Step 1",
+    "instruction": "Kaffeemehl in die Phin-Kammer geben; schütteln, um es zu ebnen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "vietnamese-phin-filter-step-3",
+    "technique_id": "vietnamese-phin-filter",
+    "step_number": 3,
+    "title": "Step 2",
+    "instruction": "Schwerkraftpresse/Filtersieb oben aufsetzen; sanft drücken, um leicht zu komprimieren.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "vietnamese-phin-filter-step-4",
+    "technique_id": "vietnamese-phin-filter",
+    "step_number": 4,
+    "title": "Step 3",
+    "instruction": "Einen kleinen Schuss heißes Wasser ({water}g) hinzufügen, um das Kaffeemehl 20 Sekunden bloomen zu lassen.",
+    "duration_seconds": 20,
+    "water_volume_ml_base": 20.0,
+    "image_name": null
+  },
+  {
+    "step_id": "vietnamese-phin-filter-step-5",
+    "technique_id": "vietnamese-phin-filter",
+    "step_number": 5,
+    "title": "Step 4",
+    "instruction": "Phin mit den restlichen {water}g heißem Wasser bis oben füllen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 100.0,
+    "image_name": null
+  },
+  {
+    "step_id": "vietnamese-phin-filter-step-6",
+    "technique_id": "vietnamese-phin-filter",
+    "step_number": 6,
+    "title": "Step 5",
+    "instruction": "Deckel auf den Phin setzen; warten, während der Kaffee langsam durchtropft (insgesamt 4-6 Minuten).",
+    "duration_seconds": 300,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "vietnamese-phin-filter-step-7",
+    "technique_id": "vietnamese-phin-filter",
+    "step_number": 7,
+    "title": "Step 6",
+    "instruction": "Wenn das Tropfen aufhört, Phin entfernen. Kondensmilch in den Kaffee einrühren.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "vietnamese-phin-filter-step-8",
+    "technique_id": "vietnamese-phin-filter",
+    "step_number": 8,
+    "title": "Step 7",
+    "instruction": "Für die Eisversion: über ein volles Glas Eis gießen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "japanese-iced-coffee-flash-brew-step-1",
+    "technique_id": "japanese-iced-coffee-flash-brew",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "{water}g Eiswürfel in die Kanne/Karaffe unter dem Dripper geben.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 96.0,
+    "image_name": null
+  },
+  {
+    "step_id": "japanese-iced-coffee-flash-brew-step-2",
+    "technique_id": "japanese-iced-coffee-flash-brew",
+    "step_number": 2,
+    "title": "Prep",
+    "instruction": "V60/Chemex mit gespültem Papierfilter auf der mit Eis gefüllten Kanne aufbauen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "japanese-iced-coffee-flash-brew-step-3",
+    "technique_id": "japanese-iced-coffee-flash-brew",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "Gemahlenen Kaffee hinzufügen (etwas feiner mahlen als für normalen heißen Aufguss). Timer starten.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "japanese-iced-coffee-flash-brew-step-4",
+    "technique_id": "japanese-iced-coffee-flash-brew",
+    "step_number": 4,
+    "title": "0:00",
+    "instruction": "Mit {water}g heißem Wasser bloomen; 30 Sekunden warten.",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 36.0,
+    "image_name": null
+  },
+  {
+    "step_id": "japanese-iced-coffee-flash-brew-step-5",
+    "technique_id": "japanese-iced-coffee-flash-brew",
+    "step_number": 5,
+    "title": "0:30",
+    "instruction": "Restliche {water}g heißes Wasser in langsamen Spiralen aufgießen (Gesamtmenge heißes Wasser = ~60% des Rezepts).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 108.0,
+    "image_name": null
+  },
+  {
+    "step_id": "japanese-iced-coffee-flash-brew-step-6",
+    "technique_id": "japanese-iced-coffee-flash-brew",
+    "step_number": 6,
+    "title": "1:30-2:30",
+    "instruction": "Aufguss abschließen; vollständig durchlaufen lassen. Heißer Kaffee tropft direkt auf das Eis.",
+    "duration_seconds": 60,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "japanese-iced-coffee-flash-brew-step-7",
+    "technique_id": "japanese-iced-coffee-flash-brew",
+    "step_number": 7,
+    "title": "Done",
+    "instruction": "Kanne schwenken, um restliches Eis zu schmelzen und gleichmäßig zu kühlen. In ein Glas gießen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "south-indian-filter-coffee-kaapi-step-1",
+    "technique_id": "south-indian-filter-coffee-kaapi",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Sicherstellen, dass der südindische Messing-/Stahlkaffeefilter sauber und trocken ist.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "south-indian-filter-coffee-kaapi-step-2",
+    "technique_id": "south-indian-filter-coffee-kaapi",
+    "step_number": 2,
+    "title": "Step 1",
+    "instruction": "Kaffeepulver (oft mit 20-30% Zichorie) in die obere gelochte Kammer geben.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "south-indian-filter-coffee-kaapi-step-3",
+    "technique_id": "south-indian-filter-coffee-kaapi",
+    "step_number": 3,
+    "title": "Step 2",
+    "instruction": "Den Pressfilter sanft herunterdrücken zum Ebnen (NICHT fest zusammenpressen).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "south-indian-filter-coffee-kaapi-step-4",
+    "technique_id": "south-indian-filter-coffee-kaapi",
+    "step_number": 4,
+    "title": "Step 3",
+    "instruction": "{water_total}g kochendes Wasser (96-100°C) über das Kaffeemehl gießen; obere Kammer füllen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 150.0,
+    "image_name": null
+  },
+  {
+    "step_id": "south-indian-filter-coffee-kaapi-step-5",
+    "technique_id": "south-indian-filter-coffee-kaapi",
+    "step_number": 5,
+    "title": "Step 4",
+    "instruction": "Mit Deckel verschließen; Sud in die untere Kammer tropfen lassen (15-20 Min. schnell; 3-4 Std. traditionell).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "south-indian-filter-coffee-kaapi-step-6",
+    "technique_id": "south-indian-filter-coffee-kaapi",
+    "step_number": 6,
+    "title": "Step 5",
+    "instruction": "In der Zwischenzeit Vollmilch in einem Topf aufkochen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "south-indian-filter-coffee-kaapi-step-7",
+    "technique_id": "south-indian-filter-coffee-kaapi",
+    "step_number": 7,
+    "title": "Step 6",
+    "instruction": "2 EL starken Sud in den Becher geben; gekochte Milch hinzufügen (Verhältnis nach Geschmack, ~1:1 bis 1:2).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "south-indian-filter-coffee-kaapi-step-8",
+    "technique_id": "south-indian-filter-coffee-kaapi",
+    "step_number": 8,
+    "title": "Step 7",
+    "instruction": "Zucker nach Geschmack hinzufügen. Zwischen Becher und Dabara aus der Höhe hin und her gießen, um Luft einzuarbeiten und Schaum zu erzeugen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kyoto-style-slow-drip-cold-drip-tower-step-1",
+    "technique_id": "kyoto-style-slow-drip-cold-drip-tower",
+    "step_number": 1,
+    "title": "Step 1",
+    "instruction": "Papierfilter-Scheibe am Boden der mittleren Kaffeekammer einlegen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kyoto-style-slow-drip-cold-drip-tower-step-2",
+    "technique_id": "kyoto-style-slow-drip-cold-drip-tower",
+    "step_number": 2,
+    "title": "Step 2",
+    "instruction": "Mittelgrob gemahlenen Kaffee hinzufügen; das Kaffeebett ebnen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kyoto-style-slow-drip-cold-drip-tower-step-3",
+    "technique_id": "kyoto-style-slow-drip-cold-drip-tower",
+    "step_number": 3,
+    "title": "Step 3",
+    "instruction": "Einen zweiten angefeuchteten Papierfilter auf das Kaffeemehl legen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kyoto-style-slow-drip-cold-drip-tower-step-4",
+    "technique_id": "kyoto-style-slow-drip-cold-drip-tower",
+    "step_number": 4,
+    "title": "Step 4",
+    "instruction": "Oberen Wasserbehälter mit Eis und {water_total}g kaltem Wasser füllen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 150.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kyoto-style-slow-drip-cold-drip-tower-step-5",
+    "technique_id": "kyoto-style-slow-drip-cold-drip-tower",
+    "step_number": 5,
+    "title": "Step 5",
+    "instruction": "Ventil einstellen, um ~1 Tropfen pro Sekunde zu erreichen (das ist entscheidend).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kyoto-style-slow-drip-cold-drip-tower-step-6",
+    "technique_id": "kyoto-style-slow-drip-cold-drip-tower",
+    "step_number": 6,
+    "title": "Step 6",
+    "instruction": "3-12 Stunden tropfen lassen, je nach Turm-Modell und gewünschter Stärke.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kyoto-style-slow-drip-cold-drip-tower-step-7",
+    "technique_id": "kyoto-style-slow-drip-cold-drip-tower",
+    "step_number": 7,
+    "title": "Step 7",
+    "instruction": "Konzentrat in der unteren Kanne auffangen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kyoto-style-slow-drip-cold-drip-tower-step-8",
+    "technique_id": "kyoto-style-slow-drip-cold-drip-tower",
+    "step_number": 8,
+    "title": "Step 8",
+    "instruction": "Über Eis servieren; bei Bedarf verdünnen. Kann 1-2 Wochen im Kühlschrank aufbewahrt werden.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "scott-rao-v60-technique-step-1",
+    "technique_id": "scott-rao-v60-technique",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "V60-Filter spülen; Dripper und Kanne vorwärmen. Kaffee einfüllen; flaches Kaffeebett formen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "scott-rao-v60-technique-step-2",
+    "technique_id": "scott-rao-v60-technique",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "Timer starten. {water}g Wasser (3× Dosis) zum Bloomen aufgießen; kräftig gießen, um alles zu sättigen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 45.0,
+    "image_name": null
+  },
+  {
+    "step_id": "scott-rao-v60-technique-step-3",
+    "technique_id": "scott-rao-v60-technique",
+    "step_number": 3,
+    "title": "0:00-0:10",
+    "instruction": "Mit dem Löffel rühren/Kaffeemehl freilegen und sicherstellen, dass alles nass ist (der 'Rao Spin').",
+    "duration_seconds": 10,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "scott-rao-v60-technique-step-4",
+    "technique_id": "scott-rao-v60-technique",
+    "step_number": 4,
+    "title": "0:10-0:45",
+    "instruction": "Auf das Blooming warten. CO₂ entweicht.",
+    "duration_seconds": 35,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "scott-rao-v60-technique-step-5",
+    "technique_id": "scott-rao-v60-technique",
+    "step_number": 5,
+    "title": "0:45",
+    "instruction": "Hauptaufguss beginnen: durchgehende langsame Spirale von der Mitte nach außen und zurück. NICHT unterbrechen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "scott-rao-v60-technique-step-6",
+    "technique_id": "scott-rao-v60-technique",
+    "step_number": 6,
+    "title": "0:45-1:45",
+    "instruction": "Ein einziger ununterbrochener Aufguss bis {water_total}g Gesamtgewicht. Wasserstand gleichmäßig halten.",
+    "duration_seconds": 60,
+    "water_volume_ml_base": 195.0,
+    "image_name": null
+  },
+  {
+    "step_id": "scott-rao-v60-technique-step-7",
+    "technique_id": "scott-rao-v60-technique",
+    "step_number": 7,
+    "title": "1:45",
+    "instruction": "Sanften 'Rao Spin' durchführen – Dripper einmal schwenken, um das Kaffeebett zu ebnen und hochliegendes/trockenes Kaffeemehl abzulösen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "scott-rao-v60-technique-step-8",
+    "technique_id": "scott-rao-v60-technique",
+    "step_number": 8,
+    "title": "1:45-3:00",
+    "instruction": "Vollständig durchlaufen lassen. Am Ende ein flaches Kaffeebett.",
+    "duration_seconds": 75,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "hario-switch-immersion-dripper-step-1",
+    "technique_id": "hario-switch-immersion-dripper",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "V60-Papierfilter mit Lasche in den Switch einsetzen; mit heißem Wasser spülen. Ventil schließen (Schalter nach unten).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "hario-switch-immersion-dripper-step-2",
+    "technique_id": "hario-switch-immersion-dripper",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "Gemahlenen Kaffee hinzufügen. Timer starten. Alle {water_total}g Wasser auf einmal aufgießen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 225.0,
+    "image_name": null
+  },
+  {
+    "step_id": "hario-switch-immersion-dripper-step-3",
+    "technique_id": "hario-switch-immersion-dripper",
+    "step_number": 3,
+    "title": "0:05",
+    "instruction": "Sanft 2-3 Mal umrühren, um sicherzustellen, dass das gesamte Kaffeemehl gesättigt ist.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "hario-switch-immersion-dripper-step-4",
+    "technique_id": "hario-switch-immersion-dripper",
+    "step_number": 4,
+    "title": "0:05-2:00",
+    "instruction": "Vollständiges Ziehen bei geschlossenem Ventil abwarten (Immersionsphase).",
+    "duration_seconds": 115,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "hario-switch-immersion-dripper-step-5",
+    "technique_id": "hario-switch-immersion-dripper",
+    "step_number": 5,
+    "title": "2:00",
+    "instruction": "Ventil öffnen (Schalter nach oben); Kaffee beginnt durch den Papierfilter zu laufen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "hario-switch-immersion-dripper-step-6",
+    "technique_id": "hario-switch-immersion-dripper",
+    "step_number": 6,
+    "title": "2:00-3:00",
+    "instruction": "Das Durchlaufen durch das V60-Papier dauert ~45-60 Sekunden.",
+    "duration_seconds": 53,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "hario-switch-immersion-dripper-step-7",
+    "technique_id": "hario-switch-immersion-dripper",
+    "step_number": 7,
+    "title": "3:00",
+    "instruction": "Dripper entfernen. Servieren.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-matt-winton-five-pour-step-1",
+    "technique_id": "v60-matt-winton-five-pour",
+    "step_number": 1,
+    "title": "0:00",
+    "instruction": "Papierfilter spülen; {coffee}g Kaffee in den V60 geben. Timer starten.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-matt-winton-five-pour-step-2",
+    "technique_id": "v60-matt-winton-five-pour",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "{water}g Wasser (3,3× Dosis) zum Bloomen aufgießen; schwenken, um das gesamte Kaffeemehl zu sättigen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 50.1,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-matt-winton-five-pour-step-3",
+    "technique_id": "v60-matt-winton-five-pour",
+    "step_number": 3,
+    "title": "0:00-0:45",
+    "instruction": "45 Sekunden auf das Blooming warten.",
+    "duration_seconds": 45,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-matt-winton-five-pour-step-4",
+    "technique_id": "v60-matt-winton-five-pour",
+    "step_number": 4,
+    "title": "0:45",
+    "instruction": "Aufguss #2: {water}g Wasser in sanften konzentrischen Kreisen.",
+    "duration_seconds": 20,
+    "water_volume_ml_base": 50.1,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-matt-winton-five-pour-step-5",
+    "technique_id": "v60-matt-winton-five-pour",
+    "step_number": 5,
+    "title": "1:05",
+    "instruction": "Aufguss #3: {water}g Wasser.",
+    "duration_seconds": 20,
+    "water_volume_ml_base": 50.1,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-matt-winton-five-pour-step-6",
+    "technique_id": "v60-matt-winton-five-pour",
+    "step_number": 6,
+    "title": "1:25",
+    "instruction": "Aufguss #4: {water}g Wasser.",
+    "duration_seconds": 20,
+    "water_volume_ml_base": 50.1,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-matt-winton-five-pour-step-7",
+    "technique_id": "v60-matt-winton-five-pour",
+    "step_number": 7,
+    "title": "1:45",
+    "instruction": "Aufguss #5: {water}g Wasser (Gesamtmenge jetzt {water_total}g).",
+    "duration_seconds": 15,
+    "water_volume_ml_base": 50.1,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-matt-winton-five-pour-step-8",
+    "technique_id": "v60-matt-winton-five-pour",
+    "step_number": 8,
+    "title": "2:00",
+    "instruction": "V60 ein letztes Mal sanft schwenken, um das Kaffeebett zu ebnen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-matt-winton-five-pour-step-9",
+    "technique_id": "v60-matt-winton-five-pour",
+    "step_number": 9,
+    "title": "2:30-3:30",
+    "instruction": "Vollständiges Durchlaufen abwarten. Flaches Kaffeebett am Boden anstreben.",
+    "duration_seconds": 60,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nel-drip-flannel-drip-step-1",
+    "technique_id": "nel-drip-flannel-drip",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Flanellfilter in heißem Wasser einweichen. Überschüssiges Wasser auswringen. Am Nel-Drip-Ständer/Griff befestigen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nel-drip-flannel-drip-step-2",
+    "technique_id": "nel-drip-flannel-drip",
+    "step_number": 2,
+    "title": "Prep",
+    "instruction": "Filter mit heißem Wasser vorspülen, um Eigengeschmack zu entfernen. Spülwasser verwerfen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nel-drip-flannel-drip-step-3",
+    "technique_id": "nel-drip-flannel-drip",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "Gemahlenen Kaffee in den Flanellfilter geben. Eine kleine Mulde in der Mitte formen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nel-drip-flannel-drip-step-4",
+    "technique_id": "nel-drip-flannel-drip",
+    "step_number": 4,
+    "title": "0:00",
+    "instruction": "Timer starten. {water}g Wasser sanft in die Mitte zum Bloomen gießen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 30.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nel-drip-flannel-drip-step-5",
+    "technique_id": "nel-drip-flannel-drip",
+    "step_number": 5,
+    "title": "0:00-0:30",
+    "instruction": "30 Sekunden warten. Kaffee quillt auf und setzt CO₂ frei.",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nel-drip-flannel-drip-step-6",
+    "technique_id": "nel-drip-flannel-drip",
+    "step_number": 6,
+    "title": "0:30",
+    "instruction": "Langsamen Aufguss in der Mitte beginnen: dünner Strahl, von der Mitte sanft nach außen spiralend.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nel-drip-flannel-drip-step-7",
+    "technique_id": "nel-drip-flannel-drip",
+    "step_number": 7,
+    "title": "0:30-3:00",
+    "instruction": "In langsamen Schüben weitergießen, bis {water_total}g erreicht sind. Wasserstand niedrig halten — den Filter NICHT überfluten.",
+    "duration_seconds": 150,
+    "water_volume_ml_base": 180.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nel-drip-flannel-drip-step-8",
+    "technique_id": "nel-drip-flannel-drip",
+    "step_number": 8,
+    "title": "3:00-5:00",
+    "instruction": "Restliches Wasser vollständig durchtropfen lassen.",
+    "duration_seconds": 120,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-standard-step-1",
+    "technique_id": "french-press-standard",
+    "step_number": 1,
+    "title": "0:00",
+    "instruction": "French Press mit heißem Wasser vorwärmen; Wasser verwerfen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-standard-step-2",
+    "technique_id": "french-press-standard",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "{coffee}g grob gemahlenen Kaffee in die French Press geben.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-standard-step-3",
+    "technique_id": "french-press-standard",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "Timer starten. Alle {water_total}g Wasser kräftig aufgießen, um das gesamte Kaffeemehl zu sättigen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 240.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-standard-step-4",
+    "technique_id": "french-press-standard",
+    "step_number": 4,
+    "title": "0:15",
+    "instruction": "Einmal kurz mit einem Löffel umrühren, um trockene Klumpen aufzulösen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-standard-step-5",
+    "technique_id": "french-press-standard",
+    "step_number": 5,
+    "title": "0:20",
+    "instruction": "Deckel auf die French Press setzen, Stempel nach oben gezogen. Noch nicht pressen.",
+    "duration_seconds": 220,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-standard-step-6",
+    "technique_id": "french-press-standard",
+    "step_number": 6,
+    "title": "4:00",
+    "instruction": "Stempel langsam und gleichmäßig bis ganz nach unten drücken.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-standard-step-7",
+    "technique_id": "french-press-standard",
+    "step_number": 7,
+    "title": "4:00",
+    "instruction": "Sofort in Tassen gießen, um Überextraktion zu vermeiden.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-inverted-method-step-1",
+    "technique_id": "aeropress-inverted-method",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Stempel bei der Markierung 4 in die Kammer einsetzen. Umdrehen (Stempel unten).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-inverted-method-step-2",
+    "technique_id": "aeropress-inverted-method",
+    "step_number": 2,
+    "title": "Prep",
+    "instruction": "Papierfilter in die Kappe einlegen; mit heißem Wasser spülen. Kappe beiseitelegen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-inverted-method-step-3",
+    "technique_id": "aeropress-inverted-method",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "Gemahlenen Kaffee in die umgedrehte Kammer geben. Timer starten.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-inverted-method-step-4",
+    "technique_id": "aeropress-inverted-method",
+    "step_number": 4,
+    "title": "0:00",
+    "instruction": "{water_total}g Wasser bis zum gewünschten Stand einfüllen. Platz für die Kappe lassen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 180.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-inverted-method-step-5",
+    "technique_id": "aeropress-inverted-method",
+    "step_number": 5,
+    "title": "0:10",
+    "instruction": "Sanft 3-5 Mal hin und her rühren.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-inverted-method-step-6",
+    "technique_id": "aeropress-inverted-method",
+    "step_number": 6,
+    "title": "1:00",
+    "instruction": "Gespülte Filterkappe anbringen. Fest aufschrauben.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-inverted-method-step-7",
+    "technique_id": "aeropress-inverted-method",
+    "step_number": 7,
+    "title": "1:05",
+    "instruction": "AeroPress vorsichtig und entschlossen auf die Tasse/Kanne umdrehen. Fest halten!",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-inverted-method-step-8",
+    "technique_id": "aeropress-inverted-method",
+    "step_number": 8,
+    "title": "1:10",
+    "instruction": "Stempel langsam und gleichmäßig herunterdrücken (~30 Sekunden). Beim Zischen stoppen.",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-inverted-method-step-9",
+    "technique_id": "aeropress-inverted-method",
+    "step_number": 9,
+    "title": "1:40",
+    "instruction": "AeroPress entfernen. Bei Bedarf mit heißem Wasser verdünnen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-james-hoffmann-best-recipe-step-1",
+    "technique_id": "aeropress-james-hoffmann-best-recipe",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Papierfilter in die Kappe einlegen; spülen. AeroPress aufrecht auf der Tasse zusammenbauen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-james-hoffmann-best-recipe-step-2",
+    "technique_id": "aeropress-james-hoffmann-best-recipe",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "{coffee}g Kaffee hinzufügen. Timer starten. Alle {water_total}g Wasser auf einmal aufgießen. NICHT umrühren.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 270.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-james-hoffmann-best-recipe-step-3",
+    "technique_id": "aeropress-james-hoffmann-best-recipe",
+    "step_number": 3,
+    "title": "0:00-2:00",
+    "instruction": "2 volle Minuten warten. Etwas Kaffee wird durchtropfen — das ist in Ordnung.",
+    "duration_seconds": 120,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-james-hoffmann-best-recipe-step-4",
+    "technique_id": "aeropress-james-hoffmann-best-recipe",
+    "step_number": 4,
+    "title": "2:00",
+    "instruction": "AeroPress sanft 3 Mal schwenken (kein Löffel nötig).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-james-hoffmann-best-recipe-step-5",
+    "technique_id": "aeropress-james-hoffmann-best-recipe",
+    "step_number": 5,
+    "title": "2:05",
+    "instruction": "Langsam und sanft für ~30 Sekunden herunterdrücken.",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-james-hoffmann-best-recipe-step-6",
+    "technique_id": "aeropress-james-hoffmann-best-recipe",
+    "step_number": 6,
+    "title": "2:30",
+    "instruction": "Beim Zischen stoppen. Sofort servieren.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-traditional-step-1",
+    "technique_id": "turkish-coffee-traditional",
+    "step_number": 1,
+    "title": "Step 1",
+    "instruction": "{water_total}g kaltes gefiltertes Wasser in die Cezve (Ibrik) geben.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 150.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-traditional-step-2",
+    "technique_id": "turkish-coffee-traditional",
+    "step_number": 2,
+    "title": "Step 2",
+    "instruction": "{coffee}g extrafein gemahlenen Kaffee hinzufügen (wie Talkumpuder). Jetzt bei Bedarf Zucker hinzufügen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-traditional-step-3",
+    "technique_id": "turkish-coffee-traditional",
+    "step_number": 3,
+    "title": "Step 3",
+    "instruction": "Sanft umrühren, um Kaffee, Wasser und Zucker gleichmäßig zu vermischen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-traditional-step-4",
+    "technique_id": "turkish-coffee-traditional",
+    "step_number": 4,
+    "title": "Step 4",
+    "instruction": "Cezve auf NIEDRIGE Hitze stellen. NICHT hetzen — sanftes Erhitzen ist entscheidend.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-traditional-step-5",
+    "technique_id": "turkish-coffee-traditional",
+    "step_number": 5,
+    "title": "Step 5",
+    "instruction": "Beobachten, bis sich Schaum auf der Oberfläche bildet (~1:30-2:00).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-traditional-step-6",
+    "technique_id": "turkish-coffee-traditional",
+    "step_number": 6,
+    "title": "Step 6",
+    "instruction": "Wenn der Schaum fast den Rand erreicht, von der Hitze nehmen. 20-30 Sekunden absetzen lassen.",
+    "duration_seconds": 25,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-traditional-step-7",
+    "technique_id": "turkish-coffee-traditional",
+    "step_number": 7,
+    "title": "Step 7",
+    "instruction": "Zurück auf die Hitzequelle. Schaum ein ZWEITES Mal aufsteigen lassen. Von der Hitze nehmen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-traditional-step-8",
+    "technique_id": "turkish-coffee-traditional",
+    "step_number": 8,
+    "title": "Step 8",
+    "instruction": "Zum DRITTEN und letzten Schaumaufstieg zurück auf die Hitzequelle. Von der Hitze nehmen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-traditional-step-9",
+    "technique_id": "turkish-coffee-traditional",
+    "step_number": 9,
+    "title": "Step 9",
+    "instruction": "Optional: 1 TL kaltes Wasser darüberspritzen, damit sich der Kaffeesatz schneller absetzt.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-traditional-step-10",
+    "technique_id": "turkish-coffee-traditional",
+    "step_number": 10,
+    "title": "Step 10",
+    "instruction": "Langsam in die Mokkatasse gießen und den Schaum oben erhalten. 1-2 Minuten warten, bevor man trinkt.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "drip-coffee-maker-automatic-step-1",
+    "technique_id": "drip-coffee-maker-automatic",
+    "step_number": 1,
+    "title": "Step 1",
+    "instruction": "Wassertank mit {water_total}g frischem gefiltertem Wasser füllen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 240.0,
+    "image_name": null
+  },
+  {
+    "step_id": "drip-coffee-maker-automatic-step-2",
+    "technique_id": "drip-coffee-maker-automatic",
+    "step_number": 2,
+    "title": "Step 2",
+    "instruction": "Papier- oder Dauerfilter in den Korb einlegen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "drip-coffee-maker-automatic-step-3",
+    "technique_id": "drip-coffee-maker-automatic",
+    "step_number": 3,
+    "title": "Step 3",
+    "instruction": "{coffee}g mittel gemahlenen Kaffee in den Filterkorb geben.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "drip-coffee-maker-automatic-step-4",
+    "technique_id": "drip-coffee-maker-automatic",
+    "step_number": 4,
+    "title": "Step 4",
+    "instruction": "Korb schließen. Start-/Brühtaste drücken.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "drip-coffee-maker-automatic-step-5",
+    "technique_id": "drip-coffee-maker-automatic",
+    "step_number": 5,
+    "title": "Step 5",
+    "instruction": "Maschine erhitzt Wasser und lässt es automatisch durch das Kaffeebett tropfen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "drip-coffee-maker-automatic-step-6",
+    "technique_id": "drip-coffee-maker-automatic",
+    "step_number": 6,
+    "title": "Step 6",
+    "instruction": "Brühvorgang ist in 5-8 Minuten abgeschlossen. Aus der Kanne servieren.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "drip-coffee-maker-automatic-step-7",
+    "technique_id": "drip-coffee-maker-automatic",
+    "step_number": 7,
+    "title": "Step 7",
+    "instruction": "Korb/Filter entfernen, um das Tropfen auf die Warmhalteplatte zu stoppen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "percolator-stovetopelectric-step-1",
+    "technique_id": "percolator-stovetopelectric",
+    "step_number": 1,
+    "title": "Step 1",
+    "instruction": "{water_total}g kaltes Wasser in die untere Kammer des Perkolators geben.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 255.0,
+    "image_name": null
+  },
+  {
+    "step_id": "percolator-stovetopelectric-step-2",
+    "technique_id": "percolator-stovetopelectric",
+    "step_number": 2,
+    "title": "Step 2",
+    "instruction": "Filterkorb auf den Stiel setzen. {coffee}g grob gemahlenen Kaffee in den Korb geben.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "percolator-stovetopelectric-step-3",
+    "technique_id": "percolator-stovetopelectric",
+    "step_number": 3,
+    "title": "Step 3",
+    "instruction": "Perkolator zusammenbauen. Auf die Herdplatte stellen (oder einstecken).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "percolator-stovetopelectric-step-4",
+    "technique_id": "percolator-stovetopelectric",
+    "step_number": 4,
+    "title": "Step 4",
+    "instruction": "Wasser erhitzt sich, steigt durch das Rohr auf, rieselt über den Kaffee, tropft zurück und wiederholt sich.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "percolator-stovetopelectric-step-5",
+    "technique_id": "percolator-stovetopelectric",
+    "step_number": 5,
+    "title": "Step 5",
+    "instruction": "Durch den Glasknopf am Deckel beobachten: mittlere Bernsteinfarbe anstreben.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "percolator-stovetopelectric-step-6",
+    "technique_id": "percolator-stovetopelectric",
+    "step_number": 6,
+    "title": "Step 6",
+    "instruction": "7-10 Minuten zirkulieren lassen.",
+    "duration_seconds": 510,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "percolator-stovetopelectric-step-7",
+    "technique_id": "percolator-stovetopelectric",
+    "step_number": 7,
+    "title": "Step 7",
+    "instruction": "Bei gewünschter Stärke SOFORT von der Hitzequelle nehmen. Zu langes Perkolieren = bitter.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "percolator-stovetopelectric-step-8",
+    "technique_id": "percolator-stovetopelectric",
+    "step_number": 8,
+    "title": "Step 8",
+    "instruction": "1-2 Minuten ruhen lassen, damit sich der Kaffeesatz absetzt, dann servieren.",
+    "duration_seconds": 90,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "osmotic-flow-v60-step-1",
+    "technique_id": "osmotic-flow-v60",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Papierfilter im V60 oder Cafec Flower Dripper spülen. Auf die Kanne setzen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "osmotic-flow-v60-step-2",
+    "technique_id": "osmotic-flow-v60",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "{coffee}g Kaffee hinzufügen (mittlerer Mahlgrad — gröber als Standard-V60). Kaffeebett ebnen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "osmotic-flow-v60-step-3",
+    "technique_id": "osmotic-flow-v60",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "Timer starten. {water}g Wasser zum Bloomen aufgießen; 45 Sekunden warten.",
+    "duration_seconds": 45,
+    "water_volume_ml_base": 37.5,
+    "image_name": null
+  },
+  {
+    "step_id": "osmotic-flow-v60-step-4",
+    "technique_id": "osmotic-flow-v60",
+    "step_number": 4,
+    "title": "0:45",
+    "instruction": "Ultralangsamen Aufguss in der Mitte beginnen: NUR in die Mitte in einem dünnen Strahl gießen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "osmotic-flow-v60-step-5",
+    "technique_id": "osmotic-flow-v60",
+    "step_number": 5,
+    "title": "0:45-3:00",
+    "instruction": "Langsamen Aufguss in der Mitte fortsetzen ({water}g verbleibend). Der Wasserstand sollte kaum über das Kaffeebett steigen.",
+    "duration_seconds": 135,
+    "water_volume_ml_base": 187.5,
+    "image_name": null
+  },
+  {
+    "step_id": "osmotic-flow-v60-step-6",
+    "technique_id": "osmotic-flow-v60",
+    "step_number": 6,
+    "title": "3:00",
+    "instruction": "Wenn alle {water_total}g aufgegossen sind, letztes Durchlaufen abwarten.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "osmotic-flow-v60-step-7",
+    "technique_id": "osmotic-flow-v60",
+    "step_number": 7,
+    "title": "3:00-4:00+",
+    "instruction": "Das Durchlaufen kann länger dauern als beim Standard-V60 — das ist normal.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cupping-professional-tasting-step-1",
+    "technique_id": "cupping-professional-tasting",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "{coffee}g pro Schale mahlen (etwas gröber als French Press). Verkostungsschalen bereitstellen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cupping-professional-tasting-step-2",
+    "technique_id": "cupping-professional-tasting",
+    "step_number": 2,
+    "title": "Prep",
+    "instruction": "Verkostungslöffel, Spülwasser und Ausspuckbecher vorbereiten.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cupping-professional-tasting-step-3",
+    "technique_id": "cupping-professional-tasting",
+    "step_number": 3,
+    "title": "Step 1",
+    "instruction": "TROCKENES AROMA bewerten: Nah heranlehnen und das trockene Kaffeemehl in jeder Schale riechen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cupping-professional-tasting-step-4",
+    "technique_id": "cupping-professional-tasting",
+    "step_number": 4,
+    "title": "0:00",
+    "instruction": "Timer starten. {water_total}g Wasser mit 93°C direkt auf das Kaffeemehl in jeder Schale gießen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 272.7,
+    "image_name": null
+  },
+  {
+    "step_id": "cupping-professional-tasting-step-5",
+    "technique_id": "cupping-professional-tasting",
+    "step_number": 5,
+    "title": "0:00-4:00",
+    "instruction": "Genau 4 Minuten warten. Eine Kruste aus Kaffeesatz bildet sich an der Oberfläche.",
+    "duration_seconds": 240,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cupping-professional-tasting-step-6",
+    "technique_id": "cupping-professional-tasting",
+    "step_number": 6,
+    "title": "4:00",
+    "instruction": "KRUSTE BRECHEN: Nah heranlehnen, Kaffeesatz mit dem Löffel 3 Mal beiseiteschieben. Aroma tief einatmen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cupping-professional-tasting-step-7",
+    "technique_id": "cupping-professional-tasting",
+    "step_number": 7,
+    "title": "4:15",
+    "instruction": "Schaum und schwimmenden Kaffeesatz mit zwei Löffeln abschöpfen. In die Abfallschale geben.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cupping-professional-tasting-step-8",
+    "technique_id": "cupping-professional-tasting",
+    "step_number": 8,
+    "title": "4:30-9:00",
+    "instruction": "Kaffee 5-8 Minuten abkühlen lassen. Der Kaffeesatz setzt sich am Boden ab.",
+    "duration_seconds": 390,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cupping-professional-tasting-step-9",
+    "technique_id": "cupping-professional-tasting",
+    "step_number": 9,
+    "title": "9:00+",
+    "instruction": "VERKOSTEN: Kräftig vom Löffel schlürfen, um den Kaffee über den gesamten Gaumen zu verteilen. Geschmack, Säure, Körper, Balance, Süße und Nachgeschmack bewerten.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cowboy-coffee-step-1",
+    "technique_id": "cowboy-coffee",
+    "step_number": 1,
+    "title": "Step 1",
+    "instruction": "{water_total}g Wasser in einen Topf oder eine Kasserolle geben.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 240.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cowboy-coffee-step-2",
+    "technique_id": "cowboy-coffee",
+    "step_number": 2,
+    "title": "Step 2",
+    "instruction": "Über Lagerfeuer oder Herd zum kräftigen Kochen bringen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cowboy-coffee-step-3",
+    "technique_id": "cowboy-coffee",
+    "step_number": 3,
+    "title": "Step 3",
+    "instruction": "Topf von der Hitzequelle nehmen. 30 Sekunden warten, bis das Kochen nachlässt.",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cowboy-coffee-step-4",
+    "technique_id": "cowboy-coffee",
+    "step_number": 4,
+    "title": "Step 4",
+    "instruction": "{coffee}g grob gemahlenen Kaffee hinzufügen. Einmal sanft umrühren.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cowboy-coffee-step-5",
+    "technique_id": "cowboy-coffee",
+    "step_number": 5,
+    "title": "Step 5",
+    "instruction": "Topf abdecken. 4-5 Minuten abseits der Hitzequelle ziehen lassen.",
+    "duration_seconds": 270,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cowboy-coffee-step-6",
+    "technique_id": "cowboy-coffee",
+    "step_number": 6,
+    "title": "Step 6",
+    "instruction": "~30ml kaltes Wasser darüberspritzen, damit sich der Kaffeesatz absetzt.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cowboy-coffee-step-7",
+    "technique_id": "cowboy-coffee",
+    "step_number": 7,
+    "title": "Step 7",
+    "instruction": "Weitere 2-3 Minuten warten, bis der Kaffeesatz absinkt.",
+    "duration_seconds": 150,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cowboy-coffee-step-8",
+    "technique_id": "cowboy-coffee",
+    "step_number": 8,
+    "title": "Step 8",
+    "instruction": "Vorsichtig von oben in die Tassen gießen, den Bodensatz im Topf zurücklassen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kopi-tubruk-indonesian-step-1",
+    "technique_id": "kopi-tubruk-indonesian",
+    "step_number": 1,
+    "title": "Step 1",
+    "instruction": "Wasser im Wasserkocher aufkochen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kopi-tubruk-indonesian-step-2",
+    "technique_id": "kopi-tubruk-indonesian",
+    "step_number": 2,
+    "title": "Step 2",
+    "instruction": "{coffee}g sehr fein gemahlenen Kaffee in eine Tasse oder ein Glas geben.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kopi-tubruk-indonesian-step-3",
+    "technique_id": "kopi-tubruk-indonesian",
+    "step_number": 3,
+    "title": "Step 3",
+    "instruction": "Zucker nach Geschmack hinzufügen (traditionell: 1-2 Teelöffel).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kopi-tubruk-indonesian-step-4",
+    "technique_id": "kopi-tubruk-indonesian",
+    "step_number": 4,
+    "title": "Step 4",
+    "instruction": "{water_total}g kochendes Wasser direkt auf das Kaffeemehl gießen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 300.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kopi-tubruk-indonesian-step-5",
+    "technique_id": "kopi-tubruk-indonesian",
+    "step_number": 5,
+    "title": "Step 5",
+    "instruction": "Kurz umrühren (3-4 Mal), um Zucker aufzulösen und alles Kaffeemehl zu benetzen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kopi-tubruk-indonesian-step-6",
+    "technique_id": "kopi-tubruk-indonesian",
+    "step_number": 6,
+    "title": "Step 6",
+    "instruction": "3-5 Minuten warten, bis sich der Kaffeesatz am Boden absetzt.",
+    "duration_seconds": 240,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kopi-tubruk-indonesian-step-7",
+    "technique_id": "kopi-tubruk-indonesian",
+    "step_number": 7,
+    "title": "Step 7",
+    "instruction": "Vorsichtig von oben trinken. Den abgesetzten Kaffeesatz NICHT aufwirbeln.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kopi-tubruk-indonesian-step-8",
+    "technique_id": "kopi-tubruk-indonesian",
+    "step_number": 8,
+    "title": "Step 8",
+    "instruction": "Aufhören zu trinken, wenn die Schlammschicht erreicht ist — die letzten ~20ml stehenlassen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "neapolitan-flip-pot-napoletana-step-1",
+    "technique_id": "neapolitan-flip-pot-napoletana",
+    "step_number": 1,
+    "title": "Step 1",
+    "instruction": "Untere Wasserkammer mit {water_total}g kaltem Wasser bis knapp unter die Dampföffnung füllen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 225.0,
+    "image_name": null
+  },
+  {
+    "step_id": "neapolitan-flip-pot-napoletana-step-2",
+    "technique_id": "neapolitan-flip-pot-napoletana",
+    "step_number": 2,
+    "title": "Step 2",
+    "instruction": "Filterkorb mit mittelgrob gemahlenem Kaffee füllen. Glattstreichen; nicht tampen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "neapolitan-flip-pot-napoletana-step-3",
+    "technique_id": "neapolitan-flip-pot-napoletana",
+    "step_number": 3,
+    "title": "Step 3",
+    "instruction": "Zusammenbauen: Wasserkammer unten, Filter in der Mitte, leere Servierkammer oben.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "neapolitan-flip-pot-napoletana-step-4",
+    "technique_id": "neapolitan-flip-pot-napoletana",
+    "step_number": 4,
+    "title": "Step 4",
+    "instruction": "Auf den Herd stellen bei mittlerer Hitze (Ausguss zeigt in dieser Phase NACH UNTEN).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "neapolitan-flip-pot-napoletana-step-5",
+    "technique_id": "neapolitan-flip-pot-napoletana",
+    "step_number": 5,
+    "title": "Step 5",
+    "instruction": "Warten, bis Dampf aus der kleinen Dampföffnung nahe der Oberseite austritt.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "neapolitan-flip-pot-napoletana-step-6",
+    "technique_id": "neapolitan-flip-pot-napoletana",
+    "step_number": 6,
+    "title": "Step 6",
+    "instruction": "Wenn Dampf erscheint: von der Hitzequelle nehmen. Die gesamte Kanne in einer entschlossenen Bewegung UMDREHEN.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "neapolitan-flip-pot-napoletana-step-7",
+    "technique_id": "neapolitan-flip-pot-napoletana",
+    "step_number": 7,
+    "title": "Step 7",
+    "instruction": "Heißes Wasser tropft nun durch Schwerkraft durch den Kaffee in die Servierkammer darunter.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "neapolitan-flip-pot-napoletana-step-8",
+    "technique_id": "neapolitan-flip-pot-napoletana",
+    "step_number": 8,
+    "title": "Step 8",
+    "instruction": "5-8 Minuten warten, bis alles Wasser durchgetropft ist. Das Tropfen wird langsamer und hört auf.",
+    "duration_seconds": 390,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "neapolitan-flip-pot-napoletana-step-9",
+    "technique_id": "neapolitan-flip-pot-napoletana",
+    "step_number": 9,
+    "title": "Step 9",
+    "instruction": "Gebrauchten Filterkorb entfernen. Aus dem Ausguss servieren.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "single-serve-pod-keurig-nespresso-step-1",
+    "technique_id": "single-serve-pod-keurig-nespresso",
+    "step_number": 1,
+    "title": "Step 1",
+    "instruction": "Wassertank mit frischem gefiltertem Wasser füllen, falls nicht bereits voll.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "single-serve-pod-keurig-nespresso-step-2",
+    "technique_id": "single-serve-pod-keurig-nespresso",
+    "step_number": 2,
+    "title": "Step 2",
+    "instruction": "Maschine einschalten. Aufheizen lassen (15-60 Sekunden).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "single-serve-pod-keurig-nespresso-step-3",
+    "technique_id": "single-serve-pod-keurig-nespresso",
+    "step_number": 3,
+    "title": "Step 3",
+    "instruction": "Tasse unter den Auslauf stellen. Gewünschtes Volumen/Größe wählen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "single-serve-pod-keurig-nespresso-step-4",
+    "technique_id": "single-serve-pod-keurig-nespresso",
+    "step_number": 4,
+    "title": "Step 4",
+    "instruction": "Kapsel oder K-Cup in die Kammer einsetzen. Hebel/Deckel schließen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "single-serve-pod-keurig-nespresso-step-5",
+    "technique_id": "single-serve-pod-keurig-nespresso",
+    "step_number": 5,
+    "title": "Step 5",
+    "instruction": "Brühtaste drücken. Maschine durchsticht Kapsel und drückt {water_total}g heißes Wasser hindurch.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 240.0,
+    "image_name": null
+  },
+  {
+    "step_id": "single-serve-pod-keurig-nespresso-step-6",
+    "technique_id": "single-serve-pod-keurig-nespresso",
+    "step_number": 6,
+    "title": "Step 6",
+    "instruction": "Nespresso Espresso: ~25-40ml in 15-25s. K-Cup: ~150-240ml in 30-60s.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "single-serve-pod-keurig-nespresso-step-7",
+    "technique_id": "single-serve-pod-keurig-nespresso",
+    "step_number": 7,
+    "title": "Step 7",
+    "instruction": "Gebrauchte Kapsel entfernen. Sofort servieren.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "melitta-pour-over-classic-flat-bottom-step-1",
+    "technique_id": "melitta-pour-over-classic-flat-bottom",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Melitta-Papierfilter in den Flachbodenfilter einsetzen. Auf Tasse oder Kanne stellen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "melitta-pour-over-classic-flat-bottom-step-2",
+    "technique_id": "melitta-pour-over-classic-flat-bottom",
+    "step_number": 2,
+    "title": "Prep",
+    "instruction": "Filter mit heißem Wasser spülen, um Papiergeschmack zu entfernen. Spülwasser verwerfen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "melitta-pour-over-classic-flat-bottom-step-3",
+    "technique_id": "melitta-pour-over-classic-flat-bottom",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "Gemahlenen Kaffee hinzufügen. Kaffeebett ebnen. Timer starten.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "melitta-pour-over-classic-flat-bottom-step-4",
+    "technique_id": "melitta-pour-over-classic-flat-bottom",
+    "step_number": 4,
+    "title": "0:00",
+    "instruction": "{water}g Wasser zum Bloomen über das Kaffeemehl gießen. Gleichmäßig benetzen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 40.0,
+    "image_name": null
+  },
+  {
+    "step_id": "melitta-pour-over-classic-flat-bottom-step-5",
+    "technique_id": "melitta-pour-over-classic-flat-bottom",
+    "step_number": 5,
+    "title": "0:00-0:30",
+    "instruction": "30 Sekunden auf das Blooming warten (CO₂-Freisetzung).",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "melitta-pour-over-classic-flat-bottom-step-6",
+    "technique_id": "melitta-pour-over-classic-flat-bottom",
+    "step_number": 6,
+    "title": "0:30",
+    "instruction": "Hauptaufguss in langsamen konzentrischen Kreisen von der Mitte nach außen beginnen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "melitta-pour-over-classic-flat-bottom-step-7",
+    "technique_id": "melitta-pour-over-classic-flat-bottom",
+    "step_number": 7,
+    "title": "0:30-2:30",
+    "instruction": "Gleichmäßig in 2-3 Schüben bis {water_total}g aufgießen, zwischen den Aufgüssen teilweise durchlaufen lassen.",
+    "duration_seconds": 120,
+    "water_volume_ml_base": 200.0,
+    "image_name": null
+  },
+  {
+    "step_id": "melitta-pour-over-classic-flat-bottom-step-8",
+    "technique_id": "melitta-pour-over-classic-flat-bottom",
+    "step_number": 8,
+    "title": "2:30-4:00",
+    "instruction": "Vollständig durchlaufen lassen. Ein flaches, gleichmäßiges Kaffeebett anstreben.",
+    "duration_seconds": 90,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nitro-cold-brew-step-1",
+    "technique_id": "nitro-cold-brew",
+    "step_number": 1,
+    "title": "Step 1",
+    "instruction": "Kaffee sehr grob mahlen (Rohzucker-Textur).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nitro-cold-brew-step-2",
+    "technique_id": "nitro-cold-brew",
+    "step_number": 2,
+    "title": "Step 2",
+    "instruction": "Mit {water_total}g kaltem/zimmerwarmem Wasser vermischen. Umrühren, bis alles gesättigt ist. Abdecken.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 120.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nitro-cold-brew-step-3",
+    "technique_id": "nitro-cold-brew",
+    "step_number": 3,
+    "title": "Step 3",
+    "instruction": "18-24 Stunden im Kühlschrank aufbewahren (oder 12-16 Stunden bei Raumtemperatur).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nitro-cold-brew-step-4",
+    "technique_id": "nitro-cold-brew",
+    "step_number": 4,
+    "title": "Step 4",
+    "instruction": "Durch ein feines Sieb filtern, dann durch einen Papierfilter für maximale Klarheit.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nitro-cold-brew-step-5",
+    "technique_id": "nitro-cold-brew",
+    "step_number": 5,
+    "title": "Step 5",
+    "instruction": "Cold-Brew-Konzentrat in ein stickstoffkompatibles Fass oder einen Sahnesiphon umfüllen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nitro-cold-brew-step-6",
+    "technique_id": "nitro-cold-brew",
+    "step_number": 6,
+    "title": "Step 6",
+    "instruction": "Mit Stickstoff (N₂, NICHT CO₂ — Stickstoff = cremig; CO₂ = sprudelnd) befüllen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nitro-cold-brew-step-7",
+    "technique_id": "nitro-cold-brew",
+    "step_number": 7,
+    "title": "Step 7",
+    "instruction": "Fass sanft schütteln. Mindestens 1 Stunde im Kühlschrank lagern, damit der Stickstoff absorbiert wird.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nitro-cold-brew-step-8",
+    "technique_id": "nitro-cold-brew",
+    "step_number": 8,
+    "title": "Step 8",
+    "instruction": "Über Hahn oder Düse ins Glas gießen. Der charakteristische kaskadierende Mikrobläschen-Effekt erscheint.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-standardupright-step-1",
+    "technique_id": "aeropress-standardupright",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Papierfilter in die Kappe einlegen; mit heißem Wasser spülen. Kappe an der AeroPress-Kammer befestigen und auf die Tasse stellen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-standardupright-step-2",
+    "technique_id": "aeropress-standardupright",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "Gemahlenen Kaffee hinzufügen. Timer starten. Alle {water_total}g Wasser gleichmäßig aufgießen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 225.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-standardupright-step-3",
+    "technique_id": "aeropress-standardupright",
+    "step_number": 3,
+    "title": "0:10",
+    "instruction": "Sanft 3-5 Mal hin und her rühren.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-standardupright-step-4",
+    "technique_id": "aeropress-standardupright",
+    "step_number": 4,
+    "title": "0:15 - Steep",
+    "instruction": "Kaffee ziehen lassen. Etwas wird durchtropfen — das ist normal bei der aufrechten Methode.",
+    "duration_seconds": 45,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-standardupright-step-5",
+    "technique_id": "aeropress-standardupright",
+    "step_number": 5,
+    "title": "1:00 - Press",
+    "instruction": "Stempel einsetzen und mit gleichmäßigem Druck langsam für 20-30 Sekunden herunterdrücken.",
+    "duration_seconds": 25,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-standardupright-step-6",
+    "technique_id": "aeropress-standardupright",
+    "step_number": 6,
+    "title": "1:25 - Finish",
+    "instruction": "Aufhören zu pressen, wenn ein Zischen zu hören ist (Luft drückt durch das Kaffeemehl).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-standardupright-step-7",
+    "technique_id": "aeropress-standardupright",
+    "step_number": 7,
+    "title": "Done",
+    "instruction": "AeroPress entfernen. Optional mit heißem Wasser verdünnen für einen Americano-Stil.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  }
+]

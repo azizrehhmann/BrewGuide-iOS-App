@@ -1,0 +1,218 @@
+[
+  {
+    "method_id": "aeropress",
+    "name": "Aeropress",
+    "description": "Explore Aeropress brewing techniques.",
+    "difficulty": 2,
+    "icon_name": "gauge.with.dots.needle.bottom.50percent",
+    "image_name": null,
+    "category": "Pressure"
+  },
+  {
+    "method_id": "chemex",
+    "name": "Chemex",
+    "description": "Explore Chemex brewing techniques.",
+    "difficulty": 3,
+    "icon_name": "drop.fill",
+    "image_name": null,
+    "category": "Pour Over"
+  },
+  {
+    "method_id": "clever-dripper",
+    "name": "Clever Dripper",
+    "description": "Explore Clever Dripper brewing techniques.",
+    "difficulty": 1,
+    "icon_name": "cup.and.saucer.fill",
+    "image_name": null,
+    "category": "Immersion"
+  },
+  {
+    "method_id": "cold-brew",
+    "name": "Cold Brew",
+    "description": "Explore Cold Brew brewing techniques.",
+    "difficulty": 1,
+    "icon_name": "cup.and.saucer.fill",
+    "image_name": null,
+    "category": "Cold Brew"
+  },
+  {
+    "method_id": "cowboy-coffee",
+    "name": "Cowboy Coffee",
+    "description": "Explore Cowboy Coffee brewing techniques.",
+    "difficulty": 1,
+    "icon_name": "flame.fill",
+    "image_name": null,
+    "category": "Stovetop & Traditional"
+  },
+  {
+    "method_id": "cupping",
+    "name": "Cupping",
+    "description": "Explore Cupping brewing techniques.",
+    "difficulty": 2,
+    "icon_name": "cup.and.saucer.fill",
+    "image_name": null,
+    "category": "Immersion"
+  },
+  {
+    "method_id": "drip-machine",
+    "name": "Drip Machine",
+    "description": "Explore Drip Machine brewing techniques.",
+    "difficulty": 1,
+    "icon_name": "drop.degreesign.fill",
+    "image_name": null,
+    "category": "Machine"
+  },
+  {
+    "method_id": "espresso",
+    "name": "Espresso",
+    "description": "Explore Espresso brewing techniques.",
+    "difficulty": 4,
+    "icon_name": "gauge.with.dots.needle.bottom.50percent",
+    "image_name": null,
+    "category": "Pressure"
+  },
+  {
+    "method_id": "french-press",
+    "name": "French Press",
+    "description": "Explore French Press brewing techniques.",
+    "difficulty": 1,
+    "icon_name": "cup.and.saucer.fill",
+    "image_name": null,
+    "category": "Immersion"
+  },
+  {
+    "method_id": "hario-switch",
+    "name": "Hario Switch",
+    "description": "Explore Hario Switch brewing techniques.",
+    "difficulty": 2,
+    "icon_name": "cup.and.saucer.fill",
+    "image_name": null,
+    "category": "Pour Over"
+  },
+  {
+    "method_id": "japanese-iced",
+    "name": "Japanese Iced",
+    "description": "Explore Japanese Iced brewing techniques.",
+    "difficulty": 3,
+    "icon_name": "cup.and.saucer.fill",
+    "image_name": null,
+    "category": "Cold Brew"
+  },
+  {
+    "method_id": "kalita-wave",
+    "name": "Kalita Wave",
+    "description": "Explore Kalita Wave brewing techniques.",
+    "difficulty": 2,
+    "icon_name": "drop.fill",
+    "image_name": null,
+    "category": "Pour Over"
+  },
+  {
+    "method_id": "kopi-tubruk",
+    "name": "Kopi Tubruk",
+    "description": "Explore Kopi Tubruk brewing techniques.",
+    "difficulty": 1,
+    "icon_name": "flame.fill",
+    "image_name": null,
+    "category": "Stovetop & Traditional"
+  },
+  {
+    "method_id": "kyoto-cold-drip",
+    "name": "Kyoto Cold Drip",
+    "description": "Explore Kyoto Cold Drip brewing techniques.",
+    "difficulty": 3,
+    "icon_name": "snowflake",
+    "image_name": null,
+    "category": "Cold Brew"
+  },
+  {
+    "method_id": "melitta-pour-over",
+    "name": "Melitta Pour Over",
+    "description": "Explore Melitta Pour Over brewing techniques.",
+    "difficulty": 1,
+    "icon_name": "drop.fill",
+    "image_name": null,
+    "category": "Pour Over"
+  },
+  {
+    "method_id": "moka-pot",
+    "name": "Moka Pot",
+    "description": "Explore Moka Pot brewing techniques.",
+    "difficulty": 2,
+    "icon_name": "gauge.with.dots.needle.bottom.50percent",
+    "image_name": null,
+    "category": "Pressure"
+  },
+  {
+    "method_id": "neapolitan-flip",
+    "name": "Neapolitan Flip",
+    "description": "Explore Neapolitan Flip brewing techniques.",
+    "difficulty": 2,
+    "icon_name": "drop.degreesign.fill",
+    "image_name": null,
+    "category": "Stovetop & Traditional"
+  },
+  {
+    "method_id": "nel-drip",
+    "name": "Nel Drip",
+    "description": "Explore Nel Drip brewing techniques.",
+    "difficulty": 4,
+    "icon_name": "drop.fill",
+    "image_name": null,
+    "category": "Pour Over"
+  },
+  {
+    "method_id": "percolator",
+    "name": "Percolator",
+    "description": "Explore Percolator brewing techniques.",
+    "difficulty": 1,
+    "icon_name": "arrow.up.arrow.down.circle.fill",
+    "image_name": null,
+    "category": "Stovetop & Traditional"
+  },
+  {
+    "method_id": "siphon",
+    "name": "Siphon",
+    "description": "Explore Siphon brewing techniques.",
+    "difficulty": 4,
+    "icon_name": "bubbles.and.sparkles.fill",
+    "image_name": null,
+    "category": "Immersion"
+  },
+  {
+    "method_id": "south-indian-filter",
+    "name": "South Indian Filter",
+    "description": "Explore South Indian Filter brewing techniques.",
+    "difficulty": 2,
+    "icon_name": "drop.degreesign.fill",
+    "image_name": null,
+    "category": "Stovetop & Traditional"
+  },
+  {
+    "method_id": "turkish-coffee",
+    "name": "Turkish Coffee",
+    "description": "Explore Turkish Coffee brewing techniques.",
+    "difficulty": 3,
+    "icon_name": "flame.fill",
+    "image_name": null,
+    "category": "Stovetop & Traditional"
+  },
+  {
+    "method_id": "v60-pour-over",
+    "name": "V60 Pour Over",
+    "description": "Explore V60 Pour Over brewing techniques.",
+    "difficulty": 3,
+    "icon_name": "drop.fill",
+    "image_name": null,
+    "category": "Pour Over"
+  },
+  {
+    "method_id": "vietnamese-phin",
+    "name": "Vietnamese Phin",
+    "description": "Explore Vietnamese Phin brewing techniques.",
+    "difficulty": 1,
+    "icon_name": "drop.degreesign.fill",
+    "image_name": null,
+    "category": "Stovetop & Traditional"
+  }
+]

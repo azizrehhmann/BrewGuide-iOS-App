@@ -1,0 +1,1121 @@
+[
+  {
+    "bean_id": "v60-pour-over-standard-bean-1",
+    "technique_id": "v60-pour-over-standard",
+    "name": "Ethiopia Yirgacheffe (Light)",
+    "origin": "Ethiopia Yirgacheffe",
+    "process": "Washed",
+    "roast_level": "Light",
+    "flavour_notes": [
+      "Floral",
+      "Bergamot",
+      "Stone Fruit"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "v60-pour-over-standard-bean-2",
+    "technique_id": "v60-pour-over-standard",
+    "name": "Colombia Huila (Medium)",
+    "origin": "Colombia Huila",
+    "process": "Washed",
+    "roast_level": "Medium",
+    "flavour_notes": [
+      "Caramel",
+      "Red Apple",
+      "Milk Chocolate"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "v60-james-hoffmann-ultimate-bean-1",
+    "technique_id": "v60-james-hoffmann-ultimate",
+    "name": "Kenya AA Nyeri (Light-Medium)",
+    "origin": "Kenya AA Nyeri",
+    "process": "Washed",
+    "roast_level": "Light-Medium",
+    "flavour_notes": [
+      "Blackcurrant",
+      "Grapefruit",
+      "Brown Sugar"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "v60-james-hoffmann-ultimate-bean-2",
+    "technique_id": "v60-james-hoffmann-ultimate",
+    "name": "Guatemala Antigua (Medium)",
+    "origin": "Guatemala Antigua",
+    "process": "Washed",
+    "roast_level": "Medium",
+    "flavour_notes": [
+      "Chocolate",
+      "Hazelnut",
+      "Orange Zest"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "v60-tetsu-kasuya-46-method-bean-1",
+    "technique_id": "v60-tetsu-kasuya-46-method",
+    "name": "Brazil Cerrado (Medium-Dark)",
+    "origin": "Brazil Cerrado",
+    "process": "Natural",
+    "roast_level": "Medium-Dark",
+    "flavour_notes": [
+      "Nutty",
+      "Chocolate",
+      "Low Acidity"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "v60-tetsu-kasuya-46-method-bean-2",
+    "technique_id": "v60-tetsu-kasuya-46-method",
+    "name": "Sumatra Mandheling (Dark)",
+    "origin": "Sumatra Mandheling",
+    "process": "Wet-Hulled",
+    "roast_level": "Dark",
+    "flavour_notes": [
+      "Earthy",
+      "Spicy",
+      "Full Body",
+      "Cedar"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "v60-matt-winton-five-pour-bean-1",
+    "technique_id": "v60-matt-winton-five-pour",
+    "name": "Costa Rica Tarrazu (Medium)",
+    "origin": "Costa Rica Tarrazu",
+    "process": "Honey",
+    "roast_level": "Medium",
+    "flavour_notes": [
+      "Honey",
+      "Peach",
+      "Bright Acidity"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "v60-matt-winton-five-pour-bean-2",
+    "technique_id": "v60-matt-winton-five-pour",
+    "name": "Rwanda Nyamasheke (Light)",
+    "origin": "Rwanda Nyamasheke",
+    "process": "Washed",
+    "roast_level": "Light",
+    "flavour_notes": [
+      "Tea-like",
+      "Red Berry",
+      "Citrus"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "chemex-bean-1",
+    "technique_id": "chemex",
+    "name": "Ethiopia Yirgacheffe (Light)",
+    "origin": "Ethiopia Yirgacheffe",
+    "process": "Washed",
+    "roast_level": "Light",
+    "flavour_notes": [
+      "Floral",
+      "Bergamot",
+      "Stone Fruit"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "chemex-bean-2",
+    "technique_id": "chemex",
+    "name": "Colombia Huila (Medium)",
+    "origin": "Colombia Huila",
+    "process": "Washed",
+    "roast_level": "Medium",
+    "flavour_notes": [
+      "Caramel",
+      "Red Apple",
+      "Milk Chocolate"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "kalita-wave-bean-1",
+    "technique_id": "kalita-wave",
+    "name": "Kenya AA Nyeri (Light-Medium)",
+    "origin": "Kenya AA Nyeri",
+    "process": "Washed",
+    "roast_level": "Light-Medium",
+    "flavour_notes": [
+      "Blackcurrant",
+      "Grapefruit",
+      "Brown Sugar"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "kalita-wave-bean-2",
+    "technique_id": "kalita-wave",
+    "name": "Guatemala Antigua (Medium)",
+    "origin": "Guatemala Antigua",
+    "process": "Washed",
+    "roast_level": "Medium",
+    "flavour_notes": [
+      "Chocolate",
+      "Hazelnut",
+      "Orange Zest"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "nel-drip-flannel-drip-bean-1",
+    "technique_id": "nel-drip-flannel-drip",
+    "name": "Brazil Cerrado (Medium-Dark)",
+    "origin": "Brazil Cerrado",
+    "process": "Natural",
+    "roast_level": "Medium-Dark",
+    "flavour_notes": [
+      "Nutty",
+      "Chocolate",
+      "Low Acidity"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "nel-drip-flannel-drip-bean-2",
+    "technique_id": "nel-drip-flannel-drip",
+    "name": "Sumatra Mandheling (Dark)",
+    "origin": "Sumatra Mandheling",
+    "process": "Wet-Hulled",
+    "roast_level": "Dark",
+    "flavour_notes": [
+      "Earthy",
+      "Spicy",
+      "Full Body",
+      "Cedar"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "french-press-standard-bean-1",
+    "technique_id": "french-press-standard",
+    "name": "Costa Rica Tarrazu (Medium)",
+    "origin": "Costa Rica Tarrazu",
+    "process": "Honey",
+    "roast_level": "Medium",
+    "flavour_notes": [
+      "Honey",
+      "Peach",
+      "Bright Acidity"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "french-press-standard-bean-2",
+    "technique_id": "french-press-standard",
+    "name": "Rwanda Nyamasheke (Light)",
+    "origin": "Rwanda Nyamasheke",
+    "process": "Washed",
+    "roast_level": "Light",
+    "flavour_notes": [
+      "Tea-like",
+      "Red Berry",
+      "Citrus"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "french-press-james-hoffmann-bean-1",
+    "technique_id": "french-press-james-hoffmann",
+    "name": "Ethiopia Yirgacheffe (Light)",
+    "origin": "Ethiopia Yirgacheffe",
+    "process": "Washed",
+    "roast_level": "Light",
+    "flavour_notes": [
+      "Floral",
+      "Bergamot",
+      "Stone Fruit"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "french-press-james-hoffmann-bean-2",
+    "technique_id": "french-press-james-hoffmann",
+    "name": "Colombia Huila (Medium)",
+    "origin": "Colombia Huila",
+    "process": "Washed",
+    "roast_level": "Medium",
+    "flavour_notes": [
+      "Caramel",
+      "Red Apple",
+      "Milk Chocolate"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "clever-dripper-bean-1",
+    "technique_id": "clever-dripper",
+    "name": "Kenya AA Nyeri (Light-Medium)",
+    "origin": "Kenya AA Nyeri",
+    "process": "Washed",
+    "roast_level": "Light-Medium",
+    "flavour_notes": [
+      "Blackcurrant",
+      "Grapefruit",
+      "Brown Sugar"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "clever-dripper-bean-2",
+    "technique_id": "clever-dripper",
+    "name": "Guatemala Antigua (Medium)",
+    "origin": "Guatemala Antigua",
+    "process": "Washed",
+    "roast_level": "Medium",
+    "flavour_notes": [
+      "Chocolate",
+      "Hazelnut",
+      "Orange Zest"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "cold-brew-immersion-bean-1",
+    "technique_id": "cold-brew-immersion",
+    "name": "Brazil Cerrado (Medium-Dark)",
+    "origin": "Brazil Cerrado",
+    "process": "Natural",
+    "roast_level": "Medium-Dark",
+    "flavour_notes": [
+      "Nutty",
+      "Chocolate",
+      "Low Acidity"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "cold-brew-immersion-bean-2",
+    "technique_id": "cold-brew-immersion",
+    "name": "Sumatra Mandheling (Dark)",
+    "origin": "Sumatra Mandheling",
+    "process": "Wet-Hulled",
+    "roast_level": "Dark",
+    "flavour_notes": [
+      "Earthy",
+      "Spicy",
+      "Full Body",
+      "Cedar"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "japanese-iced-coffee-flash-brew-bean-1",
+    "technique_id": "japanese-iced-coffee-flash-brew",
+    "name": "Costa Rica Tarrazu (Medium)",
+    "origin": "Costa Rica Tarrazu",
+    "process": "Honey",
+    "roast_level": "Medium",
+    "flavour_notes": [
+      "Honey",
+      "Peach",
+      "Bright Acidity"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "japanese-iced-coffee-flash-brew-bean-2",
+    "technique_id": "japanese-iced-coffee-flash-brew",
+    "name": "Rwanda Nyamasheke (Light)",
+    "origin": "Rwanda Nyamasheke",
+    "process": "Washed",
+    "roast_level": "Light",
+    "flavour_notes": [
+      "Tea-like",
+      "Red Berry",
+      "Citrus"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "aeropress-standardupright-bean-1",
+    "technique_id": "aeropress-standardupright",
+    "name": "Ethiopia Yirgacheffe (Light)",
+    "origin": "Ethiopia Yirgacheffe",
+    "process": "Washed",
+    "roast_level": "Light",
+    "flavour_notes": [
+      "Floral",
+      "Bergamot",
+      "Stone Fruit"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "aeropress-standardupright-bean-2",
+    "technique_id": "aeropress-standardupright",
+    "name": "Colombia Huila (Medium)",
+    "origin": "Colombia Huila",
+    "process": "Washed",
+    "roast_level": "Medium",
+    "flavour_notes": [
+      "Caramel",
+      "Red Apple",
+      "Milk Chocolate"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "aeropress-inverted-method-bean-1",
+    "technique_id": "aeropress-inverted-method",
+    "name": "Kenya AA Nyeri (Light-Medium)",
+    "origin": "Kenya AA Nyeri",
+    "process": "Washed",
+    "roast_level": "Light-Medium",
+    "flavour_notes": [
+      "Blackcurrant",
+      "Grapefruit",
+      "Brown Sugar"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "aeropress-inverted-method-bean-2",
+    "technique_id": "aeropress-inverted-method",
+    "name": "Guatemala Antigua (Medium)",
+    "origin": "Guatemala Antigua",
+    "process": "Washed",
+    "roast_level": "Medium",
+    "flavour_notes": [
+      "Chocolate",
+      "Hazelnut",
+      "Orange Zest"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "aeropress-wac-2025-winner-némo-pop-bean-1",
+    "technique_id": "aeropress-wac-2025-winner-némo-pop",
+    "name": "Brazil Cerrado (Medium-Dark)",
+    "origin": "Brazil Cerrado",
+    "process": "Natural",
+    "roast_level": "Medium-Dark",
+    "flavour_notes": [
+      "Nutty",
+      "Chocolate",
+      "Low Acidity"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "aeropress-wac-2025-winner-némo-pop-bean-2",
+    "technique_id": "aeropress-wac-2025-winner-némo-pop",
+    "name": "Sumatra Mandheling (Dark)",
+    "origin": "Sumatra Mandheling",
+    "process": "Wet-Hulled",
+    "roast_level": "Dark",
+    "flavour_notes": [
+      "Earthy",
+      "Spicy",
+      "Full Body",
+      "Cedar"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "aeropress-wac-2024-winner-george-stanica-bean-1",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "name": "Costa Rica Tarrazu (Medium)",
+    "origin": "Costa Rica Tarrazu",
+    "process": "Honey",
+    "roast_level": "Medium",
+    "flavour_notes": [
+      "Honey",
+      "Peach",
+      "Bright Acidity"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "aeropress-wac-2024-winner-george-stanica-bean-2",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "name": "Rwanda Nyamasheke (Light)",
+    "origin": "Rwanda Nyamasheke",
+    "process": "Washed",
+    "roast_level": "Light",
+    "flavour_notes": [
+      "Tea-like",
+      "Red Berry",
+      "Citrus"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "moka-pot-stovetop-espresso-bean-1",
+    "technique_id": "moka-pot-stovetop-espresso",
+    "name": "Ethiopia Yirgacheffe (Light)",
+    "origin": "Ethiopia Yirgacheffe",
+    "process": "Washed",
+    "roast_level": "Light",
+    "flavour_notes": [
+      "Floral",
+      "Bergamot",
+      "Stone Fruit"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "moka-pot-stovetop-espresso-bean-2",
+    "technique_id": "moka-pot-stovetop-espresso",
+    "name": "Colombia Huila (Medium)",
+    "origin": "Colombia Huila",
+    "process": "Washed",
+    "roast_level": "Medium",
+    "flavour_notes": [
+      "Caramel",
+      "Red Apple",
+      "Milk Chocolate"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "espresso-machine-bean-1",
+    "technique_id": "espresso-machine",
+    "name": "Kenya AA Nyeri (Light-Medium)",
+    "origin": "Kenya AA Nyeri",
+    "process": "Washed",
+    "roast_level": "Light-Medium",
+    "flavour_notes": [
+      "Blackcurrant",
+      "Grapefruit",
+      "Brown Sugar"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "espresso-machine-bean-2",
+    "technique_id": "espresso-machine",
+    "name": "Guatemala Antigua (Medium)",
+    "origin": "Guatemala Antigua",
+    "process": "Washed",
+    "roast_level": "Medium",
+    "flavour_notes": [
+      "Chocolate",
+      "Hazelnut",
+      "Orange Zest"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "turkish-coffee-traditional-bean-1",
+    "technique_id": "turkish-coffee-traditional",
+    "name": "Brazil Cerrado (Medium-Dark)",
+    "origin": "Brazil Cerrado",
+    "process": "Natural",
+    "roast_level": "Medium-Dark",
+    "flavour_notes": [
+      "Nutty",
+      "Chocolate",
+      "Low Acidity"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "turkish-coffee-traditional-bean-2",
+    "technique_id": "turkish-coffee-traditional",
+    "name": "Sumatra Mandheling (Dark)",
+    "origin": "Sumatra Mandheling",
+    "process": "Wet-Hulled",
+    "roast_level": "Dark",
+    "flavour_notes": [
+      "Earthy",
+      "Spicy",
+      "Full Body",
+      "Cedar"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "turkish-coffee-specialty-competition-bean-1",
+    "technique_id": "turkish-coffee-specialty-competition",
+    "name": "Costa Rica Tarrazu (Medium)",
+    "origin": "Costa Rica Tarrazu",
+    "process": "Honey",
+    "roast_level": "Medium",
+    "flavour_notes": [
+      "Honey",
+      "Peach",
+      "Bright Acidity"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "turkish-coffee-specialty-competition-bean-2",
+    "technique_id": "turkish-coffee-specialty-competition",
+    "name": "Rwanda Nyamasheke (Light)",
+    "origin": "Rwanda Nyamasheke",
+    "process": "Washed",
+    "roast_level": "Light",
+    "flavour_notes": [
+      "Tea-like",
+      "Red Berry",
+      "Citrus"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "siphon-vacuum-brewer-bean-1",
+    "technique_id": "siphon-vacuum-brewer",
+    "name": "Ethiopia Yirgacheffe (Light)",
+    "origin": "Ethiopia Yirgacheffe",
+    "process": "Washed",
+    "roast_level": "Light",
+    "flavour_notes": [
+      "Floral",
+      "Bergamot",
+      "Stone Fruit"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "siphon-vacuum-brewer-bean-2",
+    "technique_id": "siphon-vacuum-brewer",
+    "name": "Colombia Huila (Medium)",
+    "origin": "Colombia Huila",
+    "process": "Washed",
+    "roast_level": "Medium",
+    "flavour_notes": [
+      "Caramel",
+      "Red Apple",
+      "Milk Chocolate"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "vietnamese-phin-filter-bean-1",
+    "technique_id": "vietnamese-phin-filter",
+    "name": "Kenya AA Nyeri (Light-Medium)",
+    "origin": "Kenya AA Nyeri",
+    "process": "Washed",
+    "roast_level": "Light-Medium",
+    "flavour_notes": [
+      "Blackcurrant",
+      "Grapefruit",
+      "Brown Sugar"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "vietnamese-phin-filter-bean-2",
+    "technique_id": "vietnamese-phin-filter",
+    "name": "Guatemala Antigua (Medium)",
+    "origin": "Guatemala Antigua",
+    "process": "Washed",
+    "roast_level": "Medium",
+    "flavour_notes": [
+      "Chocolate",
+      "Hazelnut",
+      "Orange Zest"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "drip-coffee-maker-automatic-bean-1",
+    "technique_id": "drip-coffee-maker-automatic",
+    "name": "Brazil Cerrado (Medium-Dark)",
+    "origin": "Brazil Cerrado",
+    "process": "Natural",
+    "roast_level": "Medium-Dark",
+    "flavour_notes": [
+      "Nutty",
+      "Chocolate",
+      "Low Acidity"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "drip-coffee-maker-automatic-bean-2",
+    "technique_id": "drip-coffee-maker-automatic",
+    "name": "Sumatra Mandheling (Dark)",
+    "origin": "Sumatra Mandheling",
+    "process": "Wet-Hulled",
+    "roast_level": "Dark",
+    "flavour_notes": [
+      "Earthy",
+      "Spicy",
+      "Full Body",
+      "Cedar"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "percolator-stovetopelectric-bean-1",
+    "technique_id": "percolator-stovetopelectric",
+    "name": "Costa Rica Tarrazu (Medium)",
+    "origin": "Costa Rica Tarrazu",
+    "process": "Honey",
+    "roast_level": "Medium",
+    "flavour_notes": [
+      "Honey",
+      "Peach",
+      "Bright Acidity"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "percolator-stovetopelectric-bean-2",
+    "technique_id": "percolator-stovetopelectric",
+    "name": "Rwanda Nyamasheke (Light)",
+    "origin": "Rwanda Nyamasheke",
+    "process": "Washed",
+    "roast_level": "Light",
+    "flavour_notes": [
+      "Tea-like",
+      "Red Berry",
+      "Citrus"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "aeropress-james-hoffmann-best-recipe-bean-1",
+    "technique_id": "aeropress-james-hoffmann-best-recipe",
+    "name": "Ethiopia Yirgacheffe (Light)",
+    "origin": "Ethiopia Yirgacheffe",
+    "process": "Washed",
+    "roast_level": "Light",
+    "flavour_notes": [
+      "Floral",
+      "Bergamot",
+      "Stone Fruit"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "aeropress-james-hoffmann-best-recipe-bean-2",
+    "technique_id": "aeropress-james-hoffmann-best-recipe",
+    "name": "Colombia Huila (Medium)",
+    "origin": "Colombia Huila",
+    "process": "Washed",
+    "roast_level": "Medium",
+    "flavour_notes": [
+      "Caramel",
+      "Red Apple",
+      "Milk Chocolate"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "osmotic-flow-v60-bean-1",
+    "technique_id": "osmotic-flow-v60",
+    "name": "Kenya AA Nyeri (Light-Medium)",
+    "origin": "Kenya AA Nyeri",
+    "process": "Washed",
+    "roast_level": "Light-Medium",
+    "flavour_notes": [
+      "Blackcurrant",
+      "Grapefruit",
+      "Brown Sugar"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "osmotic-flow-v60-bean-2",
+    "technique_id": "osmotic-flow-v60",
+    "name": "Guatemala Antigua (Medium)",
+    "origin": "Guatemala Antigua",
+    "process": "Washed",
+    "roast_level": "Medium",
+    "flavour_notes": [
+      "Chocolate",
+      "Hazelnut",
+      "Orange Zest"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "cupping-professional-tasting-bean-1",
+    "technique_id": "cupping-professional-tasting",
+    "name": "Brazil Cerrado (Medium-Dark)",
+    "origin": "Brazil Cerrado",
+    "process": "Natural",
+    "roast_level": "Medium-Dark",
+    "flavour_notes": [
+      "Nutty",
+      "Chocolate",
+      "Low Acidity"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "cupping-professional-tasting-bean-2",
+    "technique_id": "cupping-professional-tasting",
+    "name": "Sumatra Mandheling (Dark)",
+    "origin": "Sumatra Mandheling",
+    "process": "Wet-Hulled",
+    "roast_level": "Dark",
+    "flavour_notes": [
+      "Earthy",
+      "Spicy",
+      "Full Body",
+      "Cedar"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "south-indian-filter-coffee-kaapi-bean-1",
+    "technique_id": "south-indian-filter-coffee-kaapi",
+    "name": "Costa Rica Tarrazu (Medium)",
+    "origin": "Costa Rica Tarrazu",
+    "process": "Honey",
+    "roast_level": "Medium",
+    "flavour_notes": [
+      "Honey",
+      "Peach",
+      "Bright Acidity"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "south-indian-filter-coffee-kaapi-bean-2",
+    "technique_id": "south-indian-filter-coffee-kaapi",
+    "name": "Rwanda Nyamasheke (Light)",
+    "origin": "Rwanda Nyamasheke",
+    "process": "Washed",
+    "roast_level": "Light",
+    "flavour_notes": [
+      "Tea-like",
+      "Red Berry",
+      "Citrus"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "kyoto-style-slow-drip-cold-drip-tower-bean-1",
+    "technique_id": "kyoto-style-slow-drip-cold-drip-tower",
+    "name": "Ethiopia Yirgacheffe (Light)",
+    "origin": "Ethiopia Yirgacheffe",
+    "process": "Washed",
+    "roast_level": "Light",
+    "flavour_notes": [
+      "Floral",
+      "Bergamot",
+      "Stone Fruit"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "kyoto-style-slow-drip-cold-drip-tower-bean-2",
+    "technique_id": "kyoto-style-slow-drip-cold-drip-tower",
+    "name": "Colombia Huila (Medium)",
+    "origin": "Colombia Huila",
+    "process": "Washed",
+    "roast_level": "Medium",
+    "flavour_notes": [
+      "Caramel",
+      "Red Apple",
+      "Milk Chocolate"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "cowboy-coffee-bean-1",
+    "technique_id": "cowboy-coffee",
+    "name": "Kenya AA Nyeri (Light-Medium)",
+    "origin": "Kenya AA Nyeri",
+    "process": "Washed",
+    "roast_level": "Light-Medium",
+    "flavour_notes": [
+      "Blackcurrant",
+      "Grapefruit",
+      "Brown Sugar"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "cowboy-coffee-bean-2",
+    "technique_id": "cowboy-coffee",
+    "name": "Guatemala Antigua (Medium)",
+    "origin": "Guatemala Antigua",
+    "process": "Washed",
+    "roast_level": "Medium",
+    "flavour_notes": [
+      "Chocolate",
+      "Hazelnut",
+      "Orange Zest"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "kopi-tubruk-indonesian-bean-1",
+    "technique_id": "kopi-tubruk-indonesian",
+    "name": "Brazil Cerrado (Medium-Dark)",
+    "origin": "Brazil Cerrado",
+    "process": "Natural",
+    "roast_level": "Medium-Dark",
+    "flavour_notes": [
+      "Nutty",
+      "Chocolate",
+      "Low Acidity"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "kopi-tubruk-indonesian-bean-2",
+    "technique_id": "kopi-tubruk-indonesian",
+    "name": "Sumatra Mandheling (Dark)",
+    "origin": "Sumatra Mandheling",
+    "process": "Wet-Hulled",
+    "roast_level": "Dark",
+    "flavour_notes": [
+      "Earthy",
+      "Spicy",
+      "Full Body",
+      "Cedar"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "hario-switch-immersion-dripper-bean-1",
+    "technique_id": "hario-switch-immersion-dripper",
+    "name": "Costa Rica Tarrazu (Medium)",
+    "origin": "Costa Rica Tarrazu",
+    "process": "Honey",
+    "roast_level": "Medium",
+    "flavour_notes": [
+      "Honey",
+      "Peach",
+      "Bright Acidity"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "hario-switch-immersion-dripper-bean-2",
+    "technique_id": "hario-switch-immersion-dripper",
+    "name": "Rwanda Nyamasheke (Light)",
+    "origin": "Rwanda Nyamasheke",
+    "process": "Washed",
+    "roast_level": "Light",
+    "flavour_notes": [
+      "Tea-like",
+      "Red Berry",
+      "Citrus"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "neapolitan-flip-pot-napoletana-bean-1",
+    "technique_id": "neapolitan-flip-pot-napoletana",
+    "name": "Ethiopia Yirgacheffe (Light)",
+    "origin": "Ethiopia Yirgacheffe",
+    "process": "Washed",
+    "roast_level": "Light",
+    "flavour_notes": [
+      "Floral",
+      "Bergamot",
+      "Stone Fruit"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "neapolitan-flip-pot-napoletana-bean-2",
+    "technique_id": "neapolitan-flip-pot-napoletana",
+    "name": "Colombia Huila (Medium)",
+    "origin": "Colombia Huila",
+    "process": "Washed",
+    "roast_level": "Medium",
+    "flavour_notes": [
+      "Caramel",
+      "Red Apple",
+      "Milk Chocolate"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "single-serve-pod-keurig-nespresso-bean-1",
+    "technique_id": "single-serve-pod-keurig-nespresso",
+    "name": "Kenya AA Nyeri (Light-Medium)",
+    "origin": "Kenya AA Nyeri",
+    "process": "Washed",
+    "roast_level": "Light-Medium",
+    "flavour_notes": [
+      "Blackcurrant",
+      "Grapefruit",
+      "Brown Sugar"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "single-serve-pod-keurig-nespresso-bean-2",
+    "technique_id": "single-serve-pod-keurig-nespresso",
+    "name": "Guatemala Antigua (Medium)",
+    "origin": "Guatemala Antigua",
+    "process": "Washed",
+    "roast_level": "Medium",
+    "flavour_notes": [
+      "Chocolate",
+      "Hazelnut",
+      "Orange Zest"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "nitro-cold-brew-bean-1",
+    "technique_id": "nitro-cold-brew",
+    "name": "Brazil Cerrado (Medium-Dark)",
+    "origin": "Brazil Cerrado",
+    "process": "Natural",
+    "roast_level": "Medium-Dark",
+    "flavour_notes": [
+      "Nutty",
+      "Chocolate",
+      "Low Acidity"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "nitro-cold-brew-bean-2",
+    "technique_id": "nitro-cold-brew",
+    "name": "Sumatra Mandheling (Dark)",
+    "origin": "Sumatra Mandheling",
+    "process": "Wet-Hulled",
+    "roast_level": "Dark",
+    "flavour_notes": [
+      "Earthy",
+      "Spicy",
+      "Full Body",
+      "Cedar"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "scott-rao-v60-technique-bean-1",
+    "technique_id": "scott-rao-v60-technique",
+    "name": "Costa Rica Tarrazu (Medium)",
+    "origin": "Costa Rica Tarrazu",
+    "process": "Honey",
+    "roast_level": "Medium",
+    "flavour_notes": [
+      "Honey",
+      "Peach",
+      "Bright Acidity"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "scott-rao-v60-technique-bean-2",
+    "technique_id": "scott-rao-v60-technique",
+    "name": "Rwanda Nyamasheke (Light)",
+    "origin": "Rwanda Nyamasheke",
+    "process": "Washed",
+    "roast_level": "Light",
+    "flavour_notes": [
+      "Tea-like",
+      "Red Berry",
+      "Citrus"
+    ],
+    "match_score": 80,
+    "notes": null
+  },
+  {
+    "bean_id": "melitta-pour-over-classic-flat-bottom-bean-1",
+    "technique_id": "melitta-pour-over-classic-flat-bottom",
+    "name": "Ethiopia Yirgacheffe (Light)",
+    "origin": "Ethiopia Yirgacheffe",
+    "process": "Washed",
+    "roast_level": "Light",
+    "flavour_notes": [
+      "Floral",
+      "Bergamot",
+      "Stone Fruit"
+    ],
+    "match_score": 90,
+    "notes": null
+  },
+  {
+    "bean_id": "melitta-pour-over-classic-flat-bottom-bean-2",
+    "technique_id": "melitta-pour-over-classic-flat-bottom",
+    "name": "Colombia Huila (Medium)",
+    "origin": "Colombia Huila",
+    "process": "Washed",
+    "roast_level": "Medium",
+    "flavour_notes": [
+      "Caramel",
+      "Red Apple",
+      "Milk Chocolate"
+    ],
+    "match_score": 80,
+    "notes": null
+  }
+]

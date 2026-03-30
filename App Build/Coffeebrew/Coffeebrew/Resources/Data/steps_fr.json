@@ -1,0 +1,3032 @@
+[
+  {
+    "step_id": "v60-james-hoffmann-ultimate-step-1",
+    "technique_id": "v60-james-hoffmann-ultimate",
+    "step_number": 1,
+    "title": "0:00",
+    "instruction": "Ajouter le café moulu dans le V60 ; creuser un puits au centre avec le doigt",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-james-hoffmann-ultimate-step-2",
+    "technique_id": "v60-james-hoffmann-ultimate",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "Démarrer le chronomètre ; verser {water}g d'eau (2x la dose) en spirale du centre vers l'extérieur",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 30.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-james-hoffmann-ultimate-step-3",
+    "technique_id": "v60-james-hoffmann-ultimate",
+    "step_number": 3,
+    "title": "0:10",
+    "instruction": "Tourner le V60 en mouvement circulaire jusqu'à ce que la bouillie soit uniforme ; pas de grumeaux secs",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-james-hoffmann-ultimate-step-4",
+    "technique_id": "v60-james-hoffmann-ultimate",
+    "step_number": 4,
+    "title": "0:10-0:45",
+    "instruction": "Laisser le café pré-infuser (le CO₂ s'échappe) ; attendre jusqu'à 45 secondes",
+    "duration_seconds": 35,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-james-hoffmann-ultimate-step-5",
+    "technique_id": "v60-james-hoffmann-ultimate",
+    "step_number": 5,
+    "title": "0:45",
+    "instruction": "Commencer la versée principale : verser en spirale vigoureusement pour atteindre {water}g à 1:15 (60 % du total)",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 120.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-james-hoffmann-ultimate-step-6",
+    "technique_id": "v60-james-hoffmann-ultimate",
+    "step_number": 6,
+    "title": "1:15",
+    "instruction": "Deuxième versée lente : verser doucement l'eau restante pour atteindre {water_total}g à 1:45",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 100.5,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-james-hoffmann-ultimate-step-7",
+    "technique_id": "v60-james-hoffmann-ultimate",
+    "step_number": 7,
+    "title": "1:45",
+    "instruction": "Remuer une fois dans le sens horaire, une fois dans le sens antihoraire avec une cuillère (décolle la mouture des parois)",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-james-hoffmann-ultimate-step-8",
+    "technique_id": "v60-james-hoffmann-ultimate",
+    "step_number": 8,
+    "title": "1:50",
+    "instruction": "Laisser le V60 s'écouler légèrement, puis effectuer un dernier tourbillon délicat",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-james-hoffmann-ultimate-step-9",
+    "technique_id": "v60-james-hoffmann-ultimate",
+    "step_number": 9,
+    "title": "1:55-3:30",
+    "instruction": "Attendre l'écoulement complet ; viser un lit de café plat ; temps total ~3:30",
+    "duration_seconds": 95,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-tetsu-kasuya-46-method-step-1",
+    "technique_id": "v60-tetsu-kasuya-46-method",
+    "step_number": 1,
+    "title": "0:00",
+    "instruction": "Verser {water}g d'eau lentement en cercle concentrique pendant 10 secondes (1re versée = 40 % partie 1)",
+    "duration_seconds": 10,
+    "water_volume_ml_base": 45.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-tetsu-kasuya-46-method-step-2",
+    "technique_id": "v60-tetsu-kasuya-46-method",
+    "step_number": 2,
+    "title": "0:00-0:45",
+    "instruction": "Attendre que l'eau s'écoule complètement avant la prochaine versée",
+    "duration_seconds": 45,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-tetsu-kasuya-46-method-step-3",
+    "technique_id": "v60-tetsu-kasuya-46-method",
+    "step_number": 3,
+    "title": "0:45",
+    "instruction": "Verser {water}g d'eau (2e versée = 40 % partie 2) ; attendre l'écoulement complet",
+    "duration_seconds": 40,
+    "water_volume_ml_base": 45.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-tetsu-kasuya-46-method-step-4",
+    "technique_id": "v60-tetsu-kasuya-46-method",
+    "step_number": 4,
+    "title": "1:25",
+    "instruction": "Verser {water}g d'eau (3e versée = 60 % partie 1) ; attendre l'écoulement complet",
+    "duration_seconds": 40,
+    "water_volume_ml_base": 45.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-tetsu-kasuya-46-method-step-5",
+    "technique_id": "v60-tetsu-kasuya-46-method",
+    "step_number": 5,
+    "title": "2:05",
+    "instruction": "Verser {water}g d'eau (4e versée = 60 % partie 2) ; attendre l'écoulement complet",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 45.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-tetsu-kasuya-46-method-step-6",
+    "technique_id": "v60-tetsu-kasuya-46-method",
+    "step_number": 6,
+    "title": "2:35",
+    "instruction": "Verser {water}g d'eau (5e versée = 60 % partie 3) ; attendre l'écoulement complet",
+    "duration_seconds": 55,
+    "water_volume_ml_base": 45.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-tetsu-kasuya-46-method-step-7",
+    "technique_id": "v60-tetsu-kasuya-46-method",
+    "step_number": 7,
+    "title": "3:30",
+    "instruction": "Extraction terminée ; retirer le V60 et servir",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-james-hoffmann-step-1",
+    "technique_id": "french-press-james-hoffmann",
+    "step_number": 1,
+    "title": "0:00",
+    "instruction": "Ajouter {coffee}g de café à mouture moyenne dans la cafetière à piston (ne PAS utiliser une mouture grossière)",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-james-hoffmann-step-2",
+    "technique_id": "french-press-james-hoffmann",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "Démarrer le chronomètre ; verser la totalité des {water_total}g d'eau en une seule fois ; saturer toute la mouture uniformément",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 250.5,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-james-hoffmann-step-3",
+    "technique_id": "french-press-james-hoffmann",
+    "step_number": 3,
+    "title": "0:00-4:00",
+    "instruction": "Attendre 4 minutes SANS couvercle ; ne pas toucher. Une croûte se formera en surface",
+    "duration_seconds": 240,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-james-hoffmann-step-4",
+    "technique_id": "french-press-james-hoffmann",
+    "step_number": 4,
+    "title": "4:00",
+    "instruction": "Briser la croûte en remuant doucement (sens horaire + antihoraire)",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-james-hoffmann-step-5",
+    "technique_id": "french-press-james-hoffmann",
+    "step_number": 5,
+    "title": "4:15",
+    "instruction": "Utiliser deux cuillères pour écumer la mousse et les particules flottantes en surface",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-james-hoffmann-step-6",
+    "technique_id": "french-press-james-hoffmann",
+    "step_number": 6,
+    "title": "4:30",
+    "instruction": "Mettre le couvercle (piston NON enfoncé) ; attendre encore 5-8 minutes",
+    "duration_seconds": 390,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-james-hoffmann-step-7",
+    "technique_id": "french-press-james-hoffmann",
+    "step_number": 7,
+    "title": "9:00-12:00",
+    "instruction": "Pousser le piston doucement UNIQUEMENT juste en dessous de la surface (pas jusqu'au fond)",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-james-hoffmann-step-8",
+    "technique_id": "french-press-james-hoffmann",
+    "step_number": 8,
+    "title": "9:00-12:00",
+    "instruction": "Verser doucement dans la tasse ; laisser les ~20 derniers ml pour ne pas déranger la mouture déposée",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2025-winner-némo-pop-step-1",
+    "technique_id": "aeropress-wac-2025-winner-némo-pop",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Verser d'abord {water}g d'eau de contournement à 50°C dans la carafe",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 32.1,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2025-winner-némo-pop-step-2",
+    "technique_id": "aeropress-wac-2025-winner-némo-pop",
+    "step_number": 2,
+    "title": "Prep",
+    "instruction": "Moudre le café (faible vitesse de rotation) ; souffler la balle et tamiser les fines à 200μm",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2025-winner-némo-pop-step-3",
+    "technique_id": "aeropress-wac-2025-winner-némo-pop",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "Placer l'AeroPress à la verticale sur la carafe ; ajouter le café moulu tamisé dans la chambre",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2025-winner-némo-pop-step-4",
+    "technique_id": "aeropress-wac-2025-winner-némo-pop",
+    "step_number": 4,
+    "title": "0:00",
+    "instruction": "Verser {water}g d'eau à 84°C dans l'AeroPress ; mouiller toute la mouture",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 50.4,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2025-winner-némo-pop-step-5",
+    "technique_id": "aeropress-wac-2025-winner-némo-pop",
+    "step_number": 5,
+    "title": "0:25",
+    "instruction": "Remuer en motif Nord-Sud-Nord-Sud puis Ouest-Est-Ouest-Est",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2025-winner-némo-pop-step-6",
+    "technique_id": "aeropress-wac-2025-winner-némo-pop",
+    "step_number": 6,
+    "title": "0:50",
+    "instruction": "Commencer à presser doucement pendant environ 20 secondes",
+    "duration_seconds": 20,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2025-winner-némo-pop-step-7",
+    "technique_id": "aeropress-wac-2025-winner-némo-pop",
+    "step_number": 7,
+    "title": "1:10",
+    "instruction": "Pressage terminé ; le café se mélange avec l'eau de contournement dans la carafe. Servir.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-1",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Placer l'AeroPress inversé au repère 4 ; ajouter {coffee}g de café dans la chambre",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-2",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "1re versée : Verser {water}g d'eau à l'aide d'un Melodrip (5-6 secondes)",
+    "duration_seconds": 6,
+    "water_volume_ml_base": 41.5,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-3",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 3,
+    "title": "0:06-0:30",
+    "instruction": "Attendre ; laisser le café pré-infuser",
+    "duration_seconds": 24,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-4",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 4,
+    "title": "0:30",
+    "instruction": "2e versée : Verser {water}g d'eau supplémentaire (total {water_total}g) avec le Melodrip (~10 sec)",
+    "duration_seconds": 10,
+    "water_volume_ml_base": 66.5,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-5",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 5,
+    "title": "0:45",
+    "instruction": "Remuer doucement en motif N-S-E-O pendant 10 secondes",
+    "duration_seconds": 10,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-6",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 6,
+    "title": "1:00",
+    "instruction": "Rincer le filtre (1x Aesir) ; éteindre la bouilloire et retirer le couvercle",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-7",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 7,
+    "title": "1:20",
+    "instruction": "Fermer l'AeroPress ; retirer l'air délicatement (~10 secondes)",
+    "duration_seconds": 10,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-8",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 8,
+    "title": "1:30",
+    "instruction": "Tourner doucement l'AeroPress ; placer sur le serveur",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-9",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 9,
+    "title": "1:35",
+    "instruction": "Commencer à presser doucement ; viser 76-79g en sortie en 30-40 secondes",
+    "duration_seconds": 35,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-10",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 10,
+    "title": "2:10",
+    "instruction": "Ajouter de l'eau chaude de la bouilloire jusqu'à ~130-135g au total ; ajouter 20-30g d'eau à température ambiante à 0ppm",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "chemex-step-1",
+    "technique_id": "chemex",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Placer le filtre Chemex (3 épaisseurs vers le bec verseur) ; rincer à l'eau chaude ; jeter l'eau",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "chemex-step-2",
+    "technique_id": "chemex",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "Ajouter le café moulu ; secouer doucement pour niveler. Démarrer le chronomètre.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "chemex-step-3",
+    "technique_id": "chemex",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "Verser {water}g d'eau pour la pré-infusion ; mouiller toute la mouture uniformément en spirale centrale",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 45.0,
+    "image_name": null
+  },
+  {
+    "step_id": "chemex-step-4",
+    "technique_id": "chemex",
+    "step_number": 4,
+    "title": "0:00-0:45",
+    "instruction": "Attendre 30-45 secondes pour la pré-infusion (le café libère du CO₂ et gonfle)",
+    "duration_seconds": 38,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "chemex-step-5",
+    "technique_id": "chemex",
+    "step_number": 5,
+    "title": "0:45",
+    "instruction": "Commencer la versée principale : spirale lente du centre vers l'extérieur ; éviter les bords du filtre",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "chemex-step-6",
+    "technique_id": "chemex",
+    "step_number": 6,
+    "title": "0:45-2:45",
+    "instruction": "Continuer à verser régulièrement pour atteindre {water_total}g au total ; faire une pause si proche du bord",
+    "duration_seconds": 120,
+    "water_volume_ml_base": 180.0,
+    "image_name": null
+  },
+  {
+    "step_id": "chemex-step-7",
+    "technique_id": "chemex",
+    "step_number": 7,
+    "title": "2:45-4:00",
+    "instruction": "Laisser l'écoulement complet ; viser un temps total de 3:30-4:30",
+    "duration_seconds": 75,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "chemex-step-8",
+    "technique_id": "chemex",
+    "step_number": 8,
+    "title": "4:00",
+    "instruction": "Retirer le filtre et jeter ; servir immédiatement",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "moka-pot-stovetop-espresso-step-1",
+    "technique_id": "moka-pot-stovetop-espresso",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Faire bouillir l'eau dans une bouilloire d'abord (l'eau préchauffée réduit l'extraction amère)",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "moka-pot-stovetop-espresso-step-2",
+    "technique_id": "moka-pot-stovetop-espresso",
+    "step_number": 2,
+    "title": "Step 1",
+    "instruction": "Remplir la chambre inférieure avec {water_total}g d'eau chaude juste EN DESSOUS de la soupape de sécurité",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 150.0,
+    "image_name": null
+  },
+  {
+    "step_id": "moka-pot-stovetop-espresso-step-3",
+    "technique_id": "moka-pot-stovetop-espresso",
+    "step_number": 3,
+    "title": "Step 2",
+    "instruction": "Remplir le panier filtre de café finement moulu ; niveler sans tasser",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "moka-pot-stovetop-espresso-step-4",
+    "technique_id": "moka-pot-stovetop-espresso",
+    "step_number": 4,
+    "title": "Step 3",
+    "instruction": "Assembler la cafetière Moka ; utiliser un torchon pour tenir la chambre inférieure chaude",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "moka-pot-stovetop-espresso-step-5",
+    "technique_id": "moka-pot-stovetop-espresso",
+    "step_number": 5,
+    "title": "Step 4",
+    "instruction": "Placer sur la cuisinière à feu DOUX à MOYEN ; laisser le couvercle ouvert pour surveiller",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "moka-pot-stovetop-espresso-step-6",
+    "technique_id": "moka-pot-stovetop-espresso",
+    "step_number": 6,
+    "title": "Step 5",
+    "instruction": "Le café commence à couler dans la chambre supérieure ; le flux doit être couleur miel",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "moka-pot-stovetop-espresso-step-7",
+    "technique_id": "moka-pot-stovetop-espresso",
+    "step_number": 7,
+    "title": "Step 6",
+    "instruction": "Quand les crachotements/gargouillements commencent, retirer immédiatement du feu",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "moka-pot-stovetop-espresso-step-8",
+    "technique_id": "moka-pot-stovetop-espresso",
+    "step_number": 8,
+    "title": "Step 7",
+    "instruction": "Refroidir la chambre inférieure sous l'eau froide courante pour arrêter l'extraction",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "moka-pot-stovetop-espresso-step-9",
+    "technique_id": "moka-pot-stovetop-espresso",
+    "step_number": 9,
+    "title": "Step 8",
+    "instruction": "Servir immédiatement ; peut être dilué ou additionné de lait moussé",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-specialty-competition-step-1",
+    "technique_id": "turkish-coffee-specialty-competition",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Utiliser un café de spécialité à torréfaction légère à moyenne ; mouture entre turque et espresso",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-specialty-competition-step-2",
+    "technique_id": "turkish-coffee-specialty-competition",
+    "step_number": 2,
+    "title": "Step 1",
+    "instruction": "Ajouter {water_total}g d'eau tiède (60-70°C) dans le cezve en cuivre",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 150.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-specialty-competition-step-3",
+    "technique_id": "turkish-coffee-specialty-competition",
+    "step_number": 3,
+    "title": "Step 2",
+    "instruction": "Ajouter {coffee}g de café finement moulu sur l'eau",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-specialty-competition-step-4",
+    "technique_id": "turkish-coffee-specialty-competition",
+    "step_number": 4,
+    "title": "Step 3",
+    "instruction": "Remuer doucement avec une palette en bois jusqu'à ce que le café soit saturé et mélangé",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-specialty-competition-step-5",
+    "technique_id": "turkish-coffee-specialty-competition",
+    "step_number": 5,
+    "title": "Step 4",
+    "instruction": "Placer sur feu très doux (flamme de gaz, chauffe-sable ou micro-brûleur)",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-specialty-competition-step-6",
+    "technique_id": "turkish-coffee-specialty-competition",
+    "step_number": 6,
+    "title": "Step 5",
+    "instruction": "Surveiller attentivement ; la mousse commencera à se former et à monter",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-specialty-competition-step-7",
+    "technique_id": "turkish-coffee-specialty-competition",
+    "step_number": 7,
+    "title": "Step 6",
+    "instruction": "Quand la mousse atteint le bord, retirer du feu (UNE SEULE montée)",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-specialty-competition-step-8",
+    "technique_id": "turkish-coffee-specialty-competition",
+    "step_number": 8,
+    "title": "Step 7",
+    "instruction": "Verser lentement dans une tasse à demitasse pour préserver la couche de mousse",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-specialty-competition-step-9",
+    "technique_id": "turkish-coffee-specialty-competition",
+    "step_number": 9,
+    "title": "Step 8",
+    "instruction": "Attendre 1-2 minutes que la mouture se dépose ; boire lentement",
+    "duration_seconds": 90,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cold-brew-immersion-step-1",
+    "technique_id": "cold-brew-immersion",
+    "step_number": 1,
+    "title": "Step 1",
+    "instruction": "Moudre le café très grossièrement (comme du sucre brut ou de la semoule de maïs grossière)",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cold-brew-immersion-step-2",
+    "technique_id": "cold-brew-immersion",
+    "step_number": 2,
+    "title": "Step 2",
+    "instruction": "Ajouter le café dans un bocal Mason, une cafetière à piston ou un pichet à infusion froide",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cold-brew-immersion-step-3",
+    "technique_id": "cold-brew-immersion",
+    "step_number": 3,
+    "title": "Step 3",
+    "instruction": "Verser {water_total}g d'eau filtrée froide ou à température ambiante sur la mouture",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 120.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cold-brew-immersion-step-4",
+    "technique_id": "cold-brew-immersion",
+    "step_number": 4,
+    "title": "Step 4",
+    "instruction": "Remuer doucement pour s'assurer que toute la mouture est saturée",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cold-brew-immersion-step-5",
+    "technique_id": "cold-brew-immersion",
+    "step_number": 5,
+    "title": "Step 5",
+    "instruction": "Couvrir le récipient ; placer au réfrigérateur (ou laisser à température ambiante pour une extraction plus rapide)",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cold-brew-immersion-step-6",
+    "technique_id": "cold-brew-immersion",
+    "step_number": 6,
+    "title": "Step 6",
+    "instruction": "Infuser pendant 12-24 heures (réfrigérateur = 18-24h ; température ambiante = 12-16h)",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cold-brew-immersion-step-7",
+    "technique_id": "cold-brew-immersion",
+    "step_number": 7,
+    "title": "Step 7",
+    "instruction": "Filtrer à travers un tamis fin, puis à travers une étamine ou un filtre papier",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cold-brew-immersion-step-8",
+    "technique_id": "cold-brew-immersion",
+    "step_number": 8,
+    "title": "Step 8",
+    "instruction": "Le concentré peut être dilué 1:1 avec de l'eau ou du lait ; servir sur glace",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "clever-dripper-step-1",
+    "technique_id": "clever-dripper",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Placer le filtre Melitta #4 dans le Clever Dripper ; rincer à l'eau chaude ; égoutter sur le support",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "clever-dripper-step-2",
+    "technique_id": "clever-dripper",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "Ajouter le café moulu ; verser la totalité des {water_total}g d'eau en une seule fois (pas de pré-infusion nécessaire) ; démarrer le chronomètre",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 240.0,
+    "image_name": null
+  },
+  {
+    "step_id": "clever-dripper-step-3",
+    "technique_id": "clever-dripper",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "Mettre le couvercle pour conserver la chaleur",
+    "duration_seconds": 60,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "clever-dripper-step-4",
+    "technique_id": "clever-dripper",
+    "step_number": 4,
+    "title": "1:00",
+    "instruction": "Remuer doucement pour briser toute croûte de mouture flottante",
+    "duration_seconds": 90,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "clever-dripper-step-5",
+    "technique_id": "clever-dripper",
+    "step_number": 5,
+    "title": "2:30",
+    "instruction": "Placer le Clever Dripper sur la carafe/tasse pour libérer la valve et commencer l'écoulement",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "clever-dripper-step-6",
+    "technique_id": "clever-dripper",
+    "step_number": 6,
+    "title": "2:30-3:15",
+    "instruction": "L'écoulement prend 30-45 secondes à travers le filtre papier",
+    "duration_seconds": 38,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "clever-dripper-step-7",
+    "technique_id": "clever-dripper",
+    "step_number": 7,
+    "title": "3:15",
+    "instruction": "Retirer le Clever Dripper ; servir le café",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "siphon-vacuum-brewer-step-1",
+    "technique_id": "siphon-vacuum-brewer",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Fixer le filtre en tissu ou en papier sur la chambre supérieure ; tremper le tissu s'il est neuf",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "siphon-vacuum-brewer-step-2",
+    "technique_id": "siphon-vacuum-brewer",
+    "step_number": 2,
+    "title": "Step 1",
+    "instruction": "Ajouter {water_total}g d'eau dans le globe inférieur ; placer sur la source de chaleur (brûleur butane ou halogène)",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 225.0,
+    "image_name": null
+  },
+  {
+    "step_id": "siphon-vacuum-brewer-step-3",
+    "technique_id": "siphon-vacuum-brewer",
+    "step_number": 3,
+    "title": "Step 2",
+    "instruction": "Pendant que l'eau chauffe, placer la chambre supérieure sans la sceller",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "siphon-vacuum-brewer-step-4",
+    "technique_id": "siphon-vacuum-brewer",
+    "step_number": 4,
+    "title": "Step 3",
+    "instruction": "Quand l'eau commence à bouillir, enfoncer la chambre supérieure pour créer l'étanchéité",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "siphon-vacuum-brewer-step-5",
+    "technique_id": "siphon-vacuum-brewer",
+    "step_number": 5,
+    "title": "Step 4",
+    "instruction": "L'eau monte dans la chambre supérieure par pression du vide",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "siphon-vacuum-brewer-step-6",
+    "technique_id": "siphon-vacuum-brewer",
+    "step_number": 6,
+    "title": "Step 5",
+    "instruction": "Une fois la majeure partie de l'eau montée, ajouter le café moulu ; remuer doucement pour immerger",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "siphon-vacuum-brewer-step-7",
+    "technique_id": "siphon-vacuum-brewer",
+    "step_number": 7,
+    "title": "Step 6",
+    "instruction": "Laisser infuser 45-90 secondes dans la chambre supérieure",
+    "duration_seconds": 68,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "siphon-vacuum-brewer-step-8",
+    "technique_id": "siphon-vacuum-brewer",
+    "step_number": 8,
+    "title": "Step 7",
+    "instruction": "Retirer du feu ; pendant que le globe inférieur refroidit, le vide aspire le café infusé à travers le filtre",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "siphon-vacuum-brewer-step-9",
+    "technique_id": "siphon-vacuum-brewer",
+    "step_number": 9,
+    "title": "Step 8",
+    "instruction": "Retirer la chambre supérieure ; servir depuis le globe inférieur",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-pour-over-standard-step-1",
+    "technique_id": "v60-pour-over-standard",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Plier la couture du filtre papier V60 ; placer dans le porte-filtre sur le serveur. Rincer à l'eau chaude ; jeter l'eau.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-pour-over-standard-step-2",
+    "technique_id": "v60-pour-over-standard",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "Ajouter le café moulu ; secouer pour niveler. Démarrer le chronomètre.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-pour-over-standard-step-3",
+    "technique_id": "v60-pour-over-standard",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "Pré-infusion : verser {water}g d'eau (2× la dose de café) en spirale du centre vers l'extérieur.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 30.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-pour-over-standard-step-4",
+    "technique_id": "v60-pour-over-standard",
+    "step_number": 4,
+    "title": "0:00-0:30",
+    "instruction": "Attendre 30 secondes pour la pré-infusion ; le café libère du CO₂ et gonfle.",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-pour-over-standard-step-5",
+    "technique_id": "v60-pour-over-standard",
+    "step_number": 5,
+    "title": "0:30",
+    "instruction": "Commencer la versée principale : cercles concentriques lents du centre vers l'extérieur ; éviter les bords du filtre.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-pour-over-standard-step-6",
+    "technique_id": "v60-pour-over-standard",
+    "step_number": 6,
+    "title": "0:30-2:00",
+    "instruction": "Verser {water}g régulièrement ; maintenir le niveau d'eau à mi-hauteur de la bouillie de café.",
+    "duration_seconds": 90,
+    "water_volume_ml_base": 150.5,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-pour-over-standard-step-7",
+    "technique_id": "v60-pour-over-standard",
+    "step_number": 7,
+    "title": "2:00-2:30",
+    "instruction": "Terminer la dernière versée pour atteindre {water_total}g de poids total d'eau.",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 70.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-pour-over-standard-step-8",
+    "technique_id": "v60-pour-over-standard",
+    "step_number": 8,
+    "title": "2:30-3:30",
+    "instruction": "Laisser l'écoulement complet. Viser un lit de café plat.",
+    "duration_seconds": 60,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kalita-wave-step-1",
+    "technique_id": "kalita-wave",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Placer le filtre Kalita Wave dans le porte-filtre ; rincer à l'eau chaude sur le serveur. Jeter l'eau de rinçage.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kalita-wave-step-2",
+    "technique_id": "kalita-wave",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "Ajouter le café moulu ; secouer pour niveler. Démarrer le chronomètre.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kalita-wave-step-3",
+    "technique_id": "kalita-wave",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "Pré-infusion : verser {water}g d'eau pour saturer toute la mouture ; tourbillon délicat.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 45.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kalita-wave-step-4",
+    "technique_id": "kalita-wave",
+    "step_number": 4,
+    "title": "0:00-0:45",
+    "instruction": "Attendre 30-45 secondes pour la pré-infusion.",
+    "duration_seconds": 38,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kalita-wave-step-5",
+    "technique_id": "kalita-wave",
+    "step_number": 5,
+    "title": "0:45",
+    "instruction": "Verser en cercles concentriques lents jusqu'à ~60 % du poids total d'eau de {water_total}g.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 99.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kalita-wave-step-6",
+    "technique_id": "kalita-wave",
+    "step_number": 6,
+    "title": "1:30",
+    "instruction": "Faire une pause brève ; laisser l'eau descendre près du niveau de la bouillie de café.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kalita-wave-step-7",
+    "technique_id": "kalita-wave",
+    "step_number": 7,
+    "title": "1:45",
+    "instruction": "Reprendre la versée pour atteindre {water_total}g de poids final d'eau ; garder des versées douces et centrées.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 96.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kalita-wave-step-8",
+    "technique_id": "kalita-wave",
+    "step_number": 8,
+    "title": "2:30-4:00",
+    "instruction": "Écoulement complet terminé. Lit plat = extraction uniforme.",
+    "duration_seconds": 90,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-1",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Placer le filtre papier dans le capuchon ; rincer. Fixer le capuchon sur la chambre AeroPress ; placer sur la tasse.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-2",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "Ajouter le café moulu. Démarrer le chronomètre. Verser la totalité des {water_total}g d'eau de manière régulière.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 108.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-3",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 3,
+    "title": "0:10",
+    "instruction": "Remuer doucement 3-5 fois d'avant en arrière.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-4",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 4,
+    "title": "0:10-1:00",
+    "instruction": "Laisser le café infuser (un peu s'écoulera — c'est normal avec la méthode droite).",
+    "duration_seconds": 50,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-5",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 5,
+    "title": "1:00",
+    "instruction": "Insérer le piston et presser lentement avec une pression régulière pendant 20-30 secondes.",
+    "duration_seconds": 25,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-6",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 6,
+    "title": "1:20-1:30",
+    "instruction": "Arrêter de presser au sifflement (l'air traverse).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-7",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 7,
+    "title": "Done",
+    "instruction": "Retirer l'AeroPress. Diluer éventuellement avec de l'eau chaude pour un café style Americano.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "espresso-machine-step-1",
+    "technique_id": "espresso-machine",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Préchauffer la machine pendant 15-30 min. Rincer le groupe avec de l'eau.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "espresso-machine-step-2",
+    "technique_id": "espresso-machine",
+    "step_number": 2,
+    "title": "Step 1",
+    "instruction": "Doser {coffee}g de café fraîchement moulu dans le panier du porte-filtre.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "espresso-machine-step-3",
+    "technique_id": "espresso-machine",
+    "step_number": 3,
+    "title": "Step 2",
+    "instruction": "Répartir la mouture uniformément (outil WDT ou tapotement) ; tasser à niveau avec ~15 kg de pression.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "espresso-machine-step-4",
+    "technique_id": "espresso-machine",
+    "step_number": 4,
+    "title": "Step 3",
+    "instruction": "Verrouiller le porte-filtre dans le groupe. Placer la tasse en dessous.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "espresso-machine-step-5",
+    "technique_id": "espresso-machine",
+    "step_number": 5,
+    "title": "Step 4",
+    "instruction": "Démarrer l'extraction ; le chronomètre commence quand la pompe s'active.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "espresso-machine-step-6",
+    "technique_id": "espresso-machine",
+    "step_number": 6,
+    "title": "Step 5",
+    "instruction": "Observer le flux : doit commencer par des gouttes lentes, puis un filet fin et régulier (« queue de souris »).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "espresso-machine-step-7",
+    "technique_id": "espresso-machine",
+    "step_number": 7,
+    "title": "Step 6",
+    "instruction": "Viser {water_total}g en sortie (pour une dose de {coffee}g) en 25-35 secondes.",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 30.0,
+    "image_name": null
+  },
+  {
+    "step_id": "espresso-machine-step-8",
+    "technique_id": "espresso-machine",
+    "step_number": 8,
+    "title": "Step 7",
+    "instruction": "Arrêter l'extraction. Servir immédiatement.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "vietnamese-phin-filter-step-1",
+    "technique_id": "vietnamese-phin-filter",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Placer le filtre Phin sur le verre/la tasse. Ajouter 2-3 c. à soupe de lait concentré sucré dans le verre (pour le cà phê sữa đá).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "vietnamese-phin-filter-step-2",
+    "technique_id": "vietnamese-phin-filter",
+    "step_number": 2,
+    "title": "Step 1",
+    "instruction": "Ajouter le café moulu dans la chambre du Phin ; secouer pour niveler.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "vietnamese-phin-filter-step-3",
+    "technique_id": "vietnamese-phin-filter",
+    "step_number": 3,
+    "title": "Step 2",
+    "instruction": "Placer le filtre à gravité/l'écran sur le dessus ; presser doucement pour comprimer légèrement.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "vietnamese-phin-filter-step-4",
+    "technique_id": "vietnamese-phin-filter",
+    "step_number": 4,
+    "title": "Step 3",
+    "instruction": "Ajouter un peu d'eau chaude ({water}g) pour la pré-infusion de la mouture pendant 20 secondes.",
+    "duration_seconds": 20,
+    "water_volume_ml_base": 20.0,
+    "image_name": null
+  },
+  {
+    "step_id": "vietnamese-phin-filter-step-5",
+    "technique_id": "vietnamese-phin-filter",
+    "step_number": 5,
+    "title": "Step 4",
+    "instruction": "Remplir le Phin avec les {water}g d'eau chaude restants jusqu'en haut.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 100.0,
+    "image_name": null
+  },
+  {
+    "step_id": "vietnamese-phin-filter-step-6",
+    "technique_id": "vietnamese-phin-filter",
+    "step_number": 6,
+    "title": "Step 5",
+    "instruction": "Mettre le couvercle sur le Phin ; attendre que le café s'écoule lentement (4-6 minutes au total).",
+    "duration_seconds": 300,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "vietnamese-phin-filter-step-7",
+    "technique_id": "vietnamese-phin-filter",
+    "step_number": 7,
+    "title": "Step 6",
+    "instruction": "Quand l'égouttement s'arrête, retirer le Phin. Mélanger le lait concentré dans le café.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "vietnamese-phin-filter-step-8",
+    "technique_id": "vietnamese-phin-filter",
+    "step_number": 8,
+    "title": "Step 7",
+    "instruction": "Pour la version glacée : verser sur un verre plein de glace.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "japanese-iced-coffee-flash-brew-step-1",
+    "technique_id": "japanese-iced-coffee-flash-brew",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Placer {water}g de glaçons dans le serveur/la carafe sous le porte-filtre.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 96.0,
+    "image_name": null
+  },
+  {
+    "step_id": "japanese-iced-coffee-flash-brew-step-2",
+    "technique_id": "japanese-iced-coffee-flash-brew",
+    "step_number": 2,
+    "title": "Prep",
+    "instruction": "Installer le V60/Chemex avec un filtre papier rincé au-dessus du serveur rempli de glace.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "japanese-iced-coffee-flash-brew-step-3",
+    "technique_id": "japanese-iced-coffee-flash-brew",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "Ajouter le café moulu (mouture légèrement plus fine qu'un pour-over chaud classique). Démarrer le chronomètre.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "japanese-iced-coffee-flash-brew-step-4",
+    "technique_id": "japanese-iced-coffee-flash-brew",
+    "step_number": 4,
+    "title": "0:00",
+    "instruction": "Pré-infusion avec {water}g d'eau chaude ; attendre 30 secondes.",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 36.0,
+    "image_name": null
+  },
+  {
+    "step_id": "japanese-iced-coffee-flash-brew-step-5",
+    "technique_id": "japanese-iced-coffee-flash-brew",
+    "step_number": 5,
+    "title": "0:30",
+    "instruction": "Verser les {water}g d'eau chaude restants en spirales lentes (eau chaude totale = ~60 % de la recette).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 108.0,
+    "image_name": null
+  },
+  {
+    "step_id": "japanese-iced-coffee-flash-brew-step-6",
+    "technique_id": "japanese-iced-coffee-flash-brew",
+    "step_number": 6,
+    "title": "1:30-2:30",
+    "instruction": "Terminer la versée ; laisser l'écoulement complet. Le café chaud s'écoule directement sur la glace.",
+    "duration_seconds": 60,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "japanese-iced-coffee-flash-brew-step-7",
+    "technique_id": "japanese-iced-coffee-flash-brew",
+    "step_number": 7,
+    "title": "Done",
+    "instruction": "Tourner le serveur pour faire fondre la glace restante et refroidir uniformément. Verser dans un verre.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "south-indian-filter-coffee-kaapi-step-1",
+    "technique_id": "south-indian-filter-coffee-kaapi",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "S'assurer que le filtre à café indien en laiton/acier est propre et sec.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "south-indian-filter-coffee-kaapi-step-2",
+    "technique_id": "south-indian-filter-coffee-kaapi",
+    "step_number": 2,
+    "title": "Step 1",
+    "instruction": "Ajouter la poudre de café (souvent avec 20-30 % de chicorée) dans la chambre perforée supérieure.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "south-indian-filter-coffee-kaapi-step-3",
+    "technique_id": "south-indian-filter-coffee-kaapi",
+    "step_number": 3,
+    "title": "Step 2",
+    "instruction": "Presser doucement avec le disque du piston pour niveler (ne PAS comprimer fortement).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "south-indian-filter-coffee-kaapi-step-4",
+    "technique_id": "south-indian-filter-coffee-kaapi",
+    "step_number": 4,
+    "title": "Step 3",
+    "instruction": "Verser {water_total}g d'eau bouillante (96-100°C) sur la mouture ; remplir la chambre supérieure.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 150.0,
+    "image_name": null
+  },
+  {
+    "step_id": "south-indian-filter-coffee-kaapi-step-5",
+    "technique_id": "south-indian-filter-coffee-kaapi",
+    "step_number": 5,
+    "title": "Step 4",
+    "instruction": "Fermer avec le couvercle ; laisser la décoction s'écouler dans la chambre inférieure (15-20 min rapide ; 3-4 h traditionnel).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "south-indian-filter-coffee-kaapi-step-6",
+    "technique_id": "south-indian-filter-coffee-kaapi",
+    "step_number": 6,
+    "title": "Step 5",
+    "instruction": "Pendant ce temps, faire bouillir du lait entier dans une casserole.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "south-indian-filter-coffee-kaapi-step-7",
+    "technique_id": "south-indian-filter-coffee-kaapi",
+    "step_number": 7,
+    "title": "Step 6",
+    "instruction": "Ajouter 2 c. à soupe de décoction forte dans le tumbler ; ajouter du lait bouilli (ratio au goût, ~1:1 à 1:2).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "south-indian-filter-coffee-kaapi-step-8",
+    "technique_id": "south-indian-filter-coffee-kaapi",
+    "step_number": 8,
+    "title": "Step 7",
+    "instruction": "Ajouter du sucre selon le goût. Verser entre le tumbler et le dabara en hauteur pour aérer et créer la mousse.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kyoto-style-slow-drip-cold-drip-tower-step-1",
+    "technique_id": "kyoto-style-slow-drip-cold-drip-tower",
+    "step_number": 1,
+    "title": "Step 1",
+    "instruction": "Placer le disque de filtre papier au fond de la chambre à café centrale.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kyoto-style-slow-drip-cold-drip-tower-step-2",
+    "technique_id": "kyoto-style-slow-drip-cold-drip-tower",
+    "step_number": 2,
+    "title": "Step 2",
+    "instruction": "Ajouter le café moulu moyennement grossier ; niveler le lit de café.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kyoto-style-slow-drip-cold-drip-tower-step-3",
+    "technique_id": "kyoto-style-slow-drip-cold-drip-tower",
+    "step_number": 3,
+    "title": "Step 3",
+    "instruction": "Placer un second filtre papier humidifié sur la mouture de café.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kyoto-style-slow-drip-cold-drip-tower-step-4",
+    "technique_id": "kyoto-style-slow-drip-cold-drip-tower",
+    "step_number": 4,
+    "title": "Step 4",
+    "instruction": "Remplir le réservoir d'eau supérieur avec de la glace et {water_total}g d'eau froide.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 150.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kyoto-style-slow-drip-cold-drip-tower-step-5",
+    "technique_id": "kyoto-style-slow-drip-cold-drip-tower",
+    "step_number": 5,
+    "title": "Step 5",
+    "instruction": "Régler la valve pour obtenir ~1 goutte par seconde (c'est essentiel).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kyoto-style-slow-drip-cold-drip-tower-step-6",
+    "technique_id": "kyoto-style-slow-drip-cold-drip-tower",
+    "step_number": 6,
+    "title": "Step 6",
+    "instruction": "Laisser s'écouler pendant 3-12 heures selon le modèle de tour et l'intensité souhaitée.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kyoto-style-slow-drip-cold-drip-tower-step-7",
+    "technique_id": "kyoto-style-slow-drip-cold-drip-tower",
+    "step_number": 7,
+    "title": "Step 7",
+    "instruction": "Recueillir le concentré dans la carafe inférieure.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kyoto-style-slow-drip-cold-drip-tower-step-8",
+    "technique_id": "kyoto-style-slow-drip-cold-drip-tower",
+    "step_number": 8,
+    "title": "Step 8",
+    "instruction": "Servir sur glace ; diluer si nécessaire. Peut se conserver au réfrigérateur 1-2 semaines.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "scott-rao-v60-technique-step-1",
+    "technique_id": "scott-rao-v60-technique",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Rincer le filtre V60 ; préchauffer le porte-filtre et le serveur. Ajouter le café ; créer un lit plat.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "scott-rao-v60-technique-step-2",
+    "technique_id": "scott-rao-v60-technique",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "Démarrer le chronomètre. Verser {water}g d'eau (3× la dose) pour la pré-infusion ; versée vigoureuse pour saturer.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 45.0,
+    "image_name": null
+  },
+  {
+    "step_id": "scott-rao-v60-technique-step-3",
+    "technique_id": "scott-rao-v60-technique",
+    "step_number": 3,
+    "title": "0:00-0:10",
+    "instruction": "Utiliser une cuillère pour remuer/excaver la mouture en s'assurant que tout est mouillé (le « Rao Spin »).",
+    "duration_seconds": 10,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "scott-rao-v60-technique-step-4",
+    "technique_id": "scott-rao-v60-technique",
+    "step_number": 4,
+    "title": "0:10-0:45",
+    "instruction": "Attendre la pré-infusion. Le CO₂ s'échappe.",
+    "duration_seconds": 35,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "scott-rao-v60-technique-step-5",
+    "technique_id": "scott-rao-v60-technique",
+    "step_number": 5,
+    "title": "0:45",
+    "instruction": "Commencer la versée principale : spirale lente et continue du centre vers l'extérieur et retour. Ne PAS s'arrêter et reprendre.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "scott-rao-v60-technique-step-6",
+    "technique_id": "scott-rao-v60-technique",
+    "step_number": 6,
+    "title": "0:45-1:45",
+    "instruction": "Une seule versée ininterrompue jusqu'à {water_total}g au total. Maintenir le niveau d'eau stable.",
+    "duration_seconds": 60,
+    "water_volume_ml_base": 195.0,
+    "image_name": null
+  },
+  {
+    "step_id": "scott-rao-v60-technique-step-7",
+    "technique_id": "scott-rao-v60-technique",
+    "step_number": 7,
+    "title": "1:45",
+    "instruction": "Effectuer un « Rao Spin » délicat — tourner le porte-filtre une fois pour aplanir le lit et faire tomber la mouture sèche.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "scott-rao-v60-technique-step-8",
+    "technique_id": "scott-rao-v60-technique",
+    "step_number": 8,
+    "title": "1:45-3:00",
+    "instruction": "Laisser l'écoulement complet. Lit de café plat à la fin.",
+    "duration_seconds": 75,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "hario-switch-immersion-dripper-step-1",
+    "technique_id": "hario-switch-immersion-dripper",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Placer le filtre papier V60 à onglet dans le Switch ; rincer à l'eau chaude. Fermer la valve (interrupteur vers le bas).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "hario-switch-immersion-dripper-step-2",
+    "technique_id": "hario-switch-immersion-dripper",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "Ajouter le café moulu. Démarrer le chronomètre. Verser la totalité des {water_total}g d'eau en une seule fois.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 225.0,
+    "image_name": null
+  },
+  {
+    "step_id": "hario-switch-immersion-dripper-step-3",
+    "technique_id": "hario-switch-immersion-dripper",
+    "step_number": 3,
+    "title": "0:05",
+    "instruction": "Remuer doucement 2-3 fois pour s'assurer que toute la mouture est saturée.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "hario-switch-immersion-dripper-step-4",
+    "technique_id": "hario-switch-immersion-dripper",
+    "step_number": 4,
+    "title": "0:05-2:00",
+    "instruction": "Attendre l'infusion complète avec la valve fermée (phase d'immersion).",
+    "duration_seconds": 115,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "hario-switch-immersion-dripper-step-5",
+    "technique_id": "hario-switch-immersion-dripper",
+    "step_number": 5,
+    "title": "2:00",
+    "instruction": "Ouvrir la valve (interrupteur vers le haut) ; le café commence à s'écouler à travers le filtre papier.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "hario-switch-immersion-dripper-step-6",
+    "technique_id": "hario-switch-immersion-dripper",
+    "step_number": 6,
+    "title": "2:00-3:00",
+    "instruction": "L'écoulement prend ~45-60 secondes à travers le filtre papier V60.",
+    "duration_seconds": 53,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "hario-switch-immersion-dripper-step-7",
+    "technique_id": "hario-switch-immersion-dripper",
+    "step_number": 7,
+    "title": "3:00",
+    "instruction": "Retirer le porte-filtre. Servir.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-matt-winton-five-pour-step-1",
+    "technique_id": "v60-matt-winton-five-pour",
+    "step_number": 1,
+    "title": "0:00",
+    "instruction": "Rincer le filtre papier ; ajouter {coffee}g de café dans le V60. Démarrer le chronomètre.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-matt-winton-five-pour-step-2",
+    "technique_id": "v60-matt-winton-five-pour",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "Verser {water}g d'eau (3,3× la dose) pour la pré-infusion ; tourner pour saturer toute la mouture.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 50.1,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-matt-winton-five-pour-step-3",
+    "technique_id": "v60-matt-winton-five-pour",
+    "step_number": 3,
+    "title": "0:00-0:45",
+    "instruction": "Attendre 45 secondes pour la pré-infusion.",
+    "duration_seconds": 45,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-matt-winton-five-pour-step-4",
+    "technique_id": "v60-matt-winton-five-pour",
+    "step_number": 4,
+    "title": "0:45",
+    "instruction": "Versée n°2 : {water}g d'eau en cercles concentriques doux.",
+    "duration_seconds": 20,
+    "water_volume_ml_base": 50.1,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-matt-winton-five-pour-step-5",
+    "technique_id": "v60-matt-winton-five-pour",
+    "step_number": 5,
+    "title": "1:05",
+    "instruction": "Versée n°3 : {water}g d'eau.",
+    "duration_seconds": 20,
+    "water_volume_ml_base": 50.1,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-matt-winton-five-pour-step-6",
+    "technique_id": "v60-matt-winton-five-pour",
+    "step_number": 6,
+    "title": "1:25",
+    "instruction": "Versée n°4 : {water}g d'eau.",
+    "duration_seconds": 20,
+    "water_volume_ml_base": 50.1,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-matt-winton-five-pour-step-7",
+    "technique_id": "v60-matt-winton-five-pour",
+    "step_number": 7,
+    "title": "1:45",
+    "instruction": "Versée n°5 : {water}g d'eau (total maintenant {water_total}g).",
+    "duration_seconds": 15,
+    "water_volume_ml_base": 50.1,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-matt-winton-five-pour-step-8",
+    "technique_id": "v60-matt-winton-five-pour",
+    "step_number": 8,
+    "title": "2:00",
+    "instruction": "Donner un dernier tourbillon délicat au V60 pour niveler le lit de café.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-matt-winton-five-pour-step-9",
+    "technique_id": "v60-matt-winton-five-pour",
+    "step_number": 9,
+    "title": "2:30-3:30",
+    "instruction": "Attendre l'écoulement complet. Viser un lit de café plat au fond.",
+    "duration_seconds": 60,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nel-drip-flannel-drip-step-1",
+    "technique_id": "nel-drip-flannel-drip",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Tremper le filtre en flanelle dans l'eau chaude. Essorer l'excédent. Fixer sur le support/la poignée du nel drip.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nel-drip-flannel-drip-step-2",
+    "technique_id": "nel-drip-flannel-drip",
+    "step_number": 2,
+    "title": "Prep",
+    "instruction": "Pré-mouiller le filtre à l'eau chaude pour éliminer le goût résiduel. Jeter l'eau de rinçage.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nel-drip-flannel-drip-step-3",
+    "technique_id": "nel-drip-flannel-drip",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "Ajouter le café moulu dans le filtre en flanelle. Creuser un petit puits au centre.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nel-drip-flannel-drip-step-4",
+    "technique_id": "nel-drip-flannel-drip",
+    "step_number": 4,
+    "title": "0:00",
+    "instruction": "Démarrer le chronomètre. Verser {water}g d'eau doucement au centre pour la pré-infusion.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 30.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nel-drip-flannel-drip-step-5",
+    "technique_id": "nel-drip-flannel-drip",
+    "step_number": 5,
+    "title": "0:00-0:30",
+    "instruction": "Attendre 30 secondes. Le café gonfle et libère du CO₂.",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nel-drip-flannel-drip-step-6",
+    "technique_id": "nel-drip-flannel-drip",
+    "step_number": 6,
+    "title": "0:30",
+    "instruction": "Commencer à verser lentement au centre : filet fin, spirale douce du centre vers l'extérieur.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nel-drip-flannel-drip-step-7",
+    "technique_id": "nel-drip-flannel-drip",
+    "step_number": 7,
+    "title": "0:30-3:00",
+    "instruction": "Continuer en versées lentes et pulsées pour atteindre {water_total}g au total. Garder le niveau d'eau bas — ne PAS noyer le filtre.",
+    "duration_seconds": 150,
+    "water_volume_ml_base": 180.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nel-drip-flannel-drip-step-8",
+    "technique_id": "nel-drip-flannel-drip",
+    "step_number": 8,
+    "title": "3:00-5:00",
+    "instruction": "Laisser l'eau restante s'écouler entièrement.",
+    "duration_seconds": 120,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-standard-step-1",
+    "technique_id": "french-press-standard",
+    "step_number": 1,
+    "title": "0:00",
+    "instruction": "Préchauffer la cafetière à piston avec de l'eau chaude ; jeter l'eau.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-standard-step-2",
+    "technique_id": "french-press-standard",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "Ajouter {coffee}g de café à mouture grossière dans la cafetière à piston.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-standard-step-3",
+    "technique_id": "french-press-standard",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "Démarrer le chronomètre. Verser la totalité des {water_total}g d'eau vigoureusement pour saturer toute la mouture.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 240.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-standard-step-4",
+    "technique_id": "french-press-standard",
+    "step_number": 4,
+    "title": "0:15",
+    "instruction": "Remuer une fois brièvement avec une cuillère pour défaire les grumeaux secs.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-standard-step-5",
+    "technique_id": "french-press-standard",
+    "step_number": 5,
+    "title": "0:20",
+    "instruction": "Mettre le couvercle de la cafetière à piston avec le piston relevé. Ne pas presser encore.",
+    "duration_seconds": 220,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-standard-step-6",
+    "technique_id": "french-press-standard",
+    "step_number": 6,
+    "title": "4:00",
+    "instruction": "Enfoncer le piston lentement et uniformément jusqu'au fond.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-standard-step-7",
+    "technique_id": "french-press-standard",
+    "step_number": 7,
+    "title": "4:00",
+    "instruction": "Verser immédiatement dans les tasses pour éviter la sur-extraction.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-inverted-method-step-1",
+    "technique_id": "aeropress-inverted-method",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Insérer le piston dans la chambre au repère 4. Retourner (piston en bas).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-inverted-method-step-2",
+    "technique_id": "aeropress-inverted-method",
+    "step_number": 2,
+    "title": "Prep",
+    "instruction": "Placer le filtre papier dans le capuchon ; rincer à l'eau chaude. Mettre le capuchon de côté.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-inverted-method-step-3",
+    "technique_id": "aeropress-inverted-method",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "Ajouter le café moulu dans la chambre inversée. Démarrer le chronomètre.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-inverted-method-step-4",
+    "technique_id": "aeropress-inverted-method",
+    "step_number": 4,
+    "title": "0:00",
+    "instruction": "Verser {water_total}g d'eau au niveau souhaité. Laisser de l'espace pour le capuchon.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 180.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-inverted-method-step-5",
+    "technique_id": "aeropress-inverted-method",
+    "step_number": 5,
+    "title": "0:10",
+    "instruction": "Remuer doucement 3-5 fois d'avant en arrière.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-inverted-method-step-6",
+    "technique_id": "aeropress-inverted-method",
+    "step_number": 6,
+    "title": "1:00",
+    "instruction": "Fixer le capuchon filtre rincé. Visser fermement.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-inverted-method-step-7",
+    "technique_id": "aeropress-inverted-method",
+    "step_number": 7,
+    "title": "1:05",
+    "instruction": "Retourner l'AeroPress sur la tasse/le serveur avec assurance. Tenir fermement !",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-inverted-method-step-8",
+    "technique_id": "aeropress-inverted-method",
+    "step_number": 8,
+    "title": "1:10",
+    "instruction": "Enfoncer le piston lentement et régulièrement (~30 secondes). Arrêter au sifflement.",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-inverted-method-step-9",
+    "technique_id": "aeropress-inverted-method",
+    "step_number": 9,
+    "title": "1:40",
+    "instruction": "Retirer l'AeroPress. Diluer avec de l'eau chaude si souhaité.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-james-hoffmann-best-recipe-step-1",
+    "technique_id": "aeropress-james-hoffmann-best-recipe",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Placer le filtre papier dans le capuchon ; rincer. Assembler l'AeroPress à la verticale sur la tasse.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-james-hoffmann-best-recipe-step-2",
+    "technique_id": "aeropress-james-hoffmann-best-recipe",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "Ajouter {coffee}g de café. Démarrer le chronomètre. Verser la totalité des {water_total}g d'eau en une seule fois. Ne PAS remuer.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 270.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-james-hoffmann-best-recipe-step-3",
+    "technique_id": "aeropress-james-hoffmann-best-recipe",
+    "step_number": 3,
+    "title": "0:00-2:00",
+    "instruction": "Attendre 2 minutes complètes. Un peu de café s'écoulera — c'est normal.",
+    "duration_seconds": 120,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-james-hoffmann-best-recipe-step-4",
+    "technique_id": "aeropress-james-hoffmann-best-recipe",
+    "step_number": 4,
+    "title": "2:00",
+    "instruction": "Tourner l'AeroPress doucement 3 fois (pas besoin de cuillère).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-james-hoffmann-best-recipe-step-5",
+    "technique_id": "aeropress-james-hoffmann-best-recipe",
+    "step_number": 5,
+    "title": "2:05",
+    "instruction": "Presser lentement et doucement pendant ~30 secondes.",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-james-hoffmann-best-recipe-step-6",
+    "technique_id": "aeropress-james-hoffmann-best-recipe",
+    "step_number": 6,
+    "title": "2:30",
+    "instruction": "Arrêter au sifflement. Servir immédiatement.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-traditional-step-1",
+    "technique_id": "turkish-coffee-traditional",
+    "step_number": 1,
+    "title": "Step 1",
+    "instruction": "Ajouter {water_total}g d'eau froide filtrée dans le cezve (ibrik).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 150.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-traditional-step-2",
+    "technique_id": "turkish-coffee-traditional",
+    "step_number": 2,
+    "title": "Step 2",
+    "instruction": "Ajouter {coffee}g de café extra-fin (comme du talc). Ajouter le sucre maintenant si désiré.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-traditional-step-3",
+    "technique_id": "turkish-coffee-traditional",
+    "step_number": 3,
+    "title": "Step 3",
+    "instruction": "Remuer doucement pour mélanger le café, l'eau et le sucre uniformément.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-traditional-step-4",
+    "technique_id": "turkish-coffee-traditional",
+    "step_number": 4,
+    "title": "Step 4",
+    "instruction": "Placer le cezve sur feu DOUX. Ne PAS précipiter — un chauffage progressif est essentiel.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-traditional-step-5",
+    "technique_id": "turkish-coffee-traditional",
+    "step_number": 5,
+    "title": "Step 5",
+    "instruction": "Surveiller la mousse qui commence à se former en surface (~1:30-2:00).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-traditional-step-6",
+    "technique_id": "turkish-coffee-traditional",
+    "step_number": 6,
+    "title": "Step 6",
+    "instruction": "Quand la mousse monte près du bord, retirer du feu. Laisser reposer 20-30 secondes.",
+    "duration_seconds": 25,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-traditional-step-7",
+    "technique_id": "turkish-coffee-traditional",
+    "step_number": 7,
+    "title": "Step 7",
+    "instruction": "Remettre sur le feu. Laisser la mousse monter une DEUXIÈME fois. Retirer du feu.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-traditional-step-8",
+    "technique_id": "turkish-coffee-traditional",
+    "step_number": 8,
+    "title": "Step 8",
+    "instruction": "Remettre sur le feu pour une TROISIÈME et dernière montée de mousse. Retirer du feu.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-traditional-step-9",
+    "technique_id": "turkish-coffee-traditional",
+    "step_number": 9,
+    "title": "Step 9",
+    "instruction": "Optionnel : verser 1 c. à café d'eau froide pour aider la mouture à se déposer plus vite.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-traditional-step-10",
+    "technique_id": "turkish-coffee-traditional",
+    "step_number": 10,
+    "title": "Step 10",
+    "instruction": "Verser lentement dans une tasse à demitasse en préservant la mousse. Attendre 1-2 min avant de déguster.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "drip-coffee-maker-automatic-step-1",
+    "technique_id": "drip-coffee-maker-automatic",
+    "step_number": 1,
+    "title": "Step 1",
+    "instruction": "Remplir le réservoir d'eau avec {water_total}g d'eau fraîche filtrée.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 240.0,
+    "image_name": null
+  },
+  {
+    "step_id": "drip-coffee-maker-automatic-step-2",
+    "technique_id": "drip-coffee-maker-automatic",
+    "step_number": 2,
+    "title": "Step 2",
+    "instruction": "Placer le filtre papier ou permanent dans le panier.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "drip-coffee-maker-automatic-step-3",
+    "technique_id": "drip-coffee-maker-automatic",
+    "step_number": 3,
+    "title": "Step 3",
+    "instruction": "Ajouter {coffee}g de café à mouture moyenne dans le panier filtre.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "drip-coffee-maker-automatic-step-4",
+    "technique_id": "drip-coffee-maker-automatic",
+    "step_number": 4,
+    "title": "Step 4",
+    "instruction": "Fermer le panier. Appuyer sur le bouton Démarrer/Infuser.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "drip-coffee-maker-automatic-step-5",
+    "technique_id": "drip-coffee-maker-automatic",
+    "step_number": 5,
+    "title": "Step 5",
+    "instruction": "La machine chauffe l'eau et la fait s'écouler automatiquement à travers le lit de café.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "drip-coffee-maker-automatic-step-6",
+    "technique_id": "drip-coffee-maker-automatic",
+    "step_number": 6,
+    "title": "Step 6",
+    "instruction": "L'infusion se termine en 5-8 minutes. Servir depuis la carafe.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "drip-coffee-maker-automatic-step-7",
+    "technique_id": "drip-coffee-maker-automatic",
+    "step_number": 7,
+    "title": "Step 7",
+    "instruction": "Retirer le panier/filtre pour arrêter l'égouttement sur la plaque chauffante.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "percolator-stovetopelectric-step-1",
+    "technique_id": "percolator-stovetopelectric",
+    "step_number": 1,
+    "title": "Step 1",
+    "instruction": "Ajouter {water_total}g d'eau froide dans la chambre inférieure du percolateur.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 255.0,
+    "image_name": null
+  },
+  {
+    "step_id": "percolator-stovetopelectric-step-2",
+    "technique_id": "percolator-stovetopelectric",
+    "step_number": 2,
+    "title": "Step 2",
+    "instruction": "Placer le panier filtre sur la tige. Ajouter {coffee}g de café à mouture grossière dans le panier.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "percolator-stovetopelectric-step-3",
+    "technique_id": "percolator-stovetopelectric",
+    "step_number": 3,
+    "title": "Step 3",
+    "instruction": "Assembler le percolateur. Placer sur le feu (ou brancher).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "percolator-stovetopelectric-step-4",
+    "technique_id": "percolator-stovetopelectric",
+    "step_number": 4,
+    "title": "Step 4",
+    "instruction": "L'eau chauffe, monte dans le tube, arrose le café, redescend en gouttes et recommence.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "percolator-stovetopelectric-step-5",
+    "technique_id": "percolator-stovetopelectric",
+    "step_number": 5,
+    "title": "Step 5",
+    "instruction": "Observer à travers le bouton en verre du couvercle : viser une couleur ambre moyen.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "percolator-stovetopelectric-step-6",
+    "technique_id": "percolator-stovetopelectric",
+    "step_number": 6,
+    "title": "Step 6",
+    "instruction": "Laisser le cycle se répéter pendant 7-10 minutes.",
+    "duration_seconds": 510,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "percolator-stovetopelectric-step-7",
+    "technique_id": "percolator-stovetopelectric",
+    "step_number": 7,
+    "title": "Step 7",
+    "instruction": "Retirer du feu IMMÉDIATEMENT à l'intensité souhaitée. Trop de percolation = amertume.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "percolator-stovetopelectric-step-8",
+    "technique_id": "percolator-stovetopelectric",
+    "step_number": 8,
+    "title": "Step 8",
+    "instruction": "Laisser reposer 1-2 minutes pour que la mouture se dépose, puis servir.",
+    "duration_seconds": 90,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "osmotic-flow-v60-step-1",
+    "technique_id": "osmotic-flow-v60",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Rincer le filtre papier dans le V60 ou le Cafec Flower Dripper. Placer sur le serveur.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "osmotic-flow-v60-step-2",
+    "technique_id": "osmotic-flow-v60",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "Ajouter {coffee}g de café (mouture moyenne — plus grossière qu'un V60 standard). Niveler le lit.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "osmotic-flow-v60-step-3",
+    "technique_id": "osmotic-flow-v60",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "Démarrer le chronomètre. Verser {water}g d'eau pour la pré-infusion ; attendre 45 secondes.",
+    "duration_seconds": 45,
+    "water_volume_ml_base": 37.5,
+    "image_name": null
+  },
+  {
+    "step_id": "osmotic-flow-v60-step-4",
+    "technique_id": "osmotic-flow-v60",
+    "step_number": 4,
+    "title": "0:45",
+    "instruction": "Commencer une versée ultra-lente au centre : verser UNIQUEMENT au centre en un filet fin.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "osmotic-flow-v60-step-5",
+    "technique_id": "osmotic-flow-v60",
+    "step_number": 5,
+    "title": "0:45-3:00",
+    "instruction": "Continuer la versée lente au centre ({water}g restants). L'eau doit à peine dépasser le niveau du lit de café.",
+    "duration_seconds": 135,
+    "water_volume_ml_base": 187.5,
+    "image_name": null
+  },
+  {
+    "step_id": "osmotic-flow-v60-step-6",
+    "technique_id": "osmotic-flow-v60",
+    "step_number": 6,
+    "title": "3:00",
+    "instruction": "Une fois la totalité des {water_total}g versée, laisser l'écoulement final.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "osmotic-flow-v60-step-7",
+    "technique_id": "osmotic-flow-v60",
+    "step_number": 7,
+    "title": "3:00-4:00+",
+    "instruction": "L'écoulement peut prendre plus de temps qu'un V60 standard — c'est normal.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cupping-professional-tasting-step-1",
+    "technique_id": "cupping-professional-tasting",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Moudre {coffee}g par bol (légèrement plus grossier qu'une cafetière à piston). Disposer les bols de dégustation.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cupping-professional-tasting-step-2",
+    "technique_id": "cupping-professional-tasting",
+    "step_number": 2,
+    "title": "Prep",
+    "instruction": "Préparer les cuillères de dégustation, l'eau de rinçage et le crachoir.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cupping-professional-tasting-step-3",
+    "technique_id": "cupping-professional-tasting",
+    "step_number": 3,
+    "title": "Step 1",
+    "instruction": "Évaluer le PARFUM SEC : se pencher et sentir la mouture sèche dans chaque bol.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cupping-professional-tasting-step-4",
+    "technique_id": "cupping-professional-tasting",
+    "step_number": 4,
+    "title": "0:00",
+    "instruction": "Démarrer le chronomètre. Verser {water_total}g d'eau à 93°C directement sur la mouture dans chaque bol.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 272.7,
+    "image_name": null
+  },
+  {
+    "step_id": "cupping-professional-tasting-step-5",
+    "technique_id": "cupping-professional-tasting",
+    "step_number": 5,
+    "title": "0:00-4:00",
+    "instruction": "Attendre exactement 4 minutes. Une croûte de mouture se forme en surface.",
+    "duration_seconds": 240,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cupping-professional-tasting-step-6",
+    "technique_id": "cupping-professional-tasting",
+    "step_number": 6,
+    "title": "4:00",
+    "instruction": "BRISER LA CROÛTE : se pencher, écarter la mouture avec la cuillère 3 fois. Inspirer profondément l'arôme.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cupping-professional-tasting-step-7",
+    "technique_id": "cupping-professional-tasting",
+    "step_number": 7,
+    "title": "4:15",
+    "instruction": "Écumer la mousse et la mouture flottante avec deux cuillères. Jeter dans le bol de déchets.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cupping-professional-tasting-step-8",
+    "technique_id": "cupping-professional-tasting",
+    "step_number": 8,
+    "title": "4:30-9:00",
+    "instruction": "Laisser le café refroidir 5-8 minutes. La mouture se dépose au fond.",
+    "duration_seconds": 390,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cupping-professional-tasting-step-9",
+    "technique_id": "cupping-professional-tasting",
+    "step_number": 9,
+    "title": "9:00+",
+    "instruction": "DÉGUSTER : aspirer vigoureusement à la cuillère pour projeter le café sur tout le palais. Évaluer la saveur, l'acidité, le corps, l'équilibre, la sucrosité, l'arrière-goût.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cowboy-coffee-step-1",
+    "technique_id": "cowboy-coffee",
+    "step_number": 1,
+    "title": "Step 1",
+    "instruction": "Ajouter {water_total}g d'eau dans une casserole ou un poêlon.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 240.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cowboy-coffee-step-2",
+    "technique_id": "cowboy-coffee",
+    "step_number": 2,
+    "title": "Step 2",
+    "instruction": "Porter à pleine ébullition sur un feu de camp ou une cuisinière.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cowboy-coffee-step-3",
+    "technique_id": "cowboy-coffee",
+    "step_number": 3,
+    "title": "Step 3",
+    "instruction": "Retirer la casserole du feu. Attendre 30 secondes que l'ébullition cesse.",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cowboy-coffee-step-4",
+    "technique_id": "cowboy-coffee",
+    "step_number": 4,
+    "title": "Step 4",
+    "instruction": "Ajouter {coffee}g de café à mouture grossière. Remuer une fois doucement.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cowboy-coffee-step-5",
+    "technique_id": "cowboy-coffee",
+    "step_number": 5,
+    "title": "Step 5",
+    "instruction": "Couvrir la casserole. Laisser infuser 4-5 minutes hors du feu.",
+    "duration_seconds": 270,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cowboy-coffee-step-6",
+    "technique_id": "cowboy-coffee",
+    "step_number": 6,
+    "title": "Step 6",
+    "instruction": "Verser ~30 ml d'eau froide sur le dessus pour aider la mouture à se déposer.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cowboy-coffee-step-7",
+    "technique_id": "cowboy-coffee",
+    "step_number": 7,
+    "title": "Step 7",
+    "instruction": "Attendre encore 2-3 minutes que la mouture coule.",
+    "duration_seconds": 150,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cowboy-coffee-step-8",
+    "technique_id": "cowboy-coffee",
+    "step_number": 8,
+    "title": "Step 8",
+    "instruction": "Verser délicatement par le dessus dans les tasses, en laissant le sédiment au fond de la casserole.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kopi-tubruk-indonesian-step-1",
+    "technique_id": "kopi-tubruk-indonesian",
+    "step_number": 1,
+    "title": "Step 1",
+    "instruction": "Faire bouillir l'eau dans une bouilloire.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kopi-tubruk-indonesian-step-2",
+    "technique_id": "kopi-tubruk-indonesian",
+    "step_number": 2,
+    "title": "Step 2",
+    "instruction": "Ajouter {coffee}g de café très finement moulu dans une tasse ou un verre.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kopi-tubruk-indonesian-step-3",
+    "technique_id": "kopi-tubruk-indonesian",
+    "step_number": 3,
+    "title": "Step 3",
+    "instruction": "Ajouter du sucre selon le goût (traditionnellement : 1-2 cuillères à café).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kopi-tubruk-indonesian-step-4",
+    "technique_id": "kopi-tubruk-indonesian",
+    "step_number": 4,
+    "title": "Step 4",
+    "instruction": "Verser {water_total}g d'eau bouillante directement sur la mouture.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 300.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kopi-tubruk-indonesian-step-5",
+    "technique_id": "kopi-tubruk-indonesian",
+    "step_number": 5,
+    "title": "Step 5",
+    "instruction": "Remuer brièvement (3-4 fois) pour dissoudre le sucre et mouiller toute la mouture.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kopi-tubruk-indonesian-step-6",
+    "technique_id": "kopi-tubruk-indonesian",
+    "step_number": 6,
+    "title": "Step 6",
+    "instruction": "Attendre 3-5 minutes que la mouture se dépose au fond.",
+    "duration_seconds": 240,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kopi-tubruk-indonesian-step-7",
+    "technique_id": "kopi-tubruk-indonesian",
+    "step_number": 7,
+    "title": "Step 7",
+    "instruction": "Boire délicatement par le dessus. Ne PAS déranger la mouture déposée.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kopi-tubruk-indonesian-step-8",
+    "technique_id": "kopi-tubruk-indonesian",
+    "step_number": 8,
+    "title": "Step 8",
+    "instruction": "Arrêter de boire en atteignant la couche de dépôt — laisser les ~20 derniers ml.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "neapolitan-flip-pot-napoletana-step-1",
+    "technique_id": "neapolitan-flip-pot-napoletana",
+    "step_number": 1,
+    "title": "Step 1",
+    "instruction": "Remplir la chambre à eau inférieure avec {water_total}g d'eau froide juste en dessous du trou de vapeur.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 225.0,
+    "image_name": null
+  },
+  {
+    "step_id": "neapolitan-flip-pot-napoletana-step-2",
+    "technique_id": "neapolitan-flip-pot-napoletana",
+    "step_number": 2,
+    "title": "Step 2",
+    "instruction": "Remplir le panier filtre de café moyennement grossier. Niveler ; ne pas tasser.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "neapolitan-flip-pot-napoletana-step-3",
+    "technique_id": "neapolitan-flip-pot-napoletana",
+    "step_number": 3,
+    "title": "Step 3",
+    "instruction": "Assembler : chambre à eau en bas, filtre au milieu, chambre de service vide en haut.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "neapolitan-flip-pot-napoletana-step-4",
+    "technique_id": "neapolitan-flip-pot-napoletana",
+    "step_number": 4,
+    "title": "Step 4",
+    "instruction": "Placer sur la cuisinière à feu moyen (le bec verseur pointe vers le BAS à cette étape).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "neapolitan-flip-pot-napoletana-step-5",
+    "technique_id": "neapolitan-flip-pot-napoletana",
+    "step_number": 5,
+    "title": "Step 5",
+    "instruction": "Attendre que la vapeur sorte du petit trou de vapeur près du sommet.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "neapolitan-flip-pot-napoletana-step-6",
+    "technique_id": "neapolitan-flip-pot-napoletana",
+    "step_number": 6,
+    "title": "Step 6",
+    "instruction": "Quand la vapeur apparaît : retirer du feu. RETOURNER la cafetière entière d'un geste assuré.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "neapolitan-flip-pot-napoletana-step-7",
+    "technique_id": "neapolitan-flip-pot-napoletana",
+    "step_number": 7,
+    "title": "Step 7",
+    "instruction": "L'eau chaude s'écoule maintenant par gravité à travers le café dans la chambre de service en dessous.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "neapolitan-flip-pot-napoletana-step-8",
+    "technique_id": "neapolitan-flip-pot-napoletana",
+    "step_number": 8,
+    "title": "Step 8",
+    "instruction": "Attendre 5-8 minutes que toute l'eau s'écoule. L'égouttement ralentira et s'arrêtera.",
+    "duration_seconds": 390,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "neapolitan-flip-pot-napoletana-step-9",
+    "technique_id": "neapolitan-flip-pot-napoletana",
+    "step_number": 9,
+    "title": "Step 9",
+    "instruction": "Retirer le panier filtre usagé. Servir par le bec verseur.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "single-serve-pod-keurig-nespresso-step-1",
+    "technique_id": "single-serve-pod-keurig-nespresso",
+    "step_number": 1,
+    "title": "Step 1",
+    "instruction": "Remplir le réservoir d'eau avec de l'eau fraîche filtrée s'il n'est pas déjà plein.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "single-serve-pod-keurig-nespresso-step-2",
+    "technique_id": "single-serve-pod-keurig-nespresso",
+    "step_number": 2,
+    "title": "Step 2",
+    "instruction": "Allumer la machine. Laisser chauffer (15-60 secondes).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "single-serve-pod-keurig-nespresso-step-3",
+    "technique_id": "single-serve-pod-keurig-nespresso",
+    "step_number": 3,
+    "title": "Step 3",
+    "instruction": "Placer la tasse sous le bec. Sélectionner le volume/la taille souhaité(e).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "single-serve-pod-keurig-nespresso-step-4",
+    "technique_id": "single-serve-pod-keurig-nespresso",
+    "step_number": 4,
+    "title": "Step 4",
+    "instruction": "Insérer la capsule ou le K-Cup dans la chambre. Fermer le levier/couvercle.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "single-serve-pod-keurig-nespresso-step-5",
+    "technique_id": "single-serve-pod-keurig-nespresso",
+    "step_number": 5,
+    "title": "Step 5",
+    "instruction": "Appuyer sur le bouton d'infusion. La machine perce la capsule et force {water_total}g d'eau chaude à travers.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 240.0,
+    "image_name": null
+  },
+  {
+    "step_id": "single-serve-pod-keurig-nespresso-step-6",
+    "technique_id": "single-serve-pod-keurig-nespresso",
+    "step_number": 6,
+    "title": "Step 6",
+    "instruction": "Espresso Nespresso : ~25-40ml en 15-25s. K-Cup : ~150-240ml en 30-60s.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "single-serve-pod-keurig-nespresso-step-7",
+    "technique_id": "single-serve-pod-keurig-nespresso",
+    "step_number": 7,
+    "title": "Step 7",
+    "instruction": "Retirer la capsule usagée. Servir immédiatement.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "melitta-pour-over-classic-flat-bottom-step-1",
+    "technique_id": "melitta-pour-over-classic-flat-bottom",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Placer le filtre papier Melitta dans le porte-filtre à fond plat. Poser sur la tasse ou la carafe.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "melitta-pour-over-classic-flat-bottom-step-2",
+    "technique_id": "melitta-pour-over-classic-flat-bottom",
+    "step_number": 2,
+    "title": "Prep",
+    "instruction": "Rincer le filtre à l'eau chaude pour éliminer le goût de papier. Jeter l'eau de rinçage.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "melitta-pour-over-classic-flat-bottom-step-3",
+    "technique_id": "melitta-pour-over-classic-flat-bottom",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "Ajouter le café moulu. Niveler le lit de café. Démarrer le chronomètre.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "melitta-pour-over-classic-flat-bottom-step-4",
+    "technique_id": "melitta-pour-over-classic-flat-bottom",
+    "step_number": 4,
+    "title": "0:00",
+    "instruction": "Verser {water}g d'eau sur la mouture pour la pré-infusion. Mouiller uniformément.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 40.0,
+    "image_name": null
+  },
+  {
+    "step_id": "melitta-pour-over-classic-flat-bottom-step-5",
+    "technique_id": "melitta-pour-over-classic-flat-bottom",
+    "step_number": 5,
+    "title": "0:00-0:30",
+    "instruction": "Attendre 30 secondes pour la pré-infusion (libération du CO₂).",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "melitta-pour-over-classic-flat-bottom-step-6",
+    "technique_id": "melitta-pour-over-classic-flat-bottom",
+    "step_number": 6,
+    "title": "0:30",
+    "instruction": "Commencer la versée principale en cercles concentriques lents du centre vers l'extérieur.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "melitta-pour-over-classic-flat-bottom-step-7",
+    "technique_id": "melitta-pour-over-classic-flat-bottom",
+    "step_number": 7,
+    "title": "0:30-2:30",
+    "instruction": "Verser régulièrement en 2-3 pulsations pour atteindre {water_total}g, en laissant un écoulement partiel entre les versées.",
+    "duration_seconds": 120,
+    "water_volume_ml_base": 200.0,
+    "image_name": null
+  },
+  {
+    "step_id": "melitta-pour-over-classic-flat-bottom-step-8",
+    "technique_id": "melitta-pour-over-classic-flat-bottom",
+    "step_number": 8,
+    "title": "2:30-4:00",
+    "instruction": "Laisser l'écoulement complet. Viser un lit de café plat et uniforme.",
+    "duration_seconds": 90,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nitro-cold-brew-step-1",
+    "technique_id": "nitro-cold-brew",
+    "step_number": 1,
+    "title": "Step 1",
+    "instruction": "Moudre le café très grossièrement (texture de sucre brut).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nitro-cold-brew-step-2",
+    "technique_id": "nitro-cold-brew",
+    "step_number": 2,
+    "title": "Step 2",
+    "instruction": "Mélanger avec {water_total}g d'eau froide/à température ambiante. Remuer pour saturer. Couvrir.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 120.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nitro-cold-brew-step-3",
+    "technique_id": "nitro-cold-brew",
+    "step_number": 3,
+    "title": "Step 3",
+    "instruction": "Réfrigérer 18-24 heures (ou à température ambiante 12-16 heures).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nitro-cold-brew-step-4",
+    "technique_id": "nitro-cold-brew",
+    "step_number": 4,
+    "title": "Step 4",
+    "instruction": "Filtrer à travers un tamis fin, puis un filtre papier pour une clarté maximale.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nitro-cold-brew-step-5",
+    "technique_id": "nitro-cold-brew",
+    "step_number": 5,
+    "title": "Step 5",
+    "instruction": "Transférer le concentré d'infusion froide dans un fût compatible azote ou un siphon à crème.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nitro-cold-brew-step-6",
+    "technique_id": "nitro-cold-brew",
+    "step_number": 6,
+    "title": "Step 6",
+    "instruction": "Charger à l'azote (N₂, PAS de CO₂ — azote = crémeux ; CO₂ = pétillant).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nitro-cold-brew-step-7",
+    "technique_id": "nitro-cold-brew",
+    "step_number": 7,
+    "title": "Step 7",
+    "instruction": "Secouer le fût doucement. Réfrigérer au moins 1 heure pour que l'azote soit absorbé.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nitro-cold-brew-step-8",
+    "technique_id": "nitro-cold-brew",
+    "step_number": 8,
+    "title": "Step 8",
+    "instruction": "Verser via le robinet ou la buse dans un verre. L'effet caractéristique de micro-bulles en cascade apparaît.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-standardupright-step-1",
+    "technique_id": "aeropress-standardupright",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "Placer le filtre papier dans le capuchon ; rincer à l'eau chaude. Fixer le capuchon sur la chambre AeroPress et placer sur la tasse.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-standardupright-step-2",
+    "technique_id": "aeropress-standardupright",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "Ajouter le café moulu. Démarrer le chronomètre. Verser la totalité des {water_total}g d'eau de manière régulière.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 225.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-standardupright-step-3",
+    "technique_id": "aeropress-standardupright",
+    "step_number": 3,
+    "title": "0:10",
+    "instruction": "Remuer doucement 3-5 fois d'avant en arrière.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-standardupright-step-4",
+    "technique_id": "aeropress-standardupright",
+    "step_number": 4,
+    "title": "0:15 - Steep",
+    "instruction": "Laisser le café infuser. Un peu s'écoulera — c'est normal avec la méthode droite.",
+    "duration_seconds": 45,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-standardupright-step-5",
+    "technique_id": "aeropress-standardupright",
+    "step_number": 5,
+    "title": "1:00 - Press",
+    "instruction": "Insérer le piston et presser lentement avec une pression régulière pendant 20-30 secondes.",
+    "duration_seconds": 25,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-standardupright-step-6",
+    "technique_id": "aeropress-standardupright",
+    "step_number": 6,
+    "title": "1:25 - Finish",
+    "instruction": "Arrêter de presser au sifflement (l'air traverse la mouture).",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-standardupright-step-7",
+    "technique_id": "aeropress-standardupright",
+    "step_number": 7,
+    "title": "Done",
+    "instruction": "Retirer l'AeroPress. Diluer éventuellement avec de l'eau chaude pour un café style Americano.",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  }
+]

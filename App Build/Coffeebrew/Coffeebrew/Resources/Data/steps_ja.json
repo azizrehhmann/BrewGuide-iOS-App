@@ -1,0 +1,3032 @@
+[
+  {
+    "step_id": "v60-james-hoffmann-ultimate-step-1",
+    "technique_id": "v60-james-hoffmann-ultimate",
+    "step_number": 1,
+    "title": "0:00",
+    "instruction": "挽いたコーヒーをV60に入れ、中央に指でくぼみを作る",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-james-hoffmann-ultimate-step-2",
+    "technique_id": "v60-james-hoffmann-ultimate",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "タイマースタート。{water}gのお湯（投入量の2倍）を中心から外側へ螺旋状に注ぐ",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 30.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-james-hoffmann-ultimate-step-3",
+    "technique_id": "v60-james-hoffmann-ultimate",
+    "step_number": 3,
+    "title": "0:10",
+    "instruction": "V60を円を描くように回し、スラリーが均一になるまで混ぜる",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-james-hoffmann-ultimate-step-4",
+    "technique_id": "v60-james-hoffmann-ultimate",
+    "step_number": 4,
+    "title": "0:10-0:45",
+    "instruction": "コーヒーを蒸らす（CO₂が放出される）。最大45秒待つ",
+    "duration_seconds": 35,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-james-hoffmann-ultimate-step-5",
+    "technique_id": "v60-james-hoffmann-ultimate",
+    "step_number": 5,
+    "title": "0:45",
+    "instruction": "メインの注湯開始：1:15までに{water}gに達するよう積極的に螺旋状に注ぐ（全体の60%）",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 120.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-james-hoffmann-ultimate-step-6",
+    "technique_id": "v60-james-hoffmann-ultimate",
+    "step_number": 6,
+    "title": "1:15",
+    "instruction": "ゆっくり2回目の注湯：1:45までに{water_total}gに達するよう優しく注ぐ",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 100.5,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-james-hoffmann-ultimate-step-7",
+    "technique_id": "v60-james-hoffmann-ultimate",
+    "step_number": 7,
+    "title": "1:45",
+    "instruction": "スプーンで時計回りに1回、反時計回りに1回かき混ぜる（側面の粉を落とす）",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-james-hoffmann-ultimate-step-8",
+    "technique_id": "v60-james-hoffmann-ultimate",
+    "step_number": 8,
+    "title": "1:50",
+    "instruction": "V60を少しドレインさせ、最後に優しくスワールする",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-james-hoffmann-ultimate-step-9",
+    "technique_id": "v60-james-hoffmann-ultimate",
+    "step_number": 9,
+    "title": "1:55-3:30",
+    "instruction": "完全にドリップするのを待つ。平らなコーヒーベッドを目指す。合計時間約3:30",
+    "duration_seconds": 95,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-tetsu-kasuya-46-method-step-1",
+    "technique_id": "v60-tetsu-kasuya-46-method",
+    "step_number": 1,
+    "title": "0:00",
+    "instruction": "{water}gのお湯を10秒かけて同心円状にゆっくり注ぐ（1回目＝40%のパート1）",
+    "duration_seconds": 10,
+    "water_volume_ml_base": 45.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-tetsu-kasuya-46-method-step-2",
+    "technique_id": "v60-tetsu-kasuya-46-method",
+    "step_number": 2,
+    "title": "0:00-0:45",
+    "instruction": "次の注湯の前に水が完全に落ちるのを待つ",
+    "duration_seconds": 45,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-tetsu-kasuya-46-method-step-3",
+    "technique_id": "v60-tetsu-kasuya-46-method",
+    "step_number": 3,
+    "title": "0:45",
+    "instruction": "{water}gのお湯を注ぐ（2回目＝40%のパート2）。完全に落ちるのを待つ",
+    "duration_seconds": 40,
+    "water_volume_ml_base": 45.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-tetsu-kasuya-46-method-step-4",
+    "technique_id": "v60-tetsu-kasuya-46-method",
+    "step_number": 4,
+    "title": "1:25",
+    "instruction": "{water}gのお湯を注ぐ（3回目＝60%のパート1）。完全に落ちるのを待つ",
+    "duration_seconds": 40,
+    "water_volume_ml_base": 45.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-tetsu-kasuya-46-method-step-5",
+    "technique_id": "v60-tetsu-kasuya-46-method",
+    "step_number": 5,
+    "title": "2:05",
+    "instruction": "{water}gのお湯を注ぐ（4回目＝60%のパート2）。完全に落ちるのを待つ",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 45.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-tetsu-kasuya-46-method-step-6",
+    "technique_id": "v60-tetsu-kasuya-46-method",
+    "step_number": 6,
+    "title": "2:35",
+    "instruction": "{water}gのお湯を注ぐ（5回目＝60%のパート3）。完全に落ちるのを待つ",
+    "duration_seconds": 55,
+    "water_volume_ml_base": 45.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-tetsu-kasuya-46-method-step-7",
+    "technique_id": "v60-tetsu-kasuya-46-method",
+    "step_number": 7,
+    "title": "3:30",
+    "instruction": "抽出完了。V60を取り外してサーブする",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-james-hoffmann-step-1",
+    "technique_id": "french-press-james-hoffmann",
+    "step_number": 1,
+    "title": "0:00",
+    "instruction": "フレンチプレスに{coffee}gの中挽きコーヒーを入れる（粗挽きは使わないこと）",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-james-hoffmann-step-2",
+    "technique_id": "french-press-james-hoffmann",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "タイマースタート。{water_total}gのお湯を一気に注ぎ、すべての粉を均一に浸す",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 250.5,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-james-hoffmann-step-3",
+    "technique_id": "french-press-james-hoffmann",
+    "step_number": 3,
+    "title": "0:00-4:00",
+    "instruction": "蓋をせずに4分待つ。触らないこと。上にクラストが形成される",
+    "duration_seconds": 240,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-james-hoffmann-step-4",
+    "technique_id": "french-press-james-hoffmann",
+    "step_number": 4,
+    "title": "4:00",
+    "instruction": "優しくかき混ぜてクラストを崩す（時計回り＋反時計回り）",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-james-hoffmann-step-5",
+    "technique_id": "french-press-james-hoffmann",
+    "step_number": 5,
+    "title": "4:15",
+    "instruction": "2本のスプーンで表面の泡と浮遊物をすくい取る",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-james-hoffmann-step-6",
+    "technique_id": "french-press-james-hoffmann",
+    "step_number": 6,
+    "title": "4:30",
+    "instruction": "蓋をする（プランジャーは押し下げない）。さらに5〜8分待つ",
+    "duration_seconds": 390,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-james-hoffmann-step-7",
+    "technique_id": "french-press-james-hoffmann",
+    "step_number": 7,
+    "title": "9:00-12:00",
+    "instruction": "プランジャーを表面のすぐ下まで優しく押し下げる（底まで押さない）",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-james-hoffmann-step-8",
+    "technique_id": "french-press-james-hoffmann",
+    "step_number": 8,
+    "title": "9:00-12:00",
+    "instruction": "カップに優しく注ぐ。沈殿した粉を乱さないよう最後の約20mlは残す",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2025-winner-némo-pop-step-1",
+    "technique_id": "aeropress-wac-2025-winner-némo-pop",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "まずカラフェに50°Cのバイパスウォーター{water}gを注ぐ",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 32.1,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2025-winner-némo-pop-step-2",
+    "technique_id": "aeropress-wac-2025-winner-némo-pop",
+    "step_number": 2,
+    "title": "Prep",
+    "instruction": "コーヒーを挽く（低速回転）。チャフを吹き飛ばし200μmで微粉をふるう",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2025-winner-némo-pop-step-3",
+    "technique_id": "aeropress-wac-2025-winner-némo-pop",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "エアロプレスをカラフェの上に正位置で置き、ふるったコーヒーをチャンバーに入れる",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2025-winner-némo-pop-step-4",
+    "technique_id": "aeropress-wac-2025-winner-némo-pop",
+    "step_number": 4,
+    "title": "0:00",
+    "instruction": "84°Cのお湯{water}gをエアロプレスに注ぐ。すべての粉を湿らせる",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 50.4,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2025-winner-némo-pop-step-5",
+    "technique_id": "aeropress-wac-2025-winner-némo-pop",
+    "step_number": 5,
+    "title": "0:25",
+    "instruction": "南北南北、次に東西東西のパターンでかき混ぜる",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2025-winner-némo-pop-step-6",
+    "technique_id": "aeropress-wac-2025-winner-némo-pop",
+    "step_number": 6,
+    "title": "0:50",
+    "instruction": "約20秒かけて優しくプレスを始める",
+    "duration_seconds": 20,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2025-winner-némo-pop-step-7",
+    "technique_id": "aeropress-wac-2025-winner-némo-pop",
+    "step_number": 7,
+    "title": "1:10",
+    "instruction": "プレス完了。コーヒーがカラフェ内のバイパスウォーターと混ざる。サーブする。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-1",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "エアロプレスを4番目の目盛りで逆さまにセット。チャンバーに{coffee}gのコーヒーを入れる",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-2",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "1回目：メロドリップで{water}gのお湯を注ぐ（5〜6秒）",
+    "duration_seconds": 6,
+    "water_volume_ml_base": 41.5,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-3",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 3,
+    "title": "0:06-0:30",
+    "instruction": "待つ。コーヒーを蒸らす",
+    "duration_seconds": 24,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-4",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 4,
+    "title": "0:30",
+    "instruction": "2回目：メロドリップでさらに{water}gのお湯を注ぐ（合計{water_total}g、約10秒）",
+    "duration_seconds": 10,
+    "water_volume_ml_base": 66.5,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-5",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 5,
+    "title": "0:45",
+    "instruction": "南北東西のパターンで10秒間優しくかき混ぜる",
+    "duration_seconds": 10,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-6",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 6,
+    "title": "1:00",
+    "instruction": "フィルターをすすぐ（Aesir 1枚）。ケトルを消して蓋を外す",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-7",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 7,
+    "title": "1:20",
+    "instruction": "エアロプレスにキャップをする。優しく空気を抜く（約10秒）",
+    "duration_seconds": 10,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-8",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 8,
+    "title": "1:30",
+    "instruction": "エアロプレスを優しくスワールし、サーバーの上に置く",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-9",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 9,
+    "title": "1:35",
+    "instruction": "優しくプレスを始める。30〜40秒で76〜79gの抽出を目指す",
+    "duration_seconds": 35,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-10",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 10,
+    "title": "2:10",
+    "instruction": "ケトルからお湯を加えて合計約130〜135gにする。室温の0ppmの水を20〜30g加える",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "chemex-step-1",
+    "technique_id": "chemex",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "ケメックスフィルターを置く（3層側を注ぎ口に向ける）。お湯ですすぎ、捨てる",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "chemex-step-2",
+    "technique_id": "chemex",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "挽いたコーヒーを入れ、軽く振って平らにする。タイマースタート。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "chemex-step-3",
+    "technique_id": "chemex",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "{water}gのお湯で蒸らす。中心から螺旋状にすべての粉を均一に湿らせる",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 45.0,
+    "image_name": null
+  },
+  {
+    "step_id": "chemex-step-4",
+    "technique_id": "chemex",
+    "step_number": 4,
+    "title": "0:00-0:45",
+    "instruction": "30〜45秒蒸らしを待つ（コーヒーがCO₂を放出して膨らむ）",
+    "duration_seconds": 38,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "chemex-step-5",
+    "technique_id": "chemex",
+    "step_number": 5,
+    "title": "0:45",
+    "instruction": "メインの注湯開始：中心から外側へゆっくり螺旋状に。フィルターの端には触れない",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "chemex-step-6",
+    "technique_id": "chemex",
+    "step_number": 6,
+    "title": "0:45-2:45",
+    "instruction": "安定して注ぎ続け合計{water_total}gに達するまで。縁に近づいたら一時停止",
+    "duration_seconds": 120,
+    "water_volume_ml_base": 180.0,
+    "image_name": null
+  },
+  {
+    "step_id": "chemex-step-7",
+    "technique_id": "chemex",
+    "step_number": 7,
+    "title": "2:45-4:00",
+    "instruction": "完全にドリップするのを待つ。合計3:30〜4:30を目指す",
+    "duration_seconds": 75,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "chemex-step-8",
+    "technique_id": "chemex",
+    "step_number": 8,
+    "title": "4:00",
+    "instruction": "フィルターを取り外して捨てる。すぐにサーブする",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "moka-pot-stovetop-espresso-step-1",
+    "technique_id": "moka-pot-stovetop-espresso",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "まずケトルでお湯を沸かす（予熱したお湯を使うと苦味の抽出が減る）",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "moka-pot-stovetop-espresso-step-2",
+    "technique_id": "moka-pot-stovetop-espresso",
+    "step_number": 2,
+    "title": "Step 1",
+    "instruction": "下部チャンバーに安全弁のすぐ下まで{water_total}gのお湯を入れる",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 150.0,
+    "image_name": null
+  },
+  {
+    "step_id": "moka-pot-stovetop-espresso-step-3",
+    "technique_id": "moka-pot-stovetop-espresso",
+    "step_number": 3,
+    "title": "Step 2",
+    "instruction": "フィルターバスケットに細挽きコーヒーを入れ、タンピングせずに平らにする",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "moka-pot-stovetop-espresso-step-4",
+    "technique_id": "moka-pot-stovetop-espresso",
+    "step_number": 4,
+    "title": "Step 3",
+    "instruction": "モカポットを組み立てる。タオルで熱い下部チャンバーを持つ",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "moka-pot-stovetop-espresso-step-5",
+    "technique_id": "moka-pot-stovetop-espresso",
+    "step_number": 5,
+    "title": "Step 4",
+    "instruction": "コンロに弱火〜中火で置く。観察するために蓋は開けておく",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "moka-pot-stovetop-espresso-step-6",
+    "technique_id": "moka-pot-stovetop-espresso",
+    "step_number": 6,
+    "title": "Step 5",
+    "instruction": "コーヒーが上部チャンバーに流れ始める。蜂蜜色の流れであるべき",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "moka-pot-stovetop-espresso-step-7",
+    "technique_id": "moka-pot-stovetop-espresso",
+    "step_number": 7,
+    "title": "Step 6",
+    "instruction": "プツプツ・ゴボゴボという音が始まったら、すぐに火から下ろす",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "moka-pot-stovetop-espresso-step-8",
+    "technique_id": "moka-pot-stovetop-espresso",
+    "step_number": 8,
+    "title": "Step 7",
+    "instruction": "抽出を止めるため、下部チャンバーを冷水で冷やす",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "moka-pot-stovetop-espresso-step-9",
+    "technique_id": "moka-pot-stovetop-espresso",
+    "step_number": 9,
+    "title": "Step 8",
+    "instruction": "すぐにサーブする。お湯で割ったりスチームミルクを加えてもよい",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-specialty-competition-step-1",
+    "technique_id": "turkish-coffee-specialty-competition",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "ライト〜ミディアムローストのスペシャルティコーヒーを使用。トルコ式とエスプレッソの間の粒度で挽く",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-specialty-competition-step-2",
+    "technique_id": "turkish-coffee-specialty-competition",
+    "step_number": 2,
+    "title": "Step 1",
+    "instruction": "銅のジェズヴェに60〜70°Cのぬるま湯{water_total}gを入れる",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 150.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-specialty-competition-step-3",
+    "technique_id": "turkish-coffee-specialty-competition",
+    "step_number": 3,
+    "title": "Step 2",
+    "instruction": "お湯の上に細挽きコーヒー{coffee}gを加える",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-specialty-competition-step-4",
+    "technique_id": "turkish-coffee-specialty-competition",
+    "step_number": 4,
+    "title": "Step 3",
+    "instruction": "木べらで優しくかき混ぜ、コーヒーが浸透して混ざるまで",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-specialty-competition-step-5",
+    "technique_id": "turkish-coffee-specialty-competition",
+    "step_number": 5,
+    "title": "Step 4",
+    "instruction": "ごく弱火にかける（ガス火、砂ヒーター、またはマイクロバーナー）",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-specialty-competition-step-6",
+    "technique_id": "turkish-coffee-specialty-competition",
+    "step_number": 6,
+    "title": "Step 5",
+    "instruction": "注意深く見守る。泡が形成されて上昇し始める",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-specialty-competition-step-7",
+    "technique_id": "turkish-coffee-specialty-competition",
+    "step_number": 7,
+    "title": "Step 6",
+    "instruction": "泡が縁近くまで達したら火から下ろす（1回のみ上昇）",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-specialty-competition-step-8",
+    "technique_id": "turkish-coffee-specialty-competition",
+    "step_number": 8,
+    "title": "Step 7",
+    "instruction": "泡の層を保つためデミタスカップにゆっくり注ぐ",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-specialty-competition-step-9",
+    "technique_id": "turkish-coffee-specialty-competition",
+    "step_number": 9,
+    "title": "Step 8",
+    "instruction": "粉が沈むまで1〜2分待つ。ゆっくり飲む",
+    "duration_seconds": 90,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cold-brew-immersion-step-1",
+    "technique_id": "cold-brew-immersion",
+    "step_number": 1,
+    "title": "Step 1",
+    "instruction": "コーヒーを非常に粗く挽く（ざらめ糖や粗いコーンミールのように）",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cold-brew-immersion-step-2",
+    "technique_id": "cold-brew-immersion",
+    "step_number": 2,
+    "title": "Step 2",
+    "instruction": "メイソンジャー、フレンチプレス、またはコールドブリューピッチャーにコーヒーを入れる",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cold-brew-immersion-step-3",
+    "technique_id": "cold-brew-immersion",
+    "step_number": 3,
+    "title": "Step 3",
+    "instruction": "粉の上に冷水または常温のフィルター水{water_total}gを注ぐ",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 120.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cold-brew-immersion-step-4",
+    "technique_id": "cold-brew-immersion",
+    "step_number": 4,
+    "title": "Step 4",
+    "instruction": "すべての粉が浸るよう優しくかき混ぜる",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cold-brew-immersion-step-5",
+    "technique_id": "cold-brew-immersion",
+    "step_number": 5,
+    "title": "Step 5",
+    "instruction": "容器に蓋をして冷蔵庫に入れる（より早い抽出には常温で置く）",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cold-brew-immersion-step-6",
+    "technique_id": "cold-brew-immersion",
+    "step_number": 6,
+    "title": "Step 6",
+    "instruction": "12〜24時間浸漬する（冷蔵＝18〜24時間、常温＝12〜16時間）",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cold-brew-immersion-step-7",
+    "technique_id": "cold-brew-immersion",
+    "step_number": 7,
+    "title": "Step 7",
+    "instruction": "細かいメッシュフィルターで濾し、次にチーズクロスまたはペーパーフィルターで濾す",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cold-brew-immersion-step-8",
+    "technique_id": "cold-brew-immersion",
+    "step_number": 8,
+    "title": "Step 8",
+    "instruction": "濃縮液は水またはミルクで1:1に希釈可能。氷の上にサーブする",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "clever-dripper-step-1",
+    "technique_id": "clever-dripper",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "クレバードリッパーにメリタ#4フィルターを入れ、お湯ですすぐ。ドリッパースタンドから排水",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "clever-dripper-step-2",
+    "technique_id": "clever-dripper",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "挽いたコーヒーを入れ、{water_total}gのお湯を一気に注ぐ（蒸らし不要）。タイマースタート",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 240.0,
+    "image_name": null
+  },
+  {
+    "step_id": "clever-dripper-step-3",
+    "technique_id": "clever-dripper",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "保温のため蓋をする",
+    "duration_seconds": 60,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "clever-dripper-step-4",
+    "technique_id": "clever-dripper",
+    "step_number": 4,
+    "title": "1:00",
+    "instruction": "浮いた粉のクラストを崩すよう優しくかき混ぜる",
+    "duration_seconds": 90,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "clever-dripper-step-5",
+    "technique_id": "clever-dripper",
+    "step_number": 5,
+    "title": "2:30",
+    "instruction": "クレバードリッパーをカラフェ/マグに置いてバルブを開放しドレインを開始",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "clever-dripper-step-6",
+    "technique_id": "clever-dripper",
+    "step_number": 6,
+    "title": "2:30-3:15",
+    "instruction": "ペーパーフィルターを通してドレインに30〜45秒かかる",
+    "duration_seconds": 38,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "clever-dripper-step-7",
+    "technique_id": "clever-dripper",
+    "step_number": 7,
+    "title": "3:15",
+    "instruction": "クレバードリッパーを取り外す。コーヒーをサーブする",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "siphon-vacuum-brewer-step-1",
+    "technique_id": "siphon-vacuum-brewer",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "上部チャンバーに布またはペーパーフィルターを取り付ける。新品の場合は布を浸す",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "siphon-vacuum-brewer-step-2",
+    "technique_id": "siphon-vacuum-brewer",
+    "step_number": 2,
+    "title": "Step 1",
+    "instruction": "下部グローブに{water_total}gの水を入れ、熱源の上に置く",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 225.0,
+    "image_name": null
+  },
+  {
+    "step_id": "siphon-vacuum-brewer-step-3",
+    "technique_id": "siphon-vacuum-brewer",
+    "step_number": 3,
+    "title": "Step 2",
+    "instruction": "お湯が温まったら上部チャンバーを緩く上に置く（まだ密閉しない）",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "siphon-vacuum-brewer-step-4",
+    "technique_id": "siphon-vacuum-brewer",
+    "step_number": 4,
+    "title": "Step 3",
+    "instruction": "お湯が沸騰し始めたら上部チャンバーを押して密閉する",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "siphon-vacuum-brewer-step-5",
+    "technique_id": "siphon-vacuum-brewer",
+    "step_number": 5,
+    "title": "Step 4",
+    "instruction": "真空圧で水が上部チャンバーに上昇する",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "siphon-vacuum-brewer-step-6",
+    "technique_id": "siphon-vacuum-brewer",
+    "step_number": 6,
+    "title": "Step 5",
+    "instruction": "ほとんどの水が上がったら挽いたコーヒーを加え、優しくかき混ぜて沈める",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "siphon-vacuum-brewer-step-7",
+    "technique_id": "siphon-vacuum-brewer",
+    "step_number": 7,
+    "title": "Step 6",
+    "instruction": "上部チャンバーで45〜90秒抽出する",
+    "duration_seconds": 68,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "siphon-vacuum-brewer-step-8",
+    "technique_id": "siphon-vacuum-brewer",
+    "step_number": 8,
+    "title": "Step 7",
+    "instruction": "火から下ろす。下部グローブが冷えると真空がフィルターを通して抽出コーヒーを下に引く",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "siphon-vacuum-brewer-step-9",
+    "technique_id": "siphon-vacuum-brewer",
+    "step_number": 9,
+    "title": "Step 8",
+    "instruction": "上部チャンバーを取り外す。下部グローブからサーブする",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-pour-over-standard-step-1",
+    "technique_id": "v60-pour-over-standard",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "V60ペーパーフィルターの継ぎ目を折る。サーバー上のドリッパーに置く。お湯ですすぎ、捨てる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-pour-over-standard-step-2",
+    "technique_id": "v60-pour-over-standard",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "挽いたコーヒーを入れ、振って平らにする。タイマースタート。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-pour-over-standard-step-3",
+    "technique_id": "v60-pour-over-standard",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "蒸らし：{water}gのお湯（コーヒー量の2倍）を中心から外側へ螺旋状に注ぐ。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 30.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-pour-over-standard-step-4",
+    "technique_id": "v60-pour-over-standard",
+    "step_number": 4,
+    "title": "0:00-0:30",
+    "instruction": "蒸らしのため30秒待つ。コーヒーがCO₂を放出して膨らむ。",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-pour-over-standard-step-5",
+    "technique_id": "v60-pour-over-standard",
+    "step_number": 5,
+    "title": "0:30",
+    "instruction": "メインの注湯開始：中心から外側へゆっくり同心円状に。フィルターの端には触れない。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-pour-over-standard-step-6",
+    "technique_id": "v60-pour-over-standard",
+    "step_number": 6,
+    "title": "0:30-2:00",
+    "instruction": "安定して{water}g注ぐ。水位をスラリーの約半分の高さに保つ。",
+    "duration_seconds": 90,
+    "water_volume_ml_base": 150.5,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-pour-over-standard-step-7",
+    "technique_id": "v60-pour-over-standard",
+    "step_number": 7,
+    "title": "2:00-2:30",
+    "instruction": "最後の注湯を完了し合計水量{water_total}gに達する。",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 70.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-pour-over-standard-step-8",
+    "technique_id": "v60-pour-over-standard",
+    "step_number": 8,
+    "title": "2:30-3:30",
+    "instruction": "完全にドリップするのを待つ。平らなコーヒーベッドを目指す。",
+    "duration_seconds": 60,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kalita-wave-step-1",
+    "technique_id": "kalita-wave",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "カリタウェーブフィルターをドリッパーに入れサーバー上でお湯ですすぐ。すすぎ水を捨てる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kalita-wave-step-2",
+    "technique_id": "kalita-wave",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "挽いたコーヒーを入れ、振って平らにする。タイマースタート。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kalita-wave-step-3",
+    "technique_id": "kalita-wave",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "蒸らし：{water}gのお湯ですべての粉を浸す。優しくスワール。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 45.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kalita-wave-step-4",
+    "technique_id": "kalita-wave",
+    "step_number": 4,
+    "title": "0:00-0:45",
+    "instruction": "蒸らしのため30〜45秒待つ。",
+    "duration_seconds": 38,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kalita-wave-step-5",
+    "technique_id": "kalita-wave",
+    "step_number": 5,
+    "title": "0:45",
+    "instruction": "ゆっくり同心円状に注ぎ合計水量{water_total}gの約60%まで。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 99.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kalita-wave-step-6",
+    "technique_id": "kalita-wave",
+    "step_number": 6,
+    "title": "1:30",
+    "instruction": "少し待つ。水がスラリーの近くまで下がるのを待つ。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kalita-wave-step-7",
+    "technique_id": "kalita-wave",
+    "step_number": 7,
+    "title": "1:45",
+    "instruction": "注ぎを再開し最終水量{water_total}gに達する。優しく中心に注ぐ。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 96.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kalita-wave-step-8",
+    "technique_id": "kalita-wave",
+    "step_number": 8,
+    "title": "2:30-4:00",
+    "instruction": "ドリップ完了。平らなベッド＝均一な抽出。",
+    "duration_seconds": 90,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-1",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "キャップにペーパーフィルターを入れてすすぐ。キャップをエアロプレスチャンバーに取り付けマグに置く。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-2",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "挽いたコーヒーを入れる。タイマースタート。{water_total}gのお湯を安定して注ぐ。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 108.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-3",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 3,
+    "title": "0:10",
+    "instruction": "前後に3〜5回優しくかき混ぜる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-4",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 4,
+    "title": "0:10-1:00",
+    "instruction": "コーヒーを浸漬する（正位置法では少し滴り落ちるが正常）。",
+    "duration_seconds": 50,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-5",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 5,
+    "title": "1:00",
+    "instruction": "プランジャーを入れ20〜30秒かけて一定の圧力でゆっくり押し下げる。",
+    "duration_seconds": 25,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-6",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 6,
+    "title": "1:20-1:30",
+    "instruction": "シューという音が聞こえたらプレスを止める。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-wac-2024-winner-george-stanica-step-7",
+    "technique_id": "aeropress-wac-2024-winner-george-stanica",
+    "step_number": 7,
+    "title": "Done",
+    "instruction": "エアロプレスを取り外す。お好みでお湯を加えてアメリカーノスタイルに。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "espresso-machine-step-1",
+    "technique_id": "espresso-machine",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "マシンを15〜30分ウォームアップする。グループヘッドをお湯で洗い流す。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "espresso-machine-step-2",
+    "technique_id": "espresso-machine",
+    "step_number": 2,
+    "title": "Step 1",
+    "instruction": "挽きたてのコーヒー{coffee}gをポルタフィルターバスケットに入れる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "espresso-machine-step-3",
+    "technique_id": "espresso-machine",
+    "step_number": 3,
+    "title": "Step 2",
+    "instruction": "粉を均一に分配する（WDTツールまたはタップ）。約15kgの圧力で水平にタンプ。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "espresso-machine-step-4",
+    "technique_id": "espresso-machine",
+    "step_number": 4,
+    "title": "Step 3",
+    "instruction": "ポルタフィルターをグループヘッドにロックする。カップを下に置く。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "espresso-machine-step-5",
+    "technique_id": "espresso-machine",
+    "step_number": 5,
+    "title": "Step 4",
+    "instruction": "抽出開始。ポンプが作動したらタイマー開始。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "espresso-machine-step-6",
+    "technique_id": "espresso-machine",
+    "step_number": 6,
+    "title": "Step 5",
+    "instruction": "流れを観察：最初はゆっくりとした滴り、次に細い安定した流れ（マウステール）。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "espresso-machine-step-7",
+    "technique_id": "espresso-machine",
+    "step_number": 7,
+    "title": "Step 6",
+    "instruction": "{coffee}gの投入量で25〜35秒以内に{water_total}gの抽出を目指す。",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 30.0,
+    "image_name": null
+  },
+  {
+    "step_id": "espresso-machine-step-8",
+    "technique_id": "espresso-machine",
+    "step_number": 8,
+    "title": "Step 7",
+    "instruction": "ショットを止める。すぐにサーブする。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "vietnamese-phin-filter-step-1",
+    "technique_id": "vietnamese-phin-filter",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "フィンフィルターをグラスに置く。グラスに練乳を大さじ2〜3杯加える。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "vietnamese-phin-filter-step-2",
+    "technique_id": "vietnamese-phin-filter",
+    "step_number": 2,
+    "title": "Step 1",
+    "instruction": "フィンチャンバーにコーヒー粉を入れ振って平らにする。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "vietnamese-phin-filter-step-3",
+    "technique_id": "vietnamese-phin-filter",
+    "step_number": 3,
+    "title": "Step 2",
+    "instruction": "重力プレス/フィルタースクリーンを上に置き軽く押して圧縮する。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "vietnamese-phin-filter-step-4",
+    "technique_id": "vietnamese-phin-filter",
+    "step_number": 4,
+    "title": "Step 3",
+    "instruction": "少量のお湯（{water}g）を加えて20秒間粉を蒸らす。",
+    "duration_seconds": 20,
+    "water_volume_ml_base": 20.0,
+    "image_name": null
+  },
+  {
+    "step_id": "vietnamese-phin-filter-step-5",
+    "technique_id": "vietnamese-phin-filter",
+    "step_number": 5,
+    "title": "Step 4",
+    "instruction": "フィンに残りのお湯{water}gを上まで注ぐ。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 100.0,
+    "image_name": null
+  },
+  {
+    "step_id": "vietnamese-phin-filter-step-6",
+    "technique_id": "vietnamese-phin-filter",
+    "step_number": 6,
+    "title": "Step 5",
+    "instruction": "フィンに蓋をする。コーヒーがゆっくりドリップするのを待つ（合計4〜6分）。",
+    "duration_seconds": 300,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "vietnamese-phin-filter-step-7",
+    "technique_id": "vietnamese-phin-filter",
+    "step_number": 7,
+    "title": "Step 6",
+    "instruction": "ドリップが止まったらフィンを取り外す。練乳をコーヒーに混ぜる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "vietnamese-phin-filter-step-8",
+    "technique_id": "vietnamese-phin-filter",
+    "step_number": 8,
+    "title": "Step 7",
+    "instruction": "アイスバージョン：氷いっぱいのグラスに注ぐ。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "japanese-iced-coffee-flash-brew-step-1",
+    "technique_id": "japanese-iced-coffee-flash-brew",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "ドリッパーの下のサーバー/カラフェに氷{water}gを入れる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 96.0,
+    "image_name": null
+  },
+  {
+    "step_id": "japanese-iced-coffee-flash-brew-step-2",
+    "technique_id": "japanese-iced-coffee-flash-brew",
+    "step_number": 2,
+    "title": "Prep",
+    "instruction": "氷を入れたサーバーの上にすすいだペーパーフィルター付きのV60/ケメックスをセット。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "japanese-iced-coffee-flash-brew-step-3",
+    "technique_id": "japanese-iced-coffee-flash-brew",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "挽いたコーヒーを入れる（通常より少し細かめに挽く）。タイマースタート。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "japanese-iced-coffee-flash-brew-step-4",
+    "technique_id": "japanese-iced-coffee-flash-brew",
+    "step_number": 4,
+    "title": "0:00",
+    "instruction": "{water}gのお湯で蒸らす。30秒待つ。",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 36.0,
+    "image_name": null
+  },
+  {
+    "step_id": "japanese-iced-coffee-flash-brew-step-5",
+    "technique_id": "japanese-iced-coffee-flash-brew",
+    "step_number": 5,
+    "title": "0:30",
+    "instruction": "残りの{water}gのお湯をゆっくり螺旋状に注ぐ（合計湯量＝レシピの約60%）。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 108.0,
+    "image_name": null
+  },
+  {
+    "step_id": "japanese-iced-coffee-flash-brew-step-6",
+    "technique_id": "japanese-iced-coffee-flash-brew",
+    "step_number": 6,
+    "title": "1:30-2:30",
+    "instruction": "注湯完了。完全にドリップするのを待つ。ホットコーヒーが直接氷の上に滴る。",
+    "duration_seconds": 60,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "japanese-iced-coffee-flash-brew-step-7",
+    "technique_id": "japanese-iced-coffee-flash-brew",
+    "step_number": 7,
+    "title": "Done",
+    "instruction": "サーバーを回して残りの氷を溶かし均一に冷やす。グラスに注ぐ。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "south-indian-filter-coffee-kaapi-step-1",
+    "technique_id": "south-indian-filter-coffee-kaapi",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "南インド式の真鍮/ステンレス製コーヒーフィルターが清潔で乾いていることを確認。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "south-indian-filter-coffee-kaapi-step-2",
+    "technique_id": "south-indian-filter-coffee-kaapi",
+    "step_number": 2,
+    "title": "Step 1",
+    "instruction": "コーヒー粉（チコリ20〜30%配合が多い）を上部の穴あきチャンバーに入れる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "south-indian-filter-coffee-kaapi-step-3",
+    "technique_id": "south-indian-filter-coffee-kaapi",
+    "step_number": 3,
+    "title": "Step 2",
+    "instruction": "プランジャーディスクで優しく押して平らにする（強く圧縮しないこと）。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "south-indian-filter-coffee-kaapi-step-4",
+    "technique_id": "south-indian-filter-coffee-kaapi",
+    "step_number": 4,
+    "title": "Step 3",
+    "instruction": "粉の上に沸騰水{water_total}gを注ぐ。上部チャンバーを満たす。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 150.0,
+    "image_name": null
+  },
+  {
+    "step_id": "south-indian-filter-coffee-kaapi-step-5",
+    "technique_id": "south-indian-filter-coffee-kaapi",
+    "step_number": 5,
+    "title": "Step 4",
+    "instruction": "蓋を閉める。デコクションが下部チャンバーに滴るのを待つ（早め15〜20分、伝統的3〜4時間）。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "south-indian-filter-coffee-kaapi-step-6",
+    "technique_id": "south-indian-filter-coffee-kaapi",
+    "step_number": 6,
+    "title": "Step 5",
+    "instruction": "その間に鍋で全脂肪乳を沸かす。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "south-indian-filter-coffee-kaapi-step-7",
+    "technique_id": "south-indian-filter-coffee-kaapi",
+    "step_number": 7,
+    "title": "Step 6",
+    "instruction": "タンブラーに濃いデコクション大さじ2を入れ沸かしたミルクを加える（好みの比率、約1:1〜1:2）。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "south-indian-filter-coffee-kaapi-step-8",
+    "technique_id": "south-indian-filter-coffee-kaapi",
+    "step_number": 8,
+    "title": "Step 7",
+    "instruction": "好みで砂糖を加える。タンブラーとダバラの間で高い位置から注ぎ合い泡を作る。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kyoto-style-slow-drip-cold-drip-tower-step-1",
+    "technique_id": "kyoto-style-slow-drip-cold-drip-tower",
+    "step_number": 1,
+    "title": "Step 1",
+    "instruction": "中央のコーヒーチャンバーの底にペーパーフィルターディスクを置く。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kyoto-style-slow-drip-cold-drip-tower-step-2",
+    "technique_id": "kyoto-style-slow-drip-cold-drip-tower",
+    "step_number": 2,
+    "title": "Step 2",
+    "instruction": "中粗挽きコーヒーを入れベッドを平らにする。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kyoto-style-slow-drip-cold-drip-tower-step-3",
+    "technique_id": "kyoto-style-slow-drip-cold-drip-tower",
+    "step_number": 3,
+    "title": "Step 3",
+    "instruction": "コーヒー粉の上に2枚目の湿らせたペーパーフィルターを置く。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kyoto-style-slow-drip-cold-drip-tower-step-4",
+    "technique_id": "kyoto-style-slow-drip-cold-drip-tower",
+    "step_number": 4,
+    "title": "Step 4",
+    "instruction": "上部の水タンクに氷と冷水{water_total}gを入れる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 150.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kyoto-style-slow-drip-cold-drip-tower-step-5",
+    "technique_id": "kyoto-style-slow-drip-cold-drip-tower",
+    "step_number": 5,
+    "title": "Step 5",
+    "instruction": "バルブを調整して約1秒に1滴にする（これが重要）。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kyoto-style-slow-drip-cold-drip-tower-step-6",
+    "technique_id": "kyoto-style-slow-drip-cold-drip-tower",
+    "step_number": 6,
+    "title": "Step 6",
+    "instruction": "タワーモデルと希望の濃さに応じて3〜12時間ドリップさせる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kyoto-style-slow-drip-cold-drip-tower-step-7",
+    "technique_id": "kyoto-style-slow-drip-cold-drip-tower",
+    "step_number": 7,
+    "title": "Step 7",
+    "instruction": "下部のカラフェに濃縮液を集める。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kyoto-style-slow-drip-cold-drip-tower-step-8",
+    "technique_id": "kyoto-style-slow-drip-cold-drip-tower",
+    "step_number": 8,
+    "title": "Step 8",
+    "instruction": "氷の上にサーブする。必要に応じて希釈。冷蔵庫で1〜2週間保存可能。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "scott-rao-v60-technique-step-1",
+    "technique_id": "scott-rao-v60-technique",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "V60フィルターをすすぐ。ドリッパーとサーバーを予熱。コーヒーを入れ平らなベッドを作る。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "scott-rao-v60-technique-step-2",
+    "technique_id": "scott-rao-v60-technique",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "タイマースタート。蒸らし用に{water}gのお湯（3倍）を積極的に注いで浸す。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 45.0,
+    "image_name": null
+  },
+  {
+    "step_id": "scott-rao-v60-technique-step-3",
+    "technique_id": "scott-rao-v60-technique",
+    "step_number": 3,
+    "title": "0:00-0:10",
+    "instruction": "スプーンで粉をかき混ぜすべてが湿っていることを確認する（ラオスピン）。",
+    "duration_seconds": 10,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "scott-rao-v60-technique-step-4",
+    "technique_id": "scott-rao-v60-technique",
+    "step_number": 4,
+    "title": "0:10-0:45",
+    "instruction": "蒸らしを待つ。CO₂が放出される。",
+    "duration_seconds": 35,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "scott-rao-v60-technique-step-5",
+    "technique_id": "scott-rao-v60-technique",
+    "step_number": 5,
+    "title": "0:45",
+    "instruction": "メインの注湯開始：中心から外側へまた戻る連続的な螺旋。止めたり始めたりしないこと。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "scott-rao-v60-technique-step-6",
+    "technique_id": "scott-rao-v60-technique",
+    "step_number": 6,
+    "title": "0:45-1:45",
+    "instruction": "1回の途切れない注湯で合計{water_total}gに。水位を一定に保つ。",
+    "duration_seconds": 60,
+    "water_volume_ml_base": 195.0,
+    "image_name": null
+  },
+  {
+    "step_id": "scott-rao-v60-technique-step-7",
+    "technique_id": "scott-rao-v60-technique",
+    "step_number": 7,
+    "title": "1:45",
+    "instruction": "優しくラオスピンを行う – ドリッパーを1回スワールしてベッドを平らにし乾いた粉を落とす。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "scott-rao-v60-technique-step-8",
+    "technique_id": "scott-rao-v60-technique",
+    "step_number": 8,
+    "title": "1:45-3:00",
+    "instruction": "完全にドリップするのを待つ。最後に平らなベッド。",
+    "duration_seconds": 75,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "hario-switch-immersion-dripper-step-1",
+    "technique_id": "hario-switch-immersion-dripper",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "V60タブ付きペーパーフィルターをスイッチに入れお湯ですすぐ。バルブを閉じる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "hario-switch-immersion-dripper-step-2",
+    "technique_id": "hario-switch-immersion-dripper",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "挽いたコーヒーを入れる。タイマースタート。{water_total}gのお湯を一気に注ぐ。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 225.0,
+    "image_name": null
+  },
+  {
+    "step_id": "hario-switch-immersion-dripper-step-3",
+    "technique_id": "hario-switch-immersion-dripper",
+    "step_number": 3,
+    "title": "0:05",
+    "instruction": "すべての粉が浸るよう2〜3回優しくかき混ぜる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "hario-switch-immersion-dripper-step-4",
+    "technique_id": "hario-switch-immersion-dripper",
+    "step_number": 4,
+    "title": "0:05-2:00",
+    "instruction": "バルブを閉じたまま完全に浸漬するのを待つ（浸漬フェーズ）。",
+    "duration_seconds": 115,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "hario-switch-immersion-dripper-step-5",
+    "technique_id": "hario-switch-immersion-dripper",
+    "step_number": 5,
+    "title": "2:00",
+    "instruction": "バルブを開ける。コーヒーがペーパーフィルターを通ってドレインし始める。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "hario-switch-immersion-dripper-step-6",
+    "technique_id": "hario-switch-immersion-dripper",
+    "step_number": 6,
+    "title": "2:00-3:00",
+    "instruction": "V60ペーパーを通してドレインに約45〜60秒かかる。",
+    "duration_seconds": 53,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "hario-switch-immersion-dripper-step-7",
+    "technique_id": "hario-switch-immersion-dripper",
+    "step_number": 7,
+    "title": "3:00",
+    "instruction": "ドリッパーを取り外す。サーブする。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-matt-winton-five-pour-step-1",
+    "technique_id": "v60-matt-winton-five-pour",
+    "step_number": 1,
+    "title": "0:00",
+    "instruction": "ペーパーフィルターをすすぐ。V60に{coffee}gのコーヒーを入れる。タイマースタート。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-matt-winton-five-pour-step-2",
+    "technique_id": "v60-matt-winton-five-pour",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "蒸らし用に{water}gのお湯（3.3倍）を注ぐ。スワールしてすべての粉を浸す。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 50.1,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-matt-winton-five-pour-step-3",
+    "technique_id": "v60-matt-winton-five-pour",
+    "step_number": 3,
+    "title": "0:00-0:45",
+    "instruction": "蒸らしのため45秒待つ。",
+    "duration_seconds": 45,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-matt-winton-five-pour-step-4",
+    "technique_id": "v60-matt-winton-five-pour",
+    "step_number": 4,
+    "title": "0:45",
+    "instruction": "2回目の注湯：{water}gのお湯を優しく同心円状に。",
+    "duration_seconds": 20,
+    "water_volume_ml_base": 50.1,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-matt-winton-five-pour-step-5",
+    "technique_id": "v60-matt-winton-five-pour",
+    "step_number": 5,
+    "title": "1:05",
+    "instruction": "3回目の注湯：{water}gのお湯。",
+    "duration_seconds": 20,
+    "water_volume_ml_base": 50.1,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-matt-winton-five-pour-step-6",
+    "technique_id": "v60-matt-winton-five-pour",
+    "step_number": 6,
+    "title": "1:25",
+    "instruction": "4回目の注湯：{water}gのお湯。",
+    "duration_seconds": 20,
+    "water_volume_ml_base": 50.1,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-matt-winton-five-pour-step-7",
+    "technique_id": "v60-matt-winton-five-pour",
+    "step_number": 7,
+    "title": "1:45",
+    "instruction": "5回目の注湯：{water}gのお湯（合計{water_total}g）。",
+    "duration_seconds": 15,
+    "water_volume_ml_base": 50.1,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-matt-winton-five-pour-step-8",
+    "technique_id": "v60-matt-winton-five-pour",
+    "step_number": 8,
+    "title": "2:00",
+    "instruction": "V60を最後に優しくスワールしてベッドを平らにする。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "v60-matt-winton-five-pour-step-9",
+    "technique_id": "v60-matt-winton-five-pour",
+    "step_number": 9,
+    "title": "2:30-3:30",
+    "instruction": "完全にドリップするのを待つ。底に平らなコーヒーベッドを目指す。",
+    "duration_seconds": 60,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nel-drip-flannel-drip-step-1",
+    "technique_id": "nel-drip-flannel-drip",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "フランネルフィルターをお湯に浸す。余分な水を絞る。ネルドリップスタンドに取り付ける。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nel-drip-flannel-drip-step-2",
+    "technique_id": "nel-drip-flannel-drip",
+    "step_number": 2,
+    "title": "Prep",
+    "instruction": "残留風味を除去するためフィルターをお湯で湿らせる。すすぎ水を捨てる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nel-drip-flannel-drip-step-3",
+    "technique_id": "nel-drip-flannel-drip",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "フランネルフィルターに挽いたコーヒーを入れる。中央に小さなくぼみを作る。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nel-drip-flannel-drip-step-4",
+    "technique_id": "nel-drip-flannel-drip",
+    "step_number": 4,
+    "title": "0:00",
+    "instruction": "タイマースタート。蒸らし用に中央に{water}gのお湯を優しく注ぐ。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 30.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nel-drip-flannel-drip-step-5",
+    "technique_id": "nel-drip-flannel-drip",
+    "step_number": 5,
+    "title": "0:00-0:30",
+    "instruction": "30秒待つ。コーヒーが膨らみCO₂を放出する。",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nel-drip-flannel-drip-step-6",
+    "technique_id": "nel-drip-flannel-drip",
+    "step_number": 6,
+    "title": "0:30",
+    "instruction": "ゆっくり中心からの注湯開始：細い流れで中心から外側へ優しく螺旋状に。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nel-drip-flannel-drip-step-7",
+    "technique_id": "nel-drip-flannel-drip",
+    "step_number": 7,
+    "title": "0:30-3:00",
+    "instruction": "ゆっくりパルスを続けて合計{water_total}gに達する。水位を低く保つこと。",
+    "duration_seconds": 150,
+    "water_volume_ml_base": 180.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nel-drip-flannel-drip-step-8",
+    "technique_id": "nel-drip-flannel-drip",
+    "step_number": 8,
+    "title": "3:00-5:00",
+    "instruction": "残りの水が完全に滴り落ちるのを待つ。",
+    "duration_seconds": 120,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-standard-step-1",
+    "technique_id": "french-press-standard",
+    "step_number": 1,
+    "title": "0:00",
+    "instruction": "フレンチプレスをお湯で予熱する。お湯を捨てる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-standard-step-2",
+    "technique_id": "french-press-standard",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "フレンチプレスに粗挽きコーヒー{coffee}gを入れる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-standard-step-3",
+    "technique_id": "french-press-standard",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "タイマースタート。{water_total}gのお湯を勢いよく注ぎすべての粉を浸す。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 240.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-standard-step-4",
+    "technique_id": "french-press-standard",
+    "step_number": 4,
+    "title": "0:15",
+    "instruction": "スプーンで1回軽くかき混ぜて乾いたダマを崩す。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-standard-step-5",
+    "technique_id": "french-press-standard",
+    "step_number": 5,
+    "title": "0:20",
+    "instruction": "プランジャーを上げた状態でフレンチプレスに蓋をする。まだプレスしない。",
+    "duration_seconds": 220,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-standard-step-6",
+    "technique_id": "french-press-standard",
+    "step_number": 6,
+    "title": "4:00",
+    "instruction": "プランジャーをゆっくり均一に底まで押し下げる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "french-press-standard-step-7",
+    "technique_id": "french-press-standard",
+    "step_number": 7,
+    "title": "4:00",
+    "instruction": "過抽出を防ぐためすぐにカップに注ぐ。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-inverted-method-step-1",
+    "technique_id": "aeropress-inverted-method",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "プランジャーを4の目盛りでチャンバーに挿入。逆さまにする。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-inverted-method-step-2",
+    "technique_id": "aeropress-inverted-method",
+    "step_number": 2,
+    "title": "Prep",
+    "instruction": "キャップにペーパーフィルターを入れてお湯ですすぐ。キャップを脇に置く。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-inverted-method-step-3",
+    "technique_id": "aeropress-inverted-method",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "逆さまのチャンバーに挽いたコーヒーを入れる。タイマースタート。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-inverted-method-step-4",
+    "technique_id": "aeropress-inverted-method",
+    "step_number": 4,
+    "title": "0:00",
+    "instruction": "{water_total}gのお湯を希望の水位まで注ぐ。キャップ用のスペースを残す。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 180.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-inverted-method-step-5",
+    "technique_id": "aeropress-inverted-method",
+    "step_number": 5,
+    "title": "0:10",
+    "instruction": "前後に3〜5回優しくかき混ぜる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-inverted-method-step-6",
+    "technique_id": "aeropress-inverted-method",
+    "step_number": 6,
+    "title": "1:00",
+    "instruction": "すすいだフィルターキャップを取り付ける。しっかりねじ込む。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-inverted-method-step-7",
+    "technique_id": "aeropress-inverted-method",
+    "step_number": 7,
+    "title": "1:05",
+    "instruction": "慎重かつ自信を持ってエアロプレスをカップの上にフリップする。しっかり持つこと！",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-inverted-method-step-8",
+    "technique_id": "aeropress-inverted-method",
+    "step_number": 8,
+    "title": "1:10",
+    "instruction": "プランジャーをゆっくり安定して押し下げる（約30秒）。シュー音で止める。",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-inverted-method-step-9",
+    "technique_id": "aeropress-inverted-method",
+    "step_number": 9,
+    "title": "1:40",
+    "instruction": "エアロプレスを取り外す。お好みでお湯を加える。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-james-hoffmann-best-recipe-step-1",
+    "technique_id": "aeropress-james-hoffmann-best-recipe",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "キャップにペーパーフィルターを入れてすすぐ。エアロプレスを正位置でカップに組み立てる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-james-hoffmann-best-recipe-step-2",
+    "technique_id": "aeropress-james-hoffmann-best-recipe",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "{coffee}gのコーヒーを入れる。タイマースタート。{water_total}gのお湯を一気に注ぐ。かき混ぜないこと。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 270.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-james-hoffmann-best-recipe-step-3",
+    "technique_id": "aeropress-james-hoffmann-best-recipe",
+    "step_number": 3,
+    "title": "0:00-2:00",
+    "instruction": "2分間待つ。少しコーヒーが滴り落ちるが問題ない。",
+    "duration_seconds": 120,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-james-hoffmann-best-recipe-step-4",
+    "technique_id": "aeropress-james-hoffmann-best-recipe",
+    "step_number": 4,
+    "title": "2:00",
+    "instruction": "エアロプレスを優しく3回スワールする（スプーン不要）。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-james-hoffmann-best-recipe-step-5",
+    "technique_id": "aeropress-james-hoffmann-best-recipe",
+    "step_number": 5,
+    "title": "2:05",
+    "instruction": "約30秒かけてゆっくり優しく押し下げる。",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-james-hoffmann-best-recipe-step-6",
+    "technique_id": "aeropress-james-hoffmann-best-recipe",
+    "step_number": 6,
+    "title": "2:30",
+    "instruction": "シュー音で止める。すぐにサーブする。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-traditional-step-1",
+    "technique_id": "turkish-coffee-traditional",
+    "step_number": 1,
+    "title": "Step 1",
+    "instruction": "ジェズヴェに冷たいフィルター水{water_total}gを加える。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 150.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-traditional-step-2",
+    "technique_id": "turkish-coffee-traditional",
+    "step_number": 2,
+    "title": "Step 2",
+    "instruction": "極細挽きコーヒー{coffee}gを加える。お好みで今砂糖を加える。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-traditional-step-3",
+    "technique_id": "turkish-coffee-traditional",
+    "step_number": 3,
+    "title": "Step 3",
+    "instruction": "コーヒー、水、砂糖を均一に混ぜるよう優しくかき混ぜる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-traditional-step-4",
+    "technique_id": "turkish-coffee-traditional",
+    "step_number": 4,
+    "title": "Step 4",
+    "instruction": "ジェズヴェを弱火にかける。急がないこと。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-traditional-step-5",
+    "technique_id": "turkish-coffee-traditional",
+    "step_number": 5,
+    "title": "Step 5",
+    "instruction": "表面に泡が形成され始めるのを見守る（約1:30〜2:00）。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-traditional-step-6",
+    "technique_id": "turkish-coffee-traditional",
+    "step_number": 6,
+    "title": "Step 6",
+    "instruction": "泡が縁近くまで上がったら火から下ろす。20〜30秒沈静させる。",
+    "duration_seconds": 25,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-traditional-step-7",
+    "technique_id": "turkish-coffee-traditional",
+    "step_number": 7,
+    "title": "Step 7",
+    "instruction": "火に戻す。泡を2回目上昇させる。火から下ろす。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-traditional-step-8",
+    "technique_id": "turkish-coffee-traditional",
+    "step_number": 8,
+    "title": "Step 8",
+    "instruction": "3回目で最後の泡上昇のため火に戻す。火から下ろす。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-traditional-step-9",
+    "technique_id": "turkish-coffee-traditional",
+    "step_number": 9,
+    "title": "Step 9",
+    "instruction": "オプション：冷水小さじ1を加えて粉の沈殿を早める。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "turkish-coffee-traditional-step-10",
+    "technique_id": "turkish-coffee-traditional",
+    "step_number": 10,
+    "title": "Step 10",
+    "instruction": "泡を保ちながらデミタスカップにゆっくり注ぐ。1〜2分待ってから飲む。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "drip-coffee-maker-automatic-step-1",
+    "technique_id": "drip-coffee-maker-automatic",
+    "step_number": 1,
+    "title": "Step 1",
+    "instruction": "水タンクにフィルター水{water_total}gを入れる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 240.0,
+    "image_name": null
+  },
+  {
+    "step_id": "drip-coffee-maker-automatic-step-2",
+    "technique_id": "drip-coffee-maker-automatic",
+    "step_number": 2,
+    "title": "Step 2",
+    "instruction": "バスケットにペーパーまたは永久フィルターを入れる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "drip-coffee-maker-automatic-step-3",
+    "technique_id": "drip-coffee-maker-automatic",
+    "step_number": 3,
+    "title": "Step 3",
+    "instruction": "フィルターバスケットに中挽きコーヒー{coffee}gを入れる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "drip-coffee-maker-automatic-step-4",
+    "technique_id": "drip-coffee-maker-automatic",
+    "step_number": 4,
+    "title": "Step 4",
+    "instruction": "バスケットを閉じる。スタート/ブリューボタンを押す。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "drip-coffee-maker-automatic-step-5",
+    "technique_id": "drip-coffee-maker-automatic",
+    "step_number": 5,
+    "title": "Step 5",
+    "instruction": "マシンが自動的にお湯を加熱しコーヒーベッドを通してドリップする。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "drip-coffee-maker-automatic-step-6",
+    "technique_id": "drip-coffee-maker-automatic",
+    "step_number": 6,
+    "title": "Step 6",
+    "instruction": "5〜8分で抽出完了。カラフェからサーブする。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "drip-coffee-maker-automatic-step-7",
+    "technique_id": "drip-coffee-maker-automatic",
+    "step_number": 7,
+    "title": "Step 7",
+    "instruction": "バスケット/フィルターを取り外してホットプレートへの滴りを止める。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "percolator-stovetopelectric-step-1",
+    "technique_id": "percolator-stovetopelectric",
+    "step_number": 1,
+    "title": "Step 1",
+    "instruction": "パーコレーターの下部チャンバーに冷水{water_total}gを入れる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 255.0,
+    "image_name": null
+  },
+  {
+    "step_id": "percolator-stovetopelectric-step-2",
+    "technique_id": "percolator-stovetopelectric",
+    "step_number": 2,
+    "title": "Step 2",
+    "instruction": "ステムにフィルターバスケットを置く。バスケットに粗挽きコーヒー{coffee}gを入れる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "percolator-stovetopelectric-step-3",
+    "technique_id": "percolator-stovetopelectric",
+    "step_number": 3,
+    "title": "Step 3",
+    "instruction": "パーコレーターを組み立てる。熱源に置く。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "percolator-stovetopelectric-step-4",
+    "technique_id": "percolator-stovetopelectric",
+    "step_number": 4,
+    "title": "Step 4",
+    "instruction": "水が加熱されチューブを通って上昇しコーヒーの上に降り注ぎ下に滴り落ちて繰り返す。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "percolator-stovetopelectric-step-5",
+    "technique_id": "percolator-stovetopelectric",
+    "step_number": 5,
+    "title": "Step 5",
+    "instruction": "蓋のガラスノブを通して見守る。ミディアムアンバー色を目指す。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "percolator-stovetopelectric-step-6",
+    "technique_id": "percolator-stovetopelectric",
+    "step_number": 6,
+    "title": "Step 6",
+    "instruction": "7〜10分循環させる。",
+    "duration_seconds": 510,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "percolator-stovetopelectric-step-7",
+    "technique_id": "percolator-stovetopelectric",
+    "step_number": 7,
+    "title": "Step 7",
+    "instruction": "希望の濃さで直ちに火から下ろす。過抽出＝苦い。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "percolator-stovetopelectric-step-8",
+    "technique_id": "percolator-stovetopelectric",
+    "step_number": 8,
+    "title": "Step 8",
+    "instruction": "粉が沈むまで1〜2分置いてからサーブする。",
+    "duration_seconds": 90,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "osmotic-flow-v60-step-1",
+    "technique_id": "osmotic-flow-v60",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "V60またはカフェックフラワードリッパーでペーパーフィルターをすすぐ。サーバーに置く。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "osmotic-flow-v60-step-2",
+    "technique_id": "osmotic-flow-v60",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "{coffee}gのコーヒーを入れる（中挽き、標準V60より粗め）。ベッドを平らにする。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "osmotic-flow-v60-step-3",
+    "technique_id": "osmotic-flow-v60",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "タイマースタート。蒸らし用に{water}gのお湯を注ぐ。45秒待つ。",
+    "duration_seconds": 45,
+    "water_volume_ml_base": 37.5,
+    "image_name": null
+  },
+  {
+    "step_id": "osmotic-flow-v60-step-4",
+    "technique_id": "osmotic-flow-v60",
+    "step_number": 4,
+    "title": "0:45",
+    "instruction": "超低速の中心注湯を開始：細い流れで中心のみに注ぐ。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "osmotic-flow-v60-step-5",
+    "technique_id": "osmotic-flow-v60",
+    "step_number": 5,
+    "title": "0:45-3:00",
+    "instruction": "ゆっくりした中心注湯を続ける（残り{water}g）。水がコーヒーベッドをわずかに超える程度に。",
+    "duration_seconds": 135,
+    "water_volume_ml_base": 187.5,
+    "image_name": null
+  },
+  {
+    "step_id": "osmotic-flow-v60-step-6",
+    "technique_id": "osmotic-flow-v60",
+    "step_number": 6,
+    "title": "3:00",
+    "instruction": "すべての{water_total}gを注ぎ終えたら最終ドリップを待つ。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "osmotic-flow-v60-step-7",
+    "technique_id": "osmotic-flow-v60",
+    "step_number": 7,
+    "title": "3:00-4:00+",
+    "instruction": "ドリップは標準V60より時間がかかることがある。これは想定通り。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cupping-professional-tasting-step-1",
+    "technique_id": "cupping-professional-tasting",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "ボウルごとに{coffee}gを挽く（フレンチプレスよりやや粗め）。カッピングボウルを並べる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cupping-professional-tasting-step-2",
+    "technique_id": "cupping-professional-tasting",
+    "step_number": 2,
+    "title": "Prep",
+    "instruction": "テイスティングスプーン、すすぎ水、スピットカップを準備する。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cupping-professional-tasting-step-3",
+    "technique_id": "cupping-professional-tasting",
+    "step_number": 3,
+    "title": "Step 1",
+    "instruction": "ドライフレグランスを評価：各ボウルの乾いた粉の香りを嗅ぐ。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cupping-professional-tasting-step-4",
+    "technique_id": "cupping-professional-tasting",
+    "step_number": 4,
+    "title": "0:00",
+    "instruction": "タイマースタート。各ボウルの粉の上に93°Cのお湯{water_total}gを直接注ぐ。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 272.7,
+    "image_name": null
+  },
+  {
+    "step_id": "cupping-professional-tasting-step-5",
+    "technique_id": "cupping-professional-tasting",
+    "step_number": 5,
+    "title": "0:00-4:00",
+    "instruction": "正確に4分待つ。表面に粉のクラストが形成される。",
+    "duration_seconds": 240,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cupping-professional-tasting-step-6",
+    "technique_id": "cupping-professional-tasting",
+    "step_number": 6,
+    "title": "4:00",
+    "instruction": "クラストを崩す：近づいてスプーンで3回粉を横に押す。深く香りを吸い込む。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cupping-professional-tasting-step-7",
+    "technique_id": "cupping-professional-tasting",
+    "step_number": 7,
+    "title": "4:15",
+    "instruction": "2本のスプーンで泡と浮いた粉をすくい取る。廃棄ボウルに捨てる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cupping-professional-tasting-step-8",
+    "technique_id": "cupping-professional-tasting",
+    "step_number": 8,
+    "title": "4:30-9:00",
+    "instruction": "5〜8分コーヒーを冷ます。粉が底に沈む。",
+    "duration_seconds": 390,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cupping-professional-tasting-step-9",
+    "technique_id": "cupping-professional-tasting",
+    "step_number": 9,
+    "title": "9:00+",
+    "instruction": "テイスティング：スプーンから勢いよくすすりコーヒーを口全体に広げる。味、酸味、ボディ、バランス、甘み、後味を評価する。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cowboy-coffee-step-1",
+    "technique_id": "cowboy-coffee",
+    "step_number": 1,
+    "title": "Step 1",
+    "instruction": "鍋に水{water_total}gを入れる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 240.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cowboy-coffee-step-2",
+    "technique_id": "cowboy-coffee",
+    "step_number": 2,
+    "title": "Step 2",
+    "instruction": "焚き火またはコンロで完全に沸騰させる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cowboy-coffee-step-3",
+    "technique_id": "cowboy-coffee",
+    "step_number": 3,
+    "title": "Step 3",
+    "instruction": "鍋を火から下ろす。沸騰が収まるまで30秒待つ。",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cowboy-coffee-step-4",
+    "technique_id": "cowboy-coffee",
+    "step_number": 4,
+    "title": "Step 4",
+    "instruction": "粗挽きコーヒー{coffee}gを加える。優しく1回かき混ぜる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cowboy-coffee-step-5",
+    "technique_id": "cowboy-coffee",
+    "step_number": 5,
+    "title": "Step 5",
+    "instruction": "鍋に蓋をする。火から下ろして4〜5分浸漬する。",
+    "duration_seconds": 270,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cowboy-coffee-step-6",
+    "technique_id": "cowboy-coffee",
+    "step_number": 6,
+    "title": "Step 6",
+    "instruction": "粉の沈殿を助けるため上に冷水約30mlを加える。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cowboy-coffee-step-7",
+    "technique_id": "cowboy-coffee",
+    "step_number": 7,
+    "title": "Step 7",
+    "instruction": "粉が沈むまでさらに2〜3分待つ。",
+    "duration_seconds": 150,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "cowboy-coffee-step-8",
+    "technique_id": "cowboy-coffee",
+    "step_number": 8,
+    "title": "Step 8",
+    "instruction": "上部から注意深くカップに注ぎ沈殿物を鍋に残す。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kopi-tubruk-indonesian-step-1",
+    "technique_id": "kopi-tubruk-indonesian",
+    "step_number": 1,
+    "title": "Step 1",
+    "instruction": "ケトルでお湯を沸かす。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kopi-tubruk-indonesian-step-2",
+    "technique_id": "kopi-tubruk-indonesian",
+    "step_number": 2,
+    "title": "Step 2",
+    "instruction": "カップまたはグラスに極細挽きコーヒー{coffee}gを入れる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kopi-tubruk-indonesian-step-3",
+    "technique_id": "kopi-tubruk-indonesian",
+    "step_number": 3,
+    "title": "Step 3",
+    "instruction": "好みで砂糖を加える（伝統的：小さじ1〜2）。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kopi-tubruk-indonesian-step-4",
+    "technique_id": "kopi-tubruk-indonesian",
+    "step_number": 4,
+    "title": "Step 4",
+    "instruction": "粉の上に直接沸騰水{water_total}gを注ぐ。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 300.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kopi-tubruk-indonesian-step-5",
+    "technique_id": "kopi-tubruk-indonesian",
+    "step_number": 5,
+    "title": "Step 5",
+    "instruction": "砂糖を溶かしすべての粉を湿らせるため軽くかき混ぜる（3〜4回）。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kopi-tubruk-indonesian-step-6",
+    "technique_id": "kopi-tubruk-indonesian",
+    "step_number": 6,
+    "title": "Step 6",
+    "instruction": "粉が底に沈むまで3〜5分待つ。",
+    "duration_seconds": 240,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kopi-tubruk-indonesian-step-7",
+    "technique_id": "kopi-tubruk-indonesian",
+    "step_number": 7,
+    "title": "Step 7",
+    "instruction": "上部から注意深く飲む。沈殿した粉を乱さないこと。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "kopi-tubruk-indonesian-step-8",
+    "technique_id": "kopi-tubruk-indonesian",
+    "step_number": 8,
+    "title": "Step 8",
+    "instruction": "沈殿層に達したら飲むのを止める。最後の約20mlは残す。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "neapolitan-flip-pot-napoletana-step-1",
+    "technique_id": "neapolitan-flip-pot-napoletana",
+    "step_number": 1,
+    "title": "Step 1",
+    "instruction": "下部の水チャンバーに蒸気穴のすぐ下まで冷水{water_total}gを入れる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 225.0,
+    "image_name": null
+  },
+  {
+    "step_id": "neapolitan-flip-pot-napoletana-step-2",
+    "technique_id": "neapolitan-flip-pot-napoletana",
+    "step_number": 2,
+    "title": "Step 2",
+    "instruction": "フィルターバスケットに中粗挽きコーヒーを入れる。平らにする。タンプしない。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "neapolitan-flip-pot-napoletana-step-3",
+    "technique_id": "neapolitan-flip-pot-napoletana",
+    "step_number": 3,
+    "title": "Step 3",
+    "instruction": "組み立て：下に水チャンバー、中央にフィルター、上に空のサービングチャンバー。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "neapolitan-flip-pot-napoletana-step-4",
+    "technique_id": "neapolitan-flip-pot-napoletana",
+    "step_number": 4,
+    "title": "Step 4",
+    "instruction": "中火でコンロに置く（この段階では注ぎ口が下を向く）。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "neapolitan-flip-pot-napoletana-step-5",
+    "technique_id": "neapolitan-flip-pot-napoletana",
+    "step_number": 5,
+    "title": "Step 5",
+    "instruction": "上部近くの蒸気穴から蒸気が出るのを待つ。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "neapolitan-flip-pot-napoletana-step-6",
+    "technique_id": "neapolitan-flip-pot-napoletana",
+    "step_number": 6,
+    "title": "Step 6",
+    "instruction": "蒸気が出たら火から下ろす。自信を持って一気にポット全体をひっくり返す。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "neapolitan-flip-pot-napoletana-step-7",
+    "technique_id": "neapolitan-flip-pot-napoletana",
+    "step_number": 7,
+    "title": "Step 7",
+    "instruction": "お湯が重力でコーヒーを通り下のサービングチャンバーに滴る。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "neapolitan-flip-pot-napoletana-step-8",
+    "technique_id": "neapolitan-flip-pot-napoletana",
+    "step_number": 8,
+    "title": "Step 8",
+    "instruction": "すべての水が滴り落ちるまで5〜8分待つ。滴りは遅くなり止まる。",
+    "duration_seconds": 390,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "neapolitan-flip-pot-napoletana-step-9",
+    "technique_id": "neapolitan-flip-pot-napoletana",
+    "step_number": 9,
+    "title": "Step 9",
+    "instruction": "使用済みフィルターバスケットを取り外す。注ぎ口からサーブする。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "single-serve-pod-keurig-nespresso-step-1",
+    "technique_id": "single-serve-pod-keurig-nespresso",
+    "step_number": 1,
+    "title": "Step 1",
+    "instruction": "まだ満タンでなければ水タンクにフィルター水を入れる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "single-serve-pod-keurig-nespresso-step-2",
+    "technique_id": "single-serve-pod-keurig-nespresso",
+    "step_number": 2,
+    "title": "Step 2",
+    "instruction": "マシンの電源を入れる。ウォームアップを待つ（15〜60秒）。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "single-serve-pod-keurig-nespresso-step-3",
+    "technique_id": "single-serve-pod-keurig-nespresso",
+    "step_number": 3,
+    "title": "Step 3",
+    "instruction": "注ぎ口の下にカップを置く。希望の量/サイズを選択する。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "single-serve-pod-keurig-nespresso-step-4",
+    "technique_id": "single-serve-pod-keurig-nespresso",
+    "step_number": 4,
+    "title": "Step 4",
+    "instruction": "カプセルまたはKカップをチャンバーに挿入する。レバー/蓋を閉じる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "single-serve-pod-keurig-nespresso-step-5",
+    "technique_id": "single-serve-pod-keurig-nespresso",
+    "step_number": 5,
+    "title": "Step 5",
+    "instruction": "ブリューボタンを押す。マシンがカプセルに穴を開け{water_total}gのお湯を通す。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 240.0,
+    "image_name": null
+  },
+  {
+    "step_id": "single-serve-pod-keurig-nespresso-step-6",
+    "technique_id": "single-serve-pod-keurig-nespresso",
+    "step_number": 6,
+    "title": "Step 6",
+    "instruction": "ネスプレッソ：15〜25秒で約25〜40ml。Kカップ：30〜60秒で約150〜240ml。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "single-serve-pod-keurig-nespresso-step-7",
+    "technique_id": "single-serve-pod-keurig-nespresso",
+    "step_number": 7,
+    "title": "Step 7",
+    "instruction": "使用済みカプセルを取り外す。すぐにサーブする。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "melitta-pour-over-classic-flat-bottom-step-1",
+    "technique_id": "melitta-pour-over-classic-flat-bottom",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "メリタペーパーフィルターをフラットボトムドリッパーに入れる。マグまたはカラフェにセット。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "melitta-pour-over-classic-flat-bottom-step-2",
+    "technique_id": "melitta-pour-over-classic-flat-bottom",
+    "step_number": 2,
+    "title": "Prep",
+    "instruction": "紙臭さを除去するためフィルターをお湯ですすぐ。すすぎ水を捨てる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "melitta-pour-over-classic-flat-bottom-step-3",
+    "technique_id": "melitta-pour-over-classic-flat-bottom",
+    "step_number": 3,
+    "title": "0:00",
+    "instruction": "挽いたコーヒーを入れる。ベッドを平らにする。タイマースタート。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "melitta-pour-over-classic-flat-bottom-step-4",
+    "technique_id": "melitta-pour-over-classic-flat-bottom",
+    "step_number": 4,
+    "title": "0:00",
+    "instruction": "蒸らし用に粉の上に{water}gのお湯を注ぐ。均一に湿らせる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 40.0,
+    "image_name": null
+  },
+  {
+    "step_id": "melitta-pour-over-classic-flat-bottom-step-5",
+    "technique_id": "melitta-pour-over-classic-flat-bottom",
+    "step_number": 5,
+    "title": "0:00-0:30",
+    "instruction": "蒸らしのため30秒待つ（CO₂放出）。",
+    "duration_seconds": 30,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "melitta-pour-over-classic-flat-bottom-step-6",
+    "technique_id": "melitta-pour-over-classic-flat-bottom",
+    "step_number": 6,
+    "title": "0:30",
+    "instruction": "中心から外側へゆっくり同心円状にメインの注湯を開始。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "melitta-pour-over-classic-flat-bottom-step-7",
+    "technique_id": "melitta-pour-over-classic-flat-bottom",
+    "step_number": 7,
+    "title": "0:30-2:30",
+    "instruction": "2〜3回のパルスで安定して注ぎ{water_total}gに達する。注湯間に部分的なドレインを許容。",
+    "duration_seconds": 120,
+    "water_volume_ml_base": 200.0,
+    "image_name": null
+  },
+  {
+    "step_id": "melitta-pour-over-classic-flat-bottom-step-8",
+    "technique_id": "melitta-pour-over-classic-flat-bottom",
+    "step_number": 8,
+    "title": "2:30-4:00",
+    "instruction": "完全にドリップするのを待つ。平らで均一なコーヒーベッドを目指す。",
+    "duration_seconds": 90,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nitro-cold-brew-step-1",
+    "technique_id": "nitro-cold-brew",
+    "step_number": 1,
+    "title": "Step 1",
+    "instruction": "コーヒーを非常に粗く挽く（ざらめ糖の質感）。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nitro-cold-brew-step-2",
+    "technique_id": "nitro-cold-brew",
+    "step_number": 2,
+    "title": "Step 2",
+    "instruction": "冷水/常温の水{water_total}gと合わせる。浸るようにかき混ぜる。蓋をする。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 120.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nitro-cold-brew-step-3",
+    "technique_id": "nitro-cold-brew",
+    "step_number": 3,
+    "title": "Step 3",
+    "instruction": "18〜24時間冷蔵する（または常温で12〜16時間）。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nitro-cold-brew-step-4",
+    "technique_id": "nitro-cold-brew",
+    "step_number": 4,
+    "title": "Step 4",
+    "instruction": "細かいメッシュで濾しペーパーフィルターで最大の透明度に。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nitro-cold-brew-step-5",
+    "technique_id": "nitro-cold-brew",
+    "step_number": 5,
+    "title": "Step 5",
+    "instruction": "コールドブリュー濃縮液を窒素対応ケグまたはホイップクリームディスペンサーに移す。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nitro-cold-brew-step-6",
+    "technique_id": "nitro-cold-brew",
+    "step_number": 6,
+    "title": "Step 6",
+    "instruction": "窒素を充填する（N₂、CO₂ではない。窒素＝クリーミー、CO₂＝炭酸）。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nitro-cold-brew-step-7",
+    "technique_id": "nitro-cold-brew",
+    "step_number": 7,
+    "title": "Step 7",
+    "instruction": "ケグを優しく振る。窒素が吸収されるよう少なくとも1時間冷蔵する。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "nitro-cold-brew-step-8",
+    "technique_id": "nitro-cold-brew",
+    "step_number": 8,
+    "title": "Step 8",
+    "instruction": "タップまたはノズルからグラスに注ぐ。特徴的なカスケードマイクロバブル効果が現れる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-standardupright-step-1",
+    "technique_id": "aeropress-standardupright",
+    "step_number": 1,
+    "title": "Prep",
+    "instruction": "キャップにペーパーフィルターを入れてお湯ですすぐ。エアロプレスチャンバーに取り付けマグに置く。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-standardupright-step-2",
+    "technique_id": "aeropress-standardupright",
+    "step_number": 2,
+    "title": "0:00",
+    "instruction": "挽いたコーヒーを入れる。タイマースタート。{water_total}gのお湯を安定して注ぐ。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 225.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-standardupright-step-3",
+    "technique_id": "aeropress-standardupright",
+    "step_number": 3,
+    "title": "0:10",
+    "instruction": "前後に3〜5回優しくかき混ぜる。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-standardupright-step-4",
+    "technique_id": "aeropress-standardupright",
+    "step_number": 4,
+    "title": "0:15 - Steep",
+    "instruction": "コーヒーを浸漬する。少し滴り落ちるが正位置法では正常。",
+    "duration_seconds": 45,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-standardupright-step-5",
+    "technique_id": "aeropress-standardupright",
+    "step_number": 5,
+    "title": "1:00 - Press",
+    "instruction": "プランジャーを入れ20〜30秒かけて一定の圧力でゆっくり押し下げる。",
+    "duration_seconds": 25,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-standardupright-step-6",
+    "technique_id": "aeropress-standardupright",
+    "step_number": 6,
+    "title": "1:25 - Finish",
+    "instruction": "シューという音が聞こえたらプレスを止める（空気が粉を通っている）。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  },
+  {
+    "step_id": "aeropress-standardupright-step-7",
+    "technique_id": "aeropress-standardupright",
+    "step_number": 7,
+    "title": "Done",
+    "instruction": "エアロプレスを取り外す。お好みでお湯を加えてアメリカーノスタイルに。",
+    "duration_seconds": 0,
+    "water_volume_ml_base": 0.0,
+    "image_name": null
+  }
+]

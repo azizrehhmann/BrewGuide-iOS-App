@@ -1,0 +1,218 @@
+[
+  {
+    "method_id": "aeropress",
+    "name": "Aeropress",
+    "description": "Entdecke Aeropress-Brühtechniken.",
+    "difficulty": 2,
+    "icon_name": "gauge.with.dots.needle.bottom.50percent",
+    "image_name": null,
+    "category": "Pressure"
+  },
+  {
+    "method_id": "chemex",
+    "name": "Chemex",
+    "description": "Entdecke Chemex-Brühtechniken.",
+    "difficulty": 3,
+    "icon_name": "drop.fill",
+    "image_name": null,
+    "category": "Pour Over"
+  },
+  {
+    "method_id": "clever-dripper",
+    "name": "Clever Dripper",
+    "description": "Entdecke Clever Dripper-Brühtechniken.",
+    "difficulty": 1,
+    "icon_name": "cup.and.saucer.fill",
+    "image_name": null,
+    "category": "Immersion"
+  },
+  {
+    "method_id": "cold-brew",
+    "name": "Cold Brew",
+    "description": "Entdecke Cold Brew-Zubereitungstechniken.",
+    "difficulty": 1,
+    "icon_name": "cup.and.saucer.fill",
+    "image_name": null,
+    "category": "Cold Brew"
+  },
+  {
+    "method_id": "cowboy-coffee",
+    "name": "Cowboy Coffee",
+    "description": "Entdecke Cowboy Coffee-Brühtechniken.",
+    "difficulty": 1,
+    "icon_name": "flame.fill",
+    "image_name": null,
+    "category": "Stovetop & Traditional"
+  },
+  {
+    "method_id": "cupping",
+    "name": "Cupping",
+    "description": "Entdecke Cupping-Verkostungstechniken.",
+    "difficulty": 2,
+    "icon_name": "cup.and.saucer.fill",
+    "image_name": null,
+    "category": "Immersion"
+  },
+  {
+    "method_id": "drip-machine",
+    "name": "Drip Machine",
+    "description": "Entdecke Filterkaffeemaschinen-Brühtechniken.",
+    "difficulty": 1,
+    "icon_name": "drop.degreesign.fill",
+    "image_name": null,
+    "category": "Machine"
+  },
+  {
+    "method_id": "espresso",
+    "name": "Espresso",
+    "description": "Entdecke Espresso-Zubereitungstechniken.",
+    "difficulty": 4,
+    "icon_name": "gauge.with.dots.needle.bottom.50percent",
+    "image_name": null,
+    "category": "Pressure"
+  },
+  {
+    "method_id": "french-press",
+    "name": "French Press",
+    "description": "Entdecke French Press-Brühtechniken.",
+    "difficulty": 1,
+    "icon_name": "cup.and.saucer.fill",
+    "image_name": null,
+    "category": "Immersion"
+  },
+  {
+    "method_id": "hario-switch",
+    "name": "Hario Switch",
+    "description": "Entdecke Hario Switch-Brühtechniken.",
+    "difficulty": 2,
+    "icon_name": "cup.and.saucer.fill",
+    "image_name": null,
+    "category": "Pour Over"
+  },
+  {
+    "method_id": "japanese-iced",
+    "name": "Japanese Iced",
+    "description": "Entdecke Japanese Iced Coffee-Brühtechniken.",
+    "difficulty": 3,
+    "icon_name": "cup.and.saucer.fill",
+    "image_name": null,
+    "category": "Cold Brew"
+  },
+  {
+    "method_id": "kalita-wave",
+    "name": "Kalita Wave",
+    "description": "Entdecke Kalita Wave-Brühtechniken.",
+    "difficulty": 2,
+    "icon_name": "drop.fill",
+    "image_name": null,
+    "category": "Pour Over"
+  },
+  {
+    "method_id": "kopi-tubruk",
+    "name": "Kopi Tubruk",
+    "description": "Entdecke Kopi Tubruk-Brühtechniken.",
+    "difficulty": 1,
+    "icon_name": "flame.fill",
+    "image_name": null,
+    "category": "Stovetop & Traditional"
+  },
+  {
+    "method_id": "kyoto-cold-drip",
+    "name": "Kyoto Cold Drip",
+    "description": "Entdecke Kyoto Cold Drip-Brühtechniken.",
+    "difficulty": 3,
+    "icon_name": "snowflake",
+    "image_name": null,
+    "category": "Cold Brew"
+  },
+  {
+    "method_id": "melitta-pour-over",
+    "name": "Melitta Pour Over",
+    "description": "Entdecke Melitta Handfilter-Brühtechniken.",
+    "difficulty": 1,
+    "icon_name": "drop.fill",
+    "image_name": null,
+    "category": "Pour Over"
+  },
+  {
+    "method_id": "moka-pot",
+    "name": "Moka Pot",
+    "description": "Entdecke Mokakanne-Brühtechniken.",
+    "difficulty": 2,
+    "icon_name": "gauge.with.dots.needle.bottom.50percent",
+    "image_name": null,
+    "category": "Pressure"
+  },
+  {
+    "method_id": "neapolitan-flip",
+    "name": "Neapolitan Flip",
+    "description": "Entdecke Neapolitanische Wendekanne-Brühtechniken.",
+    "difficulty": 2,
+    "icon_name": "drop.degreesign.fill",
+    "image_name": null,
+    "category": "Stovetop & Traditional"
+  },
+  {
+    "method_id": "nel-drip",
+    "name": "Nel Drip",
+    "description": "Entdecke Nel Drip-Brühtechniken.",
+    "difficulty": 4,
+    "icon_name": "drop.fill",
+    "image_name": null,
+    "category": "Pour Over"
+  },
+  {
+    "method_id": "percolator",
+    "name": "Percolator",
+    "description": "Entdecke Perkolator-Brühtechniken.",
+    "difficulty": 1,
+    "icon_name": "arrow.up.arrow.down.circle.fill",
+    "image_name": null,
+    "category": "Stovetop & Traditional"
+  },
+  {
+    "method_id": "siphon",
+    "name": "Siphon",
+    "description": "Entdecke Siphon-Brühtechniken.",
+    "difficulty": 4,
+    "icon_name": "bubbles.and.sparkles.fill",
+    "image_name": null,
+    "category": "Immersion"
+  },
+  {
+    "method_id": "south-indian-filter",
+    "name": "South Indian Filter",
+    "description": "Entdecke Südindischer Filter-Brühtechniken.",
+    "difficulty": 2,
+    "icon_name": "drop.degreesign.fill",
+    "image_name": null,
+    "category": "Stovetop & Traditional"
+  },
+  {
+    "method_id": "turkish-coffee",
+    "name": "Turkish Coffee",
+    "description": "Entdecke Türkischer Kaffee-Zubereitungstechniken.",
+    "difficulty": 3,
+    "icon_name": "flame.fill",
+    "image_name": null,
+    "category": "Stovetop & Traditional"
+  },
+  {
+    "method_id": "v60-pour-over",
+    "name": "V60 Pour Over",
+    "description": "Entdecke V60 Handfilter-Brühtechniken.",
+    "difficulty": 3,
+    "icon_name": "drop.fill",
+    "image_name": null,
+    "category": "Pour Over"
+  },
+  {
+    "method_id": "vietnamese-phin",
+    "name": "Vietnamese Phin",
+    "description": "Entdecke Vietnamesische Phin-Brühtechniken.",
+    "difficulty": 1,
+    "icon_name": "drop.degreesign.fill",
+    "image_name": null,
+    "category": "Stovetop & Traditional"
+  }
+]
