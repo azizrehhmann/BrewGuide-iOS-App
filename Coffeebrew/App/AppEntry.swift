@@ -7,6 +7,7 @@ struct AppEntry: App {
     let persistenceController = PersistenceController.shared
 
     init() {
+        UITabBar.appearance().isHidden = true  // MainTabView draws its own bar
         // Pushed screens use large nav titles; match the serif headings used on the tab roots
         if let font = UIFont(name: "PlayfairDisplay-Regular", size: 32) {
             UINavigationBar.appearance().largeTitleTextAttributes = [.font: font]

@@ -19,6 +19,71 @@ final class BrewJournalViewModelTests: XCTestCase {
         super.tearDown()
     }
 
+    // MARK: - Record brew
+
+    @MainActor
+    func testRecordBrewUsesPantryBeanAndDeductsCoffee() {
+        let db = DatabaseService()
+        let technique = db.techniques[0]
+        let inventory = BeanInventoryViewModel(context: context)
+        inventory.addBean(name: "Pantry Bean", roasterName: "Roaster", origin: "Kenya", roastLevel: "Light",
+                          totalWeightGrams: 30, roastDate: nil)
+        let pantry = inventory.beans[0]
+
+        let session = sut.recordBrew(
+            technique: technique, method: db.method(byId: technique.methodId),
+            bean: db.beans[0], pantryBean: pantry,
+            servings: 1, coffeeGrams: 15, waterMl: 250, seconds: 200
+        )
+        XCTAssertEqual(session?.beanName, "Pantry Bean")
+        XCTAssertEqual(session?.beanOrigin, "Kenya")
+        XCTAssertEqual(pantry.remainingWeightGrams, 15, accuracy: 0.01)
+    }
+
+    @MainActor
+    func testRecordBrewFallsBackToRecommendedBean() {
+        let db = DatabaseService()
+        let technique = db.techniques[0]
+        let session = sut.recordBrew(
+            technique: technique, method: nil, bean: db.beans[0], pantryBean: nil,
+            servings: 1, coffeeGrams: 15, waterMl: 250, seconds: 200
+        )
+        XCTAssertEqual(session?.beanName, db.beans[0].name)
+    }
+
+    // MARK: - Week and sort
+
+    @MainActor
+    func testThisWeekLabelsStartOnFirstWeekday() {
+        var us = Calendar(identifier: .gregorian)
+        us.firstWeekday = 1  // Sunday
+        let monday = us.date(from: DateComponents(year: 2026, month: 10, day: 12, hour: 9))!
+        let session = sut.saveSession(
+            methodName: "m", equipmentName: "e", techniqueName: "t", beanName: nil, beanOrigin: nil, roastLevel: nil,
+            servingSize: 1, coffeeGrams: 15, waterMl: 250, grindSize: "Medium", waterTempC: 93, totalBrewTimeSeconds: 1
+        )
+        session.brewedAt = monday
+
+        let week = sut.thisWeek(now: monday, calendar: us)
+        XCTAssertEqual(week.count, 1)
+        XCTAssertEqual(week.days.map(\.brewed), [false, true, false, false, false, false, false])
+        XCTAssertEqual(week.days[1].label, "M")
+    }
+
+    @MainActor
+    func testMostUsedSortPutsTheMostBrewedMethodFirst() {
+        for (equipment, minutesAgo) in [("AeroPress", 1), ("V60", 2), ("V60", 3)] {
+            let session = sut.saveSession(
+                methodName: "m", equipmentName: equipment, techniqueName: "t", beanName: nil, beanOrigin: nil, roastLevel: nil,
+                servingSize: 1, coffeeGrams: 15, waterMl: 250, grindSize: "Medium", waterTempC: 93, totalBrewTimeSeconds: 1
+            )
+            session.brewedAt = Date().addingTimeInterval(Double(-minutesAgo * 60))
+        }
+        sut.sortOrder = .mostUsed
+        sut.fetchSessions()
+        XCTAssertEqual(sut.sessions.map { $0.equipmentName ?? "" }, ["V60", "V60", "AeroPress"])
+    }
+
     // MARK: - Save
 
     @MainActor
@@ -274,5 +339,16 @@ final class BeanInventoryViewModelTests: XCTestCase {
         sut.deductWeight(from: bean, grams: 20)
         XCTAssertEqual(bean.remainingWeightGrams, 0, accuracy: 0.01)
         XCTAssertFalse(bean.isActive)
+    }
+
+    @MainActor
+    func testAddBeanReportsFailedSaveAndKeepsListClean() {
+        // A container with no stores can't save
+        let container = NSPersistentContainer(name: "BrewGuide", managedObjectModel: PersistenceController(inMemory: true).container.managedObjectModel)
+        let sut = BeanInventoryViewModel(context: container.viewContext)
+        sut.addBean(name: "Lost", roasterName: "R", origin: nil, roastLevel: "Medium",
+                    totalWeightGrams: 250, roastDate: nil)
+        XCTAssertTrue(sut.saveFailed)
+        XCTAssertTrue(sut.beans.isEmpty)
     }
 }

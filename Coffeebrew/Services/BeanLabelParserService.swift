@@ -33,7 +33,7 @@ struct BeanLabelParserService {
         ("light roast", "Light"),
         ("light", "Light"),
         ("blonde", "Light"),
-        ("cinnamon", "Light"),
+        ("cinnamon roast", "Light"),
         ("medium-light", "Medium-Light"),
         ("medium light", "Medium-Light"),
         ("medium-dark", "Medium-Dark"),
@@ -75,6 +75,23 @@ struct BeanLabelParserService {
             return f
         }
     }()
+
+    // MARK: - Read (AI when available, keyword parser otherwise)
+
+    private static let roastLevels = ["Light", "Medium-Light", "Medium", "Medium-Dark", "Dark"]
+
+    /// Keyword parse, improved with the on-device model where Apple Intelligence is available.
+    /// Weight and roast date always come from the keyword parse.
+    static func read(ocrText: String) async -> ParsedBean {
+        var result = parse(ocrText: ocrText)
+        guard let ai = try? await AIRecommendationService().parseScannedText(ocrText) else { return result }
+        if !ai.name.isEmpty { result.name = ai.name }
+        result.roasterName = ai.roaster ?? result.roasterName
+        result.origin = ai.origin ?? result.origin
+        if let roast = ai.roastLevel, roastLevels.contains(roast) { result.roastLevel = roast }
+        if !ai.flavourNotes.isEmpty { result.tastingNotes = ai.flavourNotes }
+        return result
+    }
 
     // MARK: - Parse
 
@@ -134,8 +151,10 @@ struct BeanLabelParserService {
     }
 
     private static func extractRoastLevel(from text: String) -> String? {
-        for (pattern, level) in roastKeywords {
-            if text.contains(pattern) {
+        // Longest phrase first ("medium-light" before "light"), whole words only ("Daylight" is not "light")
+        for (pattern, level) in roastKeywords.sorted(by: { $0.pattern.count > $1.pattern.count }) {
+            let regex = "(?<![a-z])" + NSRegularExpression.escapedPattern(for: pattern) + "(?![a-z])"
+            if text.range(of: regex, options: .regularExpression) != nil {
                 return level
             }
         }

@@ -36,6 +36,30 @@ final class BrewJournalViewModel: ObservableObject {
         } catch {
             print("Fetch error: \(error)")
         }
+        if sortOrder == .mostUsed {
+            // Core Data can't sort by a count, so rank methods here
+            let counts = Dictionary(grouping: sessions, by: { $0.equipmentName ?? "" }).mapValues(\.count)
+            sessions.sort {
+                let (a, b) = (counts[$0.equipmentName ?? ""] ?? 0, counts[$1.equipmentName ?? ""] ?? 0)
+                return a != b ? a > b : ($0.brewedAt ?? .distantPast) > ($1.brewedAt ?? .distantPast)
+            }
+        }
+    }
+
+    /// Brews in the calendar week containing `now`, ignoring the search and filters.
+    /// `days` starts on the calendar's first weekday, so labels and dots line up in every region.
+    func thisWeek(now: Date = Date(), calendar: Calendar = .current) -> (days: [(label: String, brewed: Bool)], count: Int) {
+        guard let week = calendar.dateInterval(of: .weekOfYear, for: now) else { return ([], 0) }
+        let request: NSFetchRequest<BrewSession> = BrewSession.fetchRequest()
+        request.predicate = NSPredicate(format: "brewedAt >= %@ AND brewedAt < %@", week.start as NSDate, week.end as NSDate)
+        let brews = (try? context.fetch(request)) ?? []
+        let brewedWeekdays = Set(brews.compactMap { $0.brewedAt }.map { calendar.component(.weekday, from: $0) })
+        let symbols = calendar.veryShortStandaloneWeekdaySymbols
+        let days = (0..<7).map { offset -> (label: String, brewed: Bool) in
+            let weekday = (calendar.firstWeekday - 1 + offset) % 7 + 1
+            return (symbols[weekday - 1], brewedWeekdays.contains(weekday))
+        }
+        return (days, brews.count)
     }
 
     private func buildPredicate() -> NSCompoundPredicate {
@@ -61,8 +85,7 @@ final class BrewJournalViewModel: ObservableObject {
         case .oldest:       return [NSSortDescriptor(key: "brewedAt", ascending: true)]
         case .highestRated: return [NSSortDescriptor(key: "rating", ascending: false),
                                     NSSortDescriptor(key: "brewedAt", ascending: false)]
-        case .mostUsed:     return [NSSortDescriptor(key: "techniqueName", ascending: true),
-                                    NSSortDescriptor(key: "brewedAt", ascending: false)]
+        case .mostUsed:     return [NSSortDescriptor(key: "brewedAt", ascending: false)]
         }
     }
 
@@ -108,6 +131,40 @@ final class BrewJournalViewModel: ObservableObject {
         } else {
             // Drop the unsaved object so a retry doesn't save a duplicate
             context.delete(session)
+        }
+        return session
+    }
+
+    /// Saves a finished brew and takes the coffee out of the pantry bag it came from.
+    /// Returns nil (nothing saved, nothing deducted) if the save fails.
+    func recordBrew(
+        technique: Technique,
+        method: BrewMethod?,
+        bean: Bean?,
+        pantryBean: CoffeeBean?,
+        servings: Int,
+        coffeeGrams: Double,
+        waterMl: Double,
+        seconds: Int
+    ) -> BrewSession? {
+        let session = saveSession(
+            methodName: method?.category ?? "Unknown",
+            equipmentName: method?.name ?? "Unknown",
+            techniqueName: technique.name,
+            techniqueId: technique.techniqueId,
+            beanName: pantryBean?.name ?? bean?.name,
+            beanOrigin: pantryBean?.origin ?? bean?.origin,
+            roastLevel: pantryBean?.roastLevel ?? bean?.roastLevel,
+            servingSize: servings,
+            coffeeGrams: coffeeGrams,
+            waterMl: waterMl,
+            grindSize: technique.grindSizeLabel,
+            waterTempC: Double(technique.waterTempC),
+            totalBrewTimeSeconds: seconds
+        )
+        guard !saveFailed else { return nil }
+        if let pantryBean {
+            BeanInventoryViewModel(context: context).deductWeight(from: pantryBean, grams: coffeeGrams)
         }
         return session
     }

@@ -5,9 +5,11 @@ struct BrewCompleteView: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @Environment(\.colorScheme) private var colorScheme
-    let technique: Technique
+    let session: BrewSession
+    @ObservedObject var journal: BrewJournalViewModel
 
-    @State private var rating: Int = 4
+    @State private var rating: Int = 0
+    @State private var showDiscardConfirm = false
     @State private var note: String = ""
     @State private var selectedNotes: Set<String> = []
     @State private var showContent = false
@@ -55,7 +57,7 @@ struct BrewCompleteView: View {
                         }
                     }
 
-                    Text(ratingLabels[rating - 1])
+                    Text(rating > 0 ? ratingLabels[rating - 1] : "Tap a star")
                         .font(Constants.Typography.mono(11))
                         .foregroundStyle(Constants.Colors.primaryColor.opacity(0.5))
                 }
@@ -134,11 +136,11 @@ struct BrewCompleteView: View {
                 // MARK: - Buttons
                 HStack(spacing: 12) {
                     KButton(title: "Discard", variant: .ghost, fullWidth: false) {
-                        appEnvironment.reset()
+                        showDiscardConfirm = true
                     }
 
                     KButton(title: "Save to journal", icon: "checkmark", variant: .primary) {
-                        appEnvironment.reset()
+                        saveAndFinish()
                     }
                 }
                 .opacity(showContent ? 1 : 0)
@@ -149,6 +151,12 @@ struct BrewCompleteView: View {
         }
         .adaptiveBackground()
         .navigationBarBackButtonHidden(true)
+        .confirmationDialog("Remove this brew from your journal?", isPresented: $showDiscardConfirm, titleVisibility: .visible) {
+            Button("Discard brew", role: .destructive) {
+                journal.delete(session)
+                appEnvironment.reset()
+            }
+        }
         .onAppear {
             if reduceMotion {
                 showContent = true
@@ -158,5 +166,13 @@ struct BrewCompleteView: View {
                 }
             }
         }
+    }
+
+    private func saveAndFinish() {
+        if rating > 0 { journal.updateRating(rating, for: session) }
+        if !selectedNotes.isEmpty { journal.updateFlavourTags(selectedNotes.sorted(), for: session) }
+        let trimmed = note.trimmingCharacters(in: .whitespacesAndNewlines)
+        if !trimmed.isEmpty { journal.updateNotes(trimmed, for: session) }
+        appEnvironment.reset()
     }
 }

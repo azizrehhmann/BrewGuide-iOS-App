@@ -17,7 +17,6 @@ struct BrewGuideView: View {
     @State private var showComplete = false
     @State private var autoAdvance = false
     @State private var didLoadDefaults = false
-    @State private var showPostBrewRating = false
     @State private var savedSession: BrewSession?
     @State private var journalViewModel: BrewJournalViewModel?
     @State private var completionBurstTrigger = false
@@ -53,18 +52,6 @@ struct BrewGuideView: View {
         step.waterVolumeMlBase * scaleFactor
     }
 
-    /// Cumulative scaled water added in steps before the current one
-    private var cumulativeWaterMl: Double {
-        guard currentStepIndex > 0 else { return 0 }
-        return steps.prefix(currentStepIndex)
-            .reduce(0.0) { $0 + scaledWater(for: $1) }
-    }
-
-    /// Total scaled water across all steps in the recipe
-    private var totalRecipeWaterMl: Double {
-        steps.reduce(0.0) { $0 + scaledWater(for: $1) }
-    }
-
     /// Resolves template placeholders in instruction text with actual scaled amounts
     private func resolvedInstruction(for step: BrewStep) -> String {
         var text = step.instruction
@@ -84,27 +71,22 @@ struct BrewGuideView: View {
         return text
     }
 
+    private static let amountRegex = try? NSRegularExpression(pattern: #"\b\d+(\.\d+)?\s*(ml|g|mL)\b"#)
+
     /// Returns the instruction as an AttributedString with numeric amounts (e.g. "250ml", "15g") highlighted in accent gold.
     private func highlightedInstruction(for step: BrewStep) -> AttributedString {
         let resolved = resolvedInstruction(for: step)
         var attributed = AttributedString(resolved)
         attributed.foregroundColor = UIColor.secondaryLabel
 
-        let pattern = #"\b\d+(\.\d+)?\s*(ml|g|mL)\b"#
-        if let regex = try? NSRegularExpression(pattern: pattern) {
-            let nsString = resolved as NSString
-            let matches = regex.matches(in: resolved, range: NSRange(location: 0, length: nsString.length))
-            for match in matches.reversed() {
-                guard let range = Range(match.range, in: resolved) else { continue }
-                let matchStr = String(resolved[range])
-                if let attrRange = attributed.range(of: matchStr) {
-                    attributed[attrRange].foregroundColor = UIColor(Constants.Colors.accentGold)
-                    attributed[attrRange].font = UIFont.systemFont(
-                        ofSize: UIFont.preferredFont(forTextStyle: .body).pointSize,
-                        weight: .semibold
-                    )
-                }
-            }
+        let matches = Self.amountRegex?.matches(in: resolved, range: NSRange(resolved.startIndex..., in: resolved)) ?? []
+        for match in matches {
+            guard let range = Range(match.range, in: attributed) else { continue }
+            attributed[range].foregroundColor = UIColor(Constants.Colors.accentGold)
+            attributed[range].font = UIFont.systemFont(
+                ofSize: UIFont.preferredFont(forTextStyle: .body).pointSize,
+                weight: .semibold
+            )
         }
         return attributed
     }
@@ -125,24 +107,15 @@ struct BrewGuideView: View {
         .navigationTitle(technique.name)
         .navigationBarTitleDisplayMode(.inline)
         .navigationDestination(isPresented: $showComplete) {
-            BrewCompleteView(technique: technique)
+            if let session = savedSession, let journal = journalViewModel {
+                BrewCompleteView(session: session, journal: journal)
+            }
         }
         .alert("Couldn't save this brew", isPresented: $showSaveError) {
             Button("Try Again") { advanceStep() }
             Button("Cancel", role: .cancel) {}
         } message: {
             Text("The brew wasn't added to your journal. Check that your device has free storage and try again.")
-        }
-        .sheet(isPresented: $showPostBrewRating) {
-            if let session = savedSession, let vm = journalViewModel {
-                PostBrewRatingView(
-                    session: session,
-                    journalViewModel: vm,
-                    isPresented: $showPostBrewRating
-                )
-                .presentationDetents([.medium, .large])
-                .presentationDragIndicator(.visible)
-            }
         }
         .onAppear {
             if !didLoadDefaults {
@@ -459,6 +432,7 @@ struct BrewGuideView: View {
         stepDirection = -1
         currentStepIndex -= 1
         configureCurrentStep()
+        liveActivityService.updateStep(makeCurrentState())
         HapticsManager.shared.stepBack()
     }
 
@@ -473,48 +447,28 @@ struct BrewGuideView: View {
     // MARK: - Save Brew Session
 
     private func saveBrewSession() -> Bool {
-        let vm = BrewJournalViewModel(context: managedObjectContext)
+        let vm = journalViewModel ?? BrewJournalViewModel(context: managedObjectContext)
         journalViewModel = vm
-
-        let method = appEnvironment.databaseService.method(byId: technique.methodId)
-        let methodName = method?.category ?? "Unknown"
-        let equipmentName = method?.name ?? "Unknown"
-
-        let session = vm.saveSession(
-            methodName: methodName,
-            equipmentName: equipmentName,
-            techniqueName: technique.name,
-            techniqueId: technique.techniqueId,
-            beanName: appEnvironment.selectedBean?.name,
-            beanOrigin: appEnvironment.selectedBean?.origin,
-            roastLevel: appEnvironment.selectedBean?.roastLevel,
-            servingSize: appEnvironment.defaultServings,
+        guard let session = vm.recordBrew(
+            technique: technique,
+            method: appEnvironment.databaseService.method(byId: technique.methodId),
+            bean: appEnvironment.selectedBean,
+            pantryBean: selectedPantryBean(),
+            servings: appEnvironment.defaultServings,
             coffeeGrams: coffeeGrams,
             waterMl: waterGrams,
-            grindSize: technique.grindSizeLabel,
-            waterTempC: Double(technique.waterTempC),
-            totalBrewTimeSeconds: timer.totalElapsedSeconds
-        )
-        guard !vm.saveFailed else { return false }
+            seconds: timer.totalElapsedSeconds
+        ) else { return false }
         savedSession = session
-
-        // Deduct coffee from inventory bean if one was selected
-        deductFromInventoryBean()
-
-        Task { @MainActor in
-            try? await Task.sleep(nanoseconds: 500_000_000)
-            showPostBrewRating = true
-        }
         return true
     }
 
-    private func deductFromInventoryBean() {
-        guard let beanID = appEnvironment.selectedInventoryBeanID else { return }
+    private func selectedPantryBean() -> CoffeeBean? {
+        guard let beanID = appEnvironment.selectedInventoryBeanID else { return nil }
         let request: NSFetchRequest<CoffeeBean> = CoffeeBean.fetchRequest()
         request.predicate = NSPredicate(format: "id == %@", beanID as CVarArg)
         request.fetchLimit = 1
-        guard let bean = try? managedObjectContext.fetch(request).first else { return }
-        BeanInventoryViewModel(context: managedObjectContext).deductWeight(from: bean, grams: coffeeGrams)
+        return try? managedObjectContext.fetch(request).first
     }
 
     // MARK: - Live Activity

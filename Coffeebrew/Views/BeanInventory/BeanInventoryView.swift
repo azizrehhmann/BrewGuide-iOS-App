@@ -479,7 +479,7 @@ private struct BeanInventoryContentView: View {
             do {
                 let scanner = BeanScannerService()
                 let ocrText = try await scanner.recognizeText(from: image)
-                let parsed = BeanLabelParserService.parse(ocrText: ocrText)
+                let parsed = await BeanLabelParserService.read(ocrText: ocrText)
 
                 await MainActor.run {
                     isProcessingScan = false

@@ -5,8 +5,6 @@ final class AppEnvironment: ObservableObject {
     let databaseService: DatabaseService
 
     // MARK: - Navigation State
-    @Published var shouldShowActiveBrew: Bool = false
-    @Published var shouldShowDailySuggestion: Bool = false
     @Published var selectedMethod: BrewMethod?
     @Published var selectedTechnique: Technique?
     @Published var selectedBean: Bean?

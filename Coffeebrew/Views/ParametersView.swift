@@ -486,6 +486,7 @@ struct ParametersView: View {
             BrewGuideView(technique: technique, coffeeGrams: coffeeGrams, waterGrams: waterGrams)
                 .onAppear {
                     appEnvironment.selectedInventoryBeanID = selectedInventoryBean?.id
+                    appEnvironment.selectedBean = selectedBean
                     appEnvironment.saveCustomRatio(
                         customRatio,
                         forTechnique: technique.techniqueId,

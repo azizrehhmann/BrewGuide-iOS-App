@@ -55,6 +55,8 @@ struct PersistenceController {
             print("PersistenceController: No persistent store description found — skipping CloudKit config")
         }
 
+        // The fallback must reopen this same file, or the user's brews would appear to vanish
+        let storeURL = container.persistentStoreDescriptions.first?.url
         var storeLoadedSuccessfully = false
 
         container.loadPersistentStores { _, error in
@@ -65,16 +67,12 @@ struct PersistenceController {
             }
         }
 
-        // If CloudKit store failed to load (e.g. no iCloud account in simulator),
-        // fall back to a local-only SQLite store so the app still works.
-        // Also verify the coordinator actually has at least one store.
+        // If the CloudKit-backed store failed to load, reopen the same file without CloudKit so the
+        // user's data stays visible. If that fails too, no store is loaded and saves report failure.
         if !storeLoadedSuccessfully || container.persistentStoreCoordinator.persistentStores.isEmpty {
-            print("PersistenceController: CloudKit store unavailable — falling back to local-only store")
+            print("PersistenceController: CloudKit store unavailable — reopening the same store without CloudKit")
 
-            // Create a fresh local-only description pointing to a known path
             let localDescription = NSPersistentStoreDescription()
-            let storeURL = NSPersistentContainer.defaultDirectoryURL()
-                .appendingPathComponent("BrewGuide-local.sqlite")
             localDescription.url = storeURL
             localDescription.cloudKitContainerOptions = nil
             localDescription.setOption(true as NSNumber, forKey: NSPersistentHistoryTrackingKey)
@@ -86,7 +84,7 @@ struct PersistenceController {
                     print("CoreData local fallback also failed: \(error)")
                 } else {
                     storeLoadedSuccessfully = true
-                    print("PersistenceController: Local-only store loaded at \(storeURL.path)")
+                    print("PersistenceController: store reopened without CloudKit")
                 }
             }
         }

@@ -33,7 +33,8 @@ final class CoffeebrewUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["Pantry"].waitForExistence(timeout: 3))
 
         app.buttons["Journal"].tap()
-        XCTAssertTrue(app.navigationBars["Journal"].waitForExistence(timeout: 3) || app.staticTexts["No brews yet"].waitForExistence(timeout: 3))
+        // Empty journal shows "No brews yet"; a journal with entries shows the week card
+        XCTAssertTrue(app.staticTexts["No brews yet"].waitForExistence(timeout: 3) || app.staticTexts["THIS WEEK"].waitForExistence(timeout: 3))
 
         app.buttons["Today"].tap()
         XCTAssertTrue(app.buttons["Settings"].waitForExistence(timeout: 3))
@@ -77,6 +78,46 @@ final class CoffeebrewUITests: XCTestCase {
 
         XCTAssertTrue(app.buttons["Close brew session"].waitForExistence(timeout: 5))
         XCTAssertTrue(app.buttons["Next step"].exists)
+    }
+
+    func testBrewFromLibraryEndsInJournalWithRatingAndBean() {
+        app.launch()
+        app.buttons["Library"].tap()
+        XCTAssertTrue(app.textFields["Search techniques"].waitForExistence(timeout: 8))
+        // No typing: the simulator's first-run keyboard tip would cover the tab bar
+        app.buttons["Pressure"].tap()  // AeroPress – James Hoffmann has the shortest recipe (6 steps)
+
+        let card = button(containing: "James Hoffmann")
+        XCTAssertTrue(card.waitForExistence(timeout: 5))
+        card.tap()
+        let toParameters = app.buttons["Continue to brewing parameters"]
+        XCTAssertTrue(toParameters.waitForExistence(timeout: 5))
+        toParameters.tap()
+        let start = button(containing: "Begin brewing")
+        XCTAssertTrue(start.waitForExistence(timeout: 5))
+        if !start.isHittable { app.swipeUp() }
+        start.tap()
+
+        for _ in 0..<5 {
+            let next = app.buttons["Next step"]
+            XCTAssertTrue(next.waitForExistence(timeout: 5))
+            next.tap()
+        }
+        let complete = app.buttons["Complete brew"]
+        XCTAssertTrue(complete.waitForExistence(timeout: 5))
+        complete.tap()
+
+        let fiveStars = app.buttons["5 stars"]
+        XCTAssertTrue(fiveStars.waitForExistence(timeout: 5))
+        fiveStars.tap()
+        button(containing: "Save to journal").tap()
+
+        // The brew screens close and Library is back, not stuck on Brew Complete
+        XCTAssertTrue(app.textFields["Search techniques"].waitForExistence(timeout: 5))
+        app.buttons["Journal"].tap()
+        // Each entry card is one button whose label includes "with <bean>"
+        XCTAssertTrue(app.buttons.matching(NSPredicate(format: "label CONTAINS ' with '")).firstMatch.waitForExistence(timeout: 5),
+                      "The journal entry should name the bean")
     }
 
     // MARK: - Onboarding

@@ -85,7 +85,7 @@ struct SettingsView: View {
                             Text("Sign In")
                                 .font(.system(.body, design: .rounded, weight: .medium))
                                 .foregroundStyle(.primary)
-                            Text("Sync data across devices")
+                            Text("Add your name to the greeting")
                                 .font(.system(.caption2, design: .rounded))
                                 .foregroundStyle(.secondary)
                         }
@@ -103,9 +103,9 @@ struct SettingsView: View {
             Text("Account")
         } footer: {
             if authService.isSignedIn {
-                Text("Your brew journal, bean inventory, and favourites sync across all your devices via iCloud.")
+                Text("Your journal and pantry sync through iCloud when this iPhone is signed in to iCloud.")
             } else {
-                Text("Sign in to sync your data across all your Apple devices.")
+                Text("Your journal and pantry sync through iCloud when this iPhone is signed in to iCloud.")
             }
         }
     }

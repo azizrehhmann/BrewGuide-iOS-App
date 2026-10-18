@@ -61,7 +61,15 @@ final class DailySuggestionServiceTests: XCTestCase {
     func testRefreshProducesSuggestionFromEmptyHistory() {
         sut.refreshIfNeeded()
         XCTAssertNotNil(sut.suggestion)
-        XCTAssertFalse(sut.suggestion?.hasPreviousBrew ?? true)
+    }
+
+    @MainActor
+    func testOwnedGearLimitsTheSuggestion() {
+        let context = PersistenceController(inMemory: true).container.viewContext
+        let gearOnly = DailySuggestionService(databaseService: DatabaseService(), context: context,
+                                              ownedMethodIds: ["aeropress"])
+        gearOnly.refreshIfNeeded()
+        XCTAssertEqual(gearOnly.suggestion?.technique.methodId, "aeropress")
     }
 
     // MARK: - Seasons (0 spring, 1 summer, 2 autumn, 3 winter)

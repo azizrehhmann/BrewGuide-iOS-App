@@ -32,29 +32,3 @@ struct FilterChip: View {
         .animation(.spring(response: 0.25), value: isActive)
     }
 }
-
-struct TagPill: View {
-    let label: String
-    let isSelected: Bool
-    let onTap: () -> Void
-
-    var body: some View {
-        Button(action: onTap) {
-            Text(label)
-                .font(.subheadline)
-                .padding(.horizontal, 14)
-                .padding(.vertical, 7)
-                .background(
-                    isSelected ? Constants.Colors.accentGold : Color(.secondarySystemBackground),
-                    in: Capsule()
-                )
-                .foregroundStyle(isSelected ? .white : .primary)
-                .overlay(
-                    Capsule()
-                        .strokeBorder(isSelected ? Constants.Colors.accentGold : Color(.systemGray4), lineWidth: 1)
-                )
-        }
-        .buttonStyle(.plain)
-        .animation(.spring(response: 0.2), value: isSelected)
-    }
-}

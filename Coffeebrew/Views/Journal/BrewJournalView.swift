@@ -22,6 +22,7 @@ struct BrewJournalView: View {
         .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer(displayMode: .automatic), prompt: "Search techniques, beans...")
         .navigationTitle(viewModel.sessions.isEmpty ? "Journal" : "")
         .navigationBarTitleDisplayMode(.inline)
+        .onAppear { viewModel.fetchSessions() }
         .onChange(of: viewModel.searchText) { _, _ in viewModel.fetchSessions() }
         .onChange(of: viewModel.filterRating) { _, _ in viewModel.fetchSessions() }
         .onChange(of: viewModel.filterFavourites) { _, _ in viewModel.fetchSessions() }
@@ -100,13 +101,14 @@ struct BrewJournalView: View {
     // MARK: - Streak Card
 
     private var streakCard: some View {
-        HStack {
+        let week = viewModel.thisWeek()
+        return HStack {
             // Left side: brew count this week
             VStack(alignment: .leading, spacing: 4) {
                 KEyebrow(text: "THIS WEEK")
 
                 HStack(alignment: .firstTextBaseline, spacing: 6) {
-                    Text("\(brewsThisWeek)")
+                    Text("\(week.count)")
                         .font(Constants.Typography.display(28))
                         .foregroundStyle(Constants.Colors.primaryColor)
                     Text("brews")
@@ -119,7 +121,7 @@ struct BrewJournalView: View {
 
             // Right side: 7 day-of-week dots
             HStack(spacing: 6) {
-                ForEach(weekDays, id: \.label) { day in
+                ForEach(Array(week.days.enumerated()), id: \.offset) { _, day in
                     VStack(spacing: 4) {
                         ZStack {
                             Circle()
@@ -243,45 +245,5 @@ struct BrewJournalView: View {
                     .foregroundStyle(Constants.Colors.primaryColor)
             }
         }
-    }
-
-    // MARK: - Week Helpers
-
-    private struct WeekDay: Hashable {
-        let label: String
-        let brewed: Bool
-    }
-
-    private var weekDays: [WeekDay] {
-        let calendar = Calendar.current
-        let today = Date()
-        guard let weekStart = calendar.date(from: calendar.dateComponents([.yearForWeekOfYear, .weekOfYear], from: today)) else {
-            return []
-        }
-
-        let labels = ["M", "T", "W", "T", "F", "S", "S"]
-        let brewDates = Set(viewModel.sessions.compactMap { session -> Int? in
-            guard let date = session.brewedAt else { return nil }
-            let dayStart = calendar.startOfDay(for: date)
-            let weekStartDay = calendar.startOfDay(for: weekStart)
-            let diff = calendar.dateComponents([.day], from: weekStartDay, to: dayStart).day ?? -1
-            return (diff >= 0 && diff < 7) ? diff : nil
-        })
-
-        return (0..<7).map { dayOffset in
-            WeekDay(label: labels[dayOffset], brewed: brewDates.contains(dayOffset))
-        }
-    }
-
-    private var brewsThisWeek: Int {
-        let calendar = Calendar.current
-        let today = Date()
-        guard let weekStart = calendar.date(from: calendar.dateComponents([.yearForWeekOfYear, .weekOfYear], from: today)) else {
-            return 0
-        }
-        return viewModel.sessions.filter { session in
-            guard let date = session.brewedAt else { return false }
-            return date >= weekStart && date <= today
-        }.count
     }
 }

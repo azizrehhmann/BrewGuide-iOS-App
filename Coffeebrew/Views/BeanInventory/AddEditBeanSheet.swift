@@ -14,6 +14,7 @@ struct AddEditBeanSheet: View {
     @State private var roastDate: Date = Date()
     @State private var hasRoastDate = false
     @State private var showScannedBanner = false
+    @State private var showSaveError = false
 
     // Flavour profile state
     @State private var selectedFlavours: Set<String> = []
@@ -24,7 +25,7 @@ struct AddEditBeanSheet: View {
     private var isValid: Bool {
         !name.trimmingCharacters(in: .whitespaces).isEmpty &&
         !roasterName.trimmingCharacters(in: .whitespaces).isEmpty &&
-        (Double(totalWeight) ?? 0) > 0
+        (Double(userInput: totalWeight) ?? 0) > 0
     }
 
     /// Computed suggested use-by date
@@ -128,6 +129,11 @@ struct AddEditBeanSheet: View {
             }
             .navigationTitle(editingBean != nil ? "Edit Coffee" : (prefill != nil ? "Scanned Coffee" : "Add Coffee"))
             .navigationBarTitleDisplayMode(.inline)
+            .alert("Couldn't save this coffee", isPresented: $showSaveError) {
+                Button("OK", role: .cancel) {}
+            } message: {
+                Text("Check that your device has free storage and try again.")
+            }
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Cancel") { isPresented = false }
@@ -135,7 +141,7 @@ struct AddEditBeanSheet: View {
                 ToolbarItem(placement: .confirmationAction) {
                     Button(editingBean == nil ? "Add" : "Save") {
                         saveBean()
-                        isPresented = false
+                        if viewModel.saveFailed { showSaveError = true } else { isPresented = false }
                     }
                     .disabled(!isValid)
                     .fontWeight(.semibold)
@@ -375,7 +381,7 @@ struct AddEditBeanSheet: View {
     // MARK: - Save
 
     private func saveBean() {
-        let weight = Double(totalWeight) ?? 250
+        let weight = Double(userInput: totalWeight) ?? 250
         let trimmedOrigin = origin.trimmingCharacters(in: .whitespaces)
         let rd: Date? = hasRoastDate ? roastDate : nil
 

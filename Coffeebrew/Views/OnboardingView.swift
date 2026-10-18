@@ -239,7 +239,7 @@ struct OnboardingView: View {
             let levels: [(id: String, title: String, sub: String, body: String)] = [
                 ("beginner", "Curious", "Never brewed before", "We'll start with forgiving techniques and teach the fundamentals as you go."),
                 ("enthusiast", "Enthusiast", "Brewing 1–3 years", "Dial in recipes, track what works, explore new methods and origins."),
-                ("pro", "Obsessed", "I own a refractometer", "Full parameter control. TDS tracking, extraction logging, advanced tweaks."),
+                ("pro", "Obsessed", "I own a refractometer", "Full parameter control and every recipe, advanced ones included."),
             ]
 
             VStack(spacing: 10) {
@@ -318,7 +318,7 @@ struct OnboardingView: View {
             .foregroundStyle(Constants.Colors.primaryColor)
             .padding(.bottom, 8)
 
-            Text("Pick any that sound right. We'll match you with beans and methods.")
+            Text("Pick any that sound right.")
                 .font(Constants.Typography.sans(14))
                 .foregroundStyle(Constants.Colors.primaryColor.opacity(0.6))
                 .padding(.bottom, 24)
@@ -395,18 +395,18 @@ struct OnboardingView: View {
             .foregroundStyle(Constants.Colors.primaryColor)
             .padding(.bottom, 8)
 
-            Text("We'll only surface techniques for gear you own. Add more later.")
+            Text("Today's suggestion sticks to the gear you own.")
                 .font(Constants.Typography.sans(14))
                 .foregroundStyle(Constants.Colors.primaryColor.opacity(0.6))
                 .padding(.bottom, 20)
 
             let gearOptions: [(id: String, label: String, cat: String)] = [
-                ("v60", "V60", "Pour over"),
+                ("v60-pour-over", "V60", "Pour over"),
                 ("chemex", "Chemex", "Pour over"),
-                ("kalita", "Kalita Wave", "Pour over"),
+                ("kalita-wave", "Kalita Wave", "Pour over"),
                 ("aeropress", "AeroPress", "Pressure"),
-                ("frenchpress", "French Press", "Immersion"),
-                ("mokapot", "Moka Pot", "Stovetop"),
+                ("french-press", "French Press", "Immersion"),
+                ("moka-pot", "Moka Pot", "Stovetop"),
                 ("espresso", "Espresso", "Machine"),
                 ("scale", "Scale", "Essential"),
                 ("grinder", "Grinder", "Essential"),
@@ -695,6 +695,8 @@ struct OnboardingView: View {
         appEnvironment.userFlavorsRaw = Array(flavors).joined(separator: ",")
         appEnvironment.userGearRaw = Array(gear).joined(separator: ",")
         appEnvironment.morningBrewTime = morningTime
+        appEnvironment.dailySuggestionNotification = notifications
+        DailySuggestionService.scheduleDailyNotification(enabled: notifications, time: morningTime)
         hasSeenOnboarding = true
     }
 }

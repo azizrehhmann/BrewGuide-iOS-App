@@ -157,6 +157,11 @@ extension Int {
 
 // MARK: - Double Rounding
 extension Double {
+    /// Parses what a user typed on a decimal keypad: "12,5" in de/fr regions, "12.5" elsewhere.
+    init?(userInput: String) {
+        self.init(userInput.trimmingCharacters(in: .whitespaces).replacingOccurrences(of: ",", with: "."))
+    }
+
     func rounded(toPlaces places: Int) -> Double {
         let factor = pow(10.0, Double(places))
         return (self * factor).rounded() / factor

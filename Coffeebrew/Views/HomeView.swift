@@ -7,7 +7,7 @@ struct HomeView: View {
     @Environment(\.managedObjectContext) private var managedObjectContext
     @State private var showSettings = false
     @State private var showBeanFirst = false
-    @State private var navigationPath = NavigationPath()
+    @Binding var navigationPath: NavigationPath
     @ObservedObject private var authService = AuthenticationService.shared
     @State private var dailySuggestionService: DailySuggestionService?
     @State private var favRecentsVM: FavouritesRecentsViewModel?
@@ -17,49 +17,42 @@ struct HomeView: View {
     }
 
     var body: some View {
-        NavigationStack(path: $navigationPath) {
-            ScrollView {
-                VStack(spacing: 32) {
-                    headerSection
-                    dailyRitualHeroCard
-                    beanFirstCard
-                    browseMethodsSection
-                    favouritesRecentsSection
-                    techniqueSpotlightSection
-                }
-                .padding(.vertical, 8)
-                .padding(.bottom, 20)
+        ScrollView {
+            VStack(spacing: 32) {
+                headerSection
+                dailyRitualHeroCard
+                beanFirstCard
+                browseMethodsSection
+                favouritesRecentsSection
+                techniqueSpotlightSection
             }
-            .adaptiveBackground()
-            .navigationDestination(for: String.self) { category in
-                EquipmentListView(category: category)
-            }
-            .navigationDestination(for: BrewMethod.self) { method in
-                TechniqueListView(method: method)
-            }
-            .navigationDestination(for: Technique.self) { technique in
-                BeansView(technique: technique)
-            }
-            .sheet(isPresented: $showSettings) {
-                SettingsView()
-            }
-            .navigationDestination(isPresented: $showBeanFirst) {
-                BeanFirstEntryView(
-                    databaseService: appEnvironment.databaseService,
-                    onBrewTechnique: { technique in
-                        showBeanFirst = false
-                        Task { @MainActor in
-                            try? await Task.sleep(nanoseconds: 300_000_000)
-                            navigationPath.append(technique)
-                        }
-                    }
-                )
-            }
+            .padding(.vertical, 8)
+            .padding(.bottom, 20)
         }
-        .onReceive(appEnvironment.$selectedMethod) { method in
-            if method == nil && !navigationPath.isEmpty {
-                navigationPath = NavigationPath()
-            }
+        .adaptiveBackground()
+        .navigationDestination(for: String.self) { category in
+            EquipmentListView(category: category)
+        }
+        .navigationDestination(for: BrewMethod.self) { method in
+            TechniqueListView(method: method)
+        }
+        .navigationDestination(for: Technique.self) { technique in
+            BeansView(technique: technique)
+        }
+        .sheet(isPresented: $showSettings) {
+            SettingsView()
+        }
+        .navigationDestination(isPresented: $showBeanFirst) {
+            BeanFirstEntryView(
+                databaseService: appEnvironment.databaseService,
+                onBrewTechnique: { technique in
+                    showBeanFirst = false
+                    Task { @MainActor in
+                        try? await Task.sleep(nanoseconds: 300_000_000)
+                        navigationPath.append(technique)
+                    }
+                }
+            )
         }
         .onAppear {
             initDailySuggestionIfNeeded()
@@ -259,7 +252,9 @@ struct HomeView: View {
         }
         let service = DailySuggestionService(
             databaseService: appEnvironment.databaseService,
-            context: managedObjectContext
+            context: managedObjectContext,
+            ownedMethodIds: Set(appEnvironment.userGearRaw.split(separator: ",").map(String.init)),
+            level: appEnvironment.userLevel
         )
         service.refreshIfNeeded()
         dailySuggestionService = service

@@ -76,6 +76,11 @@
 			path = BrewGuideWidgetExtension;
 			sourceTree = "<group>";
 		};
+		DA86CFC02F6D9E0000A90382 /* Shared */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Shared;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +120,7 @@
 			children = (
 				DA86CF522F6D9A1900A90382 /* Coffeebrew */,
 				DA86CFB12F6D9E0000A90382 /* BrewGuideWidgetExtension */,
+				DA86CFC02F6D9E0000A90382 /* Shared */,
 				DA86CF722F6D9B0000A90382 /* CoffeebrewTests */,
 				DA86CF822F6D9C0000A90382 /* CoffeebrewUITests */,
 				DA86CF512F6D9A1900A90382 /* Products */,
@@ -151,6 +157,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				DA86CF522F6D9A1900A90382 /* Coffeebrew */,
+				DA86CFC02F6D9E0000A90382 /* Shared */,
 			);
 			name = Coffeebrew;
 			packageProductDependencies = (
@@ -219,6 +226,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				DA86CFB12F6D9E0000A90382 /* BrewGuideWidgetExtension */,
+				DA86CFC02F6D9E0000A90382 /* Shared */,
 			);
 			name = BrewGuideWidgetExtension;
 			packageProductDependencies = (

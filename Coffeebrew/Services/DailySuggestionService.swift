@@ -8,7 +8,6 @@ final class DailySuggestionService: ObservableObject {
     // MARK: - Published state
 
     @Published private(set) var suggestion: DailySuggestion?
-    @Published private(set) var isLoading = false
 
     // MARK: - Dependencies
 
@@ -85,9 +84,16 @@ final class DailySuggestionService: ObservableObject {
 
     // MARK: - Init
 
-    init(databaseService: DatabaseService, context: NSManagedObjectContext) {
+    /// Method ids the user owns (empty = no filter) and their onboarding level ("beginner" favours easy techniques)
+    private let ownedMethodIds: Set<String>
+    private let level: String
+
+    init(databaseService: DatabaseService, context: NSManagedObjectContext,
+         ownedMethodIds: Set<String> = [], level: String = "") {
         self.databaseService = databaseService
         self.context = context
+        self.ownedMethodIds = ownedMethodIds
+        self.level = level
     }
 
     // MARK: - Public API
@@ -133,18 +139,8 @@ final class DailySuggestionService: ObservableObject {
         UserDefaults.standard.set(streak, forKey: Keys.streakCount)
 
         // Update the current suggestion's streak
-        if var s = suggestion {
-            suggestion = DailySuggestion(
-                technique: s.technique,
-                method: s.method,
-                computedDate: s.computedDate,
-                personalScore: s.personalScore,
-                reasonLabel: s.reasonLabel,
-                streakDays: streak,
-                hasPreviousBrew: s.hasPreviousBrew,
-                previousBestRating: s.previousBestRating,
-                flavourHook: s.flavourHook
-            )
+        if let s = suggestion {
+            suggestion = DailySuggestion(technique: s.technique, streakDays: streak, flavourHook: s.flavourHook)
         }
     }
 
@@ -180,15 +176,12 @@ final class DailySuggestionService: ObservableObject {
     // MARK: - Private: Algorithm Pipeline
 
     private func recompute(for today: Date) {
-        isLoading = true
-
-        let allTechniques = databaseService.techniques
+        var allTechniques = databaseService.techniques
             .sorted { $0.techniqueId < $1.techniqueId } // stable sort for deterministic seed
+        let owned = allTechniques.filter { ownedMethodIds.contains($0.methodId) }
+        if !owned.isEmpty { allTechniques = owned }
         let total = allTechniques.count
-        guard total > 0 else {
-            isLoading = false
-            return
-        }
+        guard total > 0 else { return }
 
         // Stage 1 — Daily seed
         let epoch = Calendar.current.dateComponents([.day], from: Date(timeIntervalSince1970: 0), to: today).day ?? 0
@@ -219,8 +212,7 @@ final class DailySuggestionService: ObservableObject {
         let totalBrews = brewHistory.count
 
         var bestCandidate = candidates[0]
-        var bestScore = Double.leastNormalMagnitude
-        var bestReason = ""
+        var bestScore = -Double.infinity
 
         for candidate in candidates {
             var score: Double = 0
@@ -262,22 +254,13 @@ final class DailySuggestionService: ObservableObject {
             }
 
             // Beginner boost: prefer easier techniques for new users
-            if totalBrews < 5 && difficulty <= 2 {
+            if (level == "beginner" || (level.isEmpty && totalBrews < 5)) && difficulty <= 2 {
                 score += 10
             }
 
             if score > bestScore {
                 bestScore = score
                 bestCandidate = candidate
-
-                // Build reason label
-                if !triedTechniqueNames.contains(candidate.name) {
-                    bestReason = "Try something new today"
-                } else if let cat = method?.category, cat != yesterdayCategory {
-                    bestReason = "Switch it up — explore \(cat.lowercased())"
-                } else {
-                    bestReason = "A great pick for today"
-                }
             }
         }
 
@@ -288,36 +271,9 @@ final class DailySuggestionService: ObservableObject {
         // Compute streak
         let streak = computeCurrentStreak(today: today)
 
-        // Previous brew info
-        let previousBrews = brewHistory.filter { $0.techniqueName == bestCandidate.name }
-        let hasPrevious = !previousBrews.isEmpty
-        let bestRating = previousBrews
-            .compactMap { $0.rating > 0 ? Int($0.rating) : nil }
-            .max()
-
-        let method = databaseService.method(byId: bestCandidate.methodId)
-            ?? BrewMethod(methodId: "", name: "Unknown", description: "", difficulty: 3,
-                          iconName: "cup.and.saucer", imageName: nil, category: "Other")
-
         let flavour = Self.flavourHooks[bestCandidate.techniqueId] ?? "A unique brew experience"
 
-        // Normalize score to 0–1
-        let maxPossible: Double = 30 + 25 + 20 * 1.4 + 15 + 10 // ~108
-        let normalizedScore = max(0, min(1, bestScore / maxPossible))
-
-        suggestion = DailySuggestion(
-            technique: bestCandidate,
-            method: method,
-            computedDate: today,
-            personalScore: normalizedScore,
-            reasonLabel: bestReason,
-            streakDays: streak,
-            hasPreviousBrew: hasPrevious,
-            previousBestRating: bestRating,
-            flavourHook: flavour
-        )
-
-        isLoading = false
+        suggestion = DailySuggestion(technique: bestCandidate, streakDays: streak, flavourHook: flavour)
     }
 
     // MARK: - CoreData Queries
@@ -434,9 +390,4 @@ final class DailySuggestionService: ObservableObject {
         }
     }
 
-    static func formatTime(_ seconds: Int) -> String {
-        let minutes = seconds / 60
-        if minutes < 1 { return "<1 min" }
-        return "~\(minutes) min"
-    }
 }

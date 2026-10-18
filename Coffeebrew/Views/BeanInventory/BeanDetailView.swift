@@ -87,7 +87,7 @@ struct BeanDetailView: View {
                 TextField("Grams used", text: $deductAmount)
                     .keyboardType(.decimalPad)
                 Button("Deduct") {
-                    if let grams = Double(deductAmount), grams > 0 {
+                    if let grams = Double(userInput: deductAmount), grams > 0 {
                         viewModel.deductWeight(from: bean, grams: grams)
                     }
                     deductAmount = ""

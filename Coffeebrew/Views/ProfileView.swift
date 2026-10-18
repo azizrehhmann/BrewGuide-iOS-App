@@ -36,7 +36,7 @@ struct ProfileView: View {
                 }
                 Button("Cancel", role: .cancel) {}
             } message: {
-                Text("Your data will remain on this device but will no longer sync to iCloud.")
+                Text("Your journal and pantry stay as they are. They keep syncing through iCloud, which doesn't depend on signing in here.")
             }
             .onAppear {
                 authService.checkAppleCredentialState()
@@ -121,7 +121,7 @@ struct ProfileView: View {
                     .font(.system(.title2, design: .rounded, weight: .bold))
                     .foregroundStyle(Constants.Colors.primaryColor)
 
-                Text("Sign in to sync your brew journal, bean inventory, and favourites across all your Apple devices.")
+                Text("Sign in to put your name in the greeting. Your journal and pantry sync through iCloud either way.")
                     .font(.system(.subheadline, design: .rounded))
                     .foregroundStyle(.secondary)
                     .multilineTextAlignment(.center)

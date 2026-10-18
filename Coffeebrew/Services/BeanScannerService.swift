@@ -2,9 +2,10 @@ import Vision
 import UIKit
 
 /// Uses Vision framework to perform OCR on a captured coffee bag image.
-final class BeanScannerService {
+nonisolated final class BeanScannerService {
 
     /// Recognize text from a UIImage using Vision's VNRecognizeTextRequest
+    @concurrent
     func recognizeText(from image: UIImage) async throws -> String {
         guard let cgImage = image.cgImage else {
             throw ScanError.invalidImage

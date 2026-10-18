@@ -6,6 +6,8 @@ final class BeanInventoryViewModel: ObservableObject {
 
     @Published var beans: [CoffeeBean] = []
     @Published var searchText: String = ""
+    /// True if the most recent save failed; callers check it right after a write.
+    @Published private(set) var saveFailed = false
 
     var filteredBeans: [CoffeeBean] {
         let active = beans.filter { $0.isActive }
@@ -63,8 +65,12 @@ final class BeanInventoryViewModel: ObservableObject {
         bean.purchaseDate = Date()
         bean.roastDate = roastDate
         bean.isActive = true
-        save()
-        beans.insert(bean, at: 0)
+        if save() {
+            beans.insert(bean, at: 0)
+        } else {
+            // Drop the unsaved object so a retry doesn't save a duplicate
+            context.delete(bean)
+        }
     }
 
     func updateBean(
@@ -116,8 +122,11 @@ final class BeanInventoryViewModel: ObservableObject {
         objectWillChange.send()
     }
 
-    private func save() {
-        _ = context.trySave()
+    @discardableResult
+    private func save() -> Bool {
+        let ok = context.trySave()
+        saveFailed = !ok
+        return ok
     }
 
     // MARK: - Freshness Calculations

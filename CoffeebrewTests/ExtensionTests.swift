@@ -60,4 +60,10 @@ final class ExtensionTests: XCTestCase {
         let color = Color(hex: 0x4A2C2A)
         XCTAssertNotNil(color)
     }
+
+    func testUserInputAcceptsCommaAndDotDecimals() {
+        XCTAssertEqual(Double(userInput: "12,5"), 12.5)
+        XCTAssertEqual(Double(userInput: " 12.5 "), 12.5)
+        XCTAssertNil(Double(userInput: "abc"))
+    }
 }
