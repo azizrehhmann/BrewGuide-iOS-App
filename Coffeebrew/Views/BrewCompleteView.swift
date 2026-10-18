@@ -4,90 +4,158 @@ struct BrewCompleteView: View {
     @EnvironmentObject private var appEnvironment: AppEnvironment
     @Environment(\.dismiss) private var dismiss
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @Environment(\.colorScheme) private var colorScheme
     let technique: Technique
 
-    @State private var showIcon = false
-    @State private var showTitle = false
-    @State private var showSummary = false
-    @State private var showActions = false
+    @State private var rating: Int = 4
+    @State private var note: String = ""
+    @State private var selectedNotes: Set<String> = []
+    @State private var showContent = false
+
+    private let tastingNotes = ["Floral", "Citrus", "Stone fruit", "Berry", "Chocolate", "Nutty", "Caramel", "Clean", "Bright", "Earthy"]
+    private let ratingLabels = ["Meh", "Fine", "Good", "Great", "Perfect"]
 
     var body: some View {
-        VStack(spacing: 28) {
-            Spacer()
+        ScrollView {
+            VStack(alignment: .leading, spacing: 28) {
+                // MARK: - Eyebrow + Heading
+                VStack(alignment: .leading, spacing: 12) {
+                    KEyebrow(text: "BREW COMPLETE", showDot: true)
+                        .opacity(showContent ? 1 : 0)
+                        .offset(y: showContent ? 0 : 12)
 
-            Image(systemName: "checkmark.seal.fill")
-                .font(.system(size: 72, weight: .light))
-                .foregroundStyle(Constants.Colors.accentGold)
-                .scaleEffect(showIcon ? 1.0 : 0.5)
-                .opacity(showIcon ? 1.0 : 0.0)
-                .animation(
-                    reduceMotion ? .none : .spring(response: 0.6, dampingFraction: 0.6),
-                    value: showIcon
-                )
+                    VStack(alignment: .leading, spacing: 0) {
+                        Text("How was it,")
+                            .font(Constants.Typography.display(40))
+                            .foregroundStyle(Constants.Colors.primaryColor)
+                        Text("this cup?")
+                            .font(Constants.Typography.displayItalic(40))
+                            .foregroundStyle(Constants.Colors.accentGold)
+                    }
+                    .opacity(showContent ? 1 : 0)
+                    .offset(y: showContent ? 0 : 12)
+                }
+                .padding(.top, 16)
 
-            VStack(spacing: 8) {
-                Text("Brew Complete")
-                    .font(.system(.title, design: .rounded, weight: .bold))
-                    .foregroundStyle(Constants.Colors.primaryColor)
-                    .accessibilityAddTraits(.isHeader)
-                    .opacity(showTitle ? 1.0 : 0.0)
-                    .offset(y: showTitle ? 0 : 12)
-                    .animation(
-                        reduceMotion ? .none : .spring(response: 0.5, dampingFraction: 0.8),
-                        value: showTitle
-                    )
+                // MARK: - Star Rating Card
+                VStack(spacing: 12) {
+                    HStack(spacing: 8) {
+                        ForEach(1...5, id: \.self) { star in
+                            Button {
+                                withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
+                                    rating = star
+                                }
+                            } label: {
+                                Image(systemName: star <= rating ? "star.fill" : "star")
+                                    .font(.system(size: 32))
+                                    .foregroundStyle(star <= rating ? Constants.Colors.accentGold : Constants.Colors.primaryColor.opacity(0.2))
+                            }
+                            .buttonStyle(.plain)
+                            .accessibilityLabel("\(star) star\(star == 1 ? "" : "s")")
+                        }
+                    }
 
-                Text("Your \(technique.name) is ready to enjoy.")
-                    .font(.system(.body, design: .rounded))
-                    .foregroundStyle(.secondary)
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal)
-                    .opacity(showSummary ? 1.0 : 0.0)
-                    .offset(y: showSummary ? 0 : 12)
-                    .animation(
-                        reduceMotion ? .none : .spring(response: 0.5, dampingFraction: 0.8),
-                        value: showSummary
-                    )
-            }
+                    Text(ratingLabels[rating - 1])
+                        .font(Constants.Typography.mono(11))
+                        .foregroundStyle(Constants.Colors.primaryColor.opacity(0.5))
+                }
+                .frame(maxWidth: .infinity)
+                .padding(24)
+                .elevatedCardStyle()
+                .opacity(showContent ? 1 : 0)
+                .offset(y: showContent ? 0 : 16)
 
-            Spacer()
+                // MARK: - Tasting Notes
+                VStack(alignment: .leading, spacing: 12) {
+                    KEyebrow(text: "TASTING NOTES")
 
-            Button {
-                appEnvironment.reset()
-            } label: {
-                Text("Brew Again")
-                    .font(.system(.body, design: .rounded, weight: .semibold))
-                    .foregroundStyle(.white)
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 52)
+                    FlowLayout(spacing: 8) {
+                        ForEach(tastingNotes, id: \.self) { note in
+                            Button {
+                                withAnimation(.easeInOut(duration: 0.2)) {
+                                    if selectedNotes.contains(note) {
+                                        selectedNotes.remove(note)
+                                    } else {
+                                        selectedNotes.insert(note)
+                                    }
+                                }
+                            } label: {
+                                Text(note)
+                                    .font(Constants.Typography.sans(12))
+                                    .foregroundStyle(selectedNotes.contains(note) ? .white : Constants.Colors.primaryColor)
+                                    .padding(.vertical, 8)
+                                    .padding(.horizontal, 12)
+                                    .background(
+                                        Capsule()
+                                            .fill(selectedNotes.contains(note) ? Constants.Colors.accentGold : Constants.Colors.cardBackground)
+                                    )
+                                    .overlay(
+                                        selectedNotes.contains(note)
+                                            ? nil
+                                            : Capsule()
+                                                .strokeBorder(Constants.Colors.primaryColor.opacity(0.12), lineWidth: 0.5)
+                                    )
+                            }
+                            .buttonStyle(.plain)
+                        }
+                    }
+                }
+                .opacity(showContent ? 1 : 0)
+                .offset(y: showContent ? 0 : 16)
+
+                // MARK: - Note to Self
+                VStack(alignment: .leading, spacing: 12) {
+                    KEyebrow(text: "NOTE TO SELF")
+
+                    ZStack(alignment: .topLeading) {
+                        if note.isEmpty {
+                            Text("How did it taste?")
+                                .font(Constants.Typography.displayItalic(15))
+                                .foregroundStyle(Constants.Colors.primaryColor.opacity(0.3))
+                                .padding(.horizontal, 16)
+                                .padding(.vertical, 14)
+                        }
+                        TextEditor(text: $note)
+                            .font(Constants.Typography.sans(14))
+                            .foregroundStyle(Constants.Colors.primaryColor)
+                            .scrollContentBackground(.hidden)
+                            .padding(.horizontal, 12)
+                            .padding(.vertical, 8)
+                    }
+                    .frame(minHeight: 96)
                     .background(
-                        RoundedRectangle(cornerRadius: Constants.Layout.cornerRadius, style: .continuous)
-                            .fill(Constants.Colors.accentGold)
+                        RoundedRectangle(cornerRadius: 18, style: .continuous)
+                            .fill(Constants.Colors.cardBackground)
                     )
+                }
+                .opacity(showContent ? 1 : 0)
+                .offset(y: showContent ? 0 : 16)
+
+                // MARK: - Buttons
+                HStack(spacing: 12) {
+                    KButton(title: "Discard", variant: .ghost, fullWidth: false) {
+                        appEnvironment.reset()
+                    }
+
+                    KButton(title: "Save to journal", icon: "checkmark", variant: .primary) {
+                        appEnvironment.reset()
+                    }
+                }
+                .opacity(showContent ? 1 : 0)
+                .offset(y: showContent ? 0 : 16)
+                .padding(.bottom, 24)
             }
-            .accessibilityLabel("Start a new brew")
-            .padding(.horizontal)
-            .opacity(showActions ? 1.0 : 0.0)
-            .offset(y: showActions ? 0 : 16)
-            .animation(
-                reduceMotion ? .none : .spring(response: 0.5, dampingFraction: 0.8),
-                value: showActions
-            )
+            .padding(.horizontal, 20)
         }
-        .padding()
         .adaptiveBackground()
         .navigationBarBackButtonHidden(true)
         .onAppear {
             if reduceMotion {
-                showIcon = true
-                showTitle = true
-                showSummary = true
-                showActions = true
+                showContent = true
             } else {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { showIcon = true }
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) { showTitle = true }
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) { showSummary = true }
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.85) { showActions = true }
+                withAnimation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.15)) {
+                    showContent = true
+                }
             }
         }
     }

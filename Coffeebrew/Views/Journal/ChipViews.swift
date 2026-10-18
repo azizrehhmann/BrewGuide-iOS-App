@@ -22,6 +22,10 @@ struct FilterChip: View {
                 isActive ? Constants.Colors.accentGold : Color(.secondarySystemBackground),
                 in: Capsule()
             )
+            .overlay(
+                Capsule()
+                    .strokeBorder(isActive ? Color.clear : Color(.systemGray4), lineWidth: 0.5)
+            )
             .foregroundStyle(isActive ? .white : .primary)
         }
         .buttonStyle(.plain)

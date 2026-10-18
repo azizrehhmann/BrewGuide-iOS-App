@@ -22,6 +22,7 @@ struct BrewGuideView: View {
     @State private var journalViewModel: BrewJournalViewModel?
     @State private var completionBurstTrigger = false
     @State private var cachedSteps: [BrewStep]?
+    @State private var showSaveError = false
 
     private var steps: [BrewStep] {
         cachedSteps ?? appEnvironment.databaseService.steps(forTechniqueId: technique.techniqueId)
@@ -83,6 +84,31 @@ struct BrewGuideView: View {
         return text
     }
 
+    /// Returns the instruction as an AttributedString with numeric amounts (e.g. "250ml", "15g") highlighted in accent gold.
+    private func highlightedInstruction(for step: BrewStep) -> AttributedString {
+        let resolved = resolvedInstruction(for: step)
+        var attributed = AttributedString(resolved)
+        attributed.foregroundColor = UIColor.secondaryLabel
+
+        let pattern = #"\b\d+(\.\d+)?\s*(ml|g|mL)\b"#
+        if let regex = try? NSRegularExpression(pattern: pattern) {
+            let nsString = resolved as NSString
+            let matches = regex.matches(in: resolved, range: NSRange(location: 0, length: nsString.length))
+            for match in matches.reversed() {
+                guard let range = Range(match.range, in: resolved) else { continue }
+                let matchStr = String(resolved[range])
+                if let attrRange = attributed.range(of: matchStr) {
+                    attributed[attrRange].foregroundColor = UIColor(Constants.Colors.accentGold)
+                    attributed[attrRange].font = UIFont.systemFont(
+                        ofSize: UIFont.preferredFont(forTextStyle: .body).pointSize,
+                        weight: .semibold
+                    )
+                }
+            }
+        }
+        return attributed
+    }
+
     var body: some View {
         Group {
             if steps.isEmpty {
@@ -100,6 +126,12 @@ struct BrewGuideView: View {
         .navigationBarTitleDisplayMode(.inline)
         .navigationDestination(isPresented: $showComplete) {
             BrewCompleteView(technique: technique)
+        }
+        .alert("Couldn't save this brew", isPresented: $showSaveError) {
+            Button("Try Again") { advanceStep() }
+            Button("Cancel", role: .cancel) {}
+        } message: {
+            Text("The brew wasn't added to your journal. Check that your device has free storage and try again.")
         }
         .sheet(isPresented: $showPostBrewRating) {
             if let session = savedSession, let vm = journalViewModel {
@@ -143,228 +175,190 @@ struct BrewGuideView: View {
         }
     }
 
+    // MARK: - Helpers
+
+    /// Whether the current step is a pour or bloom step (for visualization swap)
+    private var isPourOrBloomStep: Bool {
+        // Step titles in the data are often clock times, so key off water volume instead
+        (currentStep?.waterVolumeMlBase ?? 0) > 0
+    }
+
+    /// Formatted elapsed time as m:ss
+    private var elapsedTimeString: String {
+        let mins = timer.totalElapsedSeconds / 60
+        let secs = timer.totalElapsedSeconds % 60
+        return "\(mins):\(String(format: "%02d", secs))"
+    }
+
     // MARK: - Brew Content
 
     private var brewContent: some View {
-        VStack(spacing: 0) {
-            SegmentedProgressBar(
-                totalSteps: steps.count,
-                currentStep: currentStepIndex + 1,
-                accentColor: Constants.Colors.accentGold
+        ZStack(alignment: .bottom) {
+            VStack(spacing: 0) {
+                // Top chrome
+                topChrome
+                    .padding(.horizontal, Constants.Layout.horizontalPadding)
+                    .padding(.top, 8)
+                    .padding(.bottom, 12)
+
+                // Centered content area
+                Spacer()
+
+                centeredContent
+                    .id(currentStepIndex)
+                    .transition(.asymmetric(
+                        insertion: stepDirection > 0
+                            ? .move(edge: .trailing).combined(with: .opacity)
+                            : .move(edge: .leading).combined(with: .opacity),
+                        removal: stepDirection > 0
+                            ? .move(edge: .leading).combined(with: .opacity)
+                            : .move(edge: .trailing).combined(with: .opacity)
+                    ))
+                    .animation(
+                        reduceMotion ? .none : .spring(response: 0.38, dampingFraction: 0.82),
+                        value: currentStepIndex
+                    )
+
+                Spacer()
+
+                // Up next pill
+                upNextPill
+                    .padding(.bottom, 16)
+
+                // Bottom spacer for controls overlay
+                Spacer()
+                    .frame(height: 100)
+            }
+
+            // Bottom controls overlay
+            bottomControls
+        }
+    }
+
+    // MARK: - Top Chrome
+
+    private var topChrome: some View {
+        HStack(spacing: 12) {
+            // Close button
+            Button {
+                timer.pause()
+                liveActivityService.endActivity(animated: false)
+                appEnvironment.reset()
+            } label: {
+                Image(systemName: "xmark")
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundStyle(Constants.Colors.primaryColor)
+                    .frame(width: 36, height: 36)
+                    .background(Constants.Colors.primaryColor.opacity(0.06))
+                    .clipShape(Circle())
+            }
+            .accessibilityLabel("Close brew session")
+
+            // Segmented progress
+            KSegmentedProgress(
+                total: steps.count,
+                current: currentStepIndex,
+                progress: isTimedStep ? timer.stepProgress : 0
             )
-            .padding(.horizontal, Constants.Layout.horizontalPadding)
-            .padding(.top, 8)
 
-            ScrollView {
-                VStack(spacing: 20) {
-                    // Method photo (collapsed header)
-                    if let photoName = technique.methodPhoto {
-                        Image(photoName)
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(maxWidth: .infinity)
-                            .frame(height: 120)
-                            .clipShape(RoundedRectangle(cornerRadius: Constants.Layout.cornerRadius, style: .continuous))
-                            .overlay(
-                                RoundedRectangle(cornerRadius: Constants.Layout.cornerRadius, style: .continuous)
-                                    .fill(
-                                        LinearGradient(
-                                            colors: [.clear, .black.opacity(0.3)],
-                                            startPoint: .top,
-                                            endPoint: .bottom
-                                        )
-                                    )
-                            )
-                            .overlay(alignment: .bottomLeading) {
-                                Text(technique.name)
-                                    .font(.system(.caption, design: .rounded, weight: .semibold))
-                                    .foregroundStyle(.white)
-                                    .padding(12)
-                            }
-                    }
+            // Elapsed time
+            Text(elapsedTimeString)
+                .font(Constants.Typography.mono(12))
+                .foregroundStyle(.tertiary)
+                .monospacedDigit()
+        }
+    }
 
-                    stepHeader
-                    stepTypeIcon
-                    instructionText
-                    waterCalloutSection
+    // MARK: - Centered Content
 
-                    if isTimedStep {
-                        BrewTimerRing(
-                            progress: timer.stepProgress,
-                            secondsRemaining: timer.stepRemainingSeconds,
-                            totalSeconds: timer.stepDurationSeconds,
-                            isRunning: timer.isRunning,
-                            hasTimer: true,
-                            isPaused: !timer.isRunning && timer.stepRemainingSeconds > 0
-                        )
-                        .overlay {
-                            StepCompletionBurst(
-                                trigger: $completionBurstTrigger,
-                                color: Constants.Colors.accentGold
-                            )
-                        }
-                        .padding(.vertical, 8)
-
-                        totalTimeLabel
-                        autoAdvanceToggle
-                    } else {
-                        BrewTimerRing(
-                            progress: 0,
-                            secondsRemaining: 0,
-                            totalSeconds: 0,
-                            isRunning: false,
-                            hasTimer: false,
-                            isPaused: false
-                        )
-                        .overlay {
-                            StepCompletionBurst(
-                                trigger: $completionBurstTrigger,
-                                color: Constants.Colors.accentGold
-                            )
-                        }
-                        .padding(.vertical, 8)
-                    }
-                }
-                .padding(.horizontal, Constants.Layout.horizontalPadding)
-                .padding(.vertical, 12)
-                .id(currentStepIndex)
-                .transition(.asymmetric(
-                    insertion: stepDirection > 0
-                        ? .move(edge: .trailing).combined(with: .opacity)
-                        : .move(edge: .leading).combined(with: .opacity),
-                    removal: stepDirection > 0
-                        ? .move(edge: .leading).combined(with: .opacity)
-                        : .move(edge: .trailing).combined(with: .opacity)
-                ))
-                .animation(
-                    reduceMotion ? .none : .spring(response: 0.38, dampingFraction: 0.82),
-                    value: currentStepIndex
+    private var centeredContent: some View {
+        VStack(spacing: 20) {
+            // Phase eyebrow
+            if let step = currentStep {
+                KEyebrow(
+                    text: "\(step.title.uppercased()) \u{00B7} STEP \(step.stepNumber) OF \(steps.count)"
                 )
             }
 
-            nextStepPreview
-            bottomControls
-                .padding(.horizontal, Constants.Layout.horizontalPadding)
-                .padding(.bottom, 8)
-        }
-    }
-
-    // MARK: - Step Header
-
-    private var stepHeader: some View {
-        VStack(spacing: 4) {
+            // Step title
             if let step = currentStep {
-                Text("Step \(step.stepNumber) of \(steps.count)")
-                    .font(.caption.weight(.semibold))
-                    .foregroundStyle(Constants.Colors.accentGold)
-                    .textCase(.uppercase)
-                    .tracking(1)
-
-                Text(step.title)
-                    .font(.system(.title, design: .default, weight: .bold))
+                Text(step.displayTitle)
+                    .font(Constants.Typography.display(36))
                     .foregroundStyle(Constants.Colors.primaryColor)
                     .multilineTextAlignment(.center)
+                    .frame(maxWidth: 300)
+                    .lineLimit(3)
             }
-        }
-    }
 
-    // MARK: - Step Type Icon
+            // Visualization swap
+            visualizationView
+                .overlay {
+                    StepCompletionBurst(
+                        trigger: $completionBurstTrigger,
+                        color: Constants.Colors.accentGold
+                    )
+                }
+                .padding(.vertical, 4)
 
-    @ViewBuilder
-    private var stepTypeIcon: some View {
-        if let step = currentStep {
-            StepTypeIcon(
-                stepTitle: step.title,
-                hasTimer: step.durationSeconds > 0
-            )
-        }
-    }
-
-    // MARK: - Instruction Text
-
-    private var instructionText: some View {
-        Group {
+            // Body text (instruction)
             if let step = currentStep {
-                Text(resolvedInstruction(for: step))
-                    .font(Constants.Typography.body)
-                    .foregroundStyle(.secondary)
-                    .multilineTextAlignment(.leading)
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                Text(highlightedInstruction(for: step))
+                    .font(Constants.Typography.sans(16))
+                    .multilineTextAlignment(.center)
+                    .frame(maxWidth: 320)
                     .fixedSize(horizontal: false, vertical: true)
             }
         }
+        .padding(.horizontal, Constants.Layout.horizontalPadding)
     }
 
-    // MARK: - Water Callout Section
+    // MARK: - Visualization View
 
     @ViewBuilder
-    private var waterCalloutSection: some View {
-        if let step = currentStep, step.waterVolumeMlBase > 0 {
-            let stepWater = scaledWater(for: step)
-            let title = step.title.lowercased()
-            let isBloom = title.contains("bloom") || title.contains("pre-infus")
-                || resolvedInstruction(for: step).lowercased().contains("bloom")
-
-            VStack(spacing: 12) {
-                WaterCalloutView(
-                    targetMl: stepWater,
-                    useFluidOunces: $appEnvironment.useFluidOunces,
-                    stepTitle: step.title,
-                    isBloomStep: isBloom
+    private var visualizationView: some View {
+        if let step = currentStep {
+            if isTimedStep && isPourOrBloomStep {
+                KPourViz(
+                    current: scaledWater(for: step) * timer.stepProgress,
+                    target: scaledWater(for: step),
+                    phase: step.displayTitle
                 )
-
-                CumulativePourBar(
-                    previousMl: cumulativeWaterMl,
-                    currentStepMl: stepWater,
-                    totalRecipeMl: totalRecipeWaterMl
+            } else if isTimedStep {
+                KTimerRing(
+                    progress: timer.stepProgress,
+                    remaining: timer.stepRemainingSeconds,
+                    total: timer.stepDurationSeconds,
+                    phase: step.displayTitle
+                )
+            } else {
+                KTimerRing(
+                    progress: 0,
+                    remaining: 0,
+                    phase: step.displayTitle
                 )
             }
-            .padding(.horizontal, 4)
-            .transition(.opacity.combined(with: .scale(scale: 0.96)))
         }
     }
 
-    // MARK: - Total Time
-
-    private var totalTimeLabel: some View {
-        HStack(spacing: 4) {
-            Image(systemName: "clock")
-                .font(.caption)
-            Text("Total: \(timer.totalElapsedSeconds.shortFormattedTime)")
-                .font(.caption.weight(.medium).monospacedDigit())
-        }
-        .foregroundStyle(.secondary)
-        .accessibilityLabel("Total brew time: \(timer.totalElapsedSeconds.formattedTime)")
-    }
-
-    // MARK: - Auto-Advance Toggle
-
-    private var autoAdvanceToggle: some View {
-        Toggle(isOn: $autoAdvance) {
-            Label("Auto-advance steps", systemImage: "forward.fill")
-                .font(.caption)
-        }
-        .toggleStyle(.switch)
-        .tint(Constants.Colors.accentGold)
-        .accessibilityLabel("Auto-advance to next step when timer completes")
-    }
-
-    // MARK: - Next Step Preview
+    // MARK: - Up Next Pill
 
     @ViewBuilder
-    private var nextStepPreview: some View {
+    private var upNextPill: some View {
         if let nextStep = steps[safe: currentStepIndex + 1] {
             HStack(spacing: 8) {
-                Image(systemName: "arrow.right")
-                    .font(.caption2)
+                Text("UP NEXT")
+                    .font(Constants.Typography.mono(10))
                     .foregroundStyle(.tertiary)
-                Text("Next: \(nextStep.title)")
-                    .font(.caption)
-                    .foregroundStyle(.tertiary)
+                    .tracking(1)
+                Text(nextStep.displayTitle)
+                    .font(Constants.Typography.sans(13, weight: .medium))
+                    .foregroundStyle(.secondary)
                     .lineLimit(1)
             }
-            .padding(.horizontal, 20)
+            .padding(.horizontal, 16)
             .padding(.vertical, 8)
+            .background(Constants.Colors.primaryColor.opacity(0.04))
+            .clipShape(Capsule())
             .transition(.opacity.combined(with: .move(edge: .bottom)))
             .animation(reduceMotion ? .none : .easeInOut(duration: 0.3), value: currentStepIndex)
         }
@@ -373,21 +367,25 @@ struct BrewGuideView: View {
     // MARK: - Bottom Controls
 
     private var bottomControls: some View {
-        HStack(spacing: 16) {
+        HStack(spacing: 24) {
             // Previous
             Button {
                 goToPreviousStep()
             } label: {
-                Image(systemName: "chevron.left.circle.fill")
-                    .font(.system(size: 44))
-                    .foregroundStyle(currentStepIndex > 0 ? Constants.Colors.primaryColor : .gray.opacity(0.3))
+                Image(systemName: "chevron.left")
+                    .font(.system(size: 18, weight: .semibold))
+                    .foregroundStyle(currentStepIndex > 0 ? Constants.Colors.primaryColor : Constants.Colors.primaryColor.opacity(0.2))
+                    .frame(width: 52, height: 52)
+                    .background(Constants.Colors.cardBackground)
+                    .clipShape(Circle())
+                    .shadow(color: Constants.Shadows.cardColor, radius: Constants.Shadows.cardRadius, y: Constants.Shadows.cardY)
             }
             .disabled(currentStepIndex == 0)
             .accessibilityLabel("Previous step")
 
-            if isTimedStep {
-                // Play / Pause — only for timed steps
-                Button {
+            // Play / Pause (center)
+            Button {
+                if isTimedStep {
                     let wasRunning = timer.isRunning
                     timer.toggle()
                     HapticsManager.shared.impact()
@@ -397,43 +395,50 @@ struct BrewGuideView: View {
                         let newEndTime = Date().addingTimeInterval(Double(timer.stepRemainingSeconds))
                         liveActivityService.resumeTimer(newEndTime: newEndTime)
                     }
-                } label: {
-                    Image(systemName: timer.isRunning ? "pause.circle.fill" : "play.circle.fill")
-                        .font(.system(size: 64))
-                        .foregroundStyle(Constants.Colors.accentGold)
                 }
-                .accessibilityLabel(timer.isRunning ? "Pause timer" : "Start timer")
+            } label: {
+                Image(systemName: isTimedStep ? (timer.isRunning ? "pause.fill" : "play.fill") : "play.fill")
+                    .font(.system(size: 24, weight: .bold))
+                    .foregroundStyle(.white)
+                    .frame(width: 80, height: 80)
+                    .background(Constants.Colors.accentGold)
+                    .clipShape(Circle())
+                    .shadow(color: Constants.Colors.accentGold.opacity(0.3), radius: 12, y: 4)
             }
+            .disabled(!isTimedStep)
+            .opacity(isTimedStep ? 1.0 : 0.4)
+            .accessibilityLabel(timer.isRunning ? "Pause timer" : "Start timer")
 
             // Next / Complete
             Button {
                 advanceStep()
             } label: {
-                Image(systemName: isLastStep ? "checkmark.circle.fill" : "chevron.right.circle.fill")
-                    .font(.system(size: isTimedStep ? 44 : 64))
-                    .foregroundStyle(isTimedStep ? nextButtonColor : Constants.Colors.accentGold)
+                Image(systemName: isLastStep ? "checkmark" : "chevron.right")
+                    .font(.system(size: 18, weight: .semibold))
+                    .foregroundStyle(Constants.Colors.primaryColor)
+                    .frame(width: 52, height: 52)
+                    .background(Constants.Colors.cardBackground)
+                    .clipShape(Circle())
+                    .shadow(color: Constants.Shadows.cardColor, radius: Constants.Shadows.cardRadius, y: Constants.Shadows.cardY)
             }
             .accessibilityLabel(isLastStep ? "Complete brew" : "Next step")
         }
-        .frame(minHeight: 64)
-    }
-
-    private var nextButtonColor: Color {
-        if let step = currentStep, step.durationSeconds > 0 {
-            let canAdvance = timer.stepRemainingSeconds <= 5 || timer.stepCompleted || !timer.isRunning
-            return canAdvance ? Constants.Colors.primaryColor : Constants.Colors.primaryColor.opacity(0.3)
-        }
-        return Constants.Colors.primaryColor
+        .padding(.bottom, 32)
     }
 
     // MARK: - Step Navigation
 
     private func advanceStep() {
+        guard !showComplete else { return }
         if isLastStep {
             timer.pause()
+            // Stay on this step if the journal save fails so the user can retry
+            guard saveBrewSession() else {
+                showSaveError = true
+                return
+            }
             liveActivityService.endActivity(animated: true)
             if !reduceMotion { completionBurstTrigger = true }
-            saveBrewSession()
             showComplete = true
             HapticsManager.shared.brewComplete()
         } else {
@@ -464,7 +469,7 @@ struct BrewGuideView: View {
 
     // MARK: - Save Brew Session
 
-    private func saveBrewSession() {
+    private func saveBrewSession() -> Bool {
         let vm = BrewJournalViewModel(context: managedObjectContext)
         journalViewModel = vm
 
@@ -487,6 +492,7 @@ struct BrewGuideView: View {
             waterTempC: Double(technique.waterTempC),
             totalBrewTimeSeconds: timer.totalElapsedSeconds
         )
+        guard !vm.saveFailed else { return false }
         savedSession = session
 
         // Deduct coffee from inventory bean if one was selected
@@ -496,6 +502,7 @@ struct BrewGuideView: View {
             try? await Task.sleep(nanoseconds: 500_000_000)
             showPostBrewRating = true
         }
+        return true
     }
 
     private func deductFromInventoryBean() {
@@ -544,7 +551,7 @@ struct BrewGuideView: View {
         return BrewLiveActivityService.makeState(
             currentStep: currentStepIndex + 1,
             totalSteps: steps.count,
-            stepTitle: step.title,
+            stepTitle: step.displayTitle,
             stepInstruction: resolvedInstruction(for: step),
             stepDurationSeconds: step.durationSeconds,
             totalElapsedSeconds: timer.totalElapsedSeconds,

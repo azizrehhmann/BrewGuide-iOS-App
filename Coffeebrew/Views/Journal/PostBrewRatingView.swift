@@ -48,10 +48,10 @@ struct PostBrewRatingView: View {
                 .font(.system(size: 40))
                 .foregroundStyle(Constants.Colors.accentGold)
             Text("Brew Complete")
-                .font(.title2.weight(.semibold))
+                .font(Constants.Typography.display(24))
                 .foregroundStyle(Constants.Colors.primaryColor)
             Text(session.techniqueName ?? "")
-                .font(.subheadline)
+                .font(Constants.Typography.sans(15))
                 .foregroundStyle(.secondary)
         }
         .padding(.top, 8)
@@ -60,13 +60,13 @@ struct PostBrewRatingView: View {
     private var ratingSection: some View {
         VStack(spacing: 12) {
             Text("How was it?")
-                .font(.headline)
+                .font(Constants.Typography.display(20))
                 .foregroundStyle(Constants.Colors.primaryColor)
-            RatingStarsView(
-                rating: selectedRating,
-                size: 36,
+            KRatingStars(
+                rating: Double(selectedRating),
                 interactive: true,
-                onRatingChanged: { selectedRating = $0 }
+                onRate: { selectedRating = $0 },
+                starSize: 36
             )
             if selectedRating > 0 {
                 Text(ratingLabel(selectedRating))
@@ -80,9 +80,8 @@ struct PostBrewRatingView: View {
 
     private var flavourTagsSection: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text("Flavour notes")
-                .font(.headline)
-                .foregroundStyle(Constants.Colors.primaryColor)
+            KEyebrow(text: "FLAVOUR NOTES")
+
             FlowLayout(spacing: 8) {
                 ForEach(suggestedTags, id: \.self) { tag in
                     TagPill(
@@ -98,9 +97,7 @@ struct PostBrewRatingView: View {
 
     private var quickNoteSection: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text("Quick note (optional)")
-                .font(.headline)
-                .foregroundStyle(Constants.Colors.primaryColor)
+            KEyebrow(text: "QUICK NOTE")
             TextField("Any observations...", text: $quickNote, axis: .vertical)
                 .lineLimit(3...5)
                 .padding(12)
@@ -111,20 +108,13 @@ struct PostBrewRatingView: View {
 
     private var actionButtons: some View {
         VStack(spacing: 12) {
-            Button {
+            KButton(title: "Save to Journal", icon: "checkmark", variant: .gold) {
                 saveAndDismiss()
-            } label: {
-                Text("Save to Journal")
-                    .font(.headline)
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 16)
-                    .background(Constants.Colors.accentGold, in: RoundedRectangle(cornerRadius: 14))
-                    .foregroundStyle(.white)
             }
 
-            Button("Skip") { isPresented = false }
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
+            KButton(title: "Skip", variant: .ghost) {
+                isPresented = false
+            }
         }
     }
 

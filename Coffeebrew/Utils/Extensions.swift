@@ -27,6 +27,10 @@ extension View {
     func cardStyle() -> some View {
         modifier(CardModifier())
     }
+
+    func elevatedCardStyle() -> some View {
+        modifier(ElevatedCardModifier())
+    }
 }
 
 struct BrewCardModifier: ViewModifier {
@@ -40,9 +44,16 @@ struct BrewCardModifier: ViewModifier {
                     : .white
             )
             .clipShape(RoundedRectangle(cornerRadius: Constants.Layout.cornerRadius, style: .continuous))
+            .overlay(
+                RoundedRectangle(cornerRadius: Constants.Layout.cornerRadius, style: .continuous)
+                    .strokeBorder(
+                        colorScheme == .dark ? Constants.Shadows.darkBorderColor : .black.opacity(0.04),
+                        lineWidth: colorScheme == .dark ? Constants.Shadows.darkBorderWidth : 0.5
+                    )
+            )
             .shadow(
-                color: colorScheme == .dark ? .clear : .black.opacity(0.04),
-                radius: 12, x: 0, y: 4
+                color: colorScheme == .dark ? .clear : Constants.Shadows.cardColor,
+                radius: Constants.Shadows.cardRadius, x: 0, y: Constants.Shadows.cardY
             )
     }
 }
@@ -66,11 +77,58 @@ struct CardModifier: ViewModifier {
                 RoundedRectangle(cornerRadius: Constants.Layout.cornerRadius, style: .continuous)
                     .fill(Constants.Colors.cardBackground)
             )
+            .overlay(
+                RoundedRectangle(cornerRadius: Constants.Layout.cornerRadius, style: .continuous)
+                    .strokeBorder(
+                        colorScheme == .dark ? Constants.Shadows.darkBorderColor : .black.opacity(0.04),
+                        lineWidth: colorScheme == .dark ? Constants.Shadows.darkBorderWidth : 0.5
+                    )
+            )
             .shadow(
-                color: colorScheme == .dark ? .clear : .black.opacity(0.03),
-                radius: 10, x: 0, y: 2
+                color: colorScheme == .dark ? .clear : Constants.Shadows.cardColor,
+                radius: Constants.Shadows.cardRadius, x: 0, y: Constants.Shadows.cardY
             )
     }
+}
+
+struct ElevatedCardModifier: ViewModifier {
+    @Environment(\.colorScheme) var colorScheme
+
+    func body(content: Content) -> some View {
+        content
+            .background(
+                RoundedRectangle(cornerRadius: Constants.Layout.cornerRadius, style: .continuous)
+                    .fill(Constants.Colors.cardBackground)
+            )
+            .overlay(
+                RoundedRectangle(cornerRadius: Constants.Layout.cornerRadius, style: .continuous)
+                    .strokeBorder(
+                        colorScheme == .dark
+                            ? Constants.Shadows.darkBorderColor
+                            : Constants.Colors.accentGold.opacity(0.12),
+                        lineWidth: colorScheme == .dark ? Constants.Shadows.darkBorderWidth : 0.5
+                    )
+            )
+            .shadow(
+                color: colorScheme == .dark ? .clear : Constants.Shadows.elevatedColor,
+                radius: Constants.Shadows.elevatedRadius, x: 0, y: Constants.Shadows.elevatedY
+            )
+    }
+}
+
+// MARK: - Scale Button Style
+
+struct ScaleButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .scaleEffect(configuration.isPressed ? 0.97 : 1.0)
+            .opacity(configuration.isPressed ? 0.85 : 1.0)
+            .animation(.easeInOut(duration: 0.15), value: configuration.isPressed)
+    }
+}
+
+extension ButtonStyle where Self == ScaleButtonStyle {
+    static var scale: ScaleButtonStyle { ScaleButtonStyle() }
 }
 
 // MARK: - Int to Time String
@@ -97,6 +155,14 @@ extension Int {
     }
 }
 
+// MARK: - Double Rounding
+extension Double {
+    func rounded(toPlaces places: Int) -> Double {
+        let factor = pow(10.0, Double(places))
+        return (self * factor).rounded() / factor
+    }
+}
+
 // MARK: - Safe Array Subscript
 extension Array {
     subscript(safe index: Index) -> Element? {
@@ -113,19 +179,26 @@ struct EmptyStateView: View {
 
     var body: some View {
         VStack(spacing: 20) {
-            Image(systemName: icon)
-                .font(.system(size: 44, weight: .light, design: .rounded))
-                .foregroundStyle(Constants.Colors.accentGold.opacity(0.5))
+            ZStack {
+                Circle()
+                    .fill(Constants.Colors.accentGold.opacity(0.08))
+                    .frame(width: 88, height: 88)
 
-            VStack(spacing: 6) {
+                Image(systemName: icon)
+                    .font(.system(size: 52, weight: .light, design: .rounded))
+                    .foregroundStyle(Constants.Colors.accentGold.opacity(0.6))
+            }
+
+            VStack(spacing: 8) {
                 Text(title)
                     .font(Constants.Typography.headline)
                     .foregroundStyle(Constants.Colors.primaryColor)
 
                 Text(message)
-                    .font(Constants.Typography.caption)
+                    .font(Constants.Typography.body)
                     .foregroundStyle(.secondary)
                     .multilineTextAlignment(.center)
+                    .lineSpacing(2)
             }
         }
         .padding(32)

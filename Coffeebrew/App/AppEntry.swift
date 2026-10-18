@@ -9,19 +9,11 @@ struct AppEntry: App {
     var body: some Scene {
         WindowGroup {
             if appEnvironment.hasSeenOnboarding {
-                HomeView()
+                MainTabView()
                     .environmentObject(appEnvironment)
                     .environment(\.managedObjectContext, persistenceController.container.viewContext)
                     .environment(\.locale, appEnvironment.resolvedLocale)
                     .preferredColorScheme(appEnvironment.colorSchemeOverride)
-                    .onOpenURL { url in
-                        guard url.scheme == "brewguide" else { return }
-                        if url.host == "brew", url.path == "/resume" {
-                            appEnvironment.shouldShowActiveBrew = true
-                        } else if url.host == "suggestion" {
-                            appEnvironment.shouldShowDailySuggestion = true
-                        }
-                    }
             } else {
                 OnboardingView(hasSeenOnboarding: $appEnvironment.hasSeenOnboarding)
                     .environmentObject(appEnvironment)

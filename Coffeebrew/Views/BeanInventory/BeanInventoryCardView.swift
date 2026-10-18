@@ -19,20 +19,21 @@ struct BeanInventoryCardView: View {
 
     var body: some View {
         VStack(spacing: 8) {
-            BeanProgressRing(
-                remaining: bean.remainingWeightGrams,
-                total: bean.totalWeightGrams,
-                ringSize: 80
+            KBeanRing(
+                percent: bean.totalWeightGrams > 0
+                    ? (bean.remainingWeightGrams / bean.totalWeightGrams) * 100
+                    : 0,
+                size: 80
             )
 
             Text(bean.name ?? "Unnamed")
-                .font(.system(.caption, design: .rounded, weight: .semibold))
-                .foregroundStyle(.primary)
+                .font(Constants.Typography.sans(12, weight: .semibold))
+                .foregroundStyle(Constants.Colors.primaryColor)
                 .lineLimit(1)
                 .truncationMode(.tail)
 
             Text(bean.roasterName ?? "")
-                .font(.system(.caption2, design: .rounded))
+                .font(Constants.Typography.mono(10))
                 .foregroundStyle(.tertiary)
                 .lineLimit(1)
                 .truncationMode(.tail)
@@ -44,7 +45,7 @@ struct BeanInventoryCardView: View {
                     GeometryReader { geo in
                         ZStack(alignment: .leading) {
                             RoundedRectangle(cornerRadius: 2)
-                                .fill(Color(.systemGray5))
+                                .fill(Constants.Colors.primaryColor.opacity(0.06))
                             RoundedRectangle(cornerRadius: 2)
                                 .fill(freshnessColor)
                                 .frame(width: geo.size.width * fraction)
@@ -77,9 +78,16 @@ struct BeanInventoryCardView: View {
             RoundedRectangle(cornerRadius: Constants.Layout.cornerRadius, style: .continuous)
                 .fill(Constants.Colors.cardBackground)
         )
+        .overlay(
+            RoundedRectangle(cornerRadius: Constants.Layout.cornerRadius, style: .continuous)
+                .strokeBorder(
+                    colorScheme == .dark ? Constants.Shadows.darkBorderColor : .black.opacity(0.04),
+                    lineWidth: colorScheme == .dark ? Constants.Shadows.darkBorderWidth : 0.5
+                )
+        )
         .shadow(
-            color: colorScheme == .dark ? .clear : .black.opacity(0.03),
-            radius: 8, x: 0, y: 2
+            color: colorScheme == .dark ? .clear : Constants.Shadows.cardColor,
+            radius: Constants.Shadows.cardRadius, x: 0, y: Constants.Shadows.cardY
         )
         .accessibilityElement(children: .combine)
         .accessibilityLabel(accessibilityDescription)

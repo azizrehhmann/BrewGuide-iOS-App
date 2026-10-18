@@ -59,21 +59,25 @@ struct BeanFirstEntryView: View {
         ScrollView {
             VStack(spacing: 24) {
                 // Header
-                VStack(spacing: 8) {
-                    Image(systemName: "sparkles")
-                        .font(.system(size: 40, weight: .light, design: .rounded))
-                        .foregroundStyle(Constants.Colors.accentGold)
+                VStack(alignment: .leading, spacing: 8) {
+                    KEyebrow(text: "AI RECOMMENDATIONS")
 
-                    Text("Start with your bean")
-                        .font(.system(.title2, design: .rounded, weight: .bold))
-                        .foregroundStyle(Constants.Colors.primaryColor)
+                    VStack(alignment: .leading, spacing: 0) {
+                        Text("Start with")
+                            .font(Constants.Typography.display(40))
+                            .foregroundStyle(Constants.Colors.primaryColor)
+                        Text("your bean.")
+                            .font(Constants.Typography.displayItalic(40))
+                            .foregroundStyle(Constants.Colors.accentGold)
+                    }
 
                     Text("Get AI-powered technique recommendations tailored to your specific coffee bean.")
-                        .font(.system(.subheadline, design: .rounded))
+                        .font(Constants.Typography.sans(15))
                         .foregroundStyle(.secondary)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 24)
+                        .padding(.top, 4)
                 }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.horizontal, Constants.Layout.horizontalPadding)
                 .padding(.top, 12)
 
                 if case .available = viewModel.aiAvailability {
@@ -131,11 +135,11 @@ struct BeanFirstEntryView: View {
 
                 VStack(alignment: .leading, spacing: 3) {
                     Text(title)
-                        .font(Constants.Typography.callout)
+                        .font(Constants.Typography.display(18))
                         .foregroundStyle(Constants.Colors.primaryColor)
 
                     Text(subtitle)
-                        .font(.system(.caption, design: .rounded))
+                        .font(Constants.Typography.sans(13))
                         .foregroundStyle(.tertiary)
                         .lineLimit(2)
                 }
@@ -143,7 +147,7 @@ struct BeanFirstEntryView: View {
                 Spacer()
 
                 Image(systemName: "chevron.right")
-                    .font(.system(size: 12, weight: .semibold, design: .rounded))
+                    .font(.system(size: 12, weight: .semibold))
                     .foregroundStyle(.quaternary)
             }
             .padding(16)
@@ -151,12 +155,19 @@ struct BeanFirstEntryView: View {
                 RoundedRectangle(cornerRadius: Constants.Layout.cornerRadius, style: .continuous)
                     .fill(Constants.Colors.cardBackground)
             )
+            .overlay(
+                RoundedRectangle(cornerRadius: Constants.Layout.cornerRadius, style: .continuous)
+                    .strokeBorder(
+                        colorScheme == .dark ? Constants.Shadows.darkBorderColor : .black.opacity(0.04),
+                        lineWidth: colorScheme == .dark ? Constants.Shadows.darkBorderWidth : 0.5
+                    )
+            )
             .shadow(
-                color: colorScheme == .dark ? .clear : .black.opacity(0.03),
-                radius: 10, x: 0, y: 2
+                color: colorScheme == .dark ? .clear : Constants.Shadows.cardColor,
+                radius: Constants.Shadows.cardRadius, x: 0, y: Constants.Shadows.cardY
             )
         }
-        .buttonStyle(.plain)
+        .buttonStyle(.scale)
         .padding(.horizontal, Constants.Layout.horizontalPadding)
     }
 
@@ -165,8 +176,8 @@ struct BeanFirstEntryView: View {
             Rectangle()
                 .fill(Constants.Colors.primaryColor.opacity(0.06))
                 .frame(height: 1)
-            Text("or")
-                .font(.system(.caption, design: .rounded))
+            Text("or pick one")
+                .font(Constants.Typography.mono(11))
                 .foregroundStyle(.quaternary)
             Rectangle()
                 .fill(Constants.Colors.primaryColor.opacity(0.06))
@@ -179,15 +190,8 @@ struct BeanFirstEntryView: View {
 
     private var inventorySection: some View {
         VStack(alignment: .leading, spacing: 12) {
-            HStack(spacing: 6) {
-                Image(systemName: "leaf.fill")
-                    .font(.system(size: 13, weight: .semibold, design: .rounded))
-                    .foregroundStyle(Constants.Colors.accentGold)
-                Text("From Your Pantry")
-                    .font(Constants.Typography.callout)
-                    .foregroundStyle(Constants.Colors.primaryColor)
-            }
-            .padding(.horizontal, Constants.Layout.horizontalPadding)
+            KSectionHeader(title: "From Your Pantry")
+                .padding(.horizontal, Constants.Layout.horizontalPadding)
 
             InventoryBeanPicker(context: context) { coffeeBean in
                 viewModel.selectInventoryBean(coffeeBean)
@@ -203,7 +207,7 @@ struct BeanFirstEntryView: View {
             ProgressView()
                 .scaleEffect(1.3)
             Text("Reading bag label...")
-                .font(.system(.body, design: .rounded))
+                .font(Constants.Typography.sans(16))
                 .foregroundStyle(.secondary)
             Spacer()
         }
@@ -219,10 +223,10 @@ struct BeanFirstEntryView: View {
                 .scaleEffect(1.3)
             VStack(spacing: 4) {
                 Text("Finding best techniques...")
-                    .font(.system(.body, design: .rounded))
+                    .font(Constants.Typography.sans(16))
                     .foregroundStyle(.secondary)
                 Text("On-device AI is analyzing your bean")
-                    .font(.system(.caption, design: .rounded))
+                    .font(Constants.Typography.mono(12))
                     .foregroundStyle(.tertiary)
             }
             Spacer()
@@ -240,27 +244,19 @@ struct BeanFirstEntryView: View {
                 .foregroundStyle(.orange)
 
             Text("Something went wrong")
-                .font(.system(.title3, design: .rounded, weight: .semibold))
+                .font(Constants.Typography.display(24))
                 .foregroundStyle(Constants.Colors.primaryColor)
 
             Text(message)
-                .font(.system(.body, design: .rounded))
+                .font(Constants.Typography.sans(15))
                 .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 32)
 
-            Button {
+            KButton(title: "Try Again", variant: .gold) {
                 viewModel.reset()
-            } label: {
-                Text("Try Again")
-                    .font(.system(.body, design: .rounded, weight: .semibold))
-                    .foregroundStyle(.white)
-                    .frame(width: 200, height: 48)
-                    .background(
-                        RoundedRectangle(cornerRadius: Constants.Layout.cornerRadius, style: .continuous)
-                            .fill(Constants.Colors.accentGold)
-                    )
             }
+            .padding(.horizontal, Constants.Layout.horizontalPadding)
             Spacer()
         }
         .adaptiveBackground()
@@ -284,7 +280,7 @@ struct InventoryBeanPicker: View {
     var body: some View {
         if beans.isEmpty {
             Text("No beans in your pantry yet")
-                .font(.system(.caption, design: .rounded))
+                .font(Constants.Typography.sans(13))
                 .foregroundStyle(.tertiary)
                 .padding(.horizontal, Constants.Layout.horizontalPadding)
         } else {
@@ -295,20 +291,19 @@ struct InventoryBeanPicker: View {
                             onSelect(bean)
                             HapticsManager.shared.selection()
                         } label: {
+                            let pct = bean.totalWeightGrams > 0
+                                ? (bean.remainingWeightGrams / bean.totalWeightGrams) * 100
+                                : 0
                             VStack(spacing: 8) {
-                                BeanProgressRing(
-                                    remaining: bean.remainingWeightGrams,
-                                    total: bean.totalWeightGrams,
-                                    ringSize: 60
-                                )
+                                KBeanRing(percent: pct, size: 60)
 
                                 Text(bean.name ?? "")
-                                    .font(.system(.caption2, design: .rounded, weight: .medium))
+                                    .font(Constants.Typography.sans(11, weight: .medium))
                                     .foregroundStyle(Constants.Colors.primaryColor)
                                     .lineLimit(1)
 
                                 Text(bean.roasterName ?? "")
-                                    .font(.system(.caption2, design: .rounded))
+                                    .font(Constants.Typography.mono(10))
                                     .foregroundStyle(.tertiary)
                                     .lineLimit(1)
                             }

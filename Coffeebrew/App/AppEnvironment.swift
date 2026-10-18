@@ -23,6 +23,10 @@ final class AppEnvironment: ObservableObject {
     @AppStorage("hasSeenOnboarding") var hasSeenOnboarding: Bool = false
     @AppStorage("liveActivityEnabled") var liveActivityEnabled: Bool = true
     @AppStorage("dailySuggestionNotification") var dailySuggestionNotification: Bool = false
+    @AppStorage("userLevel") var userLevel: String = ""
+    @AppStorage("userFlavors") var userFlavorsRaw: String = ""
+    @AppStorage("userGear") var userGearRaw: String = ""
+    @AppStorage("morningBrewTime") var morningBrewTime: String = "07:30"
     @AppStorage("preferredLanguage") var preferredLanguage: String = "system" {
         didSet { applyLanguage() }
     }
@@ -48,6 +52,26 @@ final class AppEnvironment: ObservableObject {
             : preferredLanguage
         resolvedLocale = preferredLanguage == "system" ? Locale.current : Locale(identifier: preferredLanguage)
         databaseService.reload(languageCode: code)
+    }
+
+    // MARK: - Per-Technique Custom Ratio
+
+    func saveCustomRatio(_ ratio: Double, forTechnique techniqueId: String, defaultRatio: Double) {
+        var dict = customRatioDictionary
+        if abs(ratio - defaultRatio) < 0.05 {
+            dict.removeValue(forKey: techniqueId)
+        } else {
+            dict[techniqueId] = ratio
+        }
+        UserDefaults.standard.set(dict, forKey: "lastCustomRatios")
+    }
+
+    func lastCustomRatio(forTechnique techniqueId: String) -> Double? {
+        customRatioDictionary[techniqueId]
+    }
+
+    private var customRatioDictionary: [String: Double] {
+        UserDefaults.standard.dictionary(forKey: "lastCustomRatios") as? [String: Double] ?? [:]
     }
 
     func reset() {

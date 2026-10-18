@@ -52,7 +52,7 @@ struct BrewSessionDetailView: View {
     private var headerCard: some View {
         VStack(spacing: 6) {
             Text(session.techniqueName ?? "")
-                .font(.title3.weight(.semibold))
+                .font(Constants.Typography.display(24))
                 .foregroundStyle(Constants.Colors.primaryColor)
                 .multilineTextAlignment(.center)
             Text(session.equipmentName ?? "")
@@ -77,15 +77,13 @@ struct BrewSessionDetailView: View {
 
     private var ratingSection: some View {
         VStack(spacing: 12) {
-            Text("Rating")
-                .font(.headline)
-                .foregroundStyle(Constants.Colors.primaryColor)
+            KEyebrow(text: "RATING")
                 .frame(maxWidth: .infinity, alignment: .leading)
-            RatingStarsView(
-                rating: Int(session.rating),
-                size: 32,
+            KRatingStars(
+                rating: Double(session.rating),
                 interactive: true,
-                onRatingChanged: { journalViewModel.updateRating($0, for: session) }
+                onRate: { journalViewModel.updateRating($0, for: session) },
+                starSize: 32
             )
             .frame(maxWidth: .infinity, alignment: .leading)
         }
@@ -121,7 +119,7 @@ struct BrewSessionDetailView: View {
                 .textCase(.uppercase)
             Text(value)
                 .font(.subheadline.weight(.medium))
-                .foregroundStyle(Constants.Colors.primaryColor)
+                .foregroundStyle(Constants.Colors.accentGold)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(10)

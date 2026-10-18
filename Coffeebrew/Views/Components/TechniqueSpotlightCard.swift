@@ -20,7 +20,7 @@ struct TechniqueSpotlightCard: View {
             } label: {
                 headerContent
             }
-            .buttonStyle(.plain)
+            .buttonStyle(.scale)
 
             // Expanded preview
             if isExpanded {
@@ -28,14 +28,7 @@ struct TechniqueSpotlightCard: View {
                     .transition(.opacity.combined(with: .move(edge: .top)))
             }
         }
-        .background(
-            RoundedRectangle(cornerRadius: Constants.Layout.cornerRadius, style: .continuous)
-                .fill(Constants.Colors.cardBackground)
-        )
-        .shadow(
-            color: colorScheme == .dark ? .clear : .black.opacity(0.04),
-            radius: 12, x: 0, y: 3
-        )
+        .elevatedCardStyle()
         .accessibilityElement(children: .contain)
         .accessibilityLabel("Technique spotlight: \(technique.name)")
     }
@@ -160,7 +153,7 @@ struct TechniqueSpotlightCard: View {
                         .fill(Constants.Colors.accentGold)
                 )
             }
-            .buttonStyle(.plain)
+            .buttonStyle(.scale)
             .accessibilityLabel("Explore \(technique.name)")
         }
         .padding(.horizontal, 16)

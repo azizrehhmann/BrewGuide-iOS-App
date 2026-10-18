@@ -74,14 +74,7 @@ struct DailySuggestionCardView: View {
             .padding(.top, 16)
             .padding(.bottom, 20)
         }
-        .background(
-            RoundedRectangle(cornerRadius: Constants.Layout.cornerRadius, style: .continuous)
-                .fill(Constants.Colors.cardBackground)
-        )
-        .shadow(
-            color: colorScheme == .dark ? .clear : .black.opacity(0.04),
-            radius: 16, x: 0, y: 4
-        )
+        .elevatedCardStyle()
         .accessibilityElement(children: .contain)
         .accessibilityLabel("Today's suggestion: \(suggestion.technique.name) using \(suggestion.method.name)")
     }

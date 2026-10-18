@@ -13,20 +13,24 @@ struct ParametersView: View {
     @State private var didLoadDefaults = false
     @State private var inventoryBeans: [CoffeeBean] = []
     @State private var selectedInventoryBean: CoffeeBean?
+    @State private var customRatio: Double = 16.0
+    @State private var lastUsedRatio: Double?
 
-    // Base values from the first step or technique defaults
-    private var baseCoffeeGrams: Double {
-        // Use ratio: e.g. for 1:16, 15g coffee -> 250ml water is a standard single cup
-        let baseCoffee: Double = 15
-        return baseCoffee
+    // Water is anchored to the technique default (~250ml per serving for V60).
+    // When the user adjusts the ratio, only coffee adapts.
+    private var waterGrams: Double {
+        15.0 * technique.ratioWaterCoffee * Double(servings)
     }
 
     private var coffeeGrams: Double {
-        baseCoffeeGrams * Double(servings)
+        guard customRatio > 0 else { return 0 }
+        return waterGrams / customRatio
     }
 
-    private var waterGrams: Double {
-        coffeeGrams * technique.ratioWaterCoffee
+    private var ratioRange: ClosedRange<Double> {
+        let lower = max(1.0, technique.ratioWaterCoffee - 5.0)
+        let upper = min(25.0, technique.ratioWaterCoffee + 5.0)
+        return lower...upper
     }
 
     private var waterVolumeDisplay: String {
@@ -49,6 +53,7 @@ struct ParametersView: View {
         ScrollView {
             VStack(spacing: 20) {
                 servingSizeSection
+                ratioSection
                 parameterCards
                 inventoryBeanSection
                 recipeInfoSection
@@ -65,6 +70,8 @@ struct ParametersView: View {
             servings = appEnvironment.defaultServings
             showFahrenheit = appEnvironment.useFahrenheit
             showFluidOunces = appEnvironment.useFluidOunces
+            customRatio = technique.ratioWaterCoffee
+            lastUsedRatio = appEnvironment.lastCustomRatio(forTechnique: technique.techniqueId)
             loadInventoryBeans()
         }
     }
@@ -110,6 +117,112 @@ struct ParametersView: View {
                 .foregroundStyle(.tertiary)
         }
         .padding(.horizontal, Constants.Layout.horizontalPadding)
+    }
+
+    // MARK: - Ratio Adjuster
+
+    private var ratioSection: some View {
+        VStack(spacing: 14) {
+            HStack {
+                Text("Brew Ratio")
+                    .font(Constants.Typography.callout)
+                    .foregroundStyle(Constants.Colors.primaryColor)
+                Spacer()
+                if abs(customRatio - technique.ratioWaterCoffee) > 0.05 {
+                    Button {
+                        withAnimation(Constants.Animation.spring) {
+                            customRatio = technique.ratioWaterCoffee
+                        }
+                        HapticsManager.shared.selection()
+                    } label: {
+                        Label("Reset", systemImage: "arrow.counterclockwise")
+                            .font(.system(.caption, design: .rounded, weight: .medium))
+                            .foregroundStyle(Constants.Colors.accentGold)
+                    }
+                    .transition(.opacity.combined(with: .scale(scale: 0.9)))
+                }
+            }
+
+            HStack(spacing: 20) {
+                Button {
+                    let newValue = (customRatio - 0.1).rounded(toPlaces: 1)
+                    if newValue >= ratioRange.lowerBound {
+                        withAnimation(Constants.Animation.spring) { customRatio = newValue }
+                        HapticsManager.shared.selection()
+                    }
+                } label: {
+                    Image(systemName: "minus.circle.fill")
+                        .font(.system(size: 32))
+                        .foregroundStyle(customRatio > ratioRange.lowerBound
+                            ? Constants.Colors.primaryColor
+                            : Constants.Colors.primaryColor.opacity(0.2))
+                }
+                .disabled(customRatio <= ratioRange.lowerBound)
+                .accessibilityLabel("Decrease ratio")
+
+                VStack(spacing: 2) {
+                    Text("1 : \(String(format: "%.1f", customRatio))")
+                        .font(.system(.title2, design: .rounded, weight: .bold))
+                        .foregroundStyle(Constants.Colors.primaryColor)
+                        .contentTransition(.numericText())
+                        .animation(Constants.Animation.spring, value: customRatio)
+
+                    Text(ratioStrengthLabel)
+                        .font(.system(.caption2, design: .rounded))
+                        .foregroundStyle(Constants.Colors.accentGold.opacity(0.8))
+                        .animation(Constants.Animation.spring, value: customRatio)
+                }
+                .frame(minWidth: 100)
+
+                Button {
+                    let newValue = (customRatio + 0.1).rounded(toPlaces: 1)
+                    if newValue <= ratioRange.upperBound {
+                        withAnimation(Constants.Animation.spring) { customRatio = newValue }
+                        HapticsManager.shared.selection()
+                    }
+                } label: {
+                    Image(systemName: "plus.circle.fill")
+                        .font(.system(size: 32))
+                        .foregroundStyle(customRatio < ratioRange.upperBound
+                            ? Constants.Colors.primaryColor
+                            : Constants.Colors.primaryColor.opacity(0.2))
+                }
+                .disabled(customRatio >= ratioRange.upperBound)
+                .accessibilityLabel("Increase ratio")
+            }
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 16)
+            .background(
+                RoundedRectangle(cornerRadius: Constants.Layout.cornerRadius, style: .continuous)
+                    .fill(Constants.Colors.cardBackground)
+            )
+            .accessibilityElement(children: .contain)
+            .accessibilityLabel("Brew ratio 1 to \(String(format: "%.1f", customRatio))")
+
+            if let saved = lastUsedRatio,
+               abs(saved - technique.ratioWaterCoffee) > 0.05,
+               abs(saved - customRatio) > 0.05 {
+                Button {
+                    withAnimation(Constants.Animation.spring) {
+                        customRatio = saved
+                    }
+                    HapticsManager.shared.selection()
+                } label: {
+                    Text("(Last used: 1:\(String(format: "%.1f", saved)))")
+                        .font(.system(.caption, design: .rounded, weight: .medium))
+                        .foregroundStyle(Constants.Colors.accentGold)
+                }
+                .transition(.opacity)
+                .accessibilityLabel("Use last custom ratio 1 to \(String(format: "%.1f", saved))")
+            }
+        }
+        .padding(.horizontal, Constants.Layout.horizontalPadding)
+    }
+
+    private var ratioStrengthLabel: String {
+        let diff = customRatio - technique.ratioWaterCoffee
+        if abs(diff) < 0.15 { return "Default" }
+        return diff < 0 ? "Stronger" : "Lighter"
     }
 
     // MARK: - Parameter Cards
@@ -215,7 +328,7 @@ struct ParametersView: View {
             VStack(spacing: 0) {
                 recipeRow(label: "Technique", value: technique.name, isFirst: true)
                 Divider()
-                recipeRow(label: "Brew Ratio", value: "1 : \(String(format: "%.1f", technique.ratioWaterCoffee))")
+                recipeRow(label: "Brew Ratio", value: "1 : \(String(format: "%.1f", customRatio))")
                 Divider()
                 recipeRow(label: "Est. Time", value: technique.totalTimeSeconds.formattedTime)
                 Divider()
@@ -309,10 +422,11 @@ struct ParametersView: View {
                                 }
                             } label: {
                                 VStack(spacing: 6) {
-                                    BeanProgressRing(
-                                        remaining: bean.remainingWeightGrams,
-                                        total: bean.totalWeightGrams,
-                                        ringSize: 52
+                                    KBeanRing(
+                                        percent: bean.totalWeightGrams > 0
+                                            ? (bean.remainingWeightGrams / bean.totalWeightGrams) * 100
+                                            : 0,
+                                        size: 52
                                     )
                                     Text(bean.name ?? "")
                                         .font(.system(.caption2, weight: .medium))
@@ -372,6 +486,11 @@ struct ParametersView: View {
             BrewGuideView(technique: technique, coffeeGrams: coffeeGrams, waterGrams: waterGrams)
                 .onAppear {
                     appEnvironment.selectedInventoryBeanID = selectedInventoryBean?.id
+                    appEnvironment.saveCustomRatio(
+                        customRatio,
+                        forTechnique: technique.techniqueId,
+                        defaultRatio: technique.ratioWaterCoffee
+                    )
                 }
         } label: {
             Text("Begin Brew")

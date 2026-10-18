@@ -19,7 +19,7 @@ struct BrewSessionRowView: View {
             VStack(alignment: .leading, spacing: 4) {
                 HStack {
                     Text(session.techniqueName ?? "Unknown technique")
-                        .font(.subheadline.weight(.semibold))
+                        .font(Constants.Typography.display(18))
                         .foregroundStyle(Constants.Colors.primaryColor)
                         .lineLimit(1)
                     Spacer()
@@ -31,12 +31,12 @@ struct BrewSessionRowView: View {
                 }
 
                 Text(session.equipmentName ?? "")
-                    .font(.caption)
+                    .font(Constants.Typography.sans(12))
                     .foregroundStyle(.secondary)
 
                 HStack(spacing: 8) {
                     if session.rating > 0 {
-                        RatingStarsView(rating: Int(session.rating), size: 11)
+                        KRatingStars(rating: Double(session.rating), starSize: 11)
                     }
                     Text(session.brewedAt?.formatted(date: .abbreviated, time: .omitted) ?? "")
                         .font(.caption2)

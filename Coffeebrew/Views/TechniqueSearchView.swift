@@ -349,9 +349,16 @@ struct TechniqueSearchCard: View {
             RoundedRectangle(cornerRadius: Constants.Layout.cornerRadius, style: .continuous)
                 .fill(Constants.Colors.cardBackground)
         )
+        .overlay(
+            RoundedRectangle(cornerRadius: Constants.Layout.cornerRadius, style: .continuous)
+                .strokeBorder(
+                    colorScheme == .dark ? Constants.Shadows.darkBorderColor : .black.opacity(0.04),
+                    lineWidth: colorScheme == .dark ? Constants.Shadows.darkBorderWidth : 0.5
+                )
+        )
         .shadow(
-            color: colorScheme == .dark ? .clear : .black.opacity(0.03),
-            radius: 8, x: 0, y: 2
+            color: colorScheme == .dark ? .clear : Constants.Shadows.cardColor,
+            radius: Constants.Shadows.cardRadius, x: 0, y: Constants.Shadows.cardY
         )
         .accessibilityElement(children: .combine)
         .accessibilityLabel("\(technique.name), \(method.name), \(technique.totalTimeSeconds.formattedTime)")

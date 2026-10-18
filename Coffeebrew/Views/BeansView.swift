@@ -161,11 +161,11 @@ struct BeanCardView: View {
                     )
             )
             .shadow(
-                color: colorScheme == .dark ? .clear : .black.opacity(0.03),
-                radius: 8, x: 0, y: 2
+                color: colorScheme == .dark ? .clear : Constants.Shadows.cardColor,
+                radius: Constants.Shadows.cardRadius, x: 0, y: Constants.Shadows.cardY
             )
         }
-        .buttonStyle(.plain)
+        .buttonStyle(.scale)
         .accessibilityElement(children: .combine)
         .accessibilityLabel("\(bean.name), \(bean.origin), \(bean.roastLevel) roast, match score \(bean.matchScore) percent")
         .accessibilityAddTraits(isSelected ? [.isSelected, .isButton] : .isButton)

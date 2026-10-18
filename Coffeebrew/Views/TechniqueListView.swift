@@ -22,7 +22,7 @@ struct TechniqueListView: View {
                         NavigationLink(value: technique) {
                             TechniqueRowView(technique: technique)
                         }
-                        .buttonStyle(.plain)
+                        .buttonStyle(.scale)
                     }
                 }
             }
@@ -110,9 +110,16 @@ struct TechniqueRowView: View {
             RoundedRectangle(cornerRadius: Constants.Layout.cornerRadius, style: .continuous)
                 .fill(Constants.Colors.cardBackground)
         )
+        .overlay(
+            RoundedRectangle(cornerRadius: Constants.Layout.cornerRadius, style: .continuous)
+                .strokeBorder(
+                    colorScheme == .dark ? Constants.Shadows.darkBorderColor : .black.opacity(0.04),
+                    lineWidth: colorScheme == .dark ? Constants.Shadows.darkBorderWidth : 0.5
+                )
+        )
         .shadow(
-            color: colorScheme == .dark ? .clear : .black.opacity(0.03),
-            radius: 8, x: 0, y: 2
+            color: colorScheme == .dark ? .clear : Constants.Shadows.cardColor,
+            radius: Constants.Shadows.cardRadius, x: 0, y: Constants.Shadows.cardY
         )
         .accessibilityElement(children: .combine)
         .accessibilityLabel(accessibilityDescription)
@@ -121,10 +128,25 @@ struct TechniqueRowView: View {
 
     @ViewBuilder
     private var detailLabels: some View {
-        Label("\(technique.waterTempC)\u{00B0}C", systemImage: "thermometer.medium")
-        Label("1:\(String(format: "%.1f", technique.ratioWaterCoffee))", systemImage: "scalemass")
-        Label(technique.grindSizeLabel, systemImage: "circle.grid.3x3")
-            .lineLimit(1)
+        HStack(spacing: 3) {
+            Image(systemName: "thermometer.medium")
+                .foregroundStyle(Constants.Colors.accentGold)
+            Text("\(technique.waterTempC)\u{00B0}C")
+                .foregroundStyle(Constants.Colors.primaryColor.opacity(0.7))
+        }
+        HStack(spacing: 3) {
+            Image(systemName: "scalemass")
+                .foregroundStyle(Constants.Colors.accentGold)
+            Text("1:\(String(format: "%.1f", technique.ratioWaterCoffee))")
+                .foregroundStyle(Constants.Colors.primaryColor.opacity(0.7))
+        }
+        HStack(spacing: 3) {
+            Image(systemName: "circle.grid.3x3")
+                .foregroundStyle(Constants.Colors.accentGold)
+            Text(technique.grindSizeLabel)
+                .foregroundStyle(Constants.Colors.primaryColor.opacity(0.7))
+                .lineLimit(1)
+        }
     }
 
     private var timeBadge: some View {
