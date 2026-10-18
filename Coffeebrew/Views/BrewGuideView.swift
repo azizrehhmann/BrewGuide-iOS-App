@@ -251,6 +251,9 @@ struct BrewGuideView: View {
                     .frame(width: 36, height: 36)
                     .background(Constants.Colors.primaryColor.opacity(0.06))
                     .clipShape(Circle())
+                    // 44 pt hit area around the 36 pt visual
+                    .frame(width: 44, height: 44)
+                    .contentShape(Circle())
             }
             .accessibilityLabel("Close brew session")
 

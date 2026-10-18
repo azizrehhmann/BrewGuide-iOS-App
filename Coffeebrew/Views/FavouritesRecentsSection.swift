@@ -92,7 +92,7 @@ struct QuickBrewCard: View {
                     Image(systemName: item.isFavourite ? "heart.fill" : "heart")
                         .font(.system(size: 14, weight: .medium))
                         .foregroundStyle(item.isFavourite ? Constants.Colors.accentGold : Color.secondary.opacity(0.4))
-                        .frame(width: 28, height: 28)
+                        .frame(width: 44, height: 44)
                         .contentShape(Rectangle())
                 }
                 .buttonStyle(.plain)
