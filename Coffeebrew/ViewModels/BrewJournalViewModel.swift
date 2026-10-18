@@ -8,6 +8,8 @@ final class BrewJournalViewModel: ObservableObject {
     @Published var filterRating: Int = 0
     @Published var filterFavourites: Bool = false
     @Published var sortOrder: SortOrder = .newest
+    /// True if the most recent save failed; callers check it right after a write.
+    @Published private(set) var saveFailed = false
 
     enum SortOrder: String, CaseIterable {
         case newest = "Newest first"
@@ -100,9 +102,13 @@ final class BrewJournalViewModel: ObservableObject {
         session.totalBrewTimeSeconds = Int32(totalBrewTimeSeconds)
         session.rating = 0
         session.isFavourite = false
-        save()
-        // Insert at the beginning (newest first) instead of full refetch
-        sessions.insert(session, at: 0)
+        if save() {
+            // Insert at the beginning (newest first) instead of full refetch
+            sessions.insert(session, at: 0)
+        } else {
+            // Drop the unsaved object so a retry doesn't save a duplicate
+            context.delete(session)
+        }
         return session
     }
 
@@ -156,14 +162,11 @@ final class BrewJournalViewModel: ObservableObject {
 
     // MARK: - Helpers
 
-    private func save() {
-        guard context.hasChanges else { return }
-        guard let coordinator = context.persistentStoreCoordinator,
-              !coordinator.persistentStores.isEmpty else {
-            print("BrewJournalViewModel: Cannot save — no persistent stores loaded")
-            return
-        }
-        do { try context.save() } catch { print("Save error: \(error)") }
+    @discardableResult
+    private func save() -> Bool {
+        let ok = context.trySave()
+        saveFailed = !ok
+        return ok
     }
 
     var totalBrews: Int { sessions.count }

@@ -324,25 +324,24 @@ final class DailySuggestionService: ObservableObject {
 
     private struct BrewRecord {
         let techniqueName: String
-        let methodName: String
+        let equipmentName: String
         let rating: Int16
         let brewedAt: Date
-        let difficulty: Int
     }
 
     private func fetchBrewHistory() -> [BrewRecord] {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "BrewSession")
-        request.propertiesToFetch = ["techniqueName", "methodName", "rating", "brewedAt"]
+        request.propertiesToFetch = ["techniqueName", "equipmentName", "rating", "brewedAt"]
         request.resultType = .dictionaryResultType
 
         do {
             let results = try context.fetch(request) as? [[String: Any]] ?? []
             return results.compactMap { dict in
                 guard let name = dict["techniqueName"] as? String,
-                      let method = dict["methodName"] as? String,
                       let date = dict["brewedAt"] as? Date else { return nil }
                 let rating = dict["rating"] as? Int16 ?? 0
-                return BrewRecord(techniqueName: name, methodName: method, rating: rating, brewedAt: date, difficulty: 3)
+                let equipment = dict["equipmentName"] as? String ?? ""
+                return BrewRecord(techniqueName: name, equipmentName: equipment, rating: rating, brewedAt: date)
             }
         } catch {
             return []
@@ -389,7 +388,7 @@ final class DailySuggestionService: ObservableObject {
     private func computeMostBrewedDifficulty(from history: [BrewRecord]) -> Int {
         var difficultyCount: [Int: Int] = [:]
         for record in history {
-            if let method = databaseService.method(byName: record.methodName) {
+            if let method = databaseService.method(byName: record.equipmentName) {
                 difficultyCount[method.difficulty, default: 0] += 1
             }
         }

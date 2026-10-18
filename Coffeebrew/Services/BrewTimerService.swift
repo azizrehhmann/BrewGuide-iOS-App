@@ -13,9 +13,9 @@ final class BrewTimerService: ObservableObject {
 
     private var timer: AnyCancellable?
     private var startDate: Date?
-    private var accumulatedTotal: Int = 0
-    private var accumulatedStep: Int = 0
-    private var stepElapsed: Int = 0
+    // Kept as Double so sub-second time survives pause/resume
+    private var accumulatedTotal: TimeInterval = 0
+    private var accumulatedStep: TimeInterval = 0
 
     var stepProgress: Double {
         guard stepDurationSeconds > 0 else { return 0 }
@@ -41,7 +41,6 @@ final class BrewTimerService: ObservableObject {
         pause()
         stepDurationSeconds = duration
         stepRemainingSeconds = duration
-        stepElapsed = 0
         accumulatedStep = 0
         stepCompleted = false
     }
@@ -60,8 +59,15 @@ final class BrewTimerService: ObservableObject {
 
     func pause() {
         guard isRunning else { return }
-        accumulatedTotal = totalElapsedSeconds
-        accumulatedStep = stepElapsed
+        if let startDate {
+            let delta = Date().timeIntervalSince(startDate)
+            accumulatedTotal += delta
+            accumulatedStep += delta
+            totalElapsedSeconds = Int(accumulatedTotal)
+            if stepDurationSeconds > 0 {
+                stepRemainingSeconds = max(0, stepDurationSeconds - Int(accumulatedStep))
+            }
+        }
         isRunning = false
         startDate = nil
         timer?.cancel()
@@ -74,7 +80,6 @@ final class BrewTimerService: ObservableObject {
         accumulatedTotal = 0
         stepRemainingSeconds = 0
         stepDurationSeconds = 0
-        stepElapsed = 0
         accumulatedStep = 0
         stepCompleted = false
     }
@@ -87,15 +92,14 @@ final class BrewTimerService: ObservableObject {
 
     private func tick() {
         guard let startDate else { return }
-        let delta = Int(Date().timeIntervalSince(startDate))
+        let delta = Date().timeIntervalSince(startDate)
 
         // Update total elapsed
-        totalElapsedSeconds = accumulatedTotal + delta
+        totalElapsedSeconds = Int(accumulatedTotal + delta)
 
         // Update step countdown
         if stepDurationSeconds > 0 {
-            stepElapsed = accumulatedStep + delta
-            stepRemainingSeconds = max(0, stepDurationSeconds - stepElapsed)
+            stepRemainingSeconds = max(0, stepDurationSeconds - Int(accumulatedStep + delta))
 
             if stepRemainingSeconds == 0, !stepCompleted {
                 stepCompleted = true

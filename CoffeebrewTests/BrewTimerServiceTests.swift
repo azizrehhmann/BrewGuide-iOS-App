@@ -141,6 +141,23 @@ final class BrewTimerServiceTests: XCTestCase {
         sut.pause()
     }
 
+    func testPauseKeepsSubSecondTime() {
+        // Two 0.7s runs, each paused before its first tick: total must be 1s, not 0s
+        sut.start()
+        let first = expectation(description: "first run")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) { first.fulfill() }
+        wait(for: [first], timeout: 3)
+        sut.pause()
+
+        sut.start()
+        let second = expectation(description: "second run")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) { second.fulfill() }
+        wait(for: [second], timeout: 3)
+        sut.pause()
+
+        XCTAssertEqual(sut.totalElapsedSeconds, 1)
+    }
+
     func testStepCompletionAfterDuration() {
         sut.configureStep(duration: 1)
         sut.start()

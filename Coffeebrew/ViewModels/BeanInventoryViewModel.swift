@@ -117,14 +117,7 @@ final class BeanInventoryViewModel: ObservableObject {
     }
 
     private func save() {
-        guard context.hasChanges else { return }
-        // NSException from saving without stores bypasses Swift try? — guard explicitly
-        guard let coordinator = context.persistentStoreCoordinator,
-              !coordinator.persistentStores.isEmpty else {
-            print("BeanInventoryViewModel: Cannot save — no persistent stores loaded")
-            return
-        }
-        try? context.save()
+        _ = context.trySave()
     }
 
     // MARK: - Freshness Calculations

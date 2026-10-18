@@ -1,4 +1,5 @@
 import SwiftUI
+import CoreData
 
 // MARK: - Color Hex Init
 extension Color {
@@ -130,5 +131,24 @@ struct EmptyStateView: View {
         .padding(32)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .accessibilityElement(children: .combine)
+    }
+}
+
+extension NSManagedObjectContext {
+    /// Saves pending changes. Returns false (and logs) if there is no store or the save throws.
+    /// Checks for stores first because saving without one raises an NSException that `try` can't catch.
+    func trySave() -> Bool {
+        guard hasChanges else { return true }
+        guard let coordinator = persistentStoreCoordinator, !coordinator.persistentStores.isEmpty else {
+            print("Core Data: cannot save — no persistent stores loaded")
+            return false
+        }
+        do {
+            try save()
+            return true
+        } catch {
+            print("Core Data save error: \(error)")
+            return false
+        }
     }
 }
