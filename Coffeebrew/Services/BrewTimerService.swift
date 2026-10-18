@@ -23,18 +23,6 @@ final class BrewTimerService: ObservableObject {
         return min(1.0, Double(elapsed) / Double(stepDurationSeconds))
     }
 
-    var stepTimerColor: TimerPhase {
-        guard stepDurationSeconds > 0 else { return .idle }
-        let fraction = stepProgress
-        if fraction >= 0.9 { return .ending }
-        if fraction >= 0.6 { return .warning }
-        return .active
-    }
-
-    enum TimerPhase {
-        case idle, active, warning, ending
-    }
-
     // MARK: - Controls
 
     func configureStep(duration: Int) {

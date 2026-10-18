@@ -255,3 +255,24 @@ final class BrewJournalViewModelTests: XCTestCase {
         XCTAssertTrue(tags.contains("Sweet"))
     }
 }
+
+// MARK: - Inventory deduction
+
+final class BeanInventoryViewModelTests: XCTestCase {
+    @MainActor
+    func testDeductWeightMarksBeanInactiveAtZero() {
+        let context = PersistenceController(inMemory: true).container.viewContext
+        let sut = BeanInventoryViewModel(context: context)
+        sut.addBean(name: "Test", roasterName: "Roaster", origin: nil, roastLevel: "Medium",
+                    totalWeightGrams: 30, roastDate: nil)
+        let bean = sut.beans[0]
+
+        sut.deductWeight(from: bean, grams: 20)
+        XCTAssertEqual(bean.remainingWeightGrams, 10, accuracy: 0.01)
+        XCTAssertTrue(bean.isActive)
+
+        sut.deductWeight(from: bean, grams: 20)
+        XCTAssertEqual(bean.remainingWeightGrams, 0, accuracy: 0.01)
+        XCTAssertFalse(bean.isActive)
+    }
+}

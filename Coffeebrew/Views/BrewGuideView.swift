@@ -511,16 +511,7 @@ struct BrewGuideView: View {
         request.predicate = NSPredicate(format: "id == %@", beanID as CVarArg)
         request.fetchLimit = 1
         guard let bean = try? managedObjectContext.fetch(request).first else { return }
-        // Deduct directly instead of creating a throwaway ViewModel
-        bean.remainingWeightGrams = max(0, bean.remainingWeightGrams - coffeeGrams)
-        if bean.remainingWeightGrams <= 0 {
-            bean.isActive = false
-        }
-        if managedObjectContext.hasChanges,
-           let coordinator = managedObjectContext.persistentStoreCoordinator,
-           !coordinator.persistentStores.isEmpty {
-            try? managedObjectContext.save()
-        }
+        BeanInventoryViewModel(context: managedObjectContext).deductWeight(from: bean, grams: coffeeGrams)
     }
 
     // MARK: - Live Activity

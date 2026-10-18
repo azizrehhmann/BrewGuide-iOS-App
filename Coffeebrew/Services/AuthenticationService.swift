@@ -37,7 +37,6 @@ final class AuthenticationService: ObservableObject {
 
     enum SignInProvider: String, Codable {
         case apple
-        case google
     }
 
     enum SyncStatus: Equatable {
@@ -83,7 +82,6 @@ final class AuthenticationService: ObservableObject {
 
     private init() {
         loadStoredProfile()
-        observeCloudKitSync()
     }
 
     // MARK: - Sign in with Apple
@@ -146,62 +144,6 @@ final class AuthenticationService: ObservableObject {
         }
     }
 
-    // MARK: - Google Sign In (OAuth via ASWebAuthenticationSession)
-
-    /// Initiates Google OAuth flow using ASWebAuthenticationSession.
-    /// Note: Requires a valid Google OAuth Client ID configured in the app.
-    /// Set up at https://console.cloud.google.com/apis/credentials
-    func initiateGoogleSignIn(presentationAnchor: ASPresentationAnchor) {
-        // Placeholder: Replace with your Google OAuth Client ID
-        let clientId = "YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com"
-        let redirectURI = "com.googleusercontent.apps.YOUR_GOOGLE_CLIENT_ID:/oauthredirect"
-
-        guard clientId != "YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com" else {
-            // Google Sign-In not configured yet
-            return
-        }
-
-        let nonce = UUID().uuidString
-        let scope = "openid%20email%20profile"
-
-        let authURL = "https://accounts.google.com/o/oauth2/v2/auth"
-            + "?client_id=\(clientId)"
-            + "&redirect_uri=\(redirectURI)"
-            + "&response_type=code"
-            + "&scope=\(scope)"
-            + "&nonce=\(nonce)"
-
-        guard let url = URL(string: authURL) else { return }
-
-        let session = ASWebAuthenticationSession(url: url, callbackURLScheme: redirectURI.components(separatedBy: ":").first) { [weak self] callbackURL, error in
-            guard error == nil, let callbackURL else { return }
-
-            // Parse the authorization code from callback
-            guard let components = URLComponents(url: callbackURL, resolvingAgainstBaseURL: false),
-                  let _ = components.queryItems?.first(where: { $0.name == "code" })?.value else {
-                return
-            }
-
-            // In a full implementation, exchange the code for tokens via your backend
-            // For now, create a basic profile
-            let profile = UserProfile(
-                userId: "google_\(nonce)",
-                fullName: nil,
-                email: nil,
-                signInProvider: .google
-            )
-
-            Task { @MainActor [weak self] in
-                self?.userProfile = profile
-                self?.isSignedIn = true
-                self?.saveProfile(profile)
-            }
-        }
-
-        session.prefersEphemeralWebBrowserSession = false
-        session.start()
-    }
-
     // MARK: - Sign Out
 
     func signOut() {
@@ -210,22 +152,10 @@ final class AuthenticationService: ObservableObject {
         deleteStoredProfile()
     }
 
-    // MARK: - CloudKit Sync Observation
-
-    private func observeCloudKitSync() {
-        // Sync status is updated by PersistenceController via updateSyncStatusFromBackground()
-        // No duplicate observer needed here — PersistenceController already listens
-        // for .NSPersistentStoreRemoteChange on the correct store coordinator
-    }
+    // MARK: - Sync Status
 
     func updateSyncStatus(_ status: SyncStatus) {
         syncStatus = status
-    }
-
-    nonisolated func updateSyncStatusFromBackground(_ status: SyncStatus) {
-        Task { @MainActor in
-            self.syncStatus = status
-        }
     }
 
     // MARK: - Keychain Persistence

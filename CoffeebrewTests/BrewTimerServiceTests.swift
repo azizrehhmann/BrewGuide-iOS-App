@@ -112,18 +112,6 @@ final class BrewTimerServiceTests: XCTestCase {
         XCTAssertEqual(sut.stepProgress, 0)
     }
 
-    // MARK: - Timer Phase
-
-    func testTimerPhaseIdleWhenNoDuration() {
-        XCTAssertEqual(sut.stepTimerColor, .idle)
-    }
-
-    func testTimerPhaseActiveAtStart() {
-        sut.configureStep(duration: 30)
-        // Progress is 0 at start -> active
-        XCTAssertEqual(sut.stepTimerColor, .active)
-    }
-
     // MARK: - Timer Ticking
 
     func testTimerTicksAfterStart() {

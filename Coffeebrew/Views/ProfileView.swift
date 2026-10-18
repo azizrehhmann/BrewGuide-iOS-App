@@ -79,7 +79,7 @@ struct ProfileView: View {
                 HStack(spacing: 4) {
                     Image(systemName: profile.signInProvider == .apple ? "apple.logo" : "globe")
                         .font(.system(size: 10))
-                    Text("Signed in with \(profile.signInProvider == .apple ? "Apple" : "Google")")
+                    Text("Signed in with Apple")
                         .font(.system(.caption2, design: .rounded))
                 }
                 .foregroundStyle(.tertiary)
@@ -138,47 +138,6 @@ struct ProfileView: View {
             .signInWithAppleButtonStyle(colorScheme == .dark ? .white : .black)
             .frame(height: 50)
             .clipShape(RoundedRectangle(cornerRadius: Constants.Layout.smallCornerRadius, style: .continuous))
-            .padding(.horizontal, Constants.Layout.horizontalPadding)
-
-            // Separator
-            HStack {
-                Rectangle()
-                    .fill(Constants.Colors.primaryColor.opacity(0.06))
-                    .frame(height: 1)
-                Text("or")
-                    .font(.system(.caption, design: .rounded))
-                    .foregroundStyle(.quaternary)
-                Rectangle()
-                    .fill(Constants.Colors.primaryColor.opacity(0.06))
-                    .frame(height: 1)
-            }
-            .padding(.horizontal, Constants.Layout.horizontalPadding + 16)
-
-            // Google Sign In button
-            Button {
-                // Google OAuth requires additional setup
-                // See AuthenticationService.initiateGoogleSignIn
-            } label: {
-                HStack(spacing: 10) {
-                    Image(systemName: "globe")
-                        .font(.system(size: 18, weight: .medium))
-
-                    Text("Sign in with Google")
-                        .font(.system(.body, design: .rounded, weight: .medium))
-                }
-                .foregroundStyle(Constants.Colors.primaryColor)
-                .frame(maxWidth: .infinity)
-                .frame(height: 50)
-                .background(
-                    RoundedRectangle(cornerRadius: Constants.Layout.smallCornerRadius, style: .continuous)
-                        .fill(Constants.Colors.cardBackground)
-                )
-                .overlay(
-                    RoundedRectangle(cornerRadius: Constants.Layout.smallCornerRadius, style: .continuous)
-                        .strokeBorder(Constants.Colors.primaryColor.opacity(0.15), lineWidth: 1)
-                )
-            }
-            .buttonStyle(.plain)
             .padding(.horizontal, Constants.Layout.horizontalPadding)
 
             // Skip note
