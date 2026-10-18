@@ -234,3 +234,28 @@ final class BeanTests: XCTestCase {
         XCTAssertEqual(set.count, 2)
     }
 }
+
+// MARK: - BrewStep.displayTitle
+
+final class BrewStepDisplayTitleTests: XCTestCase {
+    private func step(title: String, instruction: String) throws -> BrewStep {
+        let json = """
+        {"step_id":"s","technique_id":"t","step_number":1,"title":"\(title)","instruction":"\(instruction)",
+         "duration_seconds":0,"water_volume_ml_base":0,"image_name":null}
+        """.data(using: .utf8)!
+        return try JSONDecoder().decode(BrewStep.self, from: json)
+    }
+
+    func testRealTitleIsKept() throws {
+        XCTAssertEqual(try step(title: "Prep", instruction: "Rinse filter.").displayTitle, "Prep")
+    }
+
+    func testClockTitleUsesFirstClause() throws {
+        XCTAssertEqual(try step(title: "0:45", instruction: "Begin main pour: spiral pour").displayTitle, "Begin main pour")
+    }
+
+    func testPlaceholdersAndParentheticalsAreDropped() throws {
+        let s = try step(title: "0:00", instruction: "Add {coffee}g coffee (medium grind \\u2014 coarser)")
+        XCTAssertEqual(s.displayTitle, "Add coffee")
+    }
+}

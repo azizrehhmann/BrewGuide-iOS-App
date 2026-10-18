@@ -8,9 +8,7 @@ final class CoffeebrewUITests: XCTestCase {
         super.setUp()
         continueAfterFailure = false
         app = XCUIApplication()
-        // Reset onboarding state for predictable test runs
         app.launchArguments = ["-hasSeenOnboarding", "true"]
-        app.launch()
     }
 
     override func tearDown() {
@@ -18,109 +16,93 @@ final class CoffeebrewUITests: XCTestCase {
         super.tearDown()
     }
 
-    // MARK: - Home Screen
-
-    func testHomeScreenShowsBrewGuideTitle() {
-        let title = app.staticTexts["BrewGuide"]
-        XCTAssertTrue(title.waitForExistence(timeout: 5), "BrewGuide title should be visible on home screen")
+    private func button(containing label: String) -> XCUIElement {
+        app.buttons.matching(NSPredicate(format: "label CONTAINS[c] %@", label)).firstMatch
     }
 
-    func testHomeScreenShowsBrewingMethodsHeader() {
-        let header = app.staticTexts["Brewing Methods"]
-        XCTAssertTrue(header.waitForExistence(timeout: 5), "Brewing Methods header should be visible")
-    }
+    // MARK: - Tabs
 
-    func testSettingsButtonExists() {
-        let settingsButton = app.buttons["Settings"]
-        XCTAssertTrue(settingsButton.waitForExistence(timeout: 5), "Settings button should exist")
+    func testTabsSwitchBetweenRootScreens() {
+        app.launch()
+        XCTAssertTrue(app.buttons["Today"].waitForExistence(timeout: 8))
+
+        app.buttons["Library"].tap()
+        XCTAssertTrue(app.textFields["Search techniques"].waitForExistence(timeout: 3), "Library search field")
+
+        app.buttons["Pantry"].tap()
+        XCTAssertTrue(app.staticTexts["Pantry"].waitForExistence(timeout: 3))
+
+        app.buttons["Journal"].tap()
+        XCTAssertTrue(app.navigationBars["Journal"].waitForExistence(timeout: 3) || app.staticTexts["No brews yet"].waitForExistence(timeout: 3))
+
+        app.buttons["Today"].tap()
+        XCTAssertTrue(app.buttons["Settings"].waitForExistence(timeout: 3))
     }
 
     // MARK: - Settings
 
-    func testOpenAndCloseSettings() {
-        let settingsButton = app.buttons["Settings"]
-        XCTAssertTrue(settingsButton.waitForExistence(timeout: 5))
-        settingsButton.tap()
+    func testSettingsOpensAndCloses() {
+        app.launch()
+        let settings = app.buttons["Settings"]
+        XCTAssertTrue(settings.waitForExistence(timeout: 8), "Settings must be reachable from Today")
+        settings.tap()
 
-        let settingsTitle = app.navigationBars["Settings"]
-        XCTAssertTrue(settingsTitle.waitForExistence(timeout: 3), "Settings screen should appear")
-
-        let doneButton = app.buttons["Done"]
-        XCTAssertTrue(doneButton.exists, "Done button should exist")
-        doneButton.tap()
-
-        // Should return to home
-        let title = app.staticTexts["BrewGuide"]
-        XCTAssertTrue(title.waitForExistence(timeout: 3), "Should return to home after dismissing settings")
-    }
-
-    func testSettingsShowsAllSections() {
-        app.buttons["Settings"].tap()
-
-        let settingsNav = app.navigationBars["Settings"]
-        XCTAssertTrue(settingsNav.waitForExistence(timeout: 3))
-
-        // Check section headers exist
-        XCTAssertTrue(app.staticTexts["Appearance"].exists, "Appearance section should exist")
-        XCTAssertTrue(app.staticTexts["Units"].exists, "Units section should exist")
-        XCTAssertTrue(app.staticTexts["Brewing Defaults"].exists, "Brewing Defaults section should exist")
-        XCTAssertTrue(app.staticTexts["Accessibility"].exists, "Accessibility section should exist")
-        // Scroll to About
-        app.swipeUp()
-        XCTAssertTrue(app.staticTexts["About"].waitForExistence(timeout: 2), "About section should exist")
+        XCTAssertTrue(app.navigationBars["Settings"].waitForExistence(timeout: 3))
+        XCTAssertTrue(app.staticTexts["Appearance"].exists)
+        XCTAssertTrue(app.staticTexts["Units"].exists)
 
         app.buttons["Done"].tap()
+        XCTAssertTrue(app.buttons["Today"].waitForExistence(timeout: 3))
     }
 
-    // MARK: - Navigation Flow
+    // MARK: - Brew flow
 
-    func testTapMethodCardNavigatesToTechniques() {
-        // Wait for cards to load
-        let brewingMethods = app.staticTexts["Brewing Methods"]
-        XCTAssertTrue(brewingMethods.waitForExistence(timeout: 5))
+    func testBeginBrewingReachesTimerScreen() {
+        app.launch()
+        let begin = button(containing: "Begin brewing")
+        XCTAssertTrue(begin.waitForExistence(timeout: 8))
+        begin.tap()
 
-        // Tap the first method card (look for any button with accessibility hint)
-        let firstCard = app.buttons.matching(NSPredicate(format: "label CONTAINS 'difficulty'")).firstMatch
-        guard firstCard.waitForExistence(timeout: 5) else {
-            XCTFail("No method card found")
-            return
-        }
-        firstCard.tap()
+        // Bean selection, then parameters, then the brew itself. The bottom buttons must be tappable
+        // without the tab bar covering them.
+        let toParameters = button(containing: "Continue")
+        XCTAssertTrue(toParameters.waitForExistence(timeout: 5))
+        XCTAssertTrue(toParameters.isHittable, "Continue must not sit under the tab bar")
+        toParameters.tap()
 
-        // Should show a navigation bar (technique list)
-        let backButton = app.navigationBars.buttons.firstMatch
-        XCTAssertTrue(backButton.waitForExistence(timeout: 3), "Should navigate to technique list with back button")
+        let start = button(containing: "Begin brewing")
+        XCTAssertTrue(start.waitForExistence(timeout: 5))
+        if !start.isHittable { app.swipeUp() }
+        start.tap()
+
+        XCTAssertTrue(app.buttons["Close brew session"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.buttons["Next step"].exists)
     }
 
     // MARK: - Onboarding
 
-    func testOnboardingFlowShownOnFirstLaunch() {
-        // Launch fresh without skipping onboarding
-        let freshApp = XCUIApplication()
-        freshApp.launchArguments = ["-hasSeenOnboarding", "false"]
-        freshApp.launch()
+    func testOnboardingCompletesAndShowsToday() {
+        app.launchArguments = ["-hasSeenOnboarding", "false"]
+        app.launch()
 
-        let welcomeText = freshApp.staticTexts["Welcome to BrewGuide"]
-        XCTAssertTrue(welcomeText.waitForExistence(timeout: 5), "Onboarding should show on first launch")
+        let begin = button(containing: "Begin")
+        XCTAssertTrue(begin.waitForExistence(timeout: 8))
+        begin.tap()
 
-        // Tap Next twice then Get Started
-        let nextButton = freshApp.buttons["Next page"]
-        if nextButton.waitForExistence(timeout: 3) {
-            nextButton.tap()
-
-            let nextButton2 = freshApp.buttons["Next page"]
-            if nextButton2.waitForExistence(timeout: 3) {
-                nextButton2.tap()
+        // Walk the steps, making the selections that enable Continue.
+        for _ in 0..<8 {
+            if app.buttons["Enter Kōhi"].waitForExistence(timeout: 1) {
+                app.buttons["Enter Kōhi"].tap()
+                break
             }
-
-            let getStarted = freshApp.buttons["Get started with BrewGuide"]
-            if getStarted.waitForExistence(timeout: 3) {
-                getStarted.tap()
-            }
+            if button(containing: "Curious").exists { button(containing: "Curious").tap() }
+            if button(containing: "Floral").exists { button(containing: "Floral").tap() }
+            let skip = button(containing: "Skip for now")
+            if skip.exists { skip.tap(); continue }
+            let next = app.buttons.matching(NSPredicate(format: "label BEGINSWITH[c] 'Continue'")).firstMatch
+            if next.waitForExistence(timeout: 2) && next.isEnabled { next.tap() }
         }
 
-        // After onboarding, home should appear
-        let title = freshApp.staticTexts["BrewGuide"]
-        XCTAssertTrue(title.waitForExistence(timeout: 5), "Home screen should appear after onboarding")
+        XCTAssertTrue(app.buttons["Today"].waitForExistence(timeout: 8), "Today should appear after onboarding")
     }
 }
