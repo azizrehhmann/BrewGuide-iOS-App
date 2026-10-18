@@ -63,4 +63,21 @@ final class DailySuggestionServiceTests: XCTestCase {
         XCTAssertNotNil(sut.suggestion)
         XCTAssertFalse(sut.suggestion?.hasPreviousBrew ?? true)
     }
+
+    // MARK: - Seasons (0 spring, 1 summer, 2 autumn, 3 winter)
+
+    private func date(month: Int) -> Date {
+        Calendar.current.date(from: DateComponents(year: 2026, month: month, day: 15))!
+    }
+
+    func testSeasonNorthernHemisphere() {
+        XCTAssertEqual(DailySuggestionService.currentSeason(for: date(month: 1), region: "DE"), 3)
+        XCTAssertEqual(DailySuggestionService.currentSeason(for: date(month: 7), region: "DE"), 1)
+    }
+
+    func testSeasonSouthernHemisphereIsFlipped() {
+        XCTAssertEqual(DailySuggestionService.currentSeason(for: date(month: 1), region: "AU"), 1)
+        XCTAssertEqual(DailySuggestionService.currentSeason(for: date(month: 7), region: "AU"), 3)
+        XCTAssertEqual(DailySuggestionService.currentSeason(for: date(month: 9), region: "AU"), 0)
+    }
 }

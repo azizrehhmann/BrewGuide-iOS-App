@@ -420,8 +420,12 @@ final class DailySuggestionService: ObservableObject {
 
     // MARK: - Helpers
 
-    private static func currentSeason(for date: Date) -> Int {
-        let month = Calendar.current.component(.month, from: date)
+    // shortcut: country list is approximate (Indonesia/Peru straddle the equator); extend if needed
+    private static let southernRegions: Set<String> = ["AU", "NZ", "AR", "CL", "UY", "PY", "BO", "ZA", "BR"]
+
+    static func currentSeason(for date: Date, region: String? = Locale.current.region?.identifier) -> Int {
+        var month = Calendar.current.component(.month, from: date)
+        if let region, southernRegions.contains(region) { month = (month + 5) % 12 + 1 }
         switch month {
         case 3, 4, 5: return 0   // spring
         case 6, 7, 8: return 1   // summer

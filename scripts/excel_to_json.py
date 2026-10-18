@@ -4,7 +4,7 @@ excel_to_json.py — Converts the coffee brewing Excel database into 4 JSON file
 for the BrewGuide iOS app.
 
 Usage:
-    python3 scripts/excel_to_json.py path/to/coffee_brewing_database.xlsx
+    python3 scripts/excel_to_json.py path/to/coffee_brewing_database.xlsx [output_dir]
 
 Output:
     Coffeebrew/Resources/Data/methods.json
@@ -157,7 +157,7 @@ def get_method_id(method_name: str) -> str:
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python3 excel_to_json.py <path_to_excel_file>")
+        print("Usage: python3 excel_to_json.py <path_to_excel_file> [output_dir]")
         sys.exit(1)
 
     excel_path = sys.argv[1]
@@ -165,9 +165,16 @@ def main():
         print(f"ERROR: File not found: {excel_path}")
         sys.exit(1)
 
-    # Output directory
+    # Output directory (optional second argument, e.g. to diff against the committed JSON)
     script_dir = Path(__file__).parent.parent
-    output_dir = script_dir / "Coffeebrew" / "Resources" / "Data"
+    custom_output = len(sys.argv) > 2
+    output_dir = Path(sys.argv[2]) if custom_output else script_dir / "Coffeebrew" / "Resources" / "Data"
+    # The committed steps.json is hand-curated (per-step water volumes, {water} placeholders,
+    # pour durations) and this script cannot regenerate those. Don't clobber it by accident.
+    if not custom_output and (output_dir / "steps.json").exists():
+        print(f"ERROR: {output_dir}/steps.json already exists and holds curated data.\n"
+              "Pass an output directory as the second argument to write elsewhere and diff.")
+        sys.exit(1)
     output_dir.mkdir(parents=True, exist_ok=True)
 
     wb = openpyxl.load_workbook(excel_path)
@@ -331,20 +338,27 @@ def main():
                 time_label = str(col1 or "")
                 instruction = str(col2)
 
-                # Parse duration from time label
+                # Duration only for ranges like "0:10-0:45" (end minus start). A single time
+                # is a start stamp, not a duration.
                 duration = 0
-                time_match = re.match(r"(\d+):(\d+)", time_label)
-                if time_match:
-                    duration = int(time_match.group(1)) * 60 + int(time_match.group(2))
+                range_match = re.match(r"(\d+):(\d+)\s*[-–]\s*(\d+):(\d+)", time_label)
+                if range_match:
+                    m1, s1, m2, s2 = map(int, range_match.groups())
+                    duration = max(0, (m2 * 60 + s2) - (m1 * 60 + s1))
+
+                # The sheet has no title column; use the instruction's first clause
+                title = re.split(r"[:;.]", instruction, maxsplit=1)[0].strip() or f"Step {step_num}"
 
                 step_id = f"{current_technique_id}-step-{step_num}"
                 all_steps.append({
                     "step_id": step_id,
                     "technique_id": current_technique_id,
                     "step_number": step_num,
-                    "title": time_label if time_label else f"Step {step_num}",
+                    "title": title,
+                    "time_label": time_label,
                     "instruction": instruction,
                     "duration_seconds": duration,
+                    # shortcut: water volume is not in the sheet; fill by hand in steps.json
                     "water_volume_ml_base": 0.0,
                     "image_name": None,
                 })

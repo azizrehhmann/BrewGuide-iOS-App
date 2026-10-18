@@ -92,12 +92,12 @@ final class DatabaseService {
     /// Build all dictionary indices after loading data
     private func buildIndices() {
         // Method lookups
-        methodById = Dictionary(uniqueKeysWithValues: methods.map { ($0.methodId, $0) })
+        methodById = Dictionary(methods.map { ($0.methodId, $0) }, uniquingKeysWith: { first, _ in first })
         methodsByCategory = Dictionary(grouping: methods, by: \.category)
-        methodByName = Dictionary(uniqueKeysWithValues: methods.map { ($0.name, $0) })
+        methodByName = Dictionary(methods.map { ($0.name, $0) }, uniquingKeysWith: { first, _ in first })
 
         // Technique lookups
-        techniqueById = Dictionary(uniqueKeysWithValues: techniques.map { ($0.techniqueId, $0) })
+        techniqueById = Dictionary(techniques.map { ($0.techniqueId, $0) }, uniquingKeysWith: { first, _ in first })
         techniquesByMethodId = Dictionary(grouping: techniques, by: \.methodId)
             .mapValues { $0.sorted { $0.sortOrder < $1.sortOrder } }
 
@@ -110,7 +110,7 @@ final class DatabaseService {
             .mapValues { $0.sorted { $0.matchScore > $1.matchScore } }
 
         // Grind size lookup
-        grindSizeByLevel = Dictionary(uniqueKeysWithValues: grindSizes.map { ($0.level, $0) })
+        grindSizeByLevel = Dictionary(grindSizes.map { ($0.level, $0) }, uniquingKeysWith: { first, _ in first })
 
         // Pre-compute categories
         let order = ["Pour Over", "Immersion", "Pressure", "Cold Brew", "Stovetop & Traditional", "Machine"]
