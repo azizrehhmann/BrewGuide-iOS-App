@@ -77,7 +77,7 @@ struct BrewSessionDetailView: View {
 
     private var ratingSection: some View {
         VStack(spacing: 12) {
-            KEyebrow(text: "RATING")
+            KEyebrow(text: "Rating")
                 .frame(maxWidth: .infinity, alignment: .leading)
             KRatingStars(
                 rating: Double(session.rating),
@@ -116,7 +116,6 @@ struct BrewSessionDetailView: View {
             Text(label)
                 .font(.caption2)
                 .foregroundStyle(.secondary)
-                .textCase(.uppercase)
             Text(value)
                 .font(.subheadline.weight(.medium))
                 .foregroundStyle(Constants.Colors.accentGold)

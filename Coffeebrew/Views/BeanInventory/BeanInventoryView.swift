@@ -153,7 +153,7 @@ private struct BeanInventoryContentView: View {
 
     private var headerSection: some View {
         VStack(alignment: .leading, spacing: 4) {
-            KEyebrow(text: "\(viewModel.activeBeanCount) BEANS TRACKED")
+            KEyebrow(text: "\(viewModel.activeBeanCount) \(viewModel.activeBeanCount == 1 ? "bag" : "bags") tracked")
             Text("Pantry")
                 .font(Constants.Typography.display(40))
                 .foregroundStyle(Constants.Colors.primaryColor)
@@ -362,14 +362,12 @@ private struct BeanInventoryContentView: View {
 
                     HStack(spacing: 0) {
                         Text(bean.roasterName ?? "Unknown roaster")
-                            .font(Constants.Typography.mono(10))
-                            .foregroundStyle(.secondary)
                         if let days = daysAgo {
-                            Text("  \u{00B7}  OPENED \(days)d AGO")
-                                .font(Constants.Typography.mono(10))
-                                .foregroundStyle(.secondary)
+                            Text(", opened \(days) \(days == 1 ? "day" : "days") ago")
                         }
                     }
+                    .font(Constants.Typography.sans(13))
+                    .foregroundStyle(.secondary)
                     .lineLimit(1)
 
                     if let tags = bean.flavourTags, !tags.isEmpty {
@@ -401,8 +399,8 @@ private struct BeanInventoryContentView: View {
 
                     if let lbl = label {
                         HStack {
-                            Text(lbl.uppercased())
-                                .font(Constants.Typography.mono(10))
+                            Text(lbl)
+                                .font(Constants.Typography.sans(12))
                                 .foregroundStyle(freshnessBarColor(frac))
                             Spacer()
                         }
@@ -500,14 +498,26 @@ private struct BeanInventoryContentView: View {
     // MARK: - Empty State
 
     private var emptyState: some View {
-        VStack(spacing: 20) {
-            EmptyStateView(
-                icon: "leaf.fill",
-                title: searchText.isEmpty ? "No Beans Yet" : "No Results",
-                message: searchText.isEmpty
-                    ? "Add your first bag of coffee beans."
-                    : "No beans match your search."
-            )
+        VStack(spacing: 12) {
+            if searchText.isEmpty {
+                // A canister, a valve bag and a scoop (Design/figures/objects)
+                Image("figure_empty_pantry")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(maxWidth: 300, maxHeight: 244)
+                    .accessibilityHidden(true)
+                Text("No beans yet")
+                    .font(Constants.Typography.display(28))
+                    .foregroundStyle(Constants.Colors.primaryColor)
+                    .padding(.top, 6)
+                Text("Add your first bag and BrewGuide tracks how much is left and how fresh it is.")
+                    .font(Constants.Typography.sans(16))
+                    .foregroundStyle(.secondary)
+                    .multilineTextAlignment(.center)
+            } else {
+                EmptyStateView(icon: "magnifyingglass", title: "No Results", message: "No beans match your search.")
+            }
         }
+        .padding(.horizontal, 32)
     }
 }

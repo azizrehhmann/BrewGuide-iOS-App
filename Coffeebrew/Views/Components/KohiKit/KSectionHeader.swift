@@ -8,10 +8,9 @@ struct KSectionHeader: View {
     var body: some View {
         HStack(alignment: .firstTextBaseline) {
             Text(title)
-                .font(Constants.Typography.sans(13, weight: .semibold))
-                .foregroundStyle(Constants.Colors.primaryColor.opacity(0.6))
-                .textCase(.uppercase)
-                .tracking(0.8)
+                .font(Constants.Typography.display(22))
+                .foregroundStyle(Constants.Colors.primaryColor)
+                .accessibilityAddTraits(.isHeader)
             Spacer()
             if let action {
                 Button(action: action) {

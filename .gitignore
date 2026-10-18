@@ -34,3 +34,7 @@ DerivedData/
 # CocoaPods
 Pods/
 Podfile.lock
+
+# Design work: generated renders and reference screenshots (rebuild with Design/figures/*/build.mjs)
+Design/figures/out/
+Design/before/

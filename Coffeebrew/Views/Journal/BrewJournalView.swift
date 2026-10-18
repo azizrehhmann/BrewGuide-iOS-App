@@ -45,7 +45,7 @@ struct BrewJournalView: View {
 
                 // Entry count
                 KEyebrow(
-                    text: "\(viewModel.sessions.count) BREW\(viewModel.sessions.count == 1 ? "" : "S")",
+                    text: "\(viewModel.sessions.count) brew\(viewModel.sessions.count == 1 ? "" : "s")",
                     color: Constants.Colors.primaryColor.opacity(0.5)
                 )
 
@@ -89,7 +89,7 @@ struct BrewJournalView: View {
 
     private var customHeader: some View {
         VStack(alignment: .leading, spacing: 8) {
-            KEyebrow(text: "\(viewModel.totalBrews) ENTRIES")
+            KEyebrow(text: "\(viewModel.totalBrews) \(viewModel.totalBrews == 1 ? "entry" : "entries")")
 
             Text("Journal")
                 .font(Constants.Typography.display(40))
@@ -105,7 +105,7 @@ struct BrewJournalView: View {
         return HStack {
             // Left side: brew count this week
             VStack(alignment: .leading, spacing: 4) {
-                KEyebrow(text: "THIS WEEK")
+                KEyebrow(text: "This week")
 
                 HStack(alignment: .firstTextBaseline, spacing: 6) {
                     Text("\(week.count)")
@@ -134,7 +134,7 @@ struct BrewJournalView: View {
                             }
                         }
                         Text(day.label)
-                            .font(Constants.Typography.mono(9))
+                            .font(Constants.Typography.sans(11))
                             .foregroundStyle(Constants.Colors.primaryColor.opacity(0.5))
                     }
                 }
@@ -176,7 +176,7 @@ struct BrewJournalView: View {
             // Top row: date + rating
             HStack {
                 KEyebrow(
-                    text: (session.brewedAt ?? Date()).formatted(date: .abbreviated, time: .omitted).uppercased(),
+                    text: (session.brewedAt ?? Date()).formatted(date: .abbreviated, time: .omitted),
                     color: Constants.Colors.primaryColor.opacity(0.5)
                 )
                 Spacer()
@@ -212,19 +212,23 @@ struct BrewJournalView: View {
     // MARK: - Empty State
 
     private var emptyState: some View {
-        VStack(spacing: 16) {
-            Image(systemName: "book.closed")
-                .font(.system(size: 52))
-                .foregroundStyle(Constants.Colors.accentGold.opacity(0.5))
+        VStack(spacing: 12) {
+            // An open brew log with a pencil (Design/figures/objects)
+            Image("figure_empty_journal")
+                .resizable()
+                .scaledToFit()
+                .frame(maxWidth: 300, maxHeight: 216)
+                .accessibilityHidden(true)
             Text("No brews yet")
-                .font(Constants.Typography.display(24))
+                .font(Constants.Typography.display(28))
                 .foregroundStyle(Constants.Colors.primaryColor)
-            Text("Complete a brew to start your journal.")
-                .font(Constants.Typography.sans(14))
-                .foregroundStyle(Constants.Colors.primaryColor.opacity(0.5))
+                .padding(.top, 6)
+            Text("Finish a brew and it lands here, with your rating and notes.")
+                .font(Constants.Typography.sans(16))
+                .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)
         }
-        .padding(40)
+        .padding(32)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .adaptiveBackground()
     }

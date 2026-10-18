@@ -77,10 +77,9 @@ struct OnboardingView: View {
                 Button {
                     finishOnboarding()
                 } label: {
-                    Text("SKIP")
-                        .font(Constants.Typography.mono(10))
+                    Text("Skip")
+                        .font(Constants.Typography.sans(12))
                         .foregroundStyle(Constants.Colors.primaryColor.opacity(0.35))
-                        .tracking(0.8)
                 }
             }
             .padding(.horizontal, 20)
@@ -97,20 +96,18 @@ struct OnboardingView: View {
         VStack {
             Spacer()
 
-            // Cup illustration
-            ZStack {
-                Circle()
-                    .fill(Constants.Colors.accentGold.opacity(0.08))
-                    .frame(width: 200, height: 200)
-                Image(systemName: "cup.and.saucer.fill")
-                    .font(.system(size: 80, weight: .thin))
-                    .foregroundStyle(Constants.Colors.accentGold.opacity(0.6))
-            }
+            // A scale, a server and a V60 (Design/figures/brew)
+            Image("figure_brew_full")
+                .resizable()
+                .scaledToFit()
+                .frame(maxWidth: 320, maxHeight: 340)
+                .padding(.horizontal, 28)
+                .accessibilityHidden(true)
 
             Spacer()
 
             VStack(alignment: .leading, spacing: 0) {
-                KEyebrow(text: "WELCOME TO")
+                KEyebrow(text: "Welcome to")
                     .padding(.bottom, 6)
 
                 (Text("Kōhi")
@@ -136,9 +133,9 @@ struct OnboardingView: View {
                 } label: {
                     Text("I already have an account")
                         .font(Constants.Typography.sans(13, weight: .medium))
-                        .foregroundStyle(Constants.Colors.primaryColor.opacity(0.35))
-                        .frame(maxWidth: .infinity)
-                        .padding(.top, 12)
+                        .foregroundStyle(.secondary)
+                        .frame(maxWidth: .infinity, minHeight: 44)
+                        .padding(.top, 4)
                 }
             }
             .padding(.horizontal, 28)
@@ -152,7 +149,7 @@ struct OnboardingView: View {
         VStack(alignment: .leading, spacing: 0) {
             Spacer().frame(height: 120)
 
-            KEyebrow(text: "OUR PHILOSOPHY")
+            KEyebrow(text: "Our philosophy")
                 .padding(.bottom, 10)
 
             (Text("A brewing app\nbuilt around\n")
@@ -175,12 +172,7 @@ struct OnboardingView: View {
                     HStack(alignment: .top, spacing: 16) {
                         ZStack {
                             RoundedRectangle(cornerRadius: 12, style: .continuous)
-                                .fill(
-                                    LinearGradient(
-                                        colors: [Constants.Colors.accentGold.opacity(0.15), .clear],
-                                        startPoint: .topLeading, endPoint: .bottomTrailing
-                                    )
-                                )
+                                .fill(Constants.Colors.accentGold.opacity(0.10))
                                 .frame(width: 36, height: 36)
                             Image(systemName: pillar.icon)
                                 .font(.system(size: 16, weight: .medium))
@@ -219,7 +211,7 @@ struct OnboardingView: View {
         VStack(alignment: .leading, spacing: 0) {
             Spacer().frame(height: 120)
 
-            KEyebrow(text: "STEP 1 OF 4")
+            KEyebrow(text: "Step 1 of 4")
                 .padding(.bottom, 10)
 
             (Text("Where are you\n")
@@ -253,10 +245,9 @@ struct OnboardingView: View {
                             VStack(alignment: .leading, spacing: 2) {
                                 Text(l.title)
                                     .font(Constants.Typography.display(22))
-                                Text(l.sub.uppercased())
-                                    .font(Constants.Typography.mono(10))
+                                Text(l.sub)
+                                    .font(Constants.Typography.sans(12))
                                     .opacity(0.5)
-                                    .tracking(0.8)
                                 Text(l.body)
                                     .font(Constants.Typography.sans(12))
                                     .opacity(isSelected ? 0.7 : 0.6)
@@ -307,7 +298,7 @@ struct OnboardingView: View {
         VStack(alignment: .leading, spacing: 0) {
             Spacer().frame(height: 120)
 
-            KEyebrow(text: "STEP 2 OF 4")
+            KEyebrow(text: "Step 2 of 4")
                 .padding(.bottom, 10)
 
             (Text("What do\nyou ")
@@ -347,7 +338,7 @@ struct OnboardingView: View {
                             Text(f.label)
                                 .font(Constants.Typography.display(20))
                             Text(f.hint)
-                                .font(Constants.Typography.mono(10))
+                                .font(Constants.Typography.sans(12))
                                 .opacity(isOn ? 0.8 : 0.5)
                         }
                         .padding(.horizontal, 16)
@@ -384,7 +375,7 @@ struct OnboardingView: View {
         VStack(alignment: .leading, spacing: 0) {
             Spacer().frame(height: 120)
 
-            KEyebrow(text: "STEP 3 OF 4")
+            KEyebrow(text: "Step 3 of 4")
                 .padding(.bottom, 10)
 
             (Text("What's ")
@@ -442,10 +433,9 @@ struct OnboardingView: View {
                                     Text(g.label)
                                         .font(Constants.Typography.display(16))
                                         .foregroundStyle(Constants.Colors.primaryColor)
-                                    Text(g.cat.uppercased())
-                                        .font(Constants.Typography.mono(9))
+                                    Text(g.cat)
+                                        .font(Constants.Typography.sans(11))
                                         .foregroundStyle(Constants.Colors.primaryColor.opacity(0.35))
-                                        .tracking(0.8)
                                 }
                                 Spacer()
                             }
@@ -487,7 +477,7 @@ struct OnboardingView: View {
         return VStack(alignment: .leading, spacing: 0) {
             Spacer().frame(height: 120)
 
-            KEyebrow(text: "STEP 4 OF 4")
+            KEyebrow(text: "Step 4 of 4")
                 .padding(.bottom, 10)
 
             (Text("Your ")
@@ -505,10 +495,9 @@ struct OnboardingView: View {
 
             // Big time display
             VStack(spacing: 10) {
-                Text("DAILY REMINDER")
-                    .font(Constants.Typography.mono(11))
+                Text("Daily reminder")
+                    .font(Constants.Typography.sans(13))
                     .foregroundStyle(Constants.Colors.primaryColor.opacity(0.35))
-                    .tracking(1.2)
 
                 Text(morningTime)
                     .font(Constants.Typography.display(68))
@@ -533,7 +522,7 @@ struct OnboardingView: View {
                             withAnimation(.easeInOut(duration: 0.18)) { morningTime = t }
                         } label: {
                             Text(t)
-                                .font(Constants.Typography.mono(13))
+                                .font(Constants.Typography.sans(15))
                                 .foregroundStyle(isOn ? .white : Constants.Colors.primaryColor)
                                 .padding(.horizontal, 16)
                                 .padding(.vertical, 10)
@@ -553,12 +542,7 @@ struct OnboardingView: View {
             HStack(spacing: 14) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 12, style: .continuous)
-                        .fill(
-                            LinearGradient(
-                                colors: [Constants.Colors.accentGold.opacity(0.15), .clear],
-                                startPoint: .topLeading, endPoint: .bottomTrailing
-                            )
-                        )
+                        .fill(Constants.Colors.accentGold.opacity(0.10))
                         .frame(width: 36, height: 36)
                     Image(systemName: "bell")
                         .font(.system(size: 16, weight: .medium))
@@ -614,7 +598,7 @@ struct OnboardingView: View {
             }
             .padding(.bottom, 28)
 
-            KEyebrow(text: "ALL SET", showDot: true)
+            KEyebrow(text: "All set")
                 .padding(.bottom, 10)
 
             (Text("Your\n")
@@ -629,15 +613,14 @@ struct OnboardingView: View {
 
             // Summary card
             VStack(spacing: 0) {
-                Text("YOUR PROFILE")
-                    .font(Constants.Typography.mono(10))
+                Text("Your profile")
+                    .font(Constants.Typography.sans(12))
                     .foregroundStyle(Constants.Colors.primaryColor.opacity(0.35))
-                    .tracking(1)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.bottom, 12)
 
                 summaryRow(label: "Level", value: levelLabel)
-                summaryRow(label: "Flavors", value: flavors.isEmpty ? "Any" : Array(flavors).prefix(3).map { $0.capitalized }.joined(separator: " · "))
+                summaryRow(label: "Flavors", value: flavors.isEmpty ? "Any" : Array(flavors).prefix(3).map { $0.capitalized }.joined(separator: ", "))
                 summaryRow(label: "Gear", value: "\(gear.count) item\(gear.count == 1 ? "" : "s")")
                 summaryRow(label: "Reminder", value: morningTime, isLast: true)
             }
@@ -672,10 +655,9 @@ struct OnboardingView: View {
     private func summaryRow(label: String, value: String, isLast: Bool = false) -> some View {
         VStack(spacing: 0) {
             HStack {
-                Text(label.uppercased())
-                    .font(Constants.Typography.mono(10))
+                Text(label)
+                    .font(Constants.Typography.sans(12))
                     .foregroundStyle(Constants.Colors.primaryColor.opacity(0.35))
-                    .tracking(0.8)
                 Spacer()
                 Text(value)
                     .font(Constants.Typography.display(15))

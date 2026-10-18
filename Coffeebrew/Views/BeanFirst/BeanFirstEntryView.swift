@@ -60,7 +60,7 @@ struct BeanFirstEntryView: View {
             VStack(spacing: 24) {
                 // Header
                 VStack(alignment: .leading, spacing: 8) {
-                    KEyebrow(text: "AI RECOMMENDATIONS")
+                    KEyebrow(text: "AI recommendations")
 
                     VStack(alignment: .leading, spacing: 0) {
                         Text("Start with")
@@ -177,7 +177,7 @@ struct BeanFirstEntryView: View {
                 .fill(Constants.Colors.primaryColor.opacity(0.06))
                 .frame(height: 1)
             Text("or pick one")
-                .font(Constants.Typography.mono(11))
+                .font(Constants.Typography.sans(13))
                 .foregroundStyle(.secondary)
             Rectangle()
                 .fill(Constants.Colors.primaryColor.opacity(0.06))
@@ -190,7 +190,7 @@ struct BeanFirstEntryView: View {
 
     private var inventorySection: some View {
         VStack(alignment: .leading, spacing: 12) {
-            KSectionHeader(title: "From Your Pantry")
+            KSectionHeader(title: "From your pantry")
                 .padding(.horizontal, Constants.Layout.horizontalPadding)
 
             InventoryBeanPicker(context: context) { coffeeBean in
@@ -226,7 +226,7 @@ struct BeanFirstEntryView: View {
                     .font(Constants.Typography.sans(16))
                     .foregroundStyle(.secondary)
                 Text("On-device AI is analyzing your bean")
-                    .font(Constants.Typography.mono(12))
+                    .font(Constants.Typography.sans(14))
                     .foregroundStyle(.secondary)
             }
             Spacer()
@@ -303,7 +303,7 @@ struct InventoryBeanPicker: View {
                                     .lineLimit(1)
 
                                 Text(bean.roasterName ?? "")
-                                    .font(Constants.Typography.mono(10))
+                                    .font(Constants.Typography.sans(12))
                                     .foregroundStyle(.secondary)
                                     .lineLimit(1)
                             }

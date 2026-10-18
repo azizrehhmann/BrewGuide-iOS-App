@@ -103,20 +103,14 @@ struct BeanDetailView: View {
 
     private var heroSection: some View {
         ZStack {
-            RadialGradient(
-                colors: [
-                    Constants.Colors.accentGold.opacity(0.12),
-                    Constants.Colors.accentGold.opacity(0.03),
-                    Color.clear
-                ],
-                center: .center,
-                startRadius: 20,
-                endRadius: 200
-            )
+            Constants.Colors.primaryColor.opacity(0.03)
 
-            Image(systemName: "leaf.fill")
-                .font(.system(size: 120, weight: .ultraLight))
-                .foregroundStyle(Constants.Colors.primaryColor.opacity(0.15))
+            Image("figure_empty_pantry")
+                .resizable()
+                .scaledToFit()
+                .padding(.top, 40)
+                .padding(.bottom, 30)
+                .accessibilityHidden(true)
         }
         .frame(height: 320)
         .frame(maxWidth: .infinity)
@@ -131,8 +125,7 @@ struct BeanDetailView: View {
                     text: [bean.origin, bean.roastLevel]
                         .compactMap { $0 }
                         .filter { !$0.isEmpty }
-                        .joined(separator: " \u{00B7} ")
-                        .uppercased()
+                        .joined(separator: ", ")
                 )
 
                 Text(bean.name ?? "Unnamed")
@@ -177,9 +170,9 @@ struct BeanDetailView: View {
         }()
 
         return HStack(spacing: 8) {
-            parameterCell(label: "BAG SIZE", value: "\(Int(bean.totalWeightGrams))g")
-            parameterCell(label: "REMAINING", value: "\(Int(bean.remainingWeightGrams))g")
-            parameterCell(label: "OPENED", value: openedDate)
+            parameterCell(label: "Bag size", value: "\(Int(bean.totalWeightGrams))g")
+            parameterCell(label: "Remaining", value: "\(Int(bean.remainingWeightGrams))g")
+            parameterCell(label: "Opened", value: openedDate)
         }
         .padding(.horizontal, Constants.Layout.horizontalPadding)
     }
@@ -187,10 +180,10 @@ struct BeanDetailView: View {
     private func parameterCell(label: String, value: String) -> some View {
         VStack(spacing: 6) {
             Text(label)
-                .font(Constants.Typography.mono(10))
+                .font(Constants.Typography.sans(12))
                 .foregroundStyle(.secondary)
             Text(value)
-                .font(Constants.Typography.mono(16))
+                .font(Constants.Typography.sans(18))
                 .foregroundStyle(Constants.Colors.primaryColor)
         }
         .frame(maxWidth: .infinity)
@@ -205,7 +198,7 @@ struct BeanDetailView: View {
 
     private var freshnessCard: some View {
         VStack(alignment: .leading, spacing: 12) {
-            KEyebrow(text: "FRESHNESS")
+            KEyebrow(text: "Freshness")
 
             VStack(alignment: .leading, spacing: 14) {
                 if let roastDate = bean.roastDate {
@@ -222,12 +215,12 @@ struct BeanDetailView: View {
 
                     HStack {
                         Text("Day \(daysSinceRoast) of \(totalDays)")
-                            .font(Constants.Typography.mono(11))
+                            .font(Constants.Typography.sans(13))
                             .foregroundStyle(.secondary)
                         Spacer()
                         if let fraction = freshnessFraction {
                             Text("\(Int(fraction * 100))% fresh")
-                                .font(Constants.Typography.mono(11))
+                                .font(Constants.Typography.sans(13))
                                 .foregroundStyle(freshnessColor)
                         }
                     }
@@ -250,7 +243,7 @@ struct BeanDetailView: View {
                             Text(daysLeft > 0
                                  ? "\(daysLeft) day\(daysLeft == 1 ? "" : "s") remaining"
                                  : "Past suggested use-by date")
-                                .font(Constants.Typography.mono(11))
+                                .font(Constants.Typography.sans(13))
                                 .foregroundStyle(daysLeft > 7 ? Color.secondary : (daysLeft > 0 ? Color.orange : Color.red))
                         }
                     }
@@ -261,7 +254,7 @@ struct BeanDetailView: View {
                             .font(.system(size: 14))
                             .foregroundStyle(Constants.Colors.accentGold)
                         Text("Peak freshness: days \(peak.start)\u{2013}\(peak.end)")
-                            .font(Constants.Typography.mono(11))
+                            .font(Constants.Typography.sans(13))
                             .foregroundStyle(.secondary)
                     }
                 }

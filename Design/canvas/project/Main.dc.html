@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Brew screen with the live scale</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&amp;family=Playfair+Display:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#8A6430}a:hover{color:#6E4E24}
+.drip{stroke-dasharray:3 5;animation:drip .5s linear infinite}
+@keyframes drip{to{stroke-dashoffset:-8}}
+@media (prefers-reduced-motion: reduce){.drip{animation:none}}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F9F8F5; color: #251E19; font-family: 'DM Sans', system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; padding: 58px 20px 34px">
+  <div style="width: 100%; display: flex; align-items: center; gap: 12px">
+    <button aria-label="Close brew session" style="width: 44px; height: 44px; border: 0; border-radius: 22px; background: rgba(37,30,25,0.06); display: flex; align-items: center; justify-content: center; padding: 0; cursor: pointer">
+      <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2 2l10 10M12 2L2 12" stroke="#251E19" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+    <div style="flex: 1; display: flex; gap: 4px">
+      <sc-for list="{{segments}}" as="seg" hint-placeholder-count="6">
+        <div style="flex: 1; height: 3px; border-radius: 2px; background: rgba(37,30,25,0.08); overflow: hidden">
+          <div style="height: 3px; background: #B98742; width: {{seg.w}}"></div>
+        </div>
+      </sc-for>
+    </div>
+    <div style="font-family: 'DM Mono', monospace; font-size: 13px; color: #6E625A; min-width: 34px; text-align: right">{{elapsed}}</div>
+  </div>
+
+  <div style="margin-top: 18px; font-size: 14px; color: #6E625A">{{stepLabel}}</div>
+  <h1 style="margin: 4px 0 0; font-family: 'Playfair Display', serif; font-weight: 400; font-size: 36px; line-height: 1.1">{{title}}</h1>
+
+  <div role="img" aria-label="{{a11y}}" onClick="{{togglePlay}}" style="position: relative; width: 340px; height: 360px; margin-top: 4px; cursor: pointer">
+    <img src="/_blob/1df4732cadbad498d9a7161edbe89cf6" alt="" style="position: absolute; inset: 0; width: 340px; height: 360px">
+    <svg viewBox="0 0 340 360" width="340" height="360" aria-hidden="true" style="position: absolute; inset: 0">
+      <path d="{{waterD}}" fill="#B98742" fill-opacity="0.24"></path>
+      <ellipse cx="184.56" cy="{{surfaceY}}" rx="{{surfaceRx}}" ry="{{surfaceRy}}" fill="#B98742" fill-opacity="0.16" stroke="#B98742" stroke-width="0.8"></ellipse>
+      <sc-if value="{{pouring}}" hint-placeholder-val="{{ true }}">
+        <line class="drip" x1="184.56" y1="131" x2="184.56" y2="{{surfaceY}}" stroke="#8A6430" stroke-width="1.4" stroke-linecap="round"></line>
+      </sc-if>
+    </svg>
+    <img src="/_blob/fa65c9037221faf9b31ac55e7deb312b" alt="" style="position: absolute; inset: 0; width: 340px; height: 360px">
+    <svg viewBox="0 0 340 360" width="340" height="360" aria-hidden="true" style="position: absolute; inset: 0">
+      <g transform="matrix(1.04 0.52 -1.04 0.52 78.896 234.075)">
+        <text x="1" y="-1.6" font-family="DM Mono, monospace" font-size="8.4" fill="#F1C47E">{{grams}} g</text>
+        <text x="69" y="-1.6" font-family="DM Mono, monospace" font-size="8.4" fill="#F1C47E" text-anchor="end">{{elapsed}}</text>
+      </g>
+    </svg>
+  </div>
+
+  <p style="margin: 6px 0 0; max-width: 320px; text-align: center; font-size: 16px; line-height: 1.45; color: #5E544C">{{instructionBefore}}<span style="color: #8A6430; font-weight: 600">{{target}}</span>{{instructionAfter}}</p>
+
+  <div style="margin-top: 14px; padding: 8px 16px; border-radius: 999px; background: rgba(37,30,25,0.05); font-size: 13px; color: #6E625A">Up next: <span style="color: #251E19; font-weight: 500">{{nextTitle}}</span></div>
+
+  <div style="flex: 1"></div>
+  <div style="display: flex; align-items: center; gap: 24px">
+    <button aria-label="Previous step" style="width: 52px; height: 52px; border-radius: 26px; border: 0; background: #FFFFFF; box-shadow: 0 2px 8px rgba(37,30,25,0.08); display: flex; align-items: center; justify-content: center; cursor: pointer">
+      <svg width="10" height="16" viewBox="0 0 10 16" aria-hidden="true"><path d="M8 2L2 8l6 6" fill="none" stroke="#251E19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button aria-label="{{playLabel}}" onClick="{{togglePlay}}" style="width: 80px; height: 80px; border-radius: 40px; border: 0; background: #B98742; box-shadow: 0 4px 14px rgba(185,135,66,0.32); display: flex; align-items: center; justify-content: center; cursor: pointer">
+      <sc-if value="{{playing}}" hint-placeholder-val="{{ true }}">
+        <svg width="20" height="22" viewBox="0 0 20 22" aria-hidden="true"><rect x="3" y="2" width="5" height="18" rx="1.5" fill="#FFFFFF"/><rect x="12" y="2" width="5" height="18" rx="1.5" fill="#FFFFFF"/></svg>
+      </sc-if>
+      <sc-if value="{{paused}}" hint-placeholder-val="{{ false }}">
+        <svg width="20" height="22" viewBox="0 0 20 22" aria-hidden="true"><path d="M5 2.5v17l13-8.5z" fill="#FFFFFF"/></svg>
+      </sc-if>
+    </button>
+    <button aria-label="Next step" style="width: 52px; height: 52px; border-radius: 26px; border: 0; background: #FFFFFF; box-shadow: 0 2px 8px rgba(37,30,25,0.08); display: flex; align-items: center; justify-content: center; cursor: pointer">
+      <svg width="10" height="16" viewBox="0 0 10 16" aria-hidden="true"><path d="M2 2l6 6-6 6" fill="none" stroke="#251E19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"pour":{"editor":"range","min":0,"max":100,"step":1,"default":40,"unit":"%","section":"Live scale"},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { t: 0.32, playing: true };
+  }
+  componentDidMount() {
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    this.timer = setInterval(() => {
+      if (reduce || !this.state.playing || this.props.pour != null) return;
+      const t = this.state.t + 0.004;
+      this.setState({ t: t > 1.12 ? 0 : t });
+    }, 60);
+  }
+  componentWillUnmount() {
+    clearInterval(this.timer);
+  }
+  renderVals() {
+    // One V60 brew: 15 g coffee, 250 g water, about 3:30. The scrub tweak overrides the idle loop.
+    const t = this.props.pour != null ? this.props.pour / 100 : Math.min(1, this.state.t);
+    const grams = Math.round(250 * t);
+    const seconds = Math.round(210 * t);
+    const phases = [
+      { until: 50, step: 2, title: 'Bloom', before: 'Pour ', target: '50 g', after: ' to wet every ground, then wait.', next: 'First pour' },
+      { until: 150, step: 3, title: 'First pour', before: 'Pour in slow circles up to ', target: '150 g', after: '.', next: 'Second pour' },
+      { until: 249, step: 4, title: 'Second pour', before: 'Keep circling up to ', target: '250 g', after: ', then give the cone a swirl.', next: 'Drawdown' },
+      { until: 9999, step: 5, title: 'Drawdown', before: 'Let it drain. Aim to finish by ', target: '3:30', after: '.', next: 'Enjoy' }
+    ];
+    const phase = phases.find((p) => grams < p.until) || phases[3];
+    const fill = grams / 300;
+    const h = 56.5 * fill * 1.2737;
+    const cx = 184.56, y0 = 210.38, rx = 45.75, ry = 22.88;
+    const yt = y0 - h;
+    const waterD = grams > 0
+      ? `M ${cx - rx} ${y0} A ${rx} ${ry} 0 0 0 ${cx + rx} ${y0} L ${cx + rx} ${yt} A ${rx} ${ry} 0 0 0 ${cx - rx} ${yt} Z`
+      : '';
+    const mmss = `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, '0')}`;
+    const within = phase.step === 5 ? 1 : (grams - (phases[phase.step - 3] ? phases[phase.step - 3].until : 0)) / (phase.until - (phases[phase.step - 3] ? phases[phase.step - 3].until : 0));
+    const segments = [1, 2, 3, 4, 5, 6].map((n) => ({ w: n < phase.step ? '100%' : n === phase.step ? `${Math.round(Math.max(0, Math.min(1, within)) * 100)}%` : '0%' }));
+    const playing = this.state.playing && this.props.pour == null;
+    return {
+      segments,
+      elapsed: mmss,
+      grams,
+      stepLabel: `Step ${phase.step} of 6`,
+      title: phase.title,
+      instructionBefore: phase.before,
+      target: phase.target,
+      instructionAfter: phase.after,
+      nextTitle: phase.next,
+      waterD,
+      surfaceY: yt.toFixed(2),
+      surfaceRx: grams > 0 ? rx : 0,
+      surfaceRy: grams > 0 ? ry : 0,
+      pouring: playing && grams > 0 && grams < 250,
+      a11y: `Scale: ${grams} of 250 grams poured, ${mmss} elapsed`,
+      playing,
+      paused: !playing,
+      playLabel: playing ? 'Pause timer' : 'Start timer',
+      togglePlay: () => this.setState({ playing: !this.state.playing })
+    };
+  }
+}
+</script>
+</body>
+</html>

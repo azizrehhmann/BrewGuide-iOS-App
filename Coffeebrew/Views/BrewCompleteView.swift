@@ -22,7 +22,7 @@ struct BrewCompleteView: View {
             VStack(alignment: .leading, spacing: 28) {
                 // MARK: - Eyebrow + Heading
                 VStack(alignment: .leading, spacing: 12) {
-                    KEyebrow(text: "BREW COMPLETE", showDot: true)
+                    KEyebrow(text: "Brew complete")
                         .opacity(showContent ? 1 : 0)
                         .offset(y: showContent ? 0 : 12)
 
@@ -58,7 +58,7 @@ struct BrewCompleteView: View {
                     }
 
                     Text(rating > 0 ? ratingLabels[rating - 1] : "Tap a star")
-                        .font(Constants.Typography.mono(11))
+                        .font(Constants.Typography.sans(13))
                         .foregroundStyle(Constants.Colors.primaryColor.opacity(0.5))
                 }
                 .frame(maxWidth: .infinity)
@@ -69,7 +69,7 @@ struct BrewCompleteView: View {
 
                 // MARK: - Tasting Notes
                 VStack(alignment: .leading, spacing: 12) {
-                    KEyebrow(text: "TASTING NOTES")
+                    KEyebrow(text: "Tasting notes")
 
                     FlowLayout(spacing: 8) {
                         ForEach(tastingNotes, id: \.self) { note in
@@ -107,7 +107,7 @@ struct BrewCompleteView: View {
 
                 // MARK: - Note to Self
                 VStack(alignment: .leading, spacing: 12) {
-                    KEyebrow(text: "NOTE TO SELF")
+                    KEyebrow(text: "Note to self")
 
                     ZStack(alignment: .topLeading) {
                         if note.isEmpty {

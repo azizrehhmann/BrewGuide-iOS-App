@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Category figures, light</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&amp;family=Playfair+Display:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#8A6430}a:hover{color:#6E4E24}
+</style>
+</helmet>
+<div style="width: 1360px; height: 760px; box-sizing: border-box; padding: 40px 48px; background: #F9F8F5; color: #251E19; font-family: 'DM Sans', system-ui, sans-serif; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px">
+  <sc-for list="{{figures}}" as="f" hint-placeholder-count="6">
+    <figure style="margin: 0; background: #FFFFFF; border-radius: 22px; border: 1px solid rgba(37,30,25,0.07); padding: 12px 20px 18px; display: flex; flex-direction: column">
+      <img src="{{f.src}}" alt="{{f.alt}}" style="width: 100%; height: 252px; object-fit: contain">
+      <figcaption style="display: flex; justify-content: space-between; align-items: baseline">
+        <span style="font-family: 'Playfair Display', serif; font-size: 22px">{{f.name}}</span>
+        <span style="font-size: 13px; color: #6E625A">{{f.example}}</span>
+      </figcaption>
+    </figure>
+  </sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1360,"height":760}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      figures: [
+        { name: 'Pour over', example: 'V60 on a glass server', src: '/_blob/09bbf2c261b0d8613d5a6b42018176ad', alt: 'A V60 dripper on a glass server' },
+        { name: 'Immersion', example: 'French press', src: '/_blob/e64e69aeb81a03556a5c87f5b5a7f531', alt: 'A French press with the plunger raised' },
+        { name: 'Pressure', example: 'AeroPress on a mug', src: '/_blob/ac66689b09cd2e99ef0fca2a5271cfed', alt: 'An AeroPress pressed into a mug' },
+        { name: 'Cold brew', example: 'Jar with a filter sock', src: '/_blob/3818efbcd4bb2b97b7566d82ce23f978', alt: 'A cold-brew jar with a filter sock and a screw lid' },
+        { name: 'Stovetop', example: 'Moka pot on a burner', src: '/_blob/57a71c3906868262b001999673ea5886', alt: 'A moka pot on a burner grate' },
+        { name: 'Machine', example: 'Group head and portafilter', src: '/_blob/6a093ca590c58ca4926f2b5f2d932de9', alt: 'An espresso group head, portafilter and cup on the drip tray' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -68,6 +68,7 @@ struct AdaptiveBackgroundModifier: ViewModifier {
     }
 }
 
+/// List and grid cards: a hairline, no shadow. Only `elevatedCardStyle` lifts off the page.
 struct CardModifier: ViewModifier {
     @Environment(\.colorScheme) var colorScheme
 
@@ -80,13 +81,9 @@ struct CardModifier: ViewModifier {
             .overlay(
                 RoundedRectangle(cornerRadius: Constants.Layout.cornerRadius, style: .continuous)
                     .strokeBorder(
-                        colorScheme == .dark ? Constants.Shadows.darkBorderColor : .black.opacity(0.04),
+                        colorScheme == .dark ? Constants.Shadows.darkBorderColor : Constants.Colors.primaryColor.opacity(0.08),
                         lineWidth: colorScheme == .dark ? Constants.Shadows.darkBorderWidth : 0.5
                     )
-            )
-            .shadow(
-                color: colorScheme == .dark ? .clear : Constants.Shadows.cardColor,
-                radius: Constants.Shadows.cardRadius, x: 0, y: Constants.Shadows.cardY
             )
     }
 }

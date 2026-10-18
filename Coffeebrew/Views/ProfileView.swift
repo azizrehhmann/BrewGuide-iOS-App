@@ -51,13 +51,7 @@ struct ProfileView: View {
             // Avatar
             ZStack {
                 Circle()
-                    .fill(
-                        LinearGradient(
-                            colors: [Constants.Colors.accentGold, Constants.Colors.accentGold.opacity(0.6)],
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        )
-                    )
+                    .fill(Constants.Colors.accentGold)
                     .frame(width: 80, height: 80)
 
                 Text(profile.initials)

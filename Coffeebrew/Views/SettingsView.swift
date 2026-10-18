@@ -44,13 +44,7 @@ struct SettingsView: View {
                         // Signed in avatar
                         ZStack {
                             Circle()
-                                .fill(
-                                    LinearGradient(
-                                        colors: [Constants.Colors.accentGold, Constants.Colors.accentGold.opacity(0.6)],
-                                        startPoint: .topLeading,
-                                        endPoint: .bottomTrailing
-                                    )
-                                )
+                                .fill(Constants.Colors.accentGold)
                                 .frame(width: 40, height: 40)
                             Text(profile.initials)
                                 .font(.system(size: 15, weight: .bold, design: .rounded))

@@ -32,7 +32,7 @@ struct LibraryView: View {
             VStack(alignment: .leading, spacing: 0) {
                 // Header
                 VStack(alignment: .leading, spacing: 8) {
-                    KEyebrow(text: "METHOD LIBRARY \u{00B7} \(allTechniques.count) TECHNIQUES")
+                    KEyebrow(text: "\(allTechniques.count) techniques")
 
                     (Text("Every way to\n")
                         .font(Constants.Typography.display(40))
@@ -140,10 +140,7 @@ struct LibraryTechniqueCard: View {
             // Image panel (dropped at accessibility sizes so the text gets the width)
             if !typeSize.isAccessibilitySize {
             ZStack {
-                LinearGradient(
-                    colors: [Constants.Colors.primaryColor.opacity(0.06), .clear],
-                    startPoint: .topLeading, endPoint: .bottomTrailing
-                )
+                Constants.Colors.primaryColor.opacity(0.03)
                 Image(technique.imageName)
                     .resizable()
                     .renderingMode(.original)
@@ -157,14 +154,14 @@ struct LibraryTechniqueCard: View {
             VStack(alignment: .leading, spacing: 0) {
                 (typeSize.isAccessibilitySize ? AnyLayout(VStackLayout(alignment: .leading, spacing: 4)) : AnyLayout(HStackLayout(alignment: .top))) {
                     VStack(alignment: .leading, spacing: 3) {
-                        KEyebrow(text: categoryName.uppercased(), color: categoryTint)
+                        KEyebrow(text: categoryName, color: categoryTint)
                         Text(technique.name)
                             .font(Constants.Typography.display(20))
                             .foregroundStyle(Constants.Colors.primaryColor)
                     }
                     Spacer(minLength: 8)
                     Text(technique.totalTimeSeconds.shortFormattedTime)
-                        .font(Constants.Typography.mono(13))
+                        .font(Constants.Typography.sans(15))
                         .foregroundStyle(Constants.Colors.primaryColor)
                         .monospacedDigit()
                         .fixedSize()
@@ -177,8 +174,9 @@ struct LibraryTechniqueCard: View {
                     .padding(.top, 4)
 
                 // One Text so a long grind label wraps as a sentence instead of splitting the row
-                Text("\(technique.waterTempC)\u{00B0}C \u{00B7} 1:\(String(format: "%.1f", technique.ratioWaterCoffee)) \u{00B7} \(technique.grindSizeLabel)")
-                .font(Constants.Typography.mono(10))
+                Text("\(technique.waterTempC)\u{00B0}C, 1:\(String(format: "%.0f", technique.ratioWaterCoffee)), \(technique.grindSizeLabel.lowercased()) grind")
+                .font(Constants.Typography.sans(13))
+                .monospacedDigit()
                 .multilineTextAlignment(.leading)
                 .foregroundStyle(Constants.Colors.primaryColor.opacity(0.5))
                 .padding(.top, 8)

@@ -34,7 +34,7 @@ final class CoffeebrewUITests: XCTestCase {
 
         app.buttons["Journal"].tap()
         // Empty journal shows "No brews yet"; a journal with entries shows the week card
-        XCTAssertTrue(app.staticTexts["No brews yet"].waitForExistence(timeout: 3) || app.staticTexts["THIS WEEK"].waitForExistence(timeout: 3))
+        XCTAssertTrue(app.staticTexts["No brews yet"].waitForExistence(timeout: 3) || app.staticTexts["This week"].waitForExistence(timeout: 3))
 
         app.buttons["Today"].tap()
         XCTAssertTrue(app.buttons["Settings"].waitForExistence(timeout: 3))

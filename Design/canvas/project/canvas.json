@@ -1,0 +1,43 @@
+{
+  "v": 3,
+  "createdOnFiles": { "v": 1, "at": "2026-10-18T18:30:00Z" },
+  "title": "BrewGuide: anatomy + taste",
+  "launch": { "view": "canvas" },
+  "pages": [],
+  "boards": {
+    "BrewBefore.dc.html": { "x": 0, "y": 0, "w": 390, "h": 844, "title": "Brew — today" },
+    "Main.dc.html": { "x": 470, "y": 0, "w": 390, "h": 844, "title": "Brew — new (light, live)", "is_interactive": true },
+    "BrewDark.dc.html": { "x": 940, "y": 0, "w": 390, "h": 844, "title": "Brew — new (dark, live)", "is_interactive": true },
+    "TodayBefore.dc.html": { "x": 0, "y": 1270, "w": 390, "h": 844, "title": "Today — today" },
+    "TodayAfter.dc.html": { "x": 470, "y": 1270, "w": 390, "h": 844, "title": "Today — new (light)" },
+    "TodayDark.dc.html": { "x": 940, "y": 1270, "w": 390, "h": 844, "title": "Today — new (dark)" },
+    "Splash.dc.html": { "x": 0, "y": 2540, "w": 390, "h": 844, "title": "Onboarding splash — new" },
+    "JournalEmpty.dc.html": { "x": 470, "y": 2540, "w": 390, "h": 844, "title": "Empty journal — new" },
+    "PantryEmpty.dc.html": { "x": 940, "y": 2540, "w": 390, "h": 844, "title": "Empty pantry — new" },
+    "Figures.dc.html": { "x": 0, "y": 3810, "w": 1360, "h": 760, "title": "Category figures — light" },
+    "FiguresDark.dc.html": { "x": 1440, "y": 3810, "w": 1360, "h": 760, "title": "Category figures — dark" },
+    "Details.dc.html": { "x": 0, "y": 4990, "w": 1360, "h": 980, "title": "Taste pass — before and after" }
+  },
+  "order": [
+    "BrewBefore.dc.html",
+    "Main.dc.html",
+    "BrewDark.dc.html",
+    "TodayBefore.dc.html",
+    "TodayAfter.dc.html",
+    "TodayDark.dc.html",
+    "Splash.dc.html",
+    "JournalEmpty.dc.html",
+    "PantryEmpty.dc.html",
+    "Figures.dc.html",
+    "FiguresDark.dc.html",
+    "Details.dc.html"
+  ],
+  "notes": {
+    "t_brew": { "x": 0, "y": -300, "text": "Brew screen: a live scale replaces the pour ring", "kind": "title1", "maxW": 1330 },
+    "t_today": { "x": 0, "y": 970, "text": "Today: the suggestion shows its brewer", "kind": "title1", "maxW": 1330 },
+    "t_empty": { "x": 0, "y": 2240, "text": "Onboarding and empty states", "kind": "title1", "maxW": 1330 },
+    "t_figs": { "x": 0, "y": 3510, "text": "Six category figures", "kind": "title1", "maxW": 2800 },
+    "t_details": { "x": 0, "y": 4690, "text": "Taste pass: keep Kohi, drop the tells", "kind": "title1", "maxW": 1360 }
+  },
+  "designSystems": []
+}

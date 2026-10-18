@@ -1,24 +1,15 @@
 import SwiftUI
 
+/// A small label above a heading or value, in sentence case.
 struct KEyebrow: View {
     let text: String
     var color: Color = Constants.Colors.accentGold
-    var showDot: Bool = false
 
     var body: some View {
-        HStack(spacing: 6) {
-            if showDot {
-                Circle()
-                    .fill(color)
-                    .frame(width: 5, height: 5)
-            }
-            Text(text)
-                .font(Constants.Typography.mono(10))
-                .foregroundStyle(color)
-                .textCase(.uppercase)
-                .tracking(1.4)
-                .lineLimit(1)
-                .minimumScaleFactor(0.7)
-        }
+        Text(text)
+            .font(Constants.Typography.sans(13, weight: .medium))
+            .foregroundStyle(color)
+            .lineLimit(1)
+            .minimumScaleFactor(0.8)
     }
 }

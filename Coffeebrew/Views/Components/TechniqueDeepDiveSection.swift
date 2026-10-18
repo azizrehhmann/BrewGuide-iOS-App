@@ -167,8 +167,6 @@ private struct DeepDiveBlock<Content: View>: View {
             Label(title, systemImage: icon)
                 .font(.system(.caption, design: .rounded, weight: .semibold))
                 .foregroundStyle(tint)
-                .textCase(.uppercase)
-                .tracking(0.5)
             content()
         }
     }

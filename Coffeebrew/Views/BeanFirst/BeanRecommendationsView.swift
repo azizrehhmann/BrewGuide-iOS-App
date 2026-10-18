@@ -205,7 +205,7 @@ struct RecommendationCard: View {
                         .font(.system(size: 10))
                         .foregroundStyle(.orange)
 
-                    Text(recommendation.warnings.joined(separator: " · "))
+                    Text(recommendation.warnings.joined(separator: ". "))
                         .font(.system(.caption2, design: .rounded))
                         .foregroundStyle(.orange.opacity(0.8))
                 }

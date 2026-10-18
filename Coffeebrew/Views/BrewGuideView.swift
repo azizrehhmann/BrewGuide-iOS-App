@@ -52,6 +52,18 @@ struct BrewGuideView: View {
         step.waterVolumeMlBase * scaleFactor
     }
 
+    /// Water poured so far: earlier steps in full, a timed pour as far as its timer has run,
+    /// and an untimed pour ("pour all 270 g") in full, since there is no clock to follow
+    private var pouredGrams: Double {
+        let before = steps.prefix(currentStepIndex).reduce(0.0) { $0 + scaledWater(for: $1) }
+        guard let step = currentStep else { return before }
+        return before + scaledWater(for: step) * (isTimedStep ? timer.stepProgress : 1)
+    }
+
+    private var totalRecipeGrams: Double {
+        steps.reduce(0.0) { $0 + scaledWater(for: $1) }
+    }
+
     /// Resolves template placeholders in instruction text with actual scaled amounts
     private func resolvedInstruction(for step: BrewStep) -> String {
         var text = step.instruction
@@ -105,7 +117,8 @@ struct BrewGuideView: View {
         }
         .adaptiveBackground()
         .navigationTitle(technique.name)
-        .navigationBarTitleDisplayMode(.inline)
+        // The close button is the way out; a bar with a back button on top of it gave two exits
+        .toolbar(.hidden, for: .navigationBar)
         .navigationDestination(isPresented: $showComplete) {
             if let session = savedSession, let journal = journalViewModel {
                 BrewCompleteView(session: session, journal: journal)
@@ -249,12 +262,9 @@ struct BrewGuideView: View {
 
     private var centeredContent: some View {
         VStack(spacing: 20) {
-            // Phase eyebrow
-            if let step = currentStep {
-                KEyebrow(
-                    text: "\(step.title.uppercased()) \u{00B7} STEP \(step.stepNumber) OF \(steps.count)"
-                )
-            }
+            Text("Step \(currentStepIndex + 1) of \(steps.count)")
+                .font(Constants.Typography.sans(14))
+                .foregroundStyle(.secondary)
 
             // Step title
             if let step = currentStep {
@@ -264,6 +274,10 @@ struct BrewGuideView: View {
                     .multilineTextAlignment(.center)
                     .frame(maxWidth: 300)
                     .lineLimit(3)
+                    .minimumScaleFactor(0.7)
+                    // The words win over the figure, which scales down to the space that's left
+                    .fixedSize(horizontal: false, vertical: true)
+                    .layoutPriority(1)
             }
 
             // Visualization swap
@@ -290,30 +304,15 @@ struct BrewGuideView: View {
 
     // MARK: - Visualization View
 
-    @ViewBuilder
     private var visualizationView: some View {
-        if let step = currentStep {
-            if isTimedStep && isPourOrBloomStep {
-                KPourViz(
-                    current: scaledWater(for: step) * timer.stepProgress,
-                    target: scaledWater(for: step),
-                    phase: step.displayTitle
-                )
-            } else if isTimedStep {
-                KTimerRing(
-                    progress: timer.stepProgress,
-                    remaining: timer.stepRemainingSeconds,
-                    total: timer.stepDurationSeconds,
-                    phase: step.displayTitle
-                )
-            } else {
-                KTimerRing(
-                    progress: 0,
-                    remaining: 0,
-                    phase: step.displayTitle
-                )
-            }
-        }
+        BrewScaleFigure(
+            pouredGrams: pouredGrams,
+            totalGrams: totalRecipeGrams,
+            elapsedSeconds: timer.totalElapsedSeconds,
+            stepSecondsLeft: isTimedStep ? timer.stepRemainingSeconds : nil,
+            pouring: timer.isRunning && isTimedStep && isPourOrBloomStep
+        )
+        .frame(maxWidth: 320)
     }
 
     // MARK: - Up Next Pill
@@ -321,16 +320,10 @@ struct BrewGuideView: View {
     @ViewBuilder
     private var upNextPill: some View {
         if let nextStep = steps[safe: currentStepIndex + 1] {
-            HStack(spacing: 8) {
-                Text("UP NEXT")
-                    .font(Constants.Typography.mono(10))
-                    .foregroundStyle(.secondary)
-                    .tracking(1)
-                Text(nextStep.displayTitle)
-                    .font(Constants.Typography.sans(13, weight: .medium))
-                    .foregroundStyle(.secondary)
-                    .lineLimit(1)
-            }
+            (Text("Up next: ").foregroundStyle(.secondary)
+             + Text(nextStep.displayTitle).foregroundStyle(Constants.Colors.primaryColor))
+                .font(Constants.Typography.sans(13, weight: .medium))
+                .lineLimit(1)
             .padding(.horizontal, 16)
             .padding(.vertical, 8)
             .background(Constants.Colors.primaryColor.opacity(0.04))

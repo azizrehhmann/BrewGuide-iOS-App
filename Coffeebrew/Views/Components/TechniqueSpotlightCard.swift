@@ -40,12 +40,7 @@ struct TechniqueSpotlightCard: View {
             // Icon
             ZStack {
                 RoundedRectangle(cornerRadius: Constants.Layout.smallCornerRadius, style: .continuous)
-                    .fill(
-                        LinearGradient(
-                            colors: [Constants.Colors.accentGold.opacity(0.15), Constants.Colors.accentGold.opacity(0.05)],
-                            startPoint: .topLeading, endPoint: .bottomTrailing
-                        )
-                    )
+                    .fill(Constants.Colors.accentGold.opacity(0.10))
                     .frame(width: 44, height: 44)
 
                 Image(systemName: "book.pages")
@@ -58,8 +53,6 @@ struct TechniqueSpotlightCard: View {
                     Text("Technique Spotlight")
                         .font(.system(.caption2, design: .rounded, weight: .semibold))
                         .foregroundStyle(Constants.Colors.accentGold)
-                        .textCase(.uppercase)
-                        .tracking(0.5)
                 }
 
                 Text(technique.name)

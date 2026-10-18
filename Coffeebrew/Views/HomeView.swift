@@ -69,11 +69,7 @@ struct HomeView: View {
     // MARK: - Header
 
     private var dateString: String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "EEE d MMM"
-        let date = formatter.string(from: Date()).uppercased()
-        let time = DateFormatter.localizedString(from: Date(), dateStyle: .none, timeStyle: .short)
-        return "\(date) \u{00B7} \(time)"
+        Date().formatted(.dateTime.weekday(.wide).day().month(.wide))
     }
 
     private var greetingText: String {
@@ -96,7 +92,9 @@ struct HomeView: View {
     private var headerSection: some View {
         HStack(alignment: .top, spacing: 8) {
         VStack(alignment: .leading, spacing: 4) {
-            KEyebrow(text: dateString, color: .secondary, showDot: false)
+            Text(dateString)
+                .font(Constants.Typography.sans(14))
+                .foregroundStyle(.secondary)
 
             // One Text so the greeting wraps as a sentence at large type sizes
             (Text(greetingText + " ")
@@ -131,59 +129,54 @@ struct HomeView: View {
         Group {
             if let service = dailySuggestionService, let suggestion = service.suggestion {
                 VStack(alignment: .leading, spacing: 0) {
-                    // Header row
-                    HStack(alignment: .center) {
-                        KEyebrow(text: "TODAY'S RITUAL", showDot: true)
-                        Spacer()
-                        if suggestion.streakDays > 0 {
-                            Text("\(suggestion.streakDays)-day streak")
-                                .font(Constants.Typography.mono(11))
-                                .foregroundStyle(Constants.Colors.accentGold)
-                        }
+                    // The brewer for today's method, drawn with the anatomy kit (Design/figures/objects)
+                    if !typeSize.isAccessibilitySize {
+                        Image(categoryFigure(for: suggestion.technique))
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height: 172)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 4)
+                            .background(Constants.Colors.primaryColor.opacity(0.03))
+                            .accessibilityHidden(true)
                     }
-                    .padding(.bottom, 16)
 
-                    // Technique name + image
-                    HStack(alignment: .top) {
-                        VStack(alignment: .leading, spacing: 8) {
+                    VStack(alignment: .leading, spacing: 12) {
+                        HStack {
+                            Text("Today’s ritual")
+                            Spacer()
+                            if suggestion.streakDays > 0 {
+                                Text("\(suggestion.streakDays)-day streak")
+                            }
+                        }
+                        .font(Constants.Typography.sans(13, weight: .medium))
+                        .foregroundStyle(Constants.Colors.accentGold)
+
+                        VStack(alignment: .leading, spacing: 4) {
                             Text(suggestion.technique.name)
-                                .font(Constants.Typography.display(34, weight: .regular))
+                                .font(Constants.Typography.display(28, weight: .regular))
                                 .foregroundStyle(Constants.Colors.primaryColor)
                                 .lineLimit(3)
                                 .fixedSize(horizontal: false, vertical: true)
-
                             Text(suggestion.flavourHook)
                                 .font(Constants.Typography.displayItalic(16))
                                 .foregroundStyle(Constants.Colors.accentGold)
                         }
 
-                        if !typeSize.isAccessibilitySize {
-                            Spacer(minLength: 12)
+                        specsGrid(for: suggestion.technique)
 
-                            Image(suggestion.technique.imageName)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 96, height: 96)
-                        }
+                        KButton(
+                            title: "Begin brewing",
+                            variant: .gold,
+                            action: {
+                                service.recordSuggestionBrew()
+                                navigationPath.append(suggestion.technique)
+                            }
+                        )
                     }
-                    .padding(.bottom, 20)
-
-                    // Specs grid
-                    specsGrid(for: suggestion.technique)
-                        .padding(.bottom, 20)
-
-                    // Begin brewing button
-                    KButton(
-                        title: "Begin brewing",
-                        icon: "arrow.right",
-                        variant: .gold,
-                        action: {
-                            service.recordSuggestionBrew()
-                            navigationPath.append(suggestion.technique)
-                        }
-                    )
+                    .padding(20)
                 }
-                .padding(20)
+                .clipShape(RoundedRectangle(cornerRadius: Constants.Layout.cornerRadius, style: .continuous))
                 .elevatedCardStyle()
                 .padding(.horizontal, Constants.Layout.horizontalPadding)
                 .transition(.opacity.combined(with: .move(edge: .top)))
@@ -192,57 +185,61 @@ struct HomeView: View {
         .animation(Constants.Animation.standard, value: dailySuggestionService?.suggestion?.technique.techniqueId)
     }
 
+    private func categoryFigure(for technique: Technique) -> String {
+        switch appEnvironment.databaseService.method(byId: technique.methodId)?.category {
+        case "Immersion": return "figure_cat_immersion"
+        case "Pressure": return "figure_cat_pressure"
+        case "Cold Brew": return "figure_cat_cold_brew"
+        case "Stovetop & Traditional": return "figure_cat_stovetop"
+        case "Machine": return "figure_cat_machine"
+        default: return "figure_cat_pour_over"
+        }
+    }
+
     private func specsGrid(for technique: Technique) -> some View {
         let minutes = technique.totalTimeSeconds / 60
         let seconds = technique.totalTimeSeconds % 60
-        let timeString = seconds > 0 ? "\(minutes):\(String(format: "%02d", seconds))" : "\(minutes):00"
+        let timeString = "\(minutes):\(String(format: "%02d", seconds))"
         let ratioString = "1:\(String(format: "%.0f", technique.ratioWaterCoffee))"
 
         let columns = [
-            specColumn(label: "TIME", value: timeString),
-            specColumn(label: "TEMP", value: "\(technique.waterTempC)\u{00B0}C"),
-            specColumn(label: "RATIO", value: ratioString),
-            specColumn(label: "GRIND", value: technique.grindSizeLabel),
+            specColumn(label: "Time", value: timeString),
+            specColumn(label: "Water", value: "\(technique.waterTempC)°C"),
+            specColumn(label: "Ratio", value: ratioString),
+            specColumn(label: "Grind", value: technique.grindSizeLabel),
         ]
 
         return Group {
             if typeSize.isAccessibilitySize {
                 // Four columns don't fit at accessibility sizes: two rows of two
-                VStack(spacing: 12) {
-                    HStack(spacing: 0) { columns[0]; columns[1] }
-                    HStack(spacing: 0) { columns[2]; columns[3] }
+                VStack(alignment: .leading, spacing: 12) {
+                    HStack(spacing: 8) { columns[0]; columns[1] }
+                    HStack(spacing: 8) { columns[2]; columns[3] }
                 }
             } else {
-                HStack(spacing: 0) {
-                    columns[0]; specDivider; columns[1]; specDivider; columns[2]; specDivider; columns[3]
-                }
+                HStack(spacing: 8) { columns[0]; columns[1]; columns[2]; columns[3] }
             }
         }
-        .padding(.vertical, 12)
-        .background(
-            RoundedRectangle(cornerRadius: 10, style: .continuous)
-                .fill(Constants.Colors.primaryColor.opacity(0.04))
-        )
+        .padding(.top, 10)
+        .overlay(alignment: .top) {
+            Rectangle().fill(Constants.Colors.primaryColor.opacity(0.08)).frame(height: 0.5)
+        }
     }
 
     private func specColumn(label: String, value: String) -> some View {
-        VStack(spacing: 4) {
+        VStack(alignment: .leading, spacing: 2) {
             Text(label)
-                .font(Constants.Typography.mono(9))
+                .font(Constants.Typography.sans(12))
                 .foregroundStyle(.secondary)
             Text(value)
-                .font(Constants.Typography.mono(14))
+                .font(Constants.Typography.sans(16, weight: .medium))
+                .monospacedDigit()
                 .foregroundStyle(Constants.Colors.primaryColor)
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
         }
-        .frame(maxWidth: .infinity)
-    }
-
-    private var specDivider: some View {
-        Rectangle()
-            .fill(Constants.Colors.primaryColor.opacity(0.08))
-            .frame(width: 0.5, height: 28)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .accessibilityElement(children: .combine)
     }
 
     private func initDailySuggestionIfNeeded() {
@@ -268,16 +265,11 @@ struct HomeView: View {
         } label: {
             HStack(spacing: 14) {
                 ZStack {
-                    RoundedRectangle(cornerRadius: 10, style: .continuous)
-                        .fill(
-                            LinearGradient(
-                                colors: [Constants.Colors.accentGold.opacity(0.15), Constants.Colors.accentGold.opacity(0.05)],
-                                startPoint: .topLeading, endPoint: .bottomTrailing
-                            )
-                        )
+                    RoundedRectangle(cornerRadius: 12, style: .continuous)
+                        .fill(Constants.Colors.accentGold.opacity(0.10))
                         .frame(width: 44, height: 44)
 
-                    Image(systemName: "sparkles")
+                    Image(systemName: "viewfinder")
                         .font(.system(size: 20, weight: .medium))
                         .foregroundStyle(Constants.Colors.accentGold)
                 }
@@ -287,7 +279,7 @@ struct HomeView: View {
                         .font(Constants.Typography.sans(15, weight: .semibold))
                         .foregroundStyle(Constants.Colors.primaryColor)
 
-                    Text("Scan a bag or pick a bean for AI recommendations")
+                    Text("Scan a bag and get techniques that suit it")
                         .font(Constants.Typography.sans(12, weight: .regular))
                         .foregroundStyle(.secondary)
                 }
@@ -310,7 +302,7 @@ struct HomeView: View {
 
     private var browseMethodsSection: some View {
         VStack(alignment: .leading, spacing: 14) {
-            KSectionHeader(title: "Browse Methods")
+            KSectionHeader(title: "Browse methods")
                 .padding(.horizontal, Constants.Layout.horizontalPadding)
 
             if categories.isEmpty {
@@ -359,7 +351,7 @@ struct HomeView: View {
                     .minimumScaleFactor(0.8)
 
                 Text("\(count)")
-                    .font(Constants.Typography.mono(11))
+                    .font(Constants.Typography.sans(13))
                     .foregroundStyle(.secondary)
             }
         }
