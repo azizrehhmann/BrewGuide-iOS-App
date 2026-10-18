@@ -92,7 +92,8 @@ final class BeanFirstViewModel: ObservableObject {
                 let techniques = databaseService.techniques
                 let response = try await aiService.recommendTechniques(
                     for: bean,
-                    techniques: techniques
+                    techniques: techniques,
+                    databaseService: databaseService
                 )
 
                 await MainActor.run {

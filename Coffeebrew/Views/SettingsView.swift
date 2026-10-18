@@ -218,10 +218,13 @@ struct SettingsView: View {
                 Label("Daily Brew Notification", systemImage: "bell.badge.fill")
             }
             .tint(Constants.Colors.accentGold)
+            .onChange(of: appEnvironment.dailySuggestionNotification) { _, on in
+                DailySuggestionService.scheduleDailyNotification(enabled: on, time: appEnvironment.morningBrewTime)
+            }
         } header: {
             Text("Daily Suggestion")
         } footer: {
-            Text("Get a daily notification at 8am with a personalised brewing suggestion.")
+            Text("Get a daily reminder at your morning brew time (\(appEnvironment.morningBrewTime)).")
         }
     }
 

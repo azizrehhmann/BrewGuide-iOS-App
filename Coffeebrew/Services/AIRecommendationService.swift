@@ -32,7 +32,8 @@ final class AIRecommendationService {
 
     func recommendTechniques(
         for bean: BeanProfile,
-        techniques: [Technique]
+        techniques: [Technique],
+        databaseService: DatabaseService
     ) async throws -> RecommendationResponse {
         guard OnDeviceAIAvailability.check().isAvailable else {
             throw AIError.notAvailable
@@ -48,7 +49,7 @@ final class AIRecommendationService {
         )
 
         let techniqueList = techniques.map { t in
-            let method = DatabaseService().method(byId: t.methodId)
+            let method = databaseService.method(byId: t.methodId)
             let equipName = method?.name ?? "Unknown"
             return "id:\(t.techniqueId) | \(t.name) (\(equipName)) | \(t.grindSizeLabel) grind | \(t.waterTempC)°C | ratio 1:\(t.ratioWaterCoffee)"
         }.joined(separator: "\n")

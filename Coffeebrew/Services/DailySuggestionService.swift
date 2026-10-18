@@ -150,30 +150,30 @@ final class DailySuggestionService: ObservableObject {
 
     // MARK: - Notification scheduling
 
-    func scheduleDailyNotification(enabled: Bool) {
+    /// Schedules (or cancels) a repeating reminder. Text is generic because a repeating
+    /// notification can't carry each day's technique. `time` is "HH:mm".
+    static func scheduleDailyNotification(enabled: Bool, time: String) {
         let center = UNUserNotificationCenter.current()
         center.removePendingNotificationRequests(withIdentifiers: ["dailySuggestion"])
 
-        guard enabled, let suggestion = suggestion else { return }
+        guard enabled else { return }
 
         center.requestAuthorization(options: [.alert, .sound]) { granted, _ in
             guard granted else { return }
 
             let content = UNMutableNotificationContent()
-            content.title = "Today's brew — \(suggestion.technique.name)"
-            let time = Self.formatTime(suggestion.technique.totalTimeSeconds)
-            content.body = "\(suggestion.flavourHook) · \(time) · Try something new today"
+            content.title = "Today's brew is ready"
+            content.body = "Open BrewGuide to see today's suggestion"
             content.sound = .default
             content.userInfo = ["url": "brewguide://suggestion"]
 
+            let parts = time.split(separator: ":").compactMap { Int($0) }
             var dateComponents = DateComponents()
-            dateComponents.hour = 8
-            dateComponents.minute = 0
+            dateComponents.hour = parts.first ?? 8
+            dateComponents.minute = parts.count > 1 ? parts[1] : 0
 
             let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
-            let request = UNNotificationRequest(identifier: "dailySuggestion", content: content, trigger: trigger)
-
-            center.add(request)
+            center.add(UNNotificationRequest(identifier: "dailySuggestion", content: content, trigger: trigger))
         }
     }
 
