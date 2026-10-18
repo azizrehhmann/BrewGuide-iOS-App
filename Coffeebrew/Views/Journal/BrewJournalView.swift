@@ -18,7 +18,10 @@ struct BrewJournalView: View {
             }
         }
         .toolbar { toolbarContent }
-        .searchable(text: $viewModel.searchText, prompt: "Search techniques, beans...")
+        // Top drawer: the default bottom search would stack under the floating tab bar
+        .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer(displayMode: .automatic), prompt: "Search techniques, beans...")
+        .navigationTitle(viewModel.sessions.isEmpty ? "Journal" : "")
+        .navigationBarTitleDisplayMode(.inline)
         .onChange(of: viewModel.searchText) { _, _ in viewModel.fetchSessions() }
         .onChange(of: viewModel.filterRating) { _, _ in viewModel.fetchSessions() }
         .onChange(of: viewModel.filterFavourites) { _, _ in viewModel.fetchSessions() }

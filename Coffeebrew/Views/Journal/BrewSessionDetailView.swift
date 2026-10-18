@@ -115,7 +115,7 @@ struct BrewSessionDetailView: View {
         VStack(alignment: .leading, spacing: 2) {
             Text(label)
                 .font(.caption2)
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(.secondary)
                 .textCase(.uppercase)
             Text(value)
                 .font(.subheadline.weight(.medium))

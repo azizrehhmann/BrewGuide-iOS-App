@@ -140,7 +140,7 @@ struct BeanFirstEntryView: View {
 
                     Text(subtitle)
                         .font(Constants.Typography.sans(13))
-                        .foregroundStyle(.tertiary)
+                        .foregroundStyle(.secondary)
                         .lineLimit(2)
                 }
 
@@ -178,7 +178,7 @@ struct BeanFirstEntryView: View {
                 .frame(height: 1)
             Text("or pick one")
                 .font(Constants.Typography.mono(11))
-                .foregroundStyle(.quaternary)
+                .foregroundStyle(.secondary)
             Rectangle()
                 .fill(Constants.Colors.primaryColor.opacity(0.06))
                 .frame(height: 1)
@@ -227,7 +227,7 @@ struct BeanFirstEntryView: View {
                     .foregroundStyle(.secondary)
                 Text("On-device AI is analyzing your bean")
                     .font(Constants.Typography.mono(12))
-                    .foregroundStyle(.tertiary)
+                    .foregroundStyle(.secondary)
             }
             Spacer()
         }
@@ -281,7 +281,7 @@ struct InventoryBeanPicker: View {
         if beans.isEmpty {
             Text("No beans in your pantry yet")
                 .font(Constants.Typography.sans(13))
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(.secondary)
                 .padding(.horizontal, Constants.Layout.horizontalPadding)
         } else {
             ScrollView(.horizontal, showsIndicators: false) {
@@ -304,7 +304,7 @@ struct InventoryBeanPicker: View {
 
                                 Text(bean.roasterName ?? "")
                                     .font(Constants.Typography.mono(10))
-                                    .foregroundStyle(.tertiary)
+                                    .foregroundStyle(.secondary)
                                     .lineLimit(1)
                             }
                             .frame(width: 90)

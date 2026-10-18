@@ -46,7 +46,7 @@ struct BrewTimerRing: View {
 
                     Text(isPaused ? "paused" : "remaining")
                         .font(.system(.caption2, design: .rounded))
-                        .foregroundStyle(.tertiary)
+                        .foregroundStyle(.secondary)
                 }
                 .scaleEffect(pulseScale)
 
@@ -77,7 +77,7 @@ struct BrewTimerRing: View {
 
                 Text("Manual step")
                     .font(.system(.caption2, design: .rounded))
-                    .foregroundStyle(.tertiary)
+                    .foregroundStyle(.secondary)
                     .offset(y: 30)
             }
         }

@@ -34,7 +34,7 @@ struct BeanInventoryCardView: View {
 
             Text(bean.roasterName ?? "")
                 .font(Constants.Typography.mono(10))
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(.secondary)
                 .lineLimit(1)
                 .truncationMode(.tail)
 

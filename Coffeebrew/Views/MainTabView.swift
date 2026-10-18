@@ -7,30 +7,17 @@ struct MainTabView: View {
     @State private var activeTab: KFloatingTabBar.TabItem = .today
 
     var body: some View {
-        ZStack(alignment: .bottom) {
-            Group {
-                switch activeTab {
-                case .today:
-                    NavigationStack {
-                        HomeView()
-                    }
-                case .library:
-                    NavigationStack {
-                        LibraryView()
-                    }
-                case .pantry:
-                    NavigationStack {
-                        BeanInventoryView(context: managedObjectContext)
-                    }
-                case .journal:
-                    NavigationStack {
-                        BrewJournalView(context: managedObjectContext)
-                    }
-                }
+        Group {
+            switch activeTab {
+            case .today:
+                tabRoot { HomeView() }
+            case .library:
+                tabRoot { LibraryView() }
+            case .pantry:
+                tabRoot { BeanInventoryView(context: managedObjectContext) }
+            case .journal:
+                tabRoot { BrewJournalView(context: managedObjectContext) }
             }
-
-            KFloatingTabBar(activeTab: $activeTab)
-                .padding(.bottom, 8)
         }
         .ignoresSafeArea(.keyboard)
         .onOpenURL { url in
@@ -41,6 +28,18 @@ struct MainTabView: View {
                 appEnvironment.shouldShowDailySuggestion = true
                 activeTab = .today
             }
+        }
+    }
+
+    /// The bar is an inset of each tab's root screen, so pushed screens (bean selection, brewing)
+    /// get the full height and root lists scroll clear of it.
+    private func tabRoot<Content: View>(@ViewBuilder _ content: () -> Content) -> some View {
+        NavigationStack {
+            content()
+                .safeAreaInset(edge: .bottom) {
+                    KFloatingTabBar(activeTab: $activeTab)
+                        .padding(.bottom, 8)
+                }
         }
     }
 }

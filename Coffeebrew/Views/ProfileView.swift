@@ -82,7 +82,7 @@ struct ProfileView: View {
                     Text("Signed in with Apple")
                         .font(.system(.caption2, design: .rounded))
                 }
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(.secondary)
                 .padding(.top, 2)
             }
 
@@ -143,7 +143,7 @@ struct ProfileView: View {
             // Skip note
             Text("You can also use the app without signing in.\nYour data will stay on this device only.")
                 .font(.system(.caption2, design: .rounded))
-                .foregroundStyle(.quaternary)
+                .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 32)
         }
@@ -236,7 +236,7 @@ struct ProfileView: View {
                 Text("Your data is encrypted and stored in your personal iCloud account. Only you can access it.")
                     .font(.system(.caption2, design: .rounded))
             }
-            .foregroundStyle(.tertiary)
+            .foregroundStyle(.secondary)
 
             HStack(spacing: 4) {
                 Image(systemName: "arrow.triangle.2.circlepath")
@@ -244,7 +244,7 @@ struct ProfileView: View {
                 Text("Changes sync automatically when connected to the internet.")
                     .font(.system(.caption2, design: .rounded))
             }
-            .foregroundStyle(.tertiary)
+            .foregroundStyle(.secondary)
         }
         .padding(.horizontal, Constants.Layout.horizontalPadding)
     }

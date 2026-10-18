@@ -38,7 +38,7 @@ struct BeanProgressRing: View {
 
                 Text(formattedTotal)
                     .font(.system(size: ringSize * 0.11, weight: .medium, design: .rounded))
-                    .foregroundStyle(.tertiary)
+                    .foregroundStyle(.secondary)
             }
         }
         .frame(width: ringSize, height: ringSize)

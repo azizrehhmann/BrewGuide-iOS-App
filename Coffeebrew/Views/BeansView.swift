@@ -62,7 +62,7 @@ struct BeansView: View {
                     Label(technique.totalTimeSeconds.formattedTime, systemImage: "clock")
                 }
                 .font(.system(.caption, design: .rounded))
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(.secondary)
             }
             .padding(.horizontal, Constants.Layout.horizontalPadding)
         }
@@ -129,7 +129,7 @@ struct BeanCardView: View {
                             .foregroundStyle(Constants.Colors.primaryColor)
                         Text(bean.origin)
                             .font(.system(.caption, design: .rounded))
-                            .foregroundStyle(.tertiary)
+                            .foregroundStyle(.secondary)
                     }
                     Spacer()
                     matchScoreBadge
@@ -142,7 +142,7 @@ struct BeanCardView: View {
                     Label(bean.roastLevel, systemImage: "flame.fill")
                 }
                 .font(.system(.caption, design: .rounded))
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(.secondary)
 
                 flavourNotePills
             }
@@ -178,7 +178,7 @@ struct BeanCardView: View {
                 .foregroundStyle(scoreColor)
             Text("match")
                 .font(.system(size: 9, weight: .medium, design: .rounded))
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(.secondary)
         }
         .frame(width: 44, height: 44)
         .background(Circle().fill(scoreColor.opacity(0.08)))

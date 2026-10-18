@@ -340,7 +340,7 @@ struct AddEditBeanSheet: View {
                     .foregroundStyle(Constants.Colors.accentGold)
                 Text("Peak freshness: days \(peakWindow.start)\u{2013}\(peakWindow.end) after roasting")
                     .font(.system(.caption2, design: .rounded))
-                    .foregroundStyle(.tertiary)
+                    .foregroundStyle(.secondary)
             }
         }
         .padding(.vertical, 4)

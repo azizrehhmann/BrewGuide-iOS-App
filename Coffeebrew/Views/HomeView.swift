@@ -2,11 +2,11 @@ import SwiftUI
 import CoreData
 
 struct HomeView: View {
+    @Environment(\.dynamicTypeSize) private var typeSize
     @EnvironmentObject private var appEnvironment: AppEnvironment
     @Environment(\.managedObjectContext) private var managedObjectContext
     @State private var showSettings = false
     @State private var showBeanFirst = false
-    @State private var showProfile = false
     @State private var navigationPath = NavigationPath()
     @ObservedObject private var authService = AuthenticationService.shared
     @State private var dailySuggestionService: DailySuggestionService?
@@ -42,9 +42,6 @@ struct HomeView: View {
             }
             .sheet(isPresented: $showSettings) {
                 SettingsView()
-            }
-            .sheet(isPresented: $showProfile) {
-                ProfileView()
             }
             .navigationDestination(isPresented: $showBeanFirst) {
                 BeanFirstEntryView(
@@ -104,32 +101,35 @@ struct HomeView: View {
     }
 
     private var headerSection: some View {
+        HStack(alignment: .top, spacing: 8) {
         VStack(alignment: .leading, spacing: 4) {
             KEyebrow(text: dateString, color: .secondary, showDot: false)
 
-            HStack(alignment: .firstTextBaseline, spacing: 0) {
-                Text(greetingText)
-                    .font(Constants.Typography.display(28, weight: .regular))
-                    .foregroundStyle(Constants.Colors.primaryColor)
-
-                Text(" ")
-
-                if authService.isSignedIn, authService.userProfile?.displayName != nil {
-                    Text(userName)
-                        .font(Constants.Typography.displayItalic(28))
-                        .foregroundStyle(Constants.Colors.accentGold)
-                } else {
-                    Text(userName)
-                        .font(Constants.Typography.displayItalic(28))
-                        .foregroundStyle(Constants.Colors.accentGold)
-                }
-            }
+            // One Text so the greeting wraps as a sentence at large type sizes
+            (Text(greetingText + " ")
+                .font(Constants.Typography.display(28, weight: .regular))
+                .foregroundStyle(Constants.Colors.primaryColor)
+             + Text(userName)
+                .font(Constants.Typography.displayItalic(28))
+                .foregroundStyle(Constants.Colors.accentGold))
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(.horizontal, Constants.Layout.horizontalPadding)
-        .padding(.top, 8)
         .accessibilityElement(children: .combine)
         .accessibilityAddTraits(.isHeader)
+
+            Button {
+                showSettings = true
+            } label: {
+                Image(systemName: "gearshape")
+                    .font(.system(size: 18, weight: .medium))
+                    .foregroundStyle(Constants.Colors.primaryColor)
+                    .frame(width: 44, height: 44)
+                    .background(Circle().fill(Constants.Colors.cardBackground))
+            }
+            .accessibilityLabel("Settings")
+        }
+        .padding(.horizontal, Constants.Layout.horizontalPadding)
+        .padding(.top, 8)
     }
 
     // MARK: - Daily Ritual Hero Card
@@ -164,12 +164,14 @@ struct HomeView: View {
                                 .foregroundStyle(Constants.Colors.accentGold)
                         }
 
-                        Spacer(minLength: 12)
+                        if !typeSize.isAccessibilitySize {
+                            Spacer(minLength: 12)
 
-                        Image(suggestion.technique.imageName)
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 96, height: 96)
+                            Image(suggestion.technique.imageName)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 96, height: 96)
+                        }
                     }
                     .padding(.bottom, 20)
 
@@ -203,14 +205,25 @@ struct HomeView: View {
         let timeString = seconds > 0 ? "\(minutes):\(String(format: "%02d", seconds))" : "\(minutes):00"
         let ratioString = "1:\(String(format: "%.0f", technique.ratioWaterCoffee))"
 
-        return HStack(spacing: 0) {
-            specColumn(label: "TIME", value: timeString)
-            specDivider
-            specColumn(label: "TEMP", value: "\(technique.waterTempC)\u{00B0}C")
-            specDivider
-            specColumn(label: "RATIO", value: ratioString)
-            specDivider
-            specColumn(label: "GRIND", value: technique.grindSizeLabel)
+        let columns = [
+            specColumn(label: "TIME", value: timeString),
+            specColumn(label: "TEMP", value: "\(technique.waterTempC)\u{00B0}C"),
+            specColumn(label: "RATIO", value: ratioString),
+            specColumn(label: "GRIND", value: technique.grindSizeLabel),
+        ]
+
+        return Group {
+            if typeSize.isAccessibilitySize {
+                // Four columns don't fit at accessibility sizes: two rows of two
+                VStack(spacing: 12) {
+                    HStack(spacing: 0) { columns[0]; columns[1] }
+                    HStack(spacing: 0) { columns[2]; columns[3] }
+                }
+            } else {
+                HStack(spacing: 0) {
+                    columns[0]; specDivider; columns[1]; specDivider; columns[2]; specDivider; columns[3]
+                }
+            }
         }
         .padding(.vertical, 12)
         .background(
@@ -352,7 +365,7 @@ struct HomeView: View {
 
                 Text("\(count)")
                     .font(Constants.Typography.mono(11))
-                    .foregroundStyle(.tertiary)
+                    .foregroundStyle(.secondary)
             }
         }
         .frame(width: 100, height: 110)

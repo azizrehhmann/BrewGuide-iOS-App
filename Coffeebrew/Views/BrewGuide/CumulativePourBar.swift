@@ -44,11 +44,11 @@ struct CumulativePourBar: View {
             HStack {
                 Text(String(format: "%.0f ml so far", previousMl + currentStepMl))
                     .font(.system(.caption2, design: .rounded))
-                    .foregroundStyle(.tertiary)
+                    .foregroundStyle(.secondary)
                 Spacer()
                 Text(String(format: "%.0f ml total", totalRecipeMl))
                     .font(.system(.caption2, design: .rounded))
-                    .foregroundStyle(.quaternary)
+                    .foregroundStyle(.secondary)
             }
         }
         .onAppear {

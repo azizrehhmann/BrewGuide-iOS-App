@@ -188,7 +188,7 @@ struct BeanDetailView: View {
         VStack(spacing: 6) {
             Text(label)
                 .font(Constants.Typography.mono(10))
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(.secondary)
             Text(value)
                 .font(Constants.Typography.mono(16))
                 .foregroundStyle(Constants.Colors.primaryColor)
@@ -262,7 +262,7 @@ struct BeanDetailView: View {
                             .foregroundStyle(Constants.Colors.accentGold)
                         Text("Peak freshness: days \(peak.start)\u{2013}\(peak.end)")
                             .font(Constants.Typography.mono(11))
-                            .foregroundStyle(.tertiary)
+                            .foregroundStyle(.secondary)
                     }
                 }
             }

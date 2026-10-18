@@ -62,14 +62,14 @@ struct EquipmentRowView: View {
 
                 Text(method.description)
                     .font(.system(.caption, design: .rounded))
-                    .foregroundStyle(.tertiary)
+                    .foregroundStyle(.secondary)
                     .lineLimit(1)
 
                 HStack(spacing: 10) {
                     difficultyLabel
                     Text("\(techniqueCount) technique\(techniqueCount == 1 ? "" : "s")")
                         .font(.system(.caption2, design: .rounded))
-                        .foregroundStyle(.tertiary)
+                        .foregroundStyle(.secondary)
                 }
             }
 
@@ -110,7 +110,7 @@ struct EquipmentRowView: View {
             }
             Text(method.difficultyLabel)
                 .font(.system(.caption2, design: .rounded))
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(.secondary)
         }
     }
 }

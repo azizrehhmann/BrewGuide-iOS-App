@@ -17,6 +17,8 @@ struct KEyebrow: View {
                 .foregroundStyle(color)
                 .textCase(.uppercase)
                 .tracking(1.4)
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
         }
     }
 }

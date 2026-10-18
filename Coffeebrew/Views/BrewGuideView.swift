@@ -264,7 +264,7 @@ struct BrewGuideView: View {
             // Elapsed time
             Text(elapsedTimeString)
                 .font(Constants.Typography.mono(12))
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(.secondary)
                 .monospacedDigit()
         }
     }
@@ -348,7 +348,7 @@ struct BrewGuideView: View {
             HStack(spacing: 8) {
                 Text("UP NEXT")
                     .font(Constants.Typography.mono(10))
-                    .foregroundStyle(.tertiary)
+                    .foregroundStyle(.secondary)
                     .tracking(1)
                 Text(nextStep.displayTitle)
                     .font(Constants.Typography.sans(13, weight: .medium))

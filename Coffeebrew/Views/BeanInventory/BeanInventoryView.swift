@@ -86,7 +86,8 @@ private struct BeanInventoryContentView: View {
                     beanList
                 }
 
-                addBeanDashedButton
+                // The empty state already has Scan and Add above; the dashed button is for end of list
+                if !sortedBeans.isEmpty { addBeanDashedButton }
             }
             .padding(.vertical)
         }
@@ -362,11 +363,11 @@ private struct BeanInventoryContentView: View {
                     HStack(spacing: 0) {
                         Text(bean.roasterName ?? "Unknown roaster")
                             .font(Constants.Typography.mono(10))
-                            .foregroundStyle(.tertiary)
+                            .foregroundStyle(.secondary)
                         if let days = daysAgo {
                             Text("  \u{00B7}  OPENED \(days)d AGO")
                                 .font(Constants.Typography.mono(10))
-                                .foregroundStyle(.tertiary)
+                                .foregroundStyle(.secondary)
                         }
                     }
                     .lineLimit(1)
@@ -507,47 +508,6 @@ private struct BeanInventoryContentView: View {
                     ? "Add your first bag of coffee beans."
                     : "No beans match your search."
             )
-
-            if searchText.isEmpty {
-                VStack(spacing: 12) {
-                    Button {
-                        showCamera = true
-                    } label: {
-                        HStack(spacing: 8) {
-                            Image(systemName: "camera.viewfinder")
-                            Text("Scan Coffee Bag")
-                        }
-                        .font(Constants.Typography.sans(16, weight: .semibold))
-                        .foregroundStyle(.white)
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 48)
-                        .background(
-                            RoundedRectangle(cornerRadius: Constants.Layout.cornerRadius, style: .continuous)
-                                .fill(Constants.Colors.accentGold)
-                        )
-                    }
-
-                    Button {
-                        editingBean = nil
-                        scannedBean = nil
-                        showAddSheet = true
-                    } label: {
-                        HStack(spacing: 8) {
-                            Image(systemName: "plus")
-                            Text("Add Manually")
-                        }
-                        .font(Constants.Typography.sans(16, weight: .semibold))
-                        .foregroundStyle(Constants.Colors.accentGold)
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 48)
-                        .background(
-                            RoundedRectangle(cornerRadius: Constants.Layout.cornerRadius, style: .continuous)
-                                .strokeBorder(Constants.Colors.accentGold.opacity(0.3), lineWidth: 1.5)
-                        )
-                    }
-                }
-                .padding(.horizontal, Constants.Layout.horizontalPadding)
-            }
         }
     }
 }

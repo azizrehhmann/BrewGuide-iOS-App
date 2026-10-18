@@ -169,7 +169,7 @@ struct RecommendationCard: View {
 
                     Text(recommendation.equipmentName)
                         .font(.system(.caption, design: .rounded))
-                        .foregroundStyle(.tertiary)
+                        .foregroundStyle(.secondary)
                 }
 
                 Spacer()
@@ -181,7 +181,7 @@ struct RecommendationCard: View {
 
                     Text("match")
                         .font(.system(size: 9, weight: .medium, design: .rounded))
-                        .foregroundStyle(.tertiary)
+                        .foregroundStyle(.secondary)
                 }
             }
 

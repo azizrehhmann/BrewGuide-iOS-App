@@ -108,7 +108,6 @@ struct LibraryView: View {
                     }
                 }
                 .padding(.horizontal, Constants.Layout.horizontalPadding)
-                .padding(.bottom, 100)
             }
         }
         .adaptiveBackground()
@@ -126,6 +125,7 @@ struct LibraryTechniqueCard: View {
     let technique: Technique
     @EnvironmentObject private var appEnvironment: AppEnvironment
     @Environment(\.colorScheme) private var colorScheme
+    @Environment(\.dynamicTypeSize) private var typeSize
 
     private var categoryName: String {
         appEnvironment.databaseService.method(byId: technique.methodId)?.category ?? ""
@@ -137,7 +137,8 @@ struct LibraryTechniqueCard: View {
 
     var body: some View {
         HStack(spacing: 0) {
-            // Image panel
+            // Image panel (dropped at accessibility sizes so the text gets the width)
+            if !typeSize.isAccessibilitySize {
             ZStack {
                 LinearGradient(
                     colors: [Constants.Colors.primaryColor.opacity(0.06), .clear],
@@ -150,21 +151,23 @@ struct LibraryTechniqueCard: View {
                     .frame(width: 72, height: 72)
             }
             .frame(width: 96)
+            }
 
             // Info
             VStack(alignment: .leading, spacing: 0) {
-                HStack {
+                (typeSize.isAccessibilitySize ? AnyLayout(VStackLayout(alignment: .leading, spacing: 4)) : AnyLayout(HStackLayout(alignment: .top))) {
                     VStack(alignment: .leading, spacing: 3) {
                         KEyebrow(text: categoryName.uppercased(), color: categoryTint)
                         Text(technique.name)
                             .font(Constants.Typography.display(20))
                             .foregroundStyle(Constants.Colors.primaryColor)
                     }
-                    Spacer()
+                    Spacer(minLength: 8)
                     Text(technique.totalTimeSeconds.shortFormattedTime)
                         .font(Constants.Typography.mono(13))
                         .foregroundStyle(Constants.Colors.primaryColor)
                         .monospacedDigit()
+                        .fixedSize()
                 }
 
                 Text(technique.description)
@@ -173,14 +176,10 @@ struct LibraryTechniqueCard: View {
                     .lineLimit(1)
                     .padding(.top, 4)
 
-                HStack(spacing: 12) {
-                    Text("\(technique.waterTempC)\u{00B0}C")
-                    Text("\u{00B7}")
-                    Text("1:\(String(format: "%.1f", technique.ratioWaterCoffee))")
-                    Text("\u{00B7}")
-                    Text(technique.grindSizeLabel)
-                }
+                // One Text so a long grind label wraps as a sentence instead of splitting the row
+                Text("\(technique.waterTempC)\u{00B0}C \u{00B7} 1:\(String(format: "%.1f", technique.ratioWaterCoffee)) \u{00B7} \(technique.grindSizeLabel)")
                 .font(Constants.Typography.mono(10))
+                .multilineTextAlignment(.leading)
                 .foregroundStyle(Constants.Colors.primaryColor.opacity(0.5))
                 .padding(.top, 8)
             }

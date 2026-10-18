@@ -42,7 +42,7 @@ struct DailySuggestionCardView: View {
 
             Text(suggestion.reasonLabel)
                 .font(.system(.caption, design: .rounded))
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(.secondary)
                 .padding(.horizontal, 20)
                 .padding(.top, 10)
 
@@ -148,7 +148,7 @@ struct DailySuggestionCardView: View {
                     Text("You last made this \u{2014} \(rating)\u{2605}")
                         .font(.system(.caption, design: .rounded))
                 }
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(.secondary)
             }
 
             if suggestion.streakDays > 0 {

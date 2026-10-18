@@ -21,7 +21,7 @@ struct BeanConfirmView: View {
 
                     Text("Edit any fields the scanner may have missed")
                         .font(.system(.caption, design: .rounded))
-                        .foregroundStyle(.tertiary)
+                        .foregroundStyle(.secondary)
                 }
                 .padding(.top, 8)
 

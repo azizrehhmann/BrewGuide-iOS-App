@@ -40,7 +40,7 @@ struct BrewSessionRowView: View {
                     }
                     Text(session.brewedAt?.formatted(date: .abbreviated, time: .omitted) ?? "")
                         .font(.caption2)
-                        .foregroundStyle(.tertiary)
+                        .foregroundStyle(.secondary)
                 }
 
                 if let tags = session.flavourTags, !tags.isEmpty {

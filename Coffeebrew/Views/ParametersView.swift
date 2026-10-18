@@ -114,7 +114,7 @@ struct ParametersView: View {
 
             Text("\(servings) cup\(servings > 1 ? "s" : "")")
                 .font(.system(.caption, design: .rounded))
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(.secondary)
         }
         .padding(.horizontal, Constants.Layout.horizontalPadding)
     }
@@ -307,7 +307,7 @@ struct ParametersView: View {
 
             Text(label)
                 .font(.system(.caption, design: .rounded))
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(.secondary)
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 18)

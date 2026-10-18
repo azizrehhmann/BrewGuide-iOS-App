@@ -161,7 +161,7 @@ struct TechniqueDetailView: View {
                     .font(Constants.Typography.mono(9))
                     .textCase(.uppercase)
             }
-            .foregroundStyle(.tertiary)
+            .foregroundStyle(.secondary)
 
             Text(value)
                 .font(Constants.Typography.mono(18))
@@ -200,7 +200,7 @@ struct TechniqueDetailView: View {
         HStack(alignment: .top, spacing: 12) {
             Text(String(format: "%02d", step.stepNumber))
                 .font(Constants.Typography.mono(12))
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(.secondary)
                 .frame(width: 24, alignment: .leading)
 
             VStack(alignment: .leading, spacing: 2) {
@@ -218,7 +218,7 @@ struct TechniqueDetailView: View {
 
             Text(step.durationSeconds > 0 ? "\(step.durationSeconds)s" : "\u{2014}")
                 .font(Constants.Typography.mono(12))
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(.secondary)
         }
         .padding(.vertical, 10)
     }

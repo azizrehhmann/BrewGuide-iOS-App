@@ -70,7 +70,7 @@ struct TechniqueSpotlightCard: View {
                 if let creator = deepDive.creator {
                     Text("by \(creator.name)")
                         .font(.system(.caption2, design: .rounded))
-                        .foregroundStyle(.tertiary)
+                        .foregroundStyle(.secondary)
                 }
             }
 
@@ -108,7 +108,7 @@ struct TechniqueSpotlightCard: View {
                         .padding(.top, 2)
                     Text(notes.prefix(120) + (notes.count > 120 ? "..." : ""))
                         .font(.system(.caption, design: .rounded))
-                        .foregroundStyle(.tertiary)
+                        .foregroundStyle(.secondary)
                         .lineLimit(2)
                 }
             }

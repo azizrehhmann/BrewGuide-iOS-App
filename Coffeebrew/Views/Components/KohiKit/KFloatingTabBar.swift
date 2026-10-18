@@ -24,9 +24,7 @@ struct KFloatingTabBar: View {
         HStack(spacing: 0) {
             ForEach(TabItem.allCases, id: \.self) { tab in
                 Button {
-                    withAnimation(.easeInOut(duration: 0.2)) {
-                        activeTab = tab
-                    }
+                    activeTab = tab  // no animation: each tab owns its bar, a crossfade would ghost two bars
                     HapticsManager.shared.selection()
                 } label: {
                     VStack(spacing: 3) {

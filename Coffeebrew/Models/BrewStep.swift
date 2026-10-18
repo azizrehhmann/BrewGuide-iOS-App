@@ -16,8 +16,12 @@ struct BrewStep: Codable, Identifiable, Hashable {
     /// instruction's first clause so headings read as words.
     var displayTitle: String {
         guard title.allSatisfy({ $0.isNumber || ":-– ".contains($0) }) else { return title }
-        let head = instruction.prefix { !":;.".contains($0) }.trimmingCharacters(in: .whitespaces)
-        return head.isEmpty ? title : head
+        let head = instruction.prefix { !":;.(\u{2014}\u{2013}".contains($0) }
+        // Instructions carry {coffee}/{water} placeholders that are only resolved for the body text
+        let clean = String(head)
+            .replacingOccurrences(of: #"\{[a-z_]+\}g?\s?"#, with: "", options: .regularExpression)
+            .trimmingCharacters(in: .whitespaces)
+        return clean.isEmpty ? title : clean
     }
 
     enum CodingKeys: String, CodingKey {

@@ -109,7 +109,7 @@ struct QuickBrewCard: View {
 
                 Text(item.method.name)
                     .font(.system(.caption2, design: .rounded))
-                    .foregroundStyle(.tertiary)
+                    .foregroundStyle(.secondary)
                     .lineLimit(1)
             }
 
@@ -121,7 +121,7 @@ struct QuickBrewCard: View {
 
                 Text(relativeTime(item.lastBrewedAt))
                     .font(.system(.caption2, design: .rounded))
-                    .foregroundStyle(.quaternary)
+                    .foregroundStyle(.secondary)
             }
 
             Spacer(minLength: 0)

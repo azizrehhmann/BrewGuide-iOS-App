@@ -209,7 +209,7 @@ struct TechniqueSearchView: View {
         HStack {
             Text("\(filteredItems.count) technique\(filteredItems.count == 1 ? "" : "s")")
                 .font(.system(.caption, design: .rounded))
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(.secondary)
 
             Spacer()
 
@@ -312,7 +312,7 @@ struct TechniqueSearchCard: View {
                             .foregroundStyle(Constants.Colors.primaryColor)
                         Text(method.name)
                             .font(.system(.caption, design: .rounded))
-                            .foregroundStyle(.tertiary)
+                            .foregroundStyle(.secondary)
                     }
                     Spacer()
                     Text(technique.totalTimeSeconds.formattedTime)
@@ -341,7 +341,7 @@ struct TechniqueSearchCard: View {
                         )
                 }
                 .font(.system(.caption2, design: .rounded))
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(.secondary)
             }
         }
         .padding(16)

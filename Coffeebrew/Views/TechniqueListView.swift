@@ -72,7 +72,7 @@ struct TechniqueRowView: View {
 
                 Text(technique.description)
                     .font(.system(.caption, design: .rounded))
-                    .foregroundStyle(.tertiary)
+                    .foregroundStyle(.secondary)
                     .lineLimit(2)
 
                 if technique.deepDive != nil {
@@ -102,7 +102,7 @@ struct TechniqueRowView: View {
                     }
                 }
                 .font(.system(.caption2, design: .rounded))
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(.secondary)
             }
         }
         .padding(16)
